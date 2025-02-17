@@ -1,0 +1,35 @@
+[
+    {
+        "id": 0,
+        "source": "SiemplifyThreatFuse",
+        "product": "Siemplify Threatfuse",
+        "eventName": null,
+        "familyName": "Default",
+        "familyId": 0,
+        "mappingStatus": null,
+        "changeSource": 0,
+        "exampleEventFields": []
+    },
+    {
+        "id": 0,
+        "source": "SiemplifyThreatFuse",
+        "product": "Siemplify Threatfuse",
+        "eventName": "md5",
+        "familyName": "Default",
+        "familyId": 0,
+        "mappingStatus": null,
+        "changeSource": 0,
+        "exampleEventFields": []
+    },
+    {
+        "id": 0,
+        "source": "SiemplifyThreatFuse",
+        "product": "Siemplify Threatfuse",
+        "eventName": "email",
+        "familyName": "Default",
+        "familyId": 0,
+        "mappingStatus": null,
+        "changeSource": 0,
+        "exampleEventFields": []
+    }
+]

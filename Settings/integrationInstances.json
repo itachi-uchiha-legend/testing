@@ -1,0 +1,54 @@
+[
+    {
+        "environment": "Default Environment",
+        "integrationIdentifier": "VirusTotalV3",
+        "settings": {
+            "instanceDescription": "",
+            "instanceName": "System Default Instance",
+            "settings": [
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "API Key",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "API Key",
+                    "propertyType": 3,
+                    "isMandatory": true,
+                    "value": "***************",
+                    "integrationInstance": "8f1922f7-6e38-46d0-b6da-749ade5fe0e3",
+                    "environment": null,
+                    "id": 11,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "Verify SSL",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Verify SSL",
+                    "propertyType": 0,
+                    "isMandatory": false,
+                    "value": "True",
+                    "integrationInstance": "8f1922f7-6e38-46d0-b6da-749ade5fe0e3",
+                    "environment": null,
+                    "id": 12,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "AgentIdentifier",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Agent",
+                    "propertyType": 9,
+                    "isMandatory": false,
+                    "value": null,
+                    "integrationInstance": "8f1922f7-6e38-46d0-b6da-749ade5fe0e3",
+                    "environment": null,
+                    "id": 13,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                }
+            ]
+        }
+    }
+]
