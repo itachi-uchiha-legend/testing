@@ -78,7 +78,7 @@ class GitContentManager:
         """
         try:
             zip_buffer = BytesIO()
-            definition = None
+            definition = {}
             with zipfile.ZipFile(
                 zip_buffer, "a", zipfile.ZIP_DEFLATED, False
             ) as zip_file:
@@ -89,9 +89,6 @@ class GitContentManager:
                         definition = json.loads(file.content)
                     zip_file.writestr(file.path, file.content)
             zip_buffer.seek(0)
-
-            if definition is None:
-                return None
 
             return Integration(
                 {

@@ -372,7 +372,7 @@ class SiemplifyApiClient:
         if self.system_version > VERSION_6117:
             return self.get_blocklists()
 
-        res = self.session.get("settings/GetAllModelBlackRecords")
+        res = self.session.get("settings/GetAllModelBlockRecords")
         self.validate_response(res)
         return res.json()
 
@@ -380,7 +380,7 @@ class SiemplifyApiClient:
         if self.system_version > VERSION_6117:
             return self.update_blocklist(blacklist)
 
-        res = self.session.post("settings/AddOrUpdateModelBlackRecords", json=blacklist)
+        res = self.session.post("settings/AddOrUpdateModelBlockRecords", json=blacklist)
         self.validate_response(res)
         return res.content
 

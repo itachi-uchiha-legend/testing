@@ -141,18 +141,6 @@ Pulls and Installs a playbook or block from the repo. NOTE: Please verify you're
 |Playbook Whitelist|True|String||
 |Include Playbook Blocks|False|Boolean|true|
 
-#### Push Mappings GitSyncBeta
-Exports mappings  to the repo.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Commit|True|String||
-|Repo URL|False|String|None|
-|Branch|False|String|None|
-|Commit Author|False|String||
-|Source|True|String||
-|Readme Addon|False|String||
-
 #### Pull Simulated Cases GitSyncBeta
 Imports simulated cases from the repo.
 
@@ -242,6 +230,18 @@ Export a job to the repo
 |Branch|False|String|None|
 |Commit Author|False|String||
 |Job Whitelist|True|String||
+|Readme Addon|False|String||
+
+#### Push Mappings GitSyncBeta
+Exports mappings  to the repo.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Commit|True|String||
+|Repo URL|False|String|None|
+|Branch|False|String|None|
+|Commit Author|False|String||
+|Source|True|String||
 |Readme Addon|False|String||
 
 #### Push Playbook GitSyncBeta
