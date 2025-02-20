@@ -14,9 +14,21 @@
 |VirusTotalV3|VirusTotal was founded in 2004 as a free service that analyzes files and URLs for viruses, worms, trojans and other kinds of malicious content. Our goal is to make the internet a safer place through collaboration between members of the antivirus industry, researchers and end users of all kinds. Fortune 500 companies, governments and leading security companies are all part of the VirusTotal community, which has grown to over 500,000 registered users.This integration was created using the 3rd iteration of VT API.|
 
 
+## Connectors
+|Name|Description|Has Mappings|
+|----|-----------|------------|
+|VMware Carbon Black Cloud Alerts and Events Baseline Connector|Fetch Carbon Black Cloud Alerts and Events that reached specific baseline (were classified by default as Threat in Carbon Black Cloud)|True|
+
+
 ## Playbooks
 |Name|Description|
 |----|-----------|
 |New Playbook||
 |New Playbook 1||
+
+
+## Jobs
+|Name|Description|
+|----|-----------|
+|Push Content GitSyncBeta|Push all content of this platform to git|
 

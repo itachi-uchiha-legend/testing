@@ -1,0 +1,13 @@
+[
+    {
+        "id": 0,
+        "source": "CBCloud",
+        "product": "VMware Carbon Black Cloud",
+        "eventName": "WATCHLIST",
+        "familyName": "Default",
+        "familyId": 0,
+        "mappingStatus": null,
+        "changeSource": 1,
+        "exampleEventFields": []
+    }
+]
