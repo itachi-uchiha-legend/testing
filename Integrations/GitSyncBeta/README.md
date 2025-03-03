@@ -192,6 +192,15 @@ Imports a connector from the repo.
 |Include Visual Families|False|Boolean|false|
 |Include Mappings|False|Boolean|false|
 
+#### Pull Integration GitSyncBeta
+Install an integration or update an installed one.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Install Whitelist|True|String||
+|Repo URL|False|String|None|
+|Branch|False|String|None|
+
 #### Pull Jobs GitSyncBeta
 Imports a job from the repo.
 
@@ -223,15 +232,6 @@ Export simulate cases to the repo
 |Branch|False|String|None|
 |Commit Author|False|String||
 |Simulated Cases|True|String||
-
-#### Pull Integration GitSyncBeta
-Install an integration or update an installed one.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Install Whitelist|True|String||
-|Repo URL|False|String|None|
-|Branch|False|String|None|
 
 #### Push Mappings GitSyncBeta
 Exports mappings  to the repo.

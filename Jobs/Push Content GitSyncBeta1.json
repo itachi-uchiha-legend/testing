@@ -18,7 +18,7 @@
             "isMandatory": true,
             "name": "Commit",
             "type": 2,
-            "value": "Test1"
+            "value": "This is push Content GitSyncBeta1 job"
         },
         {
             "id": 126,
@@ -198,7 +198,7 @@
     ],
     "runIntervalInSeconds": 60,
     "creationTime": "2025-03-03T11:38:19.549Z",
-    "lastModificationTime": "2025-03-03T12:00:54.219Z",
+    "lastModificationTime": "2025-03-03T12:18:00.618Z",
     "isSystemJob": false,
     "jobDefinitionName": "Push Content GitSyncBeta",
     "agentIdentifier": null
