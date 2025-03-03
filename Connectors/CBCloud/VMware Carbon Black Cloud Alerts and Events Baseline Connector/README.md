@@ -12,9 +12,6 @@ Event Name Field: event_type
 ### Parameters
 |Name|Description|Is Mandatory|Value|
 |----|-----------|------------|-----|
-|Events Limit to Ingest per Alert|Specify how many events can be ingested per single CB Cloud alert.|True|25|
-|Proxy Server Address|Proxy server to use for connection.|False|http://127.0.0.1:8866|
-|Offset Time In Hours|Number of hours before the first connector iteration to retrieve alerts from. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires.|True|2400|
 |What Alert Field to use for Name field|What Carbon Black Cloud alert field should be used for the Siemplify Alert Name field. Possible values are: type, policy_name|True|type|
 |What Alert Field to use for Rule Generator|What Carbon Black Cloud alert field should be used for the Siemplify Alert Rule Generator field. Possible values are: type, policy_name|True|type|
 |Alert Reputation to Ingest|What Carbon Black Cloud alert reputation alert can have to be ingested. Parameter accepts multiple values as a comma separated string. If "N/A" is provided, connector will ingest alerts without reputation.|False||
@@ -24,6 +21,9 @@ Event Name Field: event_type
 |Proxy Server Password|Proxy server password|False||
 |Alerts Backlog Timer|Time frame in minutes for which connector should try to fetch again the alerts from backlog it previously failed to process.|True|60|
 |Max Backlog Alerts per Cycle|How many alerts  connector should try to fetch from the backlog during one connector run.|True|10|
+|Events Limit to Ingest per Alert|Specify how many events can be ingested per single CB Cloud alert.|True|25|
+|Proxy Server Address|Proxy server to use for connection.|False|http://127.0.0.1:8866|
+|Offset Time In Hours|Number of hours before the first connector iteration to retrieve alerts from. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires.|True|2400|
 |Alert Name Template|If specified, connector will use this value from the CB Cloud API response for alert data for Siemplify Alert Name. You can provide placeholders in the following format: [name of the field]. Example: CBCLOUD Alert - [reason]. Note: the maximum length for the field is 256 characters. If nothing is provided or user provides an invalid template, connector will use the default alert name.|False||
 |Script Timeout (Seconds)|The timeout limit (in seconds) for the python process running current script|True|180|
 |Environment Field Name|Describes the name of the field where the environment name is stored. If the environment field isn't found, the environment is ""|False||
