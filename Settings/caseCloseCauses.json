@@ -128,21 +128,21 @@
     {
         "rootCause": "External attack",
         "forCloseReason": 0,
-        "id": 1,
+        "id": 50,
         "creationTimeUnixTimeInMs": 1739776836997,
         "modificationTimeUnixTimeInMs": 1741003255449
     },
     {
         "rootCause": "System/application malfunction",
         "forCloseReason": 0,
-        "id": 2,
+        "id": 51,
         "creationTimeUnixTimeInMs": 1739776836997,
         "modificationTimeUnixTimeInMs": 1741003255489
     },
     {
         "rootCause": "Unforeseen effects of change",
         "forCloseReason": 0,
-        "id": 3,
+        "id": 52,
         "creationTimeUnixTimeInMs": 1739776836997,
         "modificationTimeUnixTimeInMs": 1741003255514
     },
