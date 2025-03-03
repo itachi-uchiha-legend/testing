@@ -1,0 +1,13 @@
+[
+    {
+        "id": 0,
+        "source": "QRadar",
+        "product": "WinEventLog:Security",
+        "eventName": null,
+        "familyName": "OS",
+        "familyId": 0,
+        "mappingStatus": null,
+        "changeSource": 1,
+        "exampleEventFields": []
+    }
+]
