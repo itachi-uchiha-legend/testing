@@ -19,8 +19,8 @@
             "IsMandatory": true,
             "Value": "https://x.x.x.x",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741003618623,
-            "ModificationTimeUnixTimeInMs": 1741003618623
+            "CreationTimeUnixTimeInMs": 1740996385949,
+            "ModificationTimeUnixTimeInMs": 1740996385949
         },
         {
             "IntegrationIdentifier": "CBResponse",
@@ -31,8 +31,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741003618623,
-            "ModificationTimeUnixTimeInMs": 1741003618623
+            "CreationTimeUnixTimeInMs": 1740996385949,
+            "ModificationTimeUnixTimeInMs": 1740996385949
         },
         {
             "IntegrationIdentifier": "CBResponse",
@@ -43,8 +43,8 @@
             "IsMandatory": true,
             "Value": "6.3",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741003618623,
-            "ModificationTimeUnixTimeInMs": 1741003618623
+            "CreationTimeUnixTimeInMs": 1740996385949,
+            "ModificationTimeUnixTimeInMs": 1740996385949
         },
         {
             "IntegrationIdentifier": "CBResponse",
@@ -55,8 +55,8 @@
             "IsMandatory": false,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741003618623,
-            "ModificationTimeUnixTimeInMs": 1741003618623
+            "CreationTimeUnixTimeInMs": 1740996385949,
+            "ModificationTimeUnixTimeInMs": 1740996385949
         },
         {
             "IntegrationIdentifier": "CBResponse",
@@ -67,143 +67,143 @@
             "IsMandatory": false,
             "Value": "false",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741003618623,
-            "ModificationTimeUnixTimeInMs": 1741003618623
+            "CreationTimeUnixTimeInMs": 1740996385949,
+            "ModificationTimeUnixTimeInMs": 1740996385949
         }
     ],
     "IntegrationSupportedActions": [
         {
-            "Name": "Get Process Tree Data",
-            "Description": "Get process tree data for process by id (JSON)",
-            "Id": 84,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
-        },
-        {
-            "Name": "Enrich Binary",
-            "Description": "Enrich hash with binary info from CB Response.",
-            "Id": 85,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
-        },
-        {
-            "Name": "Unblock Hash",
-            "Description": "Unblock a hash",
-            "Id": 86,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
-        },
-        {
-            "Name": "Create Watchlist",
-            "Description": "Create a watchlist for processes (type = events) or for binaries (type = modules)",
-            "Id": 87,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
-        },
-        {
-            "Name": "List Processes",
-            "Description": "List processes that are related to given entities",
-            "Id": 88,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
-        },
-        {
-            "Name": "Isolate Host",
-            "Description": "Isolate an endpoint from the network",
-            "Id": 89,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
-        },
-        {
-            "Name": "Process Free Query",
-            "Description": "List processes by free query",
-            "Id": 90,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
-        },
-        {
-            "Name": "Get License",
-            "Description": "Get the current license from CB Response",
-            "Id": 91,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
-        },
-        {
-            "Name": "Unisolate Host",
-            "Description": "Rejoin an endpoint to the network",
-            "Id": 92,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
-        },
-        {
-            "Name": "Get System Info",
-            "Description": "Get  system information for a sensor from CB Response and enrich  entity",
-            "Id": 93,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
+            "Name": "Binary Free Query",
+            "Description": "List binaries by free query",
+            "Id": 209,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
         },
         {
             "Name": "Block Hash",
             "Description": "Block a hash",
-            "Id": 94,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
+            "Id": 210,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
+        },
+        {
+            "Name": "Create Watchlist",
+            "Description": "Create a watchlist for processes (type = events) or for binaries (type = modules)",
+            "Id": 211,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
         },
         {
             "Name": "Download Binary",
             "Description": "Download a binary",
-            "Id": 95,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
+            "Id": 212,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
         },
         {
-            "Name": "Resolve Alert",
-            "Description": "Resolve an alert. Note: Carbon Black Response REST-API returns a successful answer even if the alert that you tried to resolve doesn\u2019t exist.",
-            "Id": 96,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
-        },
-        {
-            "Name": "Get FileMod Data For Process",
-            "Description": "Get filemod data for a process by its id",
-            "Id": 97,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
-        },
-        {
-            "Name": "Binary Free Query",
-            "Description": "List binaries by free query",
-            "Id": 98,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
-        },
-        {
-            "Name": "Hosts By Process",
-            "Description": "Get hosts that are related to a particular process",
-            "Id": 99,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
-        },
-        {
-            "Name": "Ping",
-            "Description": "Test Connectivity",
-            "Id": 100,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
+            "Name": "Enrich Binary",
+            "Description": "Enrich hash with binary info from CB Response.",
+            "Id": 213,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
         },
         {
             "Name": "Enrich Process",
             "Description": "Enrich process entity with data from CB Response",
-            "Id": 101,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
+            "Id": 214,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
+        },
+        {
+            "Name": "Get FileMod Data For Process",
+            "Description": "Get filemod data for a process by its id",
+            "Id": 215,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
+        },
+        {
+            "Name": "Get License",
+            "Description": "Get the current license from CB Response",
+            "Id": 216,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
+        },
+        {
+            "Name": "Get Process Tree Data",
+            "Description": "Get process tree data for process by id (JSON)",
+            "Id": 217,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
+        },
+        {
+            "Name": "Get System Info",
+            "Description": "Get  system information for a sensor from CB Response and enrich  entity",
+            "Id": 218,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
+        },
+        {
+            "Name": "Hosts By Process",
+            "Description": "Get hosts that are related to a particular process",
+            "Id": 219,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
+        },
+        {
+            "Name": "Isolate Host",
+            "Description": "Isolate an endpoint from the network",
+            "Id": 220,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
         },
         {
             "Name": "Kill Process",
             "Description": "Kill a process on a particular host",
-            "Id": 102,
-            "CreationTimeUnixTimeInMs": 1741003618628,
-            "ModificationTimeUnixTimeInMs": 1741003618628
+            "Id": 221,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
+        },
+        {
+            "Name": "List Processes",
+            "Description": "List processes that are related to given entities",
+            "Id": 222,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
+        },
+        {
+            "Name": "Ping",
+            "Description": "Test Connectivity",
+            "Id": 223,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
+        },
+        {
+            "Name": "Process Free Query",
+            "Description": "List processes by free query",
+            "Id": 224,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
+        },
+        {
+            "Name": "Resolve Alert",
+            "Description": "Resolve an alert. Note: Carbon Black Response REST-API returns a successful answer even if the alert that you tried to resolve doesn\u2019t exist.",
+            "Id": 225,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
+        },
+        {
+            "Name": "Unblock Hash",
+            "Description": "Unblock a hash",
+            "Id": 226,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
+        },
+        {
+            "Name": "Unisolate Host",
+            "Description": "Rejoin an endpoint to the network",
+            "Id": 227,
+            "CreationTimeUnixTimeInMs": 1740996385960,
+            "ModificationTimeUnixTimeInMs": 1740996385960
         }
     ],
     "Categories": [
@@ -221,6 +221,6 @@
     "MinimumSystemVersion": 0.0,
     "ProductionIntegrationIdentifier": null,
     "Id": 0,
-    "CreationTimeUnixTimeInMs": 1741003618623,
-    "ModificationTimeUnixTimeInMs": 1741003618623
+    "CreationTimeUnixTimeInMs": 1740996385949,
+    "ModificationTimeUnixTimeInMs": 1740996385949
 }

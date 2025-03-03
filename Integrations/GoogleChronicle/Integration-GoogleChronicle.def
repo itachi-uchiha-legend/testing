@@ -19,8 +19,8 @@
             "IsMandatory": true,
             "Value": "https://{instance}.chronicle.security",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741003661518,
-            "ModificationTimeUnixTimeInMs": 1741003661518
+            "CreationTimeUnixTimeInMs": 1739814737382,
+            "ModificationTimeUnixTimeInMs": 1739814737382
         },
         {
             "IntegrationIdentifier": "GoogleChronicle",
@@ -31,8 +31,8 @@
             "IsMandatory": true,
             "Value": "https://backstory.googleapis.com",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741003661518,
-            "ModificationTimeUnixTimeInMs": 1741003661518
+            "CreationTimeUnixTimeInMs": 1739814737382,
+            "ModificationTimeUnixTimeInMs": 1739814737382
         },
         {
             "IntegrationIdentifier": "GoogleChronicle",
@@ -43,8 +43,8 @@
             "IsMandatory": false,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741003661518,
-            "ModificationTimeUnixTimeInMs": 1741003661518
+            "CreationTimeUnixTimeInMs": 1739814737382,
+            "ModificationTimeUnixTimeInMs": 1739814737382
         },
         {
             "IntegrationIdentifier": "GoogleChronicle",
@@ -55,8 +55,8 @@
             "IsMandatory": false,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741003661518,
-            "ModificationTimeUnixTimeInMs": 1741003661518
+            "CreationTimeUnixTimeInMs": 1739814737382,
+            "ModificationTimeUnixTimeInMs": 1739814737382
         },
         {
             "IntegrationIdentifier": "GoogleChronicle",
@@ -67,115 +67,115 @@
             "IsMandatory": false,
             "Value": "true",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741003661518,
-            "ModificationTimeUnixTimeInMs": 1741003661518
+            "CreationTimeUnixTimeInMs": 1739814737382,
+            "ModificationTimeUnixTimeInMs": 1739814737382
         }
     ],
     "IntegrationSupportedActions": [
         {
-            "Name": "Lookup Similar Alerts",
-            "Description": "Lookup similar alerts in Google Chronicle. Supported Chronicle alert types: RULE, EXTERNAL, IOC. Note: this action can only work with alerts that come from the \"Chronicle Alerts Connector\". Note: action can only fetch 10000 alerts. Make sure to narrow down the timeframe for better results.",
-            "Id": 104,
-            "CreationTimeUnixTimeInMs": 1741003661524,
-            "ModificationTimeUnixTimeInMs": 1741003661524
-        },
-        {
-            "Name": "Is Value In Reference List",
-            "Description": "Check, if provided values are found in reference lists in Google Chronicle.",
-            "Id": 105,
-            "CreationTimeUnixTimeInMs": 1741003661524,
-            "ModificationTimeUnixTimeInMs": 1741003661524
-        },
-        {
-            "Name": "List IOCs",
-            "Description": "List all of the IoCs discovered within your enterprise within the specified time range.",
-            "Id": 106,
-            "CreationTimeUnixTimeInMs": 1741003661524,
-            "ModificationTimeUnixTimeInMs": 1741003661524
-        },
-        {
-            "Name": "Execute Retrohunt",
-            "Description": "Execute a rule retrohunt in Google Chronicle.",
-            "Id": 107,
-            "CreationTimeUnixTimeInMs": 1741003661524,
-            "ModificationTimeUnixTimeInMs": 1741003661524
+            "Name": "Add Values To Reference List",
+            "Description": "Add values to a reference list in Google Chronicle.",
+            "Id": 1,
+            "CreationTimeUnixTimeInMs": 1739814737469,
+            "ModificationTimeUnixTimeInMs": 1739814737469
         },
         {
             "Name": "Enrich Domain",
             "Description": "Enrich domains using information from IOCs in Google Chronicle. Supported entities: Hostname, URL (action extracts domain part).",
-            "Id": 108,
-            "CreationTimeUnixTimeInMs": 1741003661524,
-            "ModificationTimeUnixTimeInMs": 1741003661524
-        },
-        {
-            "Name": "Add Values To Reference List",
-            "Description": "Add values to a reference list in Google Chronicle.",
-            "Id": 109,
-            "CreationTimeUnixTimeInMs": 1741003661524,
-            "ModificationTimeUnixTimeInMs": 1741003661524
-        },
-        {
-            "Name": "Remove Values From Reference List",
-            "Description": "Remove values from a reference list in Google Chronicle.",
-            "Id": 110,
-            "CreationTimeUnixTimeInMs": 1741003661524,
-            "ModificationTimeUnixTimeInMs": 1741003661524
+            "Id": 2,
+            "CreationTimeUnixTimeInMs": 1739814737469,
+            "ModificationTimeUnixTimeInMs": 1739814737469
         },
         {
             "Name": "Enrich IP",
             "Description": "Enrich IP entities using information from IOCs in Google Chronicle. Supported entities: IP address.",
-            "Id": 111,
-            "CreationTimeUnixTimeInMs": 1741003661524,
-            "ModificationTimeUnixTimeInMs": 1741003661524
+            "Id": 3,
+            "CreationTimeUnixTimeInMs": 1739814737469,
+            "ModificationTimeUnixTimeInMs": 1739814737469
         },
         {
-            "Name": "Get Detection Details",
-            "Description": "Fetch information about a detection in Google Chronicle.",
-            "Id": 112,
-            "CreationTimeUnixTimeInMs": 1741003661524,
-            "ModificationTimeUnixTimeInMs": 1741003661524
-        },
-        {
-            "Name": "List Events",
-            "Description": "List events on the particular asset in the specified time frame. Supported entities: IP Address, Mac Address, Hostname. Note: action can only fetch 10000 events. Make sure to narrow down the timeframe for better results.",
-            "Id": 113,
-            "CreationTimeUnixTimeInMs": 1741003661524,
-            "ModificationTimeUnixTimeInMs": 1741003661524
+            "Name": "Execute Retrohunt",
+            "Description": "Execute a rule retrohunt in Google Chronicle.",
+            "Id": 4,
+            "CreationTimeUnixTimeInMs": 1739814737469,
+            "ModificationTimeUnixTimeInMs": 1739814737469
         },
         {
             "Name": "Execute UDM Query",
             "Description": "Execute custom UDM query in Google Chronicle. Note: 120 action executions are allowed per hour.",
-            "Id": 114,
-            "CreationTimeUnixTimeInMs": 1741003661524,
-            "ModificationTimeUnixTimeInMs": 1741003661524
+            "Id": 5,
+            "CreationTimeUnixTimeInMs": 1739814737469,
+            "ModificationTimeUnixTimeInMs": 1739814737469
         },
         {
-            "Name": "Ping",
-            "Description": "Test connectivity to the Google Chronicle with parameters provided at the integration configuration page on the Marketplace tab.",
-            "Id": 115,
-            "CreationTimeUnixTimeInMs": 1741003661524,
-            "ModificationTimeUnixTimeInMs": 1741003661524
-        },
-        {
-            "Name": "Get Rule Details",
-            "Description": "Fetch information about a rule in Google Chronicle.",
-            "Id": 116,
-            "CreationTimeUnixTimeInMs": 1741003661524,
-            "ModificationTimeUnixTimeInMs": 1741003661524
-        },
-        {
-            "Name": "List Assets",
-            "Description": "List assets in Google Chronicle based on the related entities in the specified time frame. Supported entities: URL, IP Address, File hash. Only MD5, SHA-1 or SHA-256 hashes are supported.",
-            "Id": 117,
-            "CreationTimeUnixTimeInMs": 1741003661524,
-            "ModificationTimeUnixTimeInMs": 1741003661524
+            "Name": "Get Detection Details",
+            "Description": "Fetch information about a detection in Google Chronicle.",
+            "Id": 6,
+            "CreationTimeUnixTimeInMs": 1739814737469,
+            "ModificationTimeUnixTimeInMs": 1739814737469
         },
         {
             "Name": "Get Reference Lists",
             "Description": "Get available reference lists in Google Chronicle.",
-            "Id": 118,
-            "CreationTimeUnixTimeInMs": 1741003661524,
-            "ModificationTimeUnixTimeInMs": 1741003661524
+            "Id": 7,
+            "CreationTimeUnixTimeInMs": 1739814737469,
+            "ModificationTimeUnixTimeInMs": 1739814737469
+        },
+        {
+            "Name": "Get Rule Details",
+            "Description": "Fetch information about a rule in Google Chronicle.",
+            "Id": 8,
+            "CreationTimeUnixTimeInMs": 1739814737469,
+            "ModificationTimeUnixTimeInMs": 1739814737469
+        },
+        {
+            "Name": "Is Value In Reference List",
+            "Description": "Check, if provided values are found in reference lists in Google Chronicle.",
+            "Id": 9,
+            "CreationTimeUnixTimeInMs": 1739814737469,
+            "ModificationTimeUnixTimeInMs": 1739814737469
+        },
+        {
+            "Name": "List Assets",
+            "Description": "List assets in Google Chronicle based on the related entities in the specified time frame. Supported entities: URL, IP Address, File hash. Only MD5, SHA-1 or SHA-256 hashes are supported.",
+            "Id": 10,
+            "CreationTimeUnixTimeInMs": 1739814737469,
+            "ModificationTimeUnixTimeInMs": 1739814737469
+        },
+        {
+            "Name": "List Events",
+            "Description": "List events on the particular asset in the specified time frame. Supported entities: IP Address, Mac Address, Hostname. Note: action can only fetch 10000 events. Make sure to narrow down the timeframe for better results.",
+            "Id": 11,
+            "CreationTimeUnixTimeInMs": 1739814737469,
+            "ModificationTimeUnixTimeInMs": 1739814737469
+        },
+        {
+            "Name": "List IOCs",
+            "Description": "List all of the IoCs discovered within your enterprise within the specified time range.",
+            "Id": 12,
+            "CreationTimeUnixTimeInMs": 1739814737469,
+            "ModificationTimeUnixTimeInMs": 1739814737469
+        },
+        {
+            "Name": "Lookup Similar Alerts",
+            "Description": "Lookup similar alerts in Google Chronicle. Supported Chronicle alert types: RULE, EXTERNAL, IOC. Note: this action can only work with alerts that come from the \"Chronicle Alerts Connector\". Note: action can only fetch 10000 alerts. Make sure to narrow down the timeframe for better results.",
+            "Id": 13,
+            "CreationTimeUnixTimeInMs": 1739814737469,
+            "ModificationTimeUnixTimeInMs": 1739814737469
+        },
+        {
+            "Name": "Ping",
+            "Description": "Test connectivity to the Google Chronicle with parameters provided at the integration configuration page on the Marketplace tab.",
+            "Id": 14,
+            "CreationTimeUnixTimeInMs": 1739814737469,
+            "ModificationTimeUnixTimeInMs": 1739814737469
+        },
+        {
+            "Name": "Remove Values From Reference List",
+            "Description": "Remove values from a reference list in Google Chronicle.",
+            "Id": 15,
+            "CreationTimeUnixTimeInMs": 1739814737469,
+            "ModificationTimeUnixTimeInMs": 1739814737469
         }
     ],
     "Categories": [
@@ -195,6 +195,6 @@
     "MinimumSystemVersion": 0.0,
     "ProductionIntegrationIdentifier": null,
     "Id": 0,
-    "CreationTimeUnixTimeInMs": 1741003661518,
-    "ModificationTimeUnixTimeInMs": 1741003661518
+    "CreationTimeUnixTimeInMs": 1739814737382,
+    "ModificationTimeUnixTimeInMs": 1739814737382
 }

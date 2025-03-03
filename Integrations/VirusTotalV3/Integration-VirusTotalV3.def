@@ -19,8 +19,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741003848185,
-            "ModificationTimeUnixTimeInMs": 1741003848185
+            "CreationTimeUnixTimeInMs": 1740996571087,
+            "ModificationTimeUnixTimeInMs": 1740996571087
         },
         {
             "IntegrationIdentifier": "VirusTotalV3",
@@ -31,136 +31,136 @@
             "IsMandatory": false,
             "Value": "true",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741003848185,
-            "ModificationTimeUnixTimeInMs": 1741003848185
+            "CreationTimeUnixTimeInMs": 1740996571087,
+            "ModificationTimeUnixTimeInMs": 1740996571087
         }
     ],
     "IntegrationSupportedActions": [
         {
             "Name": "Add Comment To Entity",
             "Description": "Add a comment to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported",
-            "Id": 192,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 246,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Add Vote To Entity",
             "Description": "Add a vote to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported",
-            "Id": 185,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 247,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Download File",
             "Description": "Download file from VirusTotal. Supported entities: Filehash. Note: this action requires a VT Enterprise token. Only MD5, SHA-1, SHA-256 hashes are supported.",
-            "Id": 182,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 248,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Enrich Hash",
             "Description": "Enrich Hash using information from VirusTotal. Supported entities: Filehash. Note: only MD5, SHA-1 and SHA-256 are supported.",
-            "Id": 191,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 249,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Enrich IOC",
             "Description": "Enrich IOCs using information from VirusTotal.",
-            "Id": 180,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 250,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Enrich IP",
             "Description": "Enrich IP using information from VirusTotal. Supported entities: IP address.",
-            "Id": 186,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 251,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Enrich URL",
             "Description": "Enrich URL using information from VirusTotal. Supported entities: URL.",
-            "Id": 187,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 252,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Get Domain Details",
             "Description": "Get detailed information about the domain using information from VirusTotal. Supported entities: URL (entity extracts domain part), Hostname, Domain.",
-            "Id": 178,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 253,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Get Graph Details",
             "Description": "Get detailed information about graphs in VirusTotal.",
-            "Id": 183,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 254,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Get Related Domains",
             "Description": "Get related domains to the provided entities from VirusTotal. Note: this action requires a VT Enterprise token. Supported entities: IP, URL, Filehash, Hostname, Domain. Note: only MD5, SHA-1 and SHA-256 are supported.",
-            "Id": 181,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 255,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Get Related Hashes",
             "Description": "Get related hashes to the provided entities from VirusTotal. Note: this action requires a VT Enterprise token. Supported entities: IP, URL, Filehash, Hostname, Domain. Note: only MD5, SHA-1 and SHA-256 are supported.",
-            "Id": 179,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 256,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Get Related IPs",
             "Description": "Get related IPs to the provided entities from VirusTotal. Note: this action requires a VT Enterprise token. Supported entities: URL, Filehash, Hostname, Domain. Note: only MD5, SHA-1 and SHA-256 are supported.",
-            "Id": 188,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 257,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Get Related URLs",
             "Description": "Get related urls to the provided entities from VirusTotal. Note: this action requires a VT Enterprise token. Supported entities: IP, URL, Filehash, Hostname, Domain. Note: only MD5, SHA-1 and SHA-256 are supported.",
-            "Id": 184,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 258,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Ping",
             "Description": "Test connectivity to the VirusTotal with parameters provided at the integration configuration page on the Marketplace tab.",
-            "Id": 189,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 259,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Search Entity Graphs",
             "Description": "Search graphs based on the entities in VirusTotal. Supported entities: IP, URL, Filehash, Hostname, Domain, Threat Actor, User. Note: only MD5, SHA-1 and SHA-256 are supported.",
-            "Id": 177,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 260,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Search Graphs",
             "Description": "Search graphs based on custom filters in VirusTotal.",
-            "Id": 190,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 261,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Search IOCs",
             "Description": "Search for IOCs in the VirusTotal's dataset, using the same query syntax that you would use in the VirusTotal Intelligence user interface. This action requires a VT Enterprise token.",
-            "Id": 176,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 262,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         },
         {
             "Name": "Submit File",
             "Description": "Submit a file and return results from VirusTotal.",
-            "Id": 175,
-            "CreationTimeUnixTimeInMs": 1741003848192,
-            "ModificationTimeUnixTimeInMs": 1741003848192
+            "Id": 263,
+            "CreationTimeUnixTimeInMs": 1740996571101,
+            "ModificationTimeUnixTimeInMs": 1740996571101
         }
     ],
     "Categories": [
@@ -181,6 +181,6 @@
     "MinimumSystemVersion": 0.0,
     "ProductionIntegrationIdentifier": null,
     "Id": 0,
-    "CreationTimeUnixTimeInMs": 1741003848185,
-    "ModificationTimeUnixTimeInMs": 1741003848185
+    "CreationTimeUnixTimeInMs": 1740996571087,
+    "ModificationTimeUnixTimeInMs": 1740996571087
 }

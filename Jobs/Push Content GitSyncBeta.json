@@ -14,34 +14,6 @@
     "version": 1,
     "parameters": [
         {
-            "id": 121,
-            "isMandatory": false,
-            "name": "Email Templates",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 122,
-            "isMandatory": false,
-            "name": "Blacklists",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 123,
-            "isMandatory": false,
-            "name": "SLA Records",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 124,
-            "isMandatory": false,
-            "name": "Simulated Cases",
-            "type": 0,
-            "value": "true"
-        },
-        {
             "id": 99,
             "isMandatory": true,
             "name": "Commit",
@@ -194,11 +166,39 @@
             "name": "Custom Lists",
             "type": 0,
             "value": "true"
+        },
+        {
+            "id": 121,
+            "isMandatory": false,
+            "name": "Email Templates",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 122,
+            "isMandatory": false,
+            "name": "Blacklists",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 123,
+            "isMandatory": false,
+            "name": "SLA Records",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 124,
+            "isMandatory": false,
+            "name": "Simulated Cases",
+            "type": 0,
+            "value": "true"
         }
     ],
     "runIntervalInSeconds": 600,
-    "creationTime": "2025-03-03T10:09:38.838Z",
-    "lastModificationTime": "2025-03-03T12:23:22.567Z",
+    "creationTime": "2025-03-03T12:23:12.825Z",
+    "lastModificationTime": "2025-03-03T12:23:12.825Z",
     "isSystemJob": false,
     "jobDefinitionName": "Push Content GitSyncBeta",
     "agentIdentifier": null
