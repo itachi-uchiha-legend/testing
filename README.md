@@ -32,6 +32,7 @@
 ## Jobs
 |Name|Description|
 |----|-----------|
+|Pull Content GitSyncBeta|Installs content from the repo.|
 |Push Content GitSyncBeta|Push all content of this platform to git|
 |Push Content GitSyncBeta1|Push all content of this platform to git|
 
