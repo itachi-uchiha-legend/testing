@@ -18,24 +18,127 @@ Python Version - 3
 | |
 |-|
 |requests-2.32.3-py3-none-any.whl|
-|certifi-2024.8.30-py3-none-any.whl|
-|rsa-4.9-py3-none-any.whl|
-|TIPCommon-1.1.3.2-py2.py3-none-any.whl|
-|regex-2024.11.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
 |pyasn1_modules-0.4.1-py3-none-any.whl|
-|charset_normalizer-3.3.2-py3-none-any.whl|
-|filelock-3.16.1-py3-none-any.whl|
-|EnvironmentCommon-1.0.2-py2.py3-none-any.whl|
-|pyasn1-0.6.1-py3-none-any.whl|
-|tldextract-5.1.3-py3-none-any.whl|
-|urllib3-2.2.3-py3-none-any.whl|
-|requests_file-2.1.0-py2.py3-none-any.whl|
-|google_auth-2.36.0-py2.py3-none-any.whl|
-|cachetools-5.5.0-py3-none-any.whl|
+|regex-2024.11.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
 |idna-3.10-py3-none-any.whl|
+|urllib3-2.2.3-py3-none-any.whl|
+|pyasn1-0.6.1-py3-none-any.whl|
+|rsa-4.9-py3-none-any.whl|
+|charset_normalizer-3.3.2-py3-none-any.whl|
+|cachetools-5.5.0-py3-none-any.whl|
+|TIPCommon-1.1.3.2-py2.py3-none-any.whl|
+|certifi-2024.8.30-py3-none-any.whl|
+|requests_file-2.1.0-py2.py3-none-any.whl|
+|filelock-3.16.1-py3-none-any.whl|
+|google_auth-2.36.0-py2.py3-none-any.whl|
+|EnvironmentCommon-1.0.2-py2.py3-none-any.whl|
+|tldextract-5.1.3-py3-none-any.whl|
 
 
 ## Actions
+#### List Events
+List events on the particular asset in the specified time frame. Supported entities: IP Address, Mac Address, Hostname. Note: action can only fetch 10000 events. Make sure to narrow down the timeframe for better results.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Event Types|Specify a comma-separated list of the event types that need to be returned. If nothing is provided, action will fetch all event types. Possible values: EVENTTYPE_UNSPECIFIED, PROCESS_UNCATEGORIZED, PROCESS_LAUNCH, PROCESS_INJECTION, PROCESS_PRIVILEGE_ESCALATION, PROCESS_TERMINATION, PROCESS_OPEN, PROCESS_MODULE_LOAD, REGISTRY_UNCATEGORIZED, REGISTRY_CREATION, REGISTRY_MODIFICATION, REGISTRY_DELETION, SETTING_UNCATEGORIZED, SETTING_CREATION, SETTING_MODIFICATION, SETTING_DELETION, MUTEX_UNCATEGORIZED, MUTEX_CREATION, FILE_UNCATEGORIZED, FILE_CREATION, FILE_DELETION, FILE_MODIFICATION, FILE_READ, FILE_COPY, FILE_OPEN, FILE_MOVE, FILE_SYNC, USER_UNCATEGORIZED, USER_LOGIN, USER_LOGOUT, USER_CREATION, USER_CHANGE_PASSWORD, USER_CHANGE_PERMISSIONS, USER_STATS, USER_BADGE_IN, USER_DELETION, USER_RESOURCE_CREATION, USER_RESOURCE_UPDATE_CONTENT, USER_RESOURCE_UPDATE_PERMISSIONS, USER_COMMUNICATION, USER_RESOURCE_ACCESS, USER_RESOURCE_DELETION, GROUP_UNCATEGORIZED, GROUP_CREATION, GROUP_DELETION, GROUP_MODIFICATION, EMAIL_UNCATEGORIZED, EMAIL_TRANSACTION, EMAIL_URL_CLICK, NETWORK_UNCATEGORIZED, NETWORK_FLOW, NETWORK_CONNECTION, NETWORK_FTP, NETWORK_DHCP, NETWORK_DNS, NETWORK_HTTP, NETWORK_SMTP, STATUS_UNCATEGORIZED, STATUS_HEARTBEAT, STATUS_STARTUP, STATUS_SHUTDOWN, STATUS_UPDATE, SCAN_UNCATEGORIZED, SCAN_FILE, SCAN_PROCESS_BEHAVIORS, SCAN_PROCESS, SCAN_HOST, SCAN_VULN_HOST, SCAN_VULN_NETWORK, SCAN_NETWORK, SCHEDULED_TASK_UNCATEGORIZED, SCHEDULED_TASK_CREATION, SCHEDULED_TASK_DELETION, SCHEDULED_TASK_ENABLE, SCHEDULED_TASK_DISABLE, SCHEDULED_TASK_MODIFICATION, SYSTEM_AUDIT_LOG_UNCATEGORIZED, SYSTEM_AUDIT_LOG_WIPE, SERVICE_UNSPECIFIED, SERVICE_CREATION, SERVICE_DELETION, SERVICE_START, SERVICE_STOP, SERVICE_MODIFICATION, GENERIC_EVENT, RESOURCE_CREATION, RESOURCE_DELETION, RESOURCE_PERMISSIONS_CHANGE, RESOURCE_READ, RESOURCE_WRITTEN, ANALYST_UPDATE_VERDICT, ANALYST_UPDATE_REPUTATION, ANALYST_UPDATE_SEVERITY_SCORE, ANALYST_UPDATE_STATUS, ANALYST_ADD_COMMENT|False|String||
+|Time Frame|Specify a time frame for the results. If "Custom" is selected, you also need to provide "Start Time".|False|List|Custom|
+|Start Time|Specify the start time for the results. This parameter is mandatory, if "Custom" is selected for the "Time Frame" parameter. Format: ISO 8601|False|String||
+|End Time|Specify the end time for the results. Format: ISO 8601. If nothing is provided and "Custom" is selected for the "Time Frame" parameter then this parameter will use current time. Note: value "now" can also be used.|False|String||
+|Reference Time|Specify the reference time for the event search. Format: YYYY-MM-DDThh:mmTZD. Note: if nothing is provided, action will use end time as reference time.|False|String||
+|Output|Specify what should be the output for this action.|True|List|Events + Statistics|
+|Max Events To Return|Specify how many events to process per entity type. Default: 100.|False|String|100|
+
+
+
+##### JSON Results
+```json
+[{"Entity":"alan-centeno-pc","EntityResult":{"statistics":{"NETWORK_CONNECTION":10},"events":[{"metadata":{"eventTimestamp":"2020-09-28T17:20:00Z","eventType":"NETWORK_CONNECTION","productName":"Tanium Stream","productEventType":"NETWORK_DNS","ingestedTimestamp":"2020-09-28T16:28:11.615578Z"},"principal":{"hostname":"alan-centeno-pc","assetId":"TANIUM:alan-centeno-pc","process":{"pid":"1101","productSpecificProcessId":"TANIUM:32323"}},"target":{"hostname":"micrgsoft.com","user":{"userid":"alan"},"process":{"pid":"8172","file":{"md5":"a219fc7fcc93890a842183388f80369e","fullPath":"C:\\Program Files(x86)\\adobe\\acrobat reader dc\\reader\\acrord32.exe"},"commandLine":"\"C:\\Program Files(x86)\\adobe\\acrobat reader dc\\reader\\acrord32.exe\" ...","productSpecificProcessId":"TANIUM:82315"}}}],"uri":["https://demodev.backstory.chronicle.security/"]}}]
+```
+
+
+
+#### Get Rule Details
+Fetch information about a rule in Google Chronicle.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Rule ID|Specify the ID of the rule for which you want to fetch details.|True|String||
+
+
+
+##### JSON Results
+```json
+{"name": "projects/xxxx/locations/us/instances/yyyy/rules/ru_7d66bc00-7164-4c56-bb6a-66f19524983c", "revisionId": "v_1733917896_973567000", "displayName": "Test_rule_SingleEvent", "text": "rule Test_rule_SingleEvent {\n  // This rule matches single events. Rules can also match multiple events within\n  // some time window. For details about how to write a multi-event rule, see\n  // https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#single-event_versus_multi-event\n\n  meta:\n    // Allows for storage of arbitrary key-value pairs of rule details - who\n    // wrote it, what it detects on, version control, etc.\n    // The \"author\" and \"severity\" fields are special, as they are used as\n    // columns on the rules dashboard. If you'd like to be able to sort based on\n    // these fields on the dashboard, make sure to add them here.\n    // Severity value, by convention, should be \"Low\", \"Medium\" or \"High\"\n    author = \"bhusingh\"\n    description = \"windowed single event example rule\"\n    //severity = \"Medium\"\n\n  events:\n    $e.metadata.event_type = \"USER_LOGIN\"\n    $e.principal.user.userid = $user\n\n  //outcome:\n    // For a multi-event rule an aggregation function is required\n    // e.g., risk_score = max(0)\n    // See https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#outcome_conditionals_example_rule\n    //$risk_score = 0\n  match:\n    $user over 1m\n\n  condition:\n    #e > 0\n}\n", "author": "bhusingh", "metadata": {"author": "bhusingh", "description": "windowed single event example rule", "severity": null}, "createTime": "2024-12-11T11:36:18.192127Z", "revisionCreateTime": "2024-12-11T11:51:36.973567Z", "compilationState": "SUCCEEDED", "type": "SINGLE_EVENT", "allowedRunFrequencies": ["LIVE", "HOURLY", "DAILY"], "etag": "CMj55boGEJjondAD", "ruleId": "ru_7d66bc00-7164-4c56-bb6a-66f19524983c", "versionId": "ru_7d66bc00-7164-4c56-bb6a-66f19524983c@v_1733917896_973567000", "ruleName": "Test_rule_SingleEvent", "ruleText": "rule Test_rule_SingleEvent {\n  // This rule matches single events. Rules can also match multiple events within\n  // some time window. For details about how to write a multi-event rule, see\n  // https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#single-event_versus_multi-event\n\n  meta:\n    // Allows for storage of arbitrary key-value pairs of rule details - who\n    // wrote it, what it detects on, version control, etc.\n    // The \"author\" and \"severity\" fields are special, as they are used as\n    // columns on the rules dashboard. If you'd like to be able to sort based on\n    // these fields on the dashboard, make sure to add them here.\n    // Severity value, by convention, should be \"Low\", \"Medium\" or \"High\"\n    author = \"bhusingh\"\n    description = \"windowed single event example rule\"\n    //severity = \"Medium\"\n\n  events:\n    $e.metadata.event_type = \"USER_LOGIN\"\n    $e.principal.user.userid = $user\n\n  //outcome:\n    // For a multi-event rule an aggregation function is required\n    // e.g., risk_score = max(0)\n    // See https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#outcome_conditionals_example_rule\n    //$risk_score = 0\n  match:\n    $user over 1m\n\n  condition:\n    #e > 0\n}\n", "ruleType": "SINGLE_EVENT", "versionCreateTime": "2024-12-11T11:51:36.973567Z"}
+```
+
+
+
+#### List IOCs
+List all of the IoCs discovered within your enterprise within the specified time range.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Start Time|Fetches IOC Domain from the specified time. Value should be in RFC 3339 format (e.g. 2018-11-05T12:00:00Z). If not supplied, the default is the UTC time corresponding to 3 days earlier than current time.|False|String||
+|Max IoCs to Fetch|Specify the maximum number of IoCs to return. You can specify between 1 and 10,000. The default is 50.|False|String|50|
+
+
+
+##### JSON Results
+```json
+[{"artifactIndicator": {"domain": "npatni-sysops"}, "sources": ["ACME-IOC-IP-DOMAIN"], "categories": ["C2"], "assetIndicators": [{"assetIpAddress": "172.30.202.229"}], "iocIngestTimestamp": "2024-12-10T13:52:38.780150Z", "firstSeenTimestamp": "2025-01-13T14:01:00Z", "lastSeenTimestamp": "2025-01-13T14:01:00Z", "filterProperties": {"stringProperties": {"TLD": {"values": [{"rawValue": "Invalid"}]}, "IOC CATEGORIES": {"values": [{"rawValue": "C2"}]}, "IOC FEED": {"values": [{"rawValue": "ACME-IOC-IP-DOMAIN"}]}}}, "logType": "UDM", "feedName": "ACME-IOC-IP-DOMAIN", "id": "Cg1ucGF0bmktc3lzb3BzEMgB", "fieldAndValue": {"value": "npatni-sysops", "valueType": "DOMAIN_NAME"}, "artifact": {"domainName": "npatni-sysops"}, "iocIngestTime": "2024-12-10T13:52:38.780150Z", "firstSeenTime": "2025-01-13T14:01:00Z", "lastSeenTime": "2025-01-13T14:01:00Z"}, {"artifactIndicator": {"destinationIpAddress": "35.246.203.0"}, "sources": ["ACME-IOC-IP-PORT-C2"], "categories": ["C2"], "assetIndicators": [{"assetIpAddress": "172.30.202.229"}], "iocIngestTimestamp": "2024-01-10T22:04:34.267566Z", "firstSeenTimestamp": "2025-01-13T14:00:00Z", "lastSeenTimestamp": "2025-01-13T14:00:00Z", "filterProperties": {"stringProperties": {"IOC CATEGORIES": {"values": [{"rawValue": "C2"}]}, "IOC FEED": {"values": [{"rawValue": "ACME-IOC-IP-PORT-C2"}]}}}, "logType": "CATCH_ALL", "feedName": "ACME-IOC-IP-PORT-C2", "id": "CgwzNS4yNDYuMjAzLjAQyQE", "fieldAndValue": {"value": "35.246.203.0", "valueType": "RESOLVED_IP_ADDRESS"}, "artifact": {"destinationIpAddress": "35.246.203.0"}, "iocIngestTime": "2024-01-10T22:04:34.267566Z", "firstSeenTime": "2025-01-13T14:00:00Z", "lastSeenTime": "2025-01-13T14:00:00Z"}, {"artifactIndicator": {"hashSha256": "bc866cfcdda37e24dc2634dc282c7a0e6f55209da17a8fa105b07414c0e7c527"}, "sources": ["ACME-IOC-FILE-HASH"], "categories": ["C2"], "assetIndicators": [{"namespace": "Yuriy", "assetIpAddress": "172.30.202.229"}, {"namespace": "Yuriy", "mac": "00:50:56:a2:b8:a0"}, {"namespace": "Yuriy", "hostname": "exlab2019-ad"}], "iocIngestTimestamp": "2025-01-10T13:52:38.780150Z", "firstSeenTimestamp": "2024-12-15T09:07:02Z", "lastSeenTimestamp": "2025-01-14T16:07:14Z", "filterProperties": {"stringProperties": {"IOC CATEGORIES": {"values": [{"rawValue": "C2"}]}, "IOC FEED": {"values": [{"rawValue": "ACME-IOC-FILE-HASH"}]}}}, "logType": "CATCH_ALL", "feedName": "ACME-IOC-FILE-HASH", "id": "CkBiYzg2NmNmY2RkYTM3ZTI0ZGMyNjM0ZGMyODJjN2EwZTZmNTUyMDlkYTE3YThmYTEwNWIwNzQxNGMwZTdjNTI3ELEC", "fieldAndValue": {"value": "bc866cfcdda37e24dc2634dc282c7a0e6f55209da17a8fa105b07414c0e7c527", "valueType": "HASH_SHA256"}, "artifact": {"hashSha256": "bc866cfcdda37e24dc2634dc282c7a0e6f55209da17a8fa105b07414c0e7c527"}, "iocIngestTime": "2025-01-10T13:52:38.780150Z", "firstSeenTime": "2024-12-15T09:07:02Z", "lastSeenTime": "2025-01-14T16:07:14Z"}]
+```
+
+
+
+#### Get Reference Lists
+Get available reference lists in Google Chronicle.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Filter Key|Specify the key that needs to be used to filter reference lists. Name option refers to a display name of the reference list.|False|List|Select One|
+|Filter Logic|Specify what filter logic should be applied.|False|List|Equal|
+|Filter Value|Specify what value should be used in the filter. If “Equal“ is selected, action will try to find the exact match among results and if “Contains“ is selected, action will try to find results that contain that substring. “Equal” works with “title” parameter, while “Contains” works with all values in response. If nothing is provided in this parameter, the filter will not be applied.|False|String||
+|Expanded Details|If enabled, action will return detailed information about the reference lists.|False|Boolean||
+|Max Reference Lists To Return|Specify how many reference lists to return. Default: 100.|False|String|100|
+
+
+
+##### JSON Results
+```json
+[{"name": "projects/xxxx/locations/us/instances/yyyy/referenceLists/testList", "displayName": "testList", "revisionCreateTime": "2025-01-09T15:53:10.851775Z", "description": "Test reference list", "syntaxType": "REFERENCE_LIST_SYNTAX_TYPE_PLAIN_TEXT_STRING", "scopeInfo": {"referenceListScope": {}}, "createTime": "2025-01-09T15:53:10.851775Z"}]
+```
+
+
+
+#### Lookup Similar Alerts
+Lookup similar alerts in Google Chronicle. Supported Chronicle alert types: RULE, EXTERNAL, IOC. Note: this action can only work with alerts that come from the "Chronicle Alerts Connector". Note: action can only fetch 10000 alerts. Make sure to narrow down the timeframe for better results.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Time Frame|Specify a time frame for the results. If "Alert Time Till Now" is selected, action will use start time of the alert as start time for the search and end time will be current time. If "30 Minutes Around Alert Time" is selected, action will search the alerts 30 minutes before the alert happened till the 30 minutes after the alert has happened.  Same idea applies to "1 Hour Around Alert Time" and "5 Minutes Around Alert Time".|False|List|Last Hour|
+|IOCs / Assets|Specify a comma-separated list of IOCs or assets that you want to find in the alerts. Note: action will perform a different search for each item provided.|True|String||
+|Similarity By|Specify what attributes need to be used, when the action is to search for similar alerts. If "Alert Name and Alert Type" is selected, action will try to find all of the alerts that have the same alert name and IOCs/Assets for the underlying alert type. If "Product" is selected, then action will try to find all of the alerts that originate from the same product and have the same IOCs/Assets, action will search among both "EXTERNAL" and "Rule" alerts. If "Only IOCs/Assets" is enabled, action will match the similarity only based upon the items provided in the parameter "IOCs/Assets", action will search among both "EXTERNAL" and "Rule" alerts.|False|List|Alert Name and Product|
+
+
+
+##### JSON Results
+```json
+{"count":4,"distinct":[{"first_seen":"2021-12-01T20:47:02Z","last_seen":"2021-12-02T00:47:02Z","product_name":"Office 365","used_ioc_asset":"10.169.xxx.xxx","name":"Threat Model Positive Score:74","hostnames":"host-name","urls":"www.test.com","ips":"10.169.xxx.xxx","subjects":"Invoice for Goods","users":"test-user1, test-user2","email_addresses":"stanlee4@acme.com, tony@starkindustries.com","hashes":"xxxxxxxxxxxxxxxx","processes":"pr1, pr2","rule_urls":["www.rule-url.com"]},{"first_seen":"2021-12-01T20:47:02Z","last_seen":"2021-12-02T00:47:02Z","product_name":"Office 365","used_ioc_asset":"stanlee4@acme.com","name":"Threat Model Positive Score:74","hostnames":"host-name","urls":"www.test.com","ips":"10.169.xxx.xxx","subjects":"Invoice for Goods","users":"test-user1, test-user2","email_addresses":"stanlee4@acme.com, tony@starkindustries.com","hashes":"xxxxxxxxxxxxxxxx","processes":"pr1, pr2","rule_urls":["www.rule-url.com"]}],"processed_alerts":210,"run_time":0.640103,"external_url":"www.external-url.com"}
+```
+
+
+
 #### Add Values To Reference List
 Add values to a reference list in Google Chronicle.
 Timeout - 600 Seconds
@@ -97,6 +200,25 @@ Timeout - 600 Seconds
 
 
 
+#### Remove Values From Reference List
+Remove values from a reference list in Google Chronicle.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Reference List Name|Specify the display name of the reference list that needs to be updated.|True|String||
+|Values|Specify a comma-separated list of values that need to be removed from a reference list.|True|String||
+
+
+
+##### JSON Results
+```json
+{"name": "projects/xxxx/locations/us/instances/yyyy/referenceLists/testList", "displayName": "testList", "revisionCreateTime": "2025-01-16T09:15:33.753071Z", "description": "Test reference list", "entries": [{"value": "domain1.com"}], "syntaxType": "REFERENCE_LIST_SYNTAX_TYPE_PLAIN_TEXT_STRING", "scopeInfo": {"referenceListScope": {}}, "createTime": "2025-01-16T09:15:33.753071Z", "lines": ["domain1.com"]}
+```
+
+
+
 #### Execute Retrohunt
 Execute a rule retrohunt in Google Chronicle.
 Timeout - 600 Seconds
@@ -140,65 +262,6 @@ Timeout - 600 Seconds
 
 
 
-#### Get Detection Details
-Fetch information about a detection in Google Chronicle.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Rule ID|Specify the ID of the rule, which is related to the detection.|True|String||
-|Detection ID|Specify the ID of the detection for which you want to fetch details.|True|String||
-
-
-
-##### JSON Results
-```json
-{"type": "RULE_DETECTION", "detection": [{"ruleName": "dns_not_google", "urlBackToProduct": "https://unotest2.backstory-dev.chronicle.xxxx/alert?xxxx=xxxx-e380-xxxx-d29c-xxxx", "ruleId": "xxxx-f66d-xxxx-xxxx-xxxx", "ruleVersion": "xxxx-xxxx-xxxx-b682-xxxx@xxxx", "alertState": "ALERTING", "ruleType": "SINGLE_EVENT", "ruleLabels": [{"key": "priority", "value": "Medium"}, {"key": "severity", "value": "Medium"}], "riskScore": 40}], "createdTime": "2023-10-04T22:16:22.145254Z", "id": "xxxx-e380-xxxx-xxxx-xxxx", "timeWindow": {"startTime": "2023-10-04T21:18:44Z", "endTime": "2023-10-04T21:18:44Z"}, "collectionElements": [{"references": [{"event": {"metadata": {"productLogId": "xxxx-xxxx-xxxx45fc-xxxx-xxxx", "eventTimestamp": "2023-10-04T21:18:44Z", "eventType": "NETWORK_CONNECTION", "vendorName": "Palo Alto Networks", "productName": "NGFW", "productEventType": "Traffic - start", "ingestedTimestamp": "2023-10-04T21:31:03.790969Z", "id": "xxxx=", "logType": "UDM"}, "principal": {"hostname": "test3", "ip": ["x.x.0.x"], "port": 18985, "mac": ["00:00:00:0b:c9:11"], "asset": {"hostname": "test3", "ip": ["00.0.0.00"], "mac": ["00:00:00:0b:c9:11"]}}, "target": {"hostname": "youtube.com", "port": 4548, "asset": {"hostname": "youtube.com"}}, "securityResult": [{"action": ["ALLOW"]}], "network": {"sentBytes": "xxxxxxxxxxx", "receivedBytes": "xxxxxxxxxxx", "ipProtocol": "TCP", "sessionId": "xxxxxxxxxxx"}}}], "label": "e"}], "detectionTime": "2023-10-04T21:18:44Z"}
-```
-
-
-
-#### Get Reference Lists
-Get available reference lists in Google Chronicle.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Filter Key|Specify the key that needs to be used to filter reference lists. Name option refers to a display name of the reference list.|False|List|Select One|
-|Filter Logic|Specify what filter logic should be applied.|False|List|Equal|
-|Filter Value|Specify what value should be used in the filter. If “Equal“ is selected, action will try to find the exact match among results and if “Contains“ is selected, action will try to find results that contain that substring. “Equal” works with “title” parameter, while “Contains” works with all values in response. If nothing is provided in this parameter, the filter will not be applied.|False|String||
-|Expanded Details|If enabled, action will return detailed information about the reference lists.|False|Boolean||
-|Max Reference Lists To Return|Specify how many reference lists to return. Default: 100.|False|String|100|
-
-
-
-##### JSON Results
-```json
-[{"name": "projects/xxxx/locations/us/instances/yyyy/referenceLists/testList", "displayName": "testList", "revisionCreateTime": "2025-01-09T15:53:10.851775Z", "description": "Test reference list", "syntaxType": "REFERENCE_LIST_SYNTAX_TYPE_PLAIN_TEXT_STRING", "scopeInfo": {"referenceListScope": {}}, "createTime": "2025-01-09T15:53:10.851775Z"}]
-```
-
-
-
-#### Get Rule Details
-Fetch information about a rule in Google Chronicle.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Rule ID|Specify the ID of the rule for which you want to fetch details.|True|String||
-
-
-
-##### JSON Results
-```json
-{"name": "projects/xxxx/locations/us/instances/yyyy/rules/ru_7d66bc00-7164-4c56-bb6a-66f19524983c", "revisionId": "v_1733917896_973567000", "displayName": "Test_rule_SingleEvent", "text": "rule Test_rule_SingleEvent {\n  // This rule matches single events. Rules can also match multiple events within\n  // some time window. For details about how to write a multi-event rule, see\n  // https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#single-event_versus_multi-event\n\n  meta:\n    // Allows for storage of arbitrary key-value pairs of rule details - who\n    // wrote it, what it detects on, version control, etc.\n    // The \"author\" and \"severity\" fields are special, as they are used as\n    // columns on the rules dashboard. If you'd like to be able to sort based on\n    // these fields on the dashboard, make sure to add them here.\n    // Severity value, by convention, should be \"Low\", \"Medium\" or \"High\"\n    author = \"bhusingh\"\n    description = \"windowed single event example rule\"\n    //severity = \"Medium\"\n\n  events:\n    $e.metadata.event_type = \"USER_LOGIN\"\n    $e.principal.user.userid = $user\n\n  //outcome:\n    // For a multi-event rule an aggregation function is required\n    // e.g., risk_score = max(0)\n    // See https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#outcome_conditionals_example_rule\n    //$risk_score = 0\n  match:\n    $user over 1m\n\n  condition:\n    #e > 0\n}\n", "author": "bhusingh", "metadata": {"author": "bhusingh", "description": "windowed single event example rule", "severity": null}, "createTime": "2024-12-11T11:36:18.192127Z", "revisionCreateTime": "2024-12-11T11:51:36.973567Z", "compilationState": "SUCCEEDED", "type": "SINGLE_EVENT", "allowedRunFrequencies": ["LIVE", "HOURLY", "DAILY"], "etag": "CMj55boGEJjondAD", "ruleId": "ru_7d66bc00-7164-4c56-bb6a-66f19524983c", "versionId": "ru_7d66bc00-7164-4c56-bb6a-66f19524983c@v_1733917896_973567000", "ruleName": "Test_rule_SingleEvent", "ruleText": "rule Test_rule_SingleEvent {\n  // This rule matches single events. Rules can also match multiple events within\n  // some time window. For details about how to write a multi-event rule, see\n  // https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#single-event_versus_multi-event\n\n  meta:\n    // Allows for storage of arbitrary key-value pairs of rule details - who\n    // wrote it, what it detects on, version control, etc.\n    // The \"author\" and \"severity\" fields are special, as they are used as\n    // columns on the rules dashboard. If you'd like to be able to sort based on\n    // these fields on the dashboard, make sure to add them here.\n    // Severity value, by convention, should be \"Low\", \"Medium\" or \"High\"\n    author = \"bhusingh\"\n    description = \"windowed single event example rule\"\n    //severity = \"Medium\"\n\n  events:\n    $e.metadata.event_type = \"USER_LOGIN\"\n    $e.principal.user.userid = $user\n\n  //outcome:\n    // For a multi-event rule an aggregation function is required\n    // e.g., risk_score = max(0)\n    // See https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#outcome_conditionals_example_rule\n    //$risk_score = 0\n  match:\n    $user over 1m\n\n  condition:\n    #e > 0\n}\n", "ruleType": "SINGLE_EVENT", "versionCreateTime": "2024-12-11T11:51:36.973567Z"}
-```
-
-
-
 #### Is Value In Reference List
 Check, if provided values are found in reference lists in Google Chronicle.
 Timeout - 600 Seconds
@@ -215,6 +278,25 @@ Timeout - 600 Seconds
 ##### JSON Results
 ```json
 [{"Entity": "domain.com", "EntityResult": {"found_in": [], "not_found_in": "testList", "overall_status": "not found"}}]
+```
+
+
+
+#### Get Detection Details
+Fetch information about a detection in Google Chronicle.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Rule ID|Specify the ID of the rule, which is related to the detection.|True|String||
+|Detection ID|Specify the ID of the detection for which you want to fetch details.|True|String||
+
+
+
+##### JSON Results
+```json
+{"type": "RULE_DETECTION", "detection": [{"ruleName": "dns_not_google", "urlBackToProduct": "https://unotest2.backstory-dev.chronicle.xxxx/alert?xxxx=xxxx-e380-xxxx-d29c-xxxx", "ruleId": "xxxx-f66d-xxxx-xxxx-xxxx", "ruleVersion": "xxxx-xxxx-xxxx-b682-xxxx@xxxx", "alertState": "ALERTING", "ruleType": "SINGLE_EVENT", "ruleLabels": [{"key": "priority", "value": "Medium"}, {"key": "severity", "value": "Medium"}], "riskScore": 40}], "createdTime": "2023-10-04T22:16:22.145254Z", "id": "xxxx-e380-xxxx-xxxx-xxxx", "timeWindow": {"startTime": "2023-10-04T21:18:44Z", "endTime": "2023-10-04T21:18:44Z"}, "collectionElements": [{"references": [{"event": {"metadata": {"productLogId": "xxxx-xxxx-xxxx45fc-xxxx-xxxx", "eventTimestamp": "2023-10-04T21:18:44Z", "eventType": "NETWORK_CONNECTION", "vendorName": "Palo Alto Networks", "productName": "NGFW", "productEventType": "Traffic - start", "ingestedTimestamp": "2023-10-04T21:31:03.790969Z", "id": "xxxx=", "logType": "UDM"}, "principal": {"hostname": "test3", "ip": ["x.x.0.x"], "port": 18985, "mac": ["00:00:00:0b:c9:11"], "asset": {"hostname": "test3", "ip": ["00.0.0.00"], "mac": ["00:00:00:0b:c9:11"]}}, "target": {"hostname": "youtube.com", "port": 4548, "asset": {"hostname": "youtube.com"}}, "securityResult": [{"action": ["ALLOW"]}], "network": {"sentBytes": "xxxxxxxxxxx", "receivedBytes": "xxxxxxxxxxx", "ipProtocol": "TCP", "sessionId": "xxxxxxxxxxx"}}}], "label": "e"}], "detectionTime": "2023-10-04T21:18:44Z"}
 ```
 
 
@@ -241,91 +323,9 @@ Timeout - 600 Seconds
 
 
 
-#### List Events
-List events on the particular asset in the specified time frame. Supported entities: IP Address, Mac Address, Hostname. Note: action can only fetch 10000 events. Make sure to narrow down the timeframe for better results.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Event Types|Specify a comma-separated list of the event types that need to be returned. If nothing is provided, action will fetch all event types. Possible values: EVENTTYPE_UNSPECIFIED, PROCESS_UNCATEGORIZED, PROCESS_LAUNCH, PROCESS_INJECTION, PROCESS_PRIVILEGE_ESCALATION, PROCESS_TERMINATION, PROCESS_OPEN, PROCESS_MODULE_LOAD, REGISTRY_UNCATEGORIZED, REGISTRY_CREATION, REGISTRY_MODIFICATION, REGISTRY_DELETION, SETTING_UNCATEGORIZED, SETTING_CREATION, SETTING_MODIFICATION, SETTING_DELETION, MUTEX_UNCATEGORIZED, MUTEX_CREATION, FILE_UNCATEGORIZED, FILE_CREATION, FILE_DELETION, FILE_MODIFICATION, FILE_READ, FILE_COPY, FILE_OPEN, FILE_MOVE, FILE_SYNC, USER_UNCATEGORIZED, USER_LOGIN, USER_LOGOUT, USER_CREATION, USER_CHANGE_PASSWORD, USER_CHANGE_PERMISSIONS, USER_STATS, USER_BADGE_IN, USER_DELETION, USER_RESOURCE_CREATION, USER_RESOURCE_UPDATE_CONTENT, USER_RESOURCE_UPDATE_PERMISSIONS, USER_COMMUNICATION, USER_RESOURCE_ACCESS, USER_RESOURCE_DELETION, GROUP_UNCATEGORIZED, GROUP_CREATION, GROUP_DELETION, GROUP_MODIFICATION, EMAIL_UNCATEGORIZED, EMAIL_TRANSACTION, EMAIL_URL_CLICK, NETWORK_UNCATEGORIZED, NETWORK_FLOW, NETWORK_CONNECTION, NETWORK_FTP, NETWORK_DHCP, NETWORK_DNS, NETWORK_HTTP, NETWORK_SMTP, STATUS_UNCATEGORIZED, STATUS_HEARTBEAT, STATUS_STARTUP, STATUS_SHUTDOWN, STATUS_UPDATE, SCAN_UNCATEGORIZED, SCAN_FILE, SCAN_PROCESS_BEHAVIORS, SCAN_PROCESS, SCAN_HOST, SCAN_VULN_HOST, SCAN_VULN_NETWORK, SCAN_NETWORK, SCHEDULED_TASK_UNCATEGORIZED, SCHEDULED_TASK_CREATION, SCHEDULED_TASK_DELETION, SCHEDULED_TASK_ENABLE, SCHEDULED_TASK_DISABLE, SCHEDULED_TASK_MODIFICATION, SYSTEM_AUDIT_LOG_UNCATEGORIZED, SYSTEM_AUDIT_LOG_WIPE, SERVICE_UNSPECIFIED, SERVICE_CREATION, SERVICE_DELETION, SERVICE_START, SERVICE_STOP, SERVICE_MODIFICATION, GENERIC_EVENT, RESOURCE_CREATION, RESOURCE_DELETION, RESOURCE_PERMISSIONS_CHANGE, RESOURCE_READ, RESOURCE_WRITTEN, ANALYST_UPDATE_VERDICT, ANALYST_UPDATE_REPUTATION, ANALYST_UPDATE_SEVERITY_SCORE, ANALYST_UPDATE_STATUS, ANALYST_ADD_COMMENT|False|String||
-|Time Frame|Specify a time frame for the results. If "Custom" is selected, you also need to provide "Start Time".|False|List|Custom|
-|Start Time|Specify the start time for the results. This parameter is mandatory, if "Custom" is selected for the "Time Frame" parameter. Format: ISO 8601|False|String||
-|End Time|Specify the end time for the results. Format: ISO 8601. If nothing is provided and "Custom" is selected for the "Time Frame" parameter then this parameter will use current time. Note: value "now" can also be used.|False|String||
-|Reference Time|Specify the reference time for the event search. Format: YYYY-MM-DDThh:mmTZD. Note: if nothing is provided, action will use end time as reference time.|False|String||
-|Output|Specify what should be the output for this action.|True|List|Events + Statistics|
-|Max Events To Return|Specify how many events to process per entity type. Default: 100.|False|String|100|
-
-
-
-##### JSON Results
-```json
-[{"Entity":"alan-centeno-pc","EntityResult":{"statistics":{"NETWORK_CONNECTION":10},"events":[{"metadata":{"eventTimestamp":"2020-09-28T17:20:00Z","eventType":"NETWORK_CONNECTION","productName":"Tanium Stream","productEventType":"NETWORK_DNS","ingestedTimestamp":"2020-09-28T16:28:11.615578Z"},"principal":{"hostname":"alan-centeno-pc","assetId":"TANIUM:alan-centeno-pc","process":{"pid":"1101","productSpecificProcessId":"TANIUM:32323"}},"target":{"hostname":"micrgsoft.com","user":{"userid":"alan"},"process":{"pid":"8172","file":{"md5":"a219fc7fcc93890a842183388f80369e","fullPath":"C:\\Program Files(x86)\\adobe\\acrobat reader dc\\reader\\acrord32.exe"},"commandLine":"\"C:\\Program Files(x86)\\adobe\\acrobat reader dc\\reader\\acrord32.exe\" ...","productSpecificProcessId":"TANIUM:82315"}}}],"uri":["https://demodev.backstory.chronicle.security/"]}}]
-```
-
-
-
-#### List IOCs
-List all of the IoCs discovered within your enterprise within the specified time range.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Start Time|Fetches IOC Domain from the specified time. Value should be in RFC 3339 format (e.g. 2018-11-05T12:00:00Z). If not supplied, the default is the UTC time corresponding to 3 days earlier than current time.|False|String||
-|Max IoCs to Fetch|Specify the maximum number of IoCs to return. You can specify between 1 and 10,000. The default is 50.|False|String|50|
-
-
-
-##### JSON Results
-```json
-[{"artifactIndicator": {"domain": "npatni-sysops"}, "sources": ["ACME-IOC-IP-DOMAIN"], "categories": ["C2"], "assetIndicators": [{"assetIpAddress": "172.30.202.229"}], "iocIngestTimestamp": "2024-12-10T13:52:38.780150Z", "firstSeenTimestamp": "2025-01-13T14:01:00Z", "lastSeenTimestamp": "2025-01-13T14:01:00Z", "filterProperties": {"stringProperties": {"TLD": {"values": [{"rawValue": "Invalid"}]}, "IOC CATEGORIES": {"values": [{"rawValue": "C2"}]}, "IOC FEED": {"values": [{"rawValue": "ACME-IOC-IP-DOMAIN"}]}}}, "logType": "UDM", "feedName": "ACME-IOC-IP-DOMAIN", "id": "Cg1ucGF0bmktc3lzb3BzEMgB", "fieldAndValue": {"value": "npatni-sysops", "valueType": "DOMAIN_NAME"}, "artifact": {"domainName": "npatni-sysops"}, "iocIngestTime": "2024-12-10T13:52:38.780150Z", "firstSeenTime": "2025-01-13T14:01:00Z", "lastSeenTime": "2025-01-13T14:01:00Z"}, {"artifactIndicator": {"destinationIpAddress": "35.246.203.0"}, "sources": ["ACME-IOC-IP-PORT-C2"], "categories": ["C2"], "assetIndicators": [{"assetIpAddress": "172.30.202.229"}], "iocIngestTimestamp": "2024-01-10T22:04:34.267566Z", "firstSeenTimestamp": "2025-01-13T14:00:00Z", "lastSeenTimestamp": "2025-01-13T14:00:00Z", "filterProperties": {"stringProperties": {"IOC CATEGORIES": {"values": [{"rawValue": "C2"}]}, "IOC FEED": {"values": [{"rawValue": "ACME-IOC-IP-PORT-C2"}]}}}, "logType": "CATCH_ALL", "feedName": "ACME-IOC-IP-PORT-C2", "id": "CgwzNS4yNDYuMjAzLjAQyQE", "fieldAndValue": {"value": "35.246.203.0", "valueType": "RESOLVED_IP_ADDRESS"}, "artifact": {"destinationIpAddress": "35.246.203.0"}, "iocIngestTime": "2024-01-10T22:04:34.267566Z", "firstSeenTime": "2025-01-13T14:00:00Z", "lastSeenTime": "2025-01-13T14:00:00Z"}, {"artifactIndicator": {"hashSha256": "bc866cfcdda37e24dc2634dc282c7a0e6f55209da17a8fa105b07414c0e7c527"}, "sources": ["ACME-IOC-FILE-HASH"], "categories": ["C2"], "assetIndicators": [{"namespace": "Yuriy", "assetIpAddress": "172.30.202.229"}, {"namespace": "Yuriy", "mac": "00:50:56:a2:b8:a0"}, {"namespace": "Yuriy", "hostname": "exlab2019-ad"}], "iocIngestTimestamp": "2025-01-10T13:52:38.780150Z", "firstSeenTimestamp": "2024-12-15T09:07:02Z", "lastSeenTimestamp": "2025-01-14T16:07:14Z", "filterProperties": {"stringProperties": {"IOC CATEGORIES": {"values": [{"rawValue": "C2"}]}, "IOC FEED": {"values": [{"rawValue": "ACME-IOC-FILE-HASH"}]}}}, "logType": "CATCH_ALL", "feedName": "ACME-IOC-FILE-HASH", "id": "CkBiYzg2NmNmY2RkYTM3ZTI0ZGMyNjM0ZGMyODJjN2EwZTZmNTUyMDlkYTE3YThmYTEwNWIwNzQxNGMwZTdjNTI3ELEC", "fieldAndValue": {"value": "bc866cfcdda37e24dc2634dc282c7a0e6f55209da17a8fa105b07414c0e7c527", "valueType": "HASH_SHA256"}, "artifact": {"hashSha256": "bc866cfcdda37e24dc2634dc282c7a0e6f55209da17a8fa105b07414c0e7c527"}, "iocIngestTime": "2025-01-10T13:52:38.780150Z", "firstSeenTime": "2024-12-15T09:07:02Z", "lastSeenTime": "2025-01-14T16:07:14Z"}]
-```
-
-
-
-#### Lookup Similar Alerts
-Lookup similar alerts in Google Chronicle. Supported Chronicle alert types: RULE, EXTERNAL, IOC. Note: this action can only work with alerts that come from the "Chronicle Alerts Connector". Note: action can only fetch 10000 alerts. Make sure to narrow down the timeframe for better results.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Time Frame|Specify a time frame for the results. If "Alert Time Till Now" is selected, action will use start time of the alert as start time for the search and end time will be current time. If "30 Minutes Around Alert Time" is selected, action will search the alerts 30 minutes before the alert happened till the 30 minutes after the alert has happened.  Same idea applies to "1 Hour Around Alert Time" and "5 Minutes Around Alert Time".|False|List|Last Hour|
-|IOCs / Assets|Specify a comma-separated list of IOCs or assets that you want to find in the alerts. Note: action will perform a different search for each item provided.|True|String||
-|Similarity By|Specify what attributes need to be used, when the action is to search for similar alerts. If "Alert Name and Alert Type" is selected, action will try to find all of the alerts that have the same alert name and IOCs/Assets for the underlying alert type. If "Product" is selected, then action will try to find all of the alerts that originate from the same product and have the same IOCs/Assets, action will search among both "EXTERNAL" and "Rule" alerts. If "Only IOCs/Assets" is enabled, action will match the similarity only based upon the items provided in the parameter "IOCs/Assets", action will search among both "EXTERNAL" and "Rule" alerts.|False|List|Alert Name and Product|
-
-
-
-##### JSON Results
-```json
-{"count":4,"distinct":[{"first_seen":"2021-12-01T20:47:02Z","last_seen":"2021-12-02T00:47:02Z","product_name":"Office 365","used_ioc_asset":"10.169.xxx.xxx","name":"Threat Model Positive Score:74","hostnames":"host-name","urls":"www.test.com","ips":"10.169.xxx.xxx","subjects":"Invoice for Goods","users":"test-user1, test-user2","email_addresses":"stanlee4@acme.com, tony@starkindustries.com","hashes":"xxxxxxxxxxxxxxxx","processes":"pr1, pr2","rule_urls":["www.rule-url.com"]},{"first_seen":"2021-12-01T20:47:02Z","last_seen":"2021-12-02T00:47:02Z","product_name":"Office 365","used_ioc_asset":"stanlee4@acme.com","name":"Threat Model Positive Score:74","hostnames":"host-name","urls":"www.test.com","ips":"10.169.xxx.xxx","subjects":"Invoice for Goods","users":"test-user1, test-user2","email_addresses":"stanlee4@acme.com, tony@starkindustries.com","hashes":"xxxxxxxxxxxxxxxx","processes":"pr1, pr2","rule_urls":["www.rule-url.com"]}],"processed_alerts":210,"run_time":0.640103,"external_url":"www.external-url.com"}
-```
-
-
-
 #### Ping
 Test connectivity to the Google Chronicle with parameters provided at the integration configuration page on the Marketplace tab.
 Timeout - 600 Seconds
-
-
-
-#### Remove Values From Reference List
-Remove values from a reference list in Google Chronicle.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Reference List Name|Specify the display name of the reference list that needs to be updated.|True|String||
-|Values|Specify a comma-separated list of values that need to be removed from a reference list.|True|String||
-
-
-
-##### JSON Results
-```json
-{"name": "projects/xxxx/locations/us/instances/yyyy/referenceLists/testList", "displayName": "testList", "revisionCreateTime": "2025-01-16T09:15:33.753071Z", "description": "Test reference list", "entries": [{"value": "domain1.com"}], "syntaxType": "REFERENCE_LIST_SYNTAX_TYPE_PLAIN_TEXT_STRING", "scopeInfo": {"referenceListScope": {}}, "createTime": "2025-01-16T09:15:33.753071Z", "lines": ["domain1.com"]}
-```
 
 
 
@@ -333,17 +333,6 @@ Timeout - 600 Seconds
 
 
 ## Jobs
-
-#### Google Chronicle Alerts Creator Job
-This job will sync new SOAR alerts with Chronicle SIEM.
-Note: This job is only supported from Chronicle SOAR version 6.2.30 and higher.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Environment|True|String|Default Environment|
-|API Root|True|String|https://backstory.googleapis.com|
-|User's Service Account|False|Password||
-|Verify SSL|False|Boolean|true|
 
 #### Google Chronicle Sync Job
 This job will synchronize information about Chronicle SOAR Cases and Chronicle SOAR Alerts with Chronicle SIEM.
@@ -355,6 +344,17 @@ This job will synchronize information about Chronicle SOAR Cases and Chronicle S
 |API Root|True|String|https://backstory.googleapis.com|
 |User's Service Account|False|Password||
 |Max Hours Backwards|False|String|24|
+|Verify SSL|False|Boolean|true|
+
+#### Google Chronicle Alerts Creator Job
+This job will sync new SOAR alerts with Chronicle SIEM.
+Note: This job is only supported from Chronicle SOAR version 6.2.30 and higher.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Environment|True|String|Default Environment|
+|API Root|True|String|https://backstory.googleapis.com|
+|User's Service Account|False|Password||
 |Verify SSL|False|Boolean|true|
 
 

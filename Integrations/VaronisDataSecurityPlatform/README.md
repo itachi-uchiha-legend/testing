@@ -16,29 +16,23 @@ Python Version - 3
 #### Dependencies
 | |
 |-|
-|requests-2.32.3-py3-none-any.whl|
-|EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
-|idna-3.7-py3-none-any.whl|
-|certifi-2024.7.4-py3-none-any.whl|
-|TIPCommon-1.0.12-py2.py3-none-any.whl|
 |charset_normalizer-3.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|requests-2.32.3-py3-none-any.whl|
+|idna-3.7-py3-none-any.whl|
+|pyOpenSSL-24.2.1-py3-none-any.whl|
+|cffi-1.17.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|chardet-5.2.0-py3-none-any.whl|
+|urllib3-2.2.2-py3-none-any.whl|
+|TIPCommon-1.0.12-py2.py3-none-any.whl|
+|cryptography-43.0.0-cp39-abi3-manylinux_2_28_x86_64.whl|
 |requests_ntlm-1.3.0-py3-none-any.whl|
 |pycparser-2.22-py3-none-any.whl|
-|cffi-1.17.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|pyOpenSSL-24.2.1-py3-none-any.whl|
-|urllib3-2.2.2-py3-none-any.whl|
-|chardet-5.2.0-py3-none-any.whl|
 |pyspnego-0.11.1-py3-none-any.whl|
-|cryptography-43.0.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|certifi-2024.7.4-py3-none-any.whl|
+|EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
 
 
 ## Actions
-#### Ping
-Test connectivity to the Varonis Data Security Platform with parameters provided at the integration configuration page on the Marketplace tab.
-Timeout - 600 Seconds
-
-
-
 #### Update Alert
 Update status of alerts ingested from the Varonis Data Security Platform connector with parameters provided at the integration configuration page on the Marketplace tab.
 Timeout - 600 Seconds
@@ -49,6 +43,12 @@ Timeout - 600 Seconds
 |Alert GUID|Specify alert GUID for the update. This action can run on multiple alerts. Multiple alerts can be specified as a comma-separated string.|True|String||
 |Alert Status|Specify the alert status to update to.|True|List|Select One|
 |Closing Reason|Specify the closing reason for the alert. When the alert status is changed to "closed", closing reason must be specified.|False|List|Not Provided|
+
+
+
+#### Ping
+Test connectivity to the Varonis Data Security Platform with parameters provided at the integration configuration page on the Marketplace tab.
+Timeout - 600 Seconds
 
 
 

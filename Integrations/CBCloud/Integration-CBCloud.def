@@ -19,8 +19,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1740996363865,
-            "ModificationTimeUnixTimeInMs": 1740996363865
+            "CreationTimeUnixTimeInMs": 1741001995002,
+            "ModificationTimeUnixTimeInMs": 1741001995002
         },
         {
             "IntegrationIdentifier": "CBCloud",
@@ -31,8 +31,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1740996363865,
-            "ModificationTimeUnixTimeInMs": 1740996363865
+            "CreationTimeUnixTimeInMs": 1741001995002,
+            "ModificationTimeUnixTimeInMs": 1741001995002
         },
         {
             "IntegrationIdentifier": "CBCloud",
@@ -43,8 +43,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1740996363865,
-            "ModificationTimeUnixTimeInMs": 1740996363865
+            "CreationTimeUnixTimeInMs": 1741001995002,
+            "ModificationTimeUnixTimeInMs": 1741001995002
         },
         {
             "IntegrationIdentifier": "CBCloud",
@@ -55,8 +55,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1740996363865,
-            "ModificationTimeUnixTimeInMs": 1740996363865
+            "CreationTimeUnixTimeInMs": 1741001995002,
+            "ModificationTimeUnixTimeInMs": 1741001995002
         },
         {
             "IntegrationIdentifier": "CBCloud",
@@ -67,122 +67,122 @@
             "IsMandatory": false,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1740996363865,
-            "ModificationTimeUnixTimeInMs": 1740996363865
+            "CreationTimeUnixTimeInMs": 1741001995002,
+            "ModificationTimeUnixTimeInMs": 1741001995002
         }
     ],
     "IntegrationSupportedActions": [
         {
-            "Name": "Device Background Scan",
-            "Description": "Create a device background scan task on VMware Carbon Black Cloud server based on the Siemplify IP or Host Siemplify entities.",
-            "Id": 193,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
-        },
-        {
-            "Name": "Disable Bypass Mode for Device",
-            "Description": "Create disable bypass mode task for devices on the VMware Carbon Black Cloud server based on the Siemplify IP or Host Siemplify entities.",
-            "Id": 194,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
-        },
-        {
-            "Name": "Enable Bypass Mode for Device",
-            "Description": "Create enable bypass mode task for device on VMware Carbon Black Cloud server based on Siemplify IP or Host Siemplify entities.",
-            "Id": 195,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
-        },
-        {
-            "Name": "Update a Policy for Device by Policy ID",
-            "Description": "Change a policy on VMware Carbon Black Cloud sensor on a host. The action scope is IP or Host entities.",
-            "Id": 196,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
-        },
-        {
-            "Name": "Quarantine Device",
-            "Description": "Create quarantine device task on the VMware Carbon Black Cloud server based on the Siemplify IP or Host Siemplify entities.",
-            "Id": 197,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
-        },
-        {
-            "Name": "Create a Reputation Override for Certificate",
-            "Description": "Create a Reputation Override for the certificate. Note that action is not working on Siemplify entities.",
-            "Id": 198,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
-        },
-        {
             "Name": "Create a Reputation Override for IT Tool",
             "Description": "Create a Reputation Override for the specific IT Tool based on a file name and path. Note: The file name can be provided either as a Siemplify File (artifact) or as an action input parameter. If the file name is passed to action both as an entity and input parameter - action will be executed on the input parameter. File name will be appended to the File Path parameter to get the resulting path to add to the override.",
-            "Id": 199,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
-        },
-        {
-            "Name": "Create a Reputation Override for SHA-256 Hash",
-            "Description": "Create a Reputation Override for the provided hash in SHA-256 format. Note: The SHA-256 hash can be provided either as a Siemplify FileHash (artifact) or as an action input parameter. If the hash is passed to action both as an entity and input parameter - action will be executed on the input parameter.",
-            "Id": 200,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
-        },
-        {
-            "Name": "Unquarantine Device",
-            "Description": "Create unquarantine device task on the VMware Carbon Black Cloud server based on the Siemplify IP or Host Siemplify entities.",
-            "Id": 201,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
-        },
-        {
-            "Name": "Delete a Reputation Override",
-            "Description": "Delete a Reputation Override based on the provided reputation override id. Note that action is not working on Siemplify entities.",
-            "Id": 202,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
-        },
-        {
-            "Name": "Dismiss VMware Carbon Black Cloud Alert",
-            "Description": "Dismiss VMware Carbon Black Cloud alert. Note: action accepts alert id in format 27162661199ea9a043c11ea9a29a93652bc09fd, not in format that is shown in UI as DONAELUN.",
-            "Id": 203,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
+            "Id": 2,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
         },
         {
             "Name": "Enrich Entities",
             "Description": "Enrich Siemplify Host or IP entities based on the device information from the VMware Carbon Black Cloud.",
-            "Id": 204,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
+            "Id": 3,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
+        },
+        {
+            "Name": "Disable Bypass Mode for Device",
+            "Description": "Create disable bypass mode task for devices on the VMware Carbon Black Cloud server based on the Siemplify IP or Host Siemplify entities.",
+            "Id": 4,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
+        },
+        {
+            "Name": "Create a Reputation Override for Certificate",
+            "Description": "Create a Reputation Override for the certificate. Note that action is not working on Siemplify entities.",
+            "Id": 5,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
+        },
+        {
+            "Name": "Quarantine Device",
+            "Description": "Create quarantine device task on the VMware Carbon Black Cloud server based on the Siemplify IP or Host Siemplify entities.",
+            "Id": 6,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
+        },
+        {
+            "Name": "Update a Policy for Device by Policy ID",
+            "Description": "Change a policy on VMware Carbon Black Cloud sensor on a host. The action scope is IP or Host entities.",
+            "Id": 7,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
+        },
+        {
+            "Name": "Device Background Scan",
+            "Description": "Create a device background scan task on VMware Carbon Black Cloud server based on the Siemplify IP or Host Siemplify entities.",
+            "Id": 8,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
+        },
+        {
+            "Name": "Unquarantine Device",
+            "Description": "Create unquarantine device task on the VMware Carbon Black Cloud server based on the Siemplify IP or Host Siemplify entities.",
+            "Id": 9,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
+        },
+        {
+            "Name": "Dismiss VMware Carbon Black Cloud Alert",
+            "Description": "Dismiss VMware Carbon Black Cloud alert. Note: action accepts alert id in format 27162661199ea9a043c11ea9a29a93652bc09fd, not in format that is shown in UI as DONAELUN.",
+            "Id": 10,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
         },
         {
             "Name": "Execute Entity Processes Search",
             "Description": "Execute Carbon Black Cloud Process Search based on the Siemplify Entity. Action can be used to search information about processes stored in Carbon Black Cloud with action input parameters and following Siemplify entities: IP, Host, User, Hash, Process.",
-            "Id": 205,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
-        },
-        {
-            "Name": "List Host Vulnerabilities",
-            "Description": "List vulnerabilities found on the host in \u0421arbon Black Cloud. Supported entities: IP Address and Hostname.",
-            "Id": 206,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
+            "Id": 11,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
         },
         {
             "Name": "List Reputation Overrides",
             "Description": "List reputation overrides configured in VMware Carbon Black Cloud. Note that action is not working on Siemplify entities.",
-            "Id": 207,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
+            "Id": 12,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
+        },
+        {
+            "Name": "Create a Reputation Override for SHA-256 Hash",
+            "Description": "Create a Reputation Override for the provided hash in SHA-256 format. Note: The SHA-256 hash can be provided either as a Siemplify FileHash (artifact) or as an action input parameter. If the hash is passed to action both as an entity and input parameter - action will be executed on the input parameter.",
+            "Id": 13,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
+        },
+        {
+            "Name": "Delete a Reputation Override",
+            "Description": "Delete a Reputation Override based on the provided reputation override id. Note that action is not working on Siemplify entities.",
+            "Id": 14,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
+        },
+        {
+            "Name": "List Host Vulnerabilities",
+            "Description": "List vulnerabilities found on the host in \u0421arbon Black Cloud. Supported entities: IP Address and Hostname.",
+            "Id": 15,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
+        },
+        {
+            "Name": "Enable Bypass Mode for Device",
+            "Description": "Create enable bypass mode task for device on VMware Carbon Black Cloud server based on Siemplify IP or Host Siemplify entities.",
+            "Id": 16,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
         },
         {
             "Name": "Ping",
             "Description": "Test connectivity to the VMware Carbon Black Cloud",
-            "Id": 208,
-            "CreationTimeUnixTimeInMs": 1740996363896,
-            "ModificationTimeUnixTimeInMs": 1740996363896
+            "Id": 17,
+            "CreationTimeUnixTimeInMs": 1741001995011,
+            "ModificationTimeUnixTimeInMs": 1741001995011
         }
     ],
     "Categories": [
@@ -200,6 +200,6 @@
     "MinimumSystemVersion": 0.0,
     "ProductionIntegrationIdentifier": null,
     "Id": 0,
-    "CreationTimeUnixTimeInMs": 1740996363865,
-    "ModificationTimeUnixTimeInMs": 1740996363865
+    "CreationTimeUnixTimeInMs": 1741001995002,
+    "ModificationTimeUnixTimeInMs": 1741001995002
 }

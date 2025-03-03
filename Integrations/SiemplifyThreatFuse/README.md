@@ -18,22 +18,122 @@ Python Version - 3
 | |
 |-|
 |requests-2.32.3-py3-none-any.whl|
-|certifi-2024.8.30-py3-none-any.whl|
+|idna-3.8-py3-none-any.whl|
 |python_dateutil-2.9.0.post0-py2.py3-none-any.whl|
-|pandas-2.2.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|chardet-5.2.0-py3-none-any.whl|
 |TIPCommon-1.0.10-py3-none-any.whl|
 |pytz-2024.1-py2.py3-none-any.whl|
-|charset_normalizer-3.3.2-py3-none-any.whl|
-|idna-3.8-py3-none-any.whl|
-|numpy-2.1.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|EnvironmentCommon-1.0.0-py3-none-any.whl|
 |urllib3-2.2.2-py3-none-any.whl|
-|chardet-5.2.0-py3-none-any.whl|
+|numpy-2.1.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|charset_normalizer-3.3.2-py3-none-any.whl|
 |tzdata-2024.1-py2.py3-none-any.whl|
+|pandas-2.2.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|EnvironmentCommon-1.0.0-py3-none-any.whl|
+|certifi-2024.8.30-py3-none-any.whl|
 |six-1.16.0-py2.py3-none-any.whl|
 
 
 ## Actions
+#### Get Related IPs
+Retrieve entity related IP addresses based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Confidence Threshold|Specify what should be the confidence threshold. Note: Maximum is 100.|True|String||
+|Search Observables|If enabled, action will search among observables.|False|Boolean|True|
+|Search Threat Bulletins|If enabled, action will search among threat bulletins.|False|Boolean|True|
+|Search Actors|If enabled, action will search among actors.|False|Boolean|True|
+|Search Attack Patterns|If enabled, action will search among attack patterns.|False|Boolean|True|
+|Search Campaigns|If enabled, action will search among campaigns.|False|Boolean|True|
+|Search Courses Of Action|If enabled, action will search among courses of action.|False|Boolean|True|
+|Search Identities|If enabled, action will search among identities.|False|Boolean|True|
+|Search Incidents|If enabled, action will search among incidents.|False|Boolean|True|
+|Search Infrastructures|If enabled, action will search among infrastructures.|False|Boolean|True|
+|Search Intrusion Sets|If enabled, action will search among intrusion sets.|False|Boolean|True|
+|Search Malware|If enabled, action will search among malware.|False|Boolean|True|
+|Search Signatures|If enabled, action will search among signatures.|False|Boolean|True|
+|Search Tools|If enabled, action will search among tools.|False|Boolean|True|
+|Search TTPs|If enabled, action will search among TTPs.|False|Boolean|True|
+|Search Vulnerabilities|If enabled, action will search among vulnerabilities.|False|Boolean|True|
+|Max IPs To Return|Specify how many IPs to return. Default: 50.|False|String|50|
+
+
+
+##### JSON Results
+```json
+[{"ips":["100.0.0.1"]}]
+```
+
+
+
+#### Get Related Domains
+Retrieve entity related domains based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Search Incidents|If enabled, action will search among incidents.|False|Boolean|True|
+|Confidence Threshold|Specify what should be the confidence threshold. Note: Maximum is 100.|True|String||
+|Search Threat Bulletins|If enabled, action will search among threat bulletins.|False|Boolean|True|
+|Search Actors|If enabled, action will search among actors.|False|Boolean|True|
+|Search Attack Patterns|If enabled, action will search among attack patterns.|False|Boolean|True|
+|Search Campaigns|If enabled, action will search among campaigns.|False|Boolean|True|
+|Search Courses Of Action|If enabled, action will search among courses of action.|False|Boolean|True|
+|Search Identities|If enabled, action will search among identities.|False|Boolean|True|
+|Search Infrastructures|If enabled, action will search among infrastructures.|False|Boolean|True|
+|Search Intrusion Sets|If enabled, action will search among intrusion sets.|False|Boolean|True|
+|Search Malware|If enabled, action will search among malware.|False|Boolean|True|
+|Search Signatures|If enabled, action will search among signatures.|False|Boolean|True|
+|Search Tools|If enabled, action will search among tools.|False|Boolean|True|
+|Search TTPs|If enabled, action will search among TTPs.|False|Boolean|True|
+|Search Vulnerabilities|If enabled, action will search among vulnerabilities.|False|Boolean|True|
+|Max Domains To Return|Specify how many domains to return. Default: 50.|False|String|50|
+
+
+
+##### JSON Results
+```json
+[{"domains":["www.google.com"]}]
+```
+
+
+
+#### Get Related Hashes
+Retrieve entity related hashes based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Confidence Threshold|Specify what should be the confidence threshold. Note: Maximum is 100.|True|String||
+|Search Threat Bulletins|If enabled, action will search among threat bulletins.|False|Boolean|True|
+|Search Actors|If enabled, action will search among actors.|False|Boolean|True|
+|Search Attack Patterns|If enabled, action will search among attack patterns.|False|Boolean|True|
+|Search Campaigns|If enabled, action will search among campaigns.|False|Boolean|True|
+|Search Courses Of Action|If enabled, action will search among courses of action.|False|Boolean|True|
+|Search Identities|If enabled, action will search among identities.|False|Boolean|True|
+|Search Incidents|If enabled, action will search among incidents.|False|Boolean|True|
+|Search Infrastructures|If enabled, action will search among infrastructures.|False|Boolean|True|
+|Search Intrusion Sets|If enabled, action will search among intrusion sets.|False|Boolean|True|
+|Search Malware|If enabled, action will search among malware.|False|Boolean|True|
+|Search Signatures|If enabled, action will search among signatures.|False|Boolean|True|
+|Search Tools|If enabled, action will search among tools.|False|Boolean|True|
+|Search TTPs|If enabled, action will search among TTPs.|False|Boolean|True|
+|Search Vulnerabilities|If enabled, action will search among vulnerabilities.|False|Boolean|True|
+|Max Hashes To Return|Specify how many hashes to return. Default: 50.|False|String|50|
+
+
+
+##### JSON Results
+```json
+[{"SHA1_hashes":["e7700ed03ee64a634527be5944d5e063fd9f1734","10bc38d0a421011a56875db8636e34748a2107f1"],"all_hashes":["ak285ed63a42f22dae616a341ef61dab66b6b65217df02k491966c778be5f138","1ff4c79bffeaa6fc865ad3d8de1b7aac2939862b246cae0a93cf5937d827f5be","e7700ed03ee64a634527be5944d5e063fd9f1734","10bc38d0a421011a56875db8636e34748a2107f1","4781c65762016dbb1e624418e6asw21b","1ababw3014df8594a61e0645422db960"],"MD5_hashes":["4781c65762016dbb1e624418e6asw21b","1ababw3014df8594a61e0645422db960"],"SHA256_hashes":["ak285ed63a42f22dae616a341ef61dab66b6b65217df02k491966c778be5f138","1ff4c79bffeaa6fc865ad3d8de1b7aac2939862b246cae0a93cf5937d827f5be"]}]
+```
+
+
+
 #### Enrich Entities
 Retrieve information about IPs, URLs, hashes or User entities with Email regexes from Siemplify ThreatFuse. If multiple records are found for the same entity, action will enrich using the latest record.
 Timeout - 600 Seconds
@@ -53,6 +153,106 @@ Timeout - 600 Seconds
 ##### JSON Results
 ```json
 {"results": [{"Entity": "49.234.23.243", "EntityResult": [{"source_created": null, "status": "active", "itype": "bot_ip", "expiration_ts": "2021-02-08T10:23:40.950Z", "ip": "49.234.23.243", "is_editable": false, "feed_id": 17, "update_id": 9074259384, "value": "49.234.23.243", "is_public": true, "threat_type": "bot", "workgroups": [], "rdns": null, "confidence": 100, "uuid": "d3c13526-3af4-4045-a242-f7e5720a13d8", "retina_confidence": 100, "trusted_circle_ids": null, "id": 56278363173, "source": "Emerging Threats - Compromised", "owner_organization_id": 2, "import_session_id": null, "source_modified": null, "type": "ip", "sort": [1605003831850, "56278363173"], "description": null, "threatscore": 25, "latitude": 34.7725, "modified_ts": "2020-11-10T10:23:51.850Z", "org": "Tencent cloud computing", "asn": "", "created_ts": "2020-11-10T10:23:51.850Z", "tlp": null, "is_anonymous": false, "country": "CN", "source_reported_confidence": 75, "can_add_public_tags": false, "longitude": 113.7266, "subtype": null, "meta": {"detail2": "imported by user 668", "severity": "low"}, "resource_uri": "/api/v2/intelligence/56278363173/", "report_link": "https://siemplify.threatstream.com/detail/ip/49.234.23.243"}]}], "is_risky": true}
+```
+
+
+
+#### Ping
+Test connectivity to the Siemplify ThreatFuse with parameters provided at the integration configuration page on the Marketplace tab.
+Timeout - 600 Seconds
+
+
+
+#### Submit Observables
+Submit an observable to Siemplify ThreatFuse based on IP, URL, Hash or User entities with Email regexes from Siemplify ThreatFuse. Note: requires 'Org admin', 'Create Anomali Community Intel' and 'Approve Intel' permissions.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Classification|Specify the classification of the observable.|True|List|Private|
+|Threat Type|Specify the threat type of the observables.|True|List|APT|
+|Source|Specify the intelligence source for the observable.|False|String|Siemplify|
+|Expiration Date|Specify the expiration date in days for the observable. If nothing is specified here, action will create an observable that will never expire.|False|String||
+|Trusted Circle IDs|Specify the comma-separated list of trusted circle ids. Observables will be shared with those trusted circles.|False|String||
+|TLP|Specify the TLP for your observables.|False|List|Select One|
+|Confidence|Specify what should be the confidence for the observable. Note: this parameter will only work, if you create observables in your organization and requires 'Override System Confidence' to be enabled.|False|String||
+|Override System Confidence|If enabled, created observables will have the confidence specified in the 'Confidence' parameter. Note: you can't share observables in trusted circles and publicly, when this parameter is enabled.|False|Boolean|False|
+|Anonymous Submission|If enabled, action will make an anonymous submission.|False|Boolean|False|
+|Tags|Specify a comma-separated list of tags that you want to add to observable.|False|String||
+
+
+
+##### JSON Results
+```json
+[{"approved_jobs":[{"id":"XXXXXXX","entity":"104.10.182.103"}],"jobs_with_excluded_entities":[{"id":"XXXXXXX","entity":"10.0.0.28"},{"id":"XXXXXXX","entity":"HTTP://MARKOSSOLOMON.COM/F1Q7QX.PHP"},{"id":"XXXXXXX","entity":"100.0.0.10"}]}]
+```
+
+
+
+#### Get Related URLs
+Retrieve entity related urls based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Confidence Threshold|Specify what should be the confidence threshold. Note: Maximum is 100.|True|String||
+|Search Threat Bulletins|If enabled, action will search among threat bulletins.|False|Boolean|True|
+|Search Actors|If enabled, action will search among actors.|False|Boolean|True|
+|Search Attack Patterns|If enabled, action will search among attack patterns.|False|Boolean|True|
+|Search Campaigns|If enabled, action will search among campaigns.|False|Boolean|True|
+|Search Courses Of Action|If enabled, action will search among courses of action.|False|Boolean|True|
+|Search Identities|If enabled, action will search among identities.|False|Boolean|True|
+|Search Incidents|If enabled, action will search among incidents.|False|Boolean|True|
+|Search Infrastructures|If enabled, action will search among infrastructures.|False|Boolean|True|
+|Search Intrusion Sets|If enabled, action will search among intrusion sets.|False|Boolean|True|
+|Search Malware|If enabled, action will search among malware.|False|Boolean|True|
+|Search Signatures|If enabled, action will search among signatures.|False|Boolean|True|
+|Search Tools|If enabled, action will search among tools.|False|Boolean|True|
+|Search TTPs|If enabled, action will search among TTPs.|False|Boolean|True|
+|Search Vulnerabilities|If enabled, action will search among vulnerabilities.|False|Boolean|True|
+|Max URLs To Return|Specify how many hashes to return. Default: 50.|False|String|50|
+
+
+
+##### JSON Results
+```json
+[{"urls":["https://www.google.com/url?q=http:/wzFgw"]}]
+```
+
+
+
+#### Get Related Email Addresses
+Retrieve entity related email addresses based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Confidence Threshold|Specify what should be the confidence threshold. Note: Maximum is 100.|True|String||
+|Search Observables|If enabled, action will search among observables.|False|Boolean|True|
+|Search Threat Bulletins|If enabled, action will search among threat bulletins.|False|Boolean|True|
+|Search Actors|If enabled, action will search among actors.|False|Boolean|True|
+|Search Attack Patterns|If enabled, action will search among attack patterns.|False|Boolean|True|
+|Search Campaigns|If enabled, action will search among campaigns.|False|Boolean|True|
+|Search Courses Of Action|If enabled, action will search among courses of action.|False|Boolean|True|
+|Search Identities|If enabled, action will search among identities.|False|Boolean|True|
+|Search Incidents|If enabled, action will search among incidents.|False|Boolean|True|
+|Search Infrastructures|If enabled, action will search among infrastructures.|False|Boolean|True|
+|Search Intrusion Sets|If enabled, action will search among intrusion sets.|False|Boolean|True|
+|Search Malware|If enabled, action will search among malware.|False|Boolean|True|
+|Search Signatures|If enabled, action will search among signatures.|False|Boolean|True|
+|Search Tools|If enabled, action will search among tools.|False|Boolean|True|
+|Search TTPs|If enabled, action will search among TTPs.|False|Boolean|True|
+|Search Vulnerabilities|If enabled, action will search among vulnerabilities.|False|Boolean|True|
+|Max Email Addresses To Return|Specify how many email addresses to return. Default: 50.|False|String|50|
+
+
+
+##### JSON Results
+```json
+[{"emails":["XWZNR1L@gmail.com"]}]
 ```
 
 
@@ -96,206 +296,6 @@ Timeout - 600 Seconds
 
 
 
-#### Get Related Domains
-Retrieve entity related domains based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Confidence Threshold|Specify what should be the confidence threshold. Note: Maximum is 100.|True|String||
-|Search Threat Bulletins|If enabled, action will search among threat bulletins.|False|Boolean|True|
-|Search Actors|If enabled, action will search among actors.|False|Boolean|True|
-|Search Attack Patterns|If enabled, action will search among attack patterns.|False|Boolean|True|
-|Search Campaigns|If enabled, action will search among campaigns.|False|Boolean|True|
-|Search Courses Of Action|If enabled, action will search among courses of action.|False|Boolean|True|
-|Search Identities|If enabled, action will search among identities.|False|Boolean|True|
-|Search Incidents|If enabled, action will search among incidents.|False|Boolean|True|
-|Search Infrastructures|If enabled, action will search among infrastructures.|False|Boolean|True|
-|Search Intrusion Sets|If enabled, action will search among intrusion sets.|False|Boolean|True|
-|Search Malware|If enabled, action will search among malware.|False|Boolean|True|
-|Search Signatures|If enabled, action will search among signatures.|False|Boolean|True|
-|Search Tools|If enabled, action will search among tools.|False|Boolean|True|
-|Search TTPs|If enabled, action will search among TTPs.|False|Boolean|True|
-|Search Vulnerabilities|If enabled, action will search among vulnerabilities.|False|Boolean|True|
-|Max Domains To Return|Specify how many domains to return. Default: 50.|False|String|50|
-
-
-
-##### JSON Results
-```json
-[{"domains":["www.google.com"]}]
-```
-
-
-
-#### Get Related Email Addresses
-Retrieve entity related email addresses based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Confidence Threshold|Specify what should be the confidence threshold. Note: Maximum is 100.|True|String||
-|Search Observables|If enabled, action will search among observables.|False|Boolean|True|
-|Search Threat Bulletins|If enabled, action will search among threat bulletins.|False|Boolean|True|
-|Search Actors|If enabled, action will search among actors.|False|Boolean|True|
-|Search Attack Patterns|If enabled, action will search among attack patterns.|False|Boolean|True|
-|Search Campaigns|If enabled, action will search among campaigns.|False|Boolean|True|
-|Search Courses Of Action|If enabled, action will search among courses of action.|False|Boolean|True|
-|Search Identities|If enabled, action will search among identities.|False|Boolean|True|
-|Search Incidents|If enabled, action will search among incidents.|False|Boolean|True|
-|Search Infrastructures|If enabled, action will search among infrastructures.|False|Boolean|True|
-|Search Intrusion Sets|If enabled, action will search among intrusion sets.|False|Boolean|True|
-|Search Malware|If enabled, action will search among malware.|False|Boolean|True|
-|Search Signatures|If enabled, action will search among signatures.|False|Boolean|True|
-|Search Tools|If enabled, action will search among tools.|False|Boolean|True|
-|Search TTPs|If enabled, action will search among TTPs.|False|Boolean|True|
-|Search Vulnerabilities|If enabled, action will search among vulnerabilities.|False|Boolean|True|
-|Max Email Addresses To Return|Specify how many email addresses to return. Default: 50.|False|String|50|
-
-
-
-##### JSON Results
-```json
-[{"emails":["XWZNR1L@gmail.com"]}]
-```
-
-
-
-#### Get Related Hashes
-Retrieve entity related hashes based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Confidence Threshold|Specify what should be the confidence threshold. Note: Maximum is 100.|True|String||
-|Search Threat Bulletins|If enabled, action will search among threat bulletins.|False|Boolean|True|
-|Search Actors|If enabled, action will search among actors.|False|Boolean|True|
-|Search Attack Patterns|If enabled, action will search among attack patterns.|False|Boolean|True|
-|Search Campaigns|If enabled, action will search among campaigns.|False|Boolean|True|
-|Search Courses Of Action|If enabled, action will search among courses of action.|False|Boolean|True|
-|Search Identities|If enabled, action will search among identities.|False|Boolean|True|
-|Search Incidents|If enabled, action will search among incidents.|False|Boolean|True|
-|Search Infrastructures|If enabled, action will search among infrastructures.|False|Boolean|True|
-|Search Intrusion Sets|If enabled, action will search among intrusion sets.|False|Boolean|True|
-|Search Malware|If enabled, action will search among malware.|False|Boolean|True|
-|Search Signatures|If enabled, action will search among signatures.|False|Boolean|True|
-|Search Tools|If enabled, action will search among tools.|False|Boolean|True|
-|Search TTPs|If enabled, action will search among TTPs.|False|Boolean|True|
-|Search Vulnerabilities|If enabled, action will search among vulnerabilities.|False|Boolean|True|
-|Max Hashes To Return|Specify how many hashes to return. Default: 50.|False|String|50|
-
-
-
-##### JSON Results
-```json
-[{"SHA1_hashes":["e7700ed03ee64a634527be5944d5e063fd9f1734","10bc38d0a421011a56875db8636e34748a2107f1"],"all_hashes":["ak285ed63a42f22dae616a341ef61dab66b6b65217df02k491966c778be5f138","1ff4c79bffeaa6fc865ad3d8de1b7aac2939862b246cae0a93cf5937d827f5be","e7700ed03ee64a634527be5944d5e063fd9f1734","10bc38d0a421011a56875db8636e34748a2107f1","4781c65762016dbb1e624418e6asw21b","1ababw3014df8594a61e0645422db960"],"MD5_hashes":["4781c65762016dbb1e624418e6asw21b","1ababw3014df8594a61e0645422db960"],"SHA256_hashes":["ak285ed63a42f22dae616a341ef61dab66b6b65217df02k491966c778be5f138","1ff4c79bffeaa6fc865ad3d8de1b7aac2939862b246cae0a93cf5937d827f5be"]}]
-```
-
-
-
-#### Get Related IPs
-Retrieve entity related IP addresses based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Confidence Threshold|Specify what should be the confidence threshold. Note: Maximum is 100.|True|String||
-|Search Observables|If enabled, action will search among observables.|False|Boolean|True|
-|Search Threat Bulletins|If enabled, action will search among threat bulletins.|False|Boolean|True|
-|Search Actors|If enabled, action will search among actors.|False|Boolean|True|
-|Search Attack Patterns|If enabled, action will search among attack patterns.|False|Boolean|True|
-|Search Campaigns|If enabled, action will search among campaigns.|False|Boolean|True|
-|Search Courses Of Action|If enabled, action will search among courses of action.|False|Boolean|True|
-|Search Identities|If enabled, action will search among identities.|False|Boolean|True|
-|Search Incidents|If enabled, action will search among incidents.|False|Boolean|True|
-|Search Infrastructures|If enabled, action will search among infrastructures.|False|Boolean|True|
-|Search Intrusion Sets|If enabled, action will search among intrusion sets.|False|Boolean|True|
-|Search Malware|If enabled, action will search among malware.|False|Boolean|True|
-|Search Signatures|If enabled, action will search among signatures.|False|Boolean|True|
-|Search Tools|If enabled, action will search among tools.|False|Boolean|True|
-|Search TTPs|If enabled, action will search among TTPs.|False|Boolean|True|
-|Search Vulnerabilities|If enabled, action will search among vulnerabilities.|False|Boolean|True|
-|Max IPs To Return|Specify how many IPs to return. Default: 50.|False|String|50|
-
-
-
-##### JSON Results
-```json
-[{"ips":["100.0.0.1"]}]
-```
-
-
-
-#### Get Related URLs
-Retrieve entity related urls based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Confidence Threshold|Specify what should be the confidence threshold. Note: Maximum is 100.|True|String||
-|Search Threat Bulletins|If enabled, action will search among threat bulletins.|False|Boolean|True|
-|Search Actors|If enabled, action will search among actors.|False|Boolean|True|
-|Search Attack Patterns|If enabled, action will search among attack patterns.|False|Boolean|True|
-|Search Campaigns|If enabled, action will search among campaigns.|False|Boolean|True|
-|Search Courses Of Action|If enabled, action will search among courses of action.|False|Boolean|True|
-|Search Identities|If enabled, action will search among identities.|False|Boolean|True|
-|Search Incidents|If enabled, action will search among incidents.|False|Boolean|True|
-|Search Infrastructures|If enabled, action will search among infrastructures.|False|Boolean|True|
-|Search Intrusion Sets|If enabled, action will search among intrusion sets.|False|Boolean|True|
-|Search Malware|If enabled, action will search among malware.|False|Boolean|True|
-|Search Signatures|If enabled, action will search among signatures.|False|Boolean|True|
-|Search Tools|If enabled, action will search among tools.|False|Boolean|True|
-|Search TTPs|If enabled, action will search among TTPs.|False|Boolean|True|
-|Search Vulnerabilities|If enabled, action will search among vulnerabilities.|False|Boolean|True|
-|Max URLs To Return|Specify how many hashes to return. Default: 50.|False|String|50|
-
-
-
-##### JSON Results
-```json
-[{"urls":["https://www.google.com/url?q=http:/wzFgw"]}]
-```
-
-
-
-#### Ping
-Test connectivity to the Siemplify ThreatFuse with parameters provided at the integration configuration page on the Marketplace tab.
-Timeout - 600 Seconds
-
-
-
-#### Submit Observables
-Submit an observable to Siemplify ThreatFuse based on IP, URL, Hash or User entities with Email regexes from Siemplify ThreatFuse. Note: requires 'Org admin', 'Create Anomali Community Intel' and 'Approve Intel' permissions.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Classification|Specify the classification of the observable.|True|List|Private|
-|Threat Type|Specify the threat type of the observables.|True|List|APT|
-|Source|Specify the intelligence source for the observable.|False|String|Siemplify|
-|Expiration Date|Specify the expiration date in days for the observable. If nothing is specified here, action will create an observable that will never expire.|False|String||
-|Trusted Circle IDs|Specify the comma-separated list of trusted circle ids. Observables will be shared with those trusted circles.|False|String||
-|TLP|Specify the TLP for your observables.|False|List|Select One|
-|Confidence|Specify what should be the confidence for the observable. Note: this parameter will only work, if you create observables in your organization and requires 'Override System Confidence' to be enabled.|False|String||
-|Override System Confidence|If enabled, created observables will have the confidence specified in the 'Confidence' parameter. Note: you can't share observables in trusted circles and publicly, when this parameter is enabled.|False|Boolean|False|
-|Anonymous Submission|If enabled, action will make an anonymous submission.|False|Boolean|False|
-|Tags|Specify a comma-separated list of tags that you want to add to observable.|False|String||
-
-
-
-##### JSON Results
-```json
-[{"approved_jobs":[{"id":"XXXXXXX","entity":"104.10.182.103"}],"jobs_with_excluded_entities":[{"id":"XXXXXXX","entity":"10.0.0.28"},{"id":"XXXXXXX","entity":"HTTP://MARKOSSOLOMON.COM/F1Q7QX.PHP"},{"id":"XXXXXXX","entity":"100.0.0.10"}]}]
-```
-
-
-
 
 
 
@@ -308,10 +308,8 @@ Pull observables from Siemplify ThreatFuse. Note: Source names are used in the w
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Proxy Username|The proxy username to authenticate with.|False|String||
-|Proxy Password|The proxy password to authenticate with.|False|Password||
-|DeviceProductField|Enter the source field name in order to retrieve the Product Field name.|True|String|Product Name|
 |EventClassId|Enter the source field name in order to retrieve the Event Field name.|True|String|type|
+|DeviceProductField|Enter the source field name in order to retrieve the Product Field name.|True|String|Product Name|
 |Script Timeout (Seconds)|Timeout limit for the python process running the current script.|True|Integer|300|
 |API Root|API root of the Siemplify ThreatFuse instance.|True|String|https://api.threatstream.com|
 |Email Address|Email address of the Siemplify ThreatFuse account.|True|String||
@@ -332,6 +330,8 @@ Pull observables from Siemplify ThreatFuse. Note: Source names are used in the w
 |Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field. Default is .* to catch all and return the value unchanged. Used to allow the user to manipulate the environment field via regex logic. If the regex pattern is null or empty, or the environment value is null, the final environment result is the default environment.|False|String|.*|
 |Verify SSL|If enabled, verify the SSL certificate for the connection to the Siemplify ThreatFuse server is valid.|False|Boolean|false|
 |Proxy Server Address|The address of the proxy server to use.|False|String||
+|Proxy Username|The proxy username to authenticate with.|False|String||
+|Proxy Password|The proxy password to authenticate with.|False|Password||
 
 
 
