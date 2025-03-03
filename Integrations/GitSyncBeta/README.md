@@ -93,24 +93,6 @@ Imports a custom family from the repo.
 |Branch|False|String|None|
 |Family Name|True|String||
 
-#### Pull Mappings GitSyncBeta
-Imports mappings from the repo.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Repo URL|False|String|None|
-|Branch|False|String|None|
-|Source|True|String||
-
-#### Pull Simulated Cases GitSyncBeta
-Imports simulated cases from the repo.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Simulated Cases|True|String||
-|Repo URL|False|String|None|
-|Branch|False|String|None|
-
 #### Push Content GitSyncBeta
 Push all content of this platform to git
 
@@ -143,6 +125,36 @@ Push all content of this platform to git
 |SLA Records|False|Boolean|true|
 |Simulated Cases|False|Boolean|true|
 
+#### Pull Mappings GitSyncBeta
+Imports mappings from the repo.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Repo URL|False|String|None|
+|Branch|False|String|None|
+|Source|True|String||
+
+#### Pull Simulated Cases GitSyncBeta
+Imports simulated cases from the repo.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Simulated Cases|True|String||
+|Repo URL|False|String|None|
+|Branch|False|String|None|
+
+#### Push Integration GitSyncBeta
+Push an integration to repo. This action will overwrite the entire folder.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Commit|True|String||
+|Push Whitelist|True|String||
+|Repo URL|False|String|None|
+|Branch|False|String|None|
+|Commit Author|False|String||
+|Readme Addon|False|String||
+
 #### Push Playbook GitSyncBeta
 Exports playbooks or blocks to the repo
 
@@ -156,18 +168,6 @@ Exports playbooks or blocks to the repo
 |Playbook Whitelist|False|String||
 |Readme Addon|False|String||
 |Include Playbook Blocks|False|Boolean|true|
-
-#### Push Integration GitSyncBeta
-Push an integration to repo. This action will overwrite the entire folder.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Commit|True|String||
-|Push Whitelist|True|String||
-|Repo URL|False|String|None|
-|Branch|False|String|None|
-|Commit Author|False|String||
-|Readme Addon|False|String||
 
 #### Push Job GitSyncBeta
 Export a job to the repo
@@ -191,18 +191,6 @@ Imports a connector from the repo.
 |Connector Name|True|String||
 |Include Visual Families|False|Boolean|false|
 |Include Mappings|False|Boolean|false|
-
-#### Push Custom Family GitSyncBeta
-Exports a custom family to the repo.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Commit|True|String||
-|Repo URL|False|String|None|
-|Branch|False|String|None|
-|Commit Author|False|String||
-|Family Name|True|String||
-|Readme Addon|False|String||
 
 #### Push Simulated Cases GitSyncBeta
 Export simulate cases to the repo
@@ -233,8 +221,8 @@ Imports a job from the repo.
 |Repo URL|False|String|None|
 |Branch|False|String|None|
 
-#### Push Mappings GitSyncBeta
-Exports mappings  to the repo.
+#### Push Custom Family GitSyncBeta
+Exports a custom family to the repo.
 
 |Name|IsMandatory|Type|DefaultValue|
 |----|-----------|----|------------|
@@ -242,7 +230,7 @@ Exports mappings  to the repo.
 |Repo URL|False|String|None|
 |Branch|False|String|None|
 |Commit Author|False|String||
-|Source|True|String||
+|Family Name|True|String||
 |Readme Addon|False|String||
 
 #### Pull Playbook GitSyncBeta
@@ -254,6 +242,18 @@ Pulls and Installs a playbook or block from the repo. NOTE: Please verify you're
 |Branch|False|String|None|
 |Playbook Whitelist|True|String||
 |Include Playbook Blocks|False|Boolean|true|
+
+#### Push Mappings GitSyncBeta
+Exports mappings  to the repo.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Commit|True|String||
+|Repo URL|False|String|None|
+|Branch|False|String|None|
+|Commit Author|False|String||
+|Source|True|String||
+|Readme Addon|False|String||
 
 #### Push Connectors GitSyncBeta
 Exports a connector to the repo.
