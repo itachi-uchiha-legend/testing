@@ -1,6 +1,6 @@
 {
-    "lastRunStatus": 0,
-    "lastRunTime": 1741004600240,
+    "lastRunStatus": 1,
+    "lastRunTime": 1741005103234,
     "uniqueIdentifier": "ab36b73f-e8cb-46a8-95ec-49243aff5508",
     "id": 0,
     "jobDefinitionId": 0,
@@ -177,7 +177,7 @@
     ],
     "runIntervalInSeconds": 60,
     "creationTime": "2025-03-03T11:43:27.818Z",
-    "lastModificationTime": "2025-03-03T12:23:20.258Z",
+    "lastModificationTime": "2025-03-03T12:31:43.245Z",
     "isSystemJob": false,
     "jobDefinitionName": "Pull Content GitSyncBeta",
     "agentIdentifier": null
