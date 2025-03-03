@@ -14,6 +14,27 @@
     "version": 1,
     "parameters": [
         {
+            "id": 151,
+            "isMandatory": false,
+            "name": "Repo URL",
+            "type": 2,
+            "value": "https://github.com/itachi-uchiha-legend/testing.git"
+        },
+        {
+            "id": 152,
+            "isMandatory": false,
+            "name": "Branch",
+            "type": 2,
+            "value": "main"
+        },
+        {
+            "id": 153,
+            "isMandatory": false,
+            "name": "Integrations",
+            "type": 0,
+            "value": "true"
+        },
+        {
             "id": 154,
             "isMandatory": false,
             "name": "Playbooks",
@@ -152,32 +173,11 @@
             "name": "Simulated Cases",
             "type": 0,
             "value": "true"
-        },
-        {
-            "id": 151,
-            "isMandatory": false,
-            "name": "Repo URL",
-            "type": 2,
-            "value": "https://github.com/itachi-uchiha-legend/testing.git"
-        },
-        {
-            "id": 152,
-            "isMandatory": false,
-            "name": "Branch",
-            "type": 2,
-            "value": "main"
-        },
-        {
-            "id": 153,
-            "isMandatory": false,
-            "name": "Integrations",
-            "type": 0,
-            "value": "true"
         }
     ],
     "runIntervalInSeconds": 60,
     "creationTime": "2025-03-03T11:43:27.818Z",
-    "lastModificationTime": "2025-03-03T11:49:53.678Z",
+    "lastModificationTime": "2025-03-03T11:50:36.296Z",
     "isSystemJob": false,
     "jobDefinitionName": "Pull Content GitSyncBeta",
     "agentIdentifier": null
