@@ -5,7 +5,7 @@
     "isEnabled": true,
     "isDebugMode": false,
     "name": "New Playbook",
-    "creator": "d1bace6b-0539-4e30-adde-13724886364c",
+    "creator": "Siemplify automation",
     "modifiedBy": "Siemplify automation",
     "priority": 2,
     "description": "",
@@ -16,7 +16,7 @@
     "categoryId": 1,
     "originalPlaybookIdentifier": "17c3da1e-7283-403a-9a4b-c41e9614feb2",
     "creationTimeUnixTimeInMs": 1740996575658,
-    "modificationTimeUnixTimeInMs": 1740996575658,
+    "modificationTimeUnixTimeInMs": 1741002294991,
     "trigger": {
         "id": 0,
         "identifier": "e9d8f2d2-8995-4e69-85d3-01a6a9d0a333",
@@ -174,8 +174,8 @@
             "workflowIdentifier": "17c3da1e-7283-403a-9a4b-c41e9614feb2",
             "isTouchedByAi": false,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1740996575658,
-            "modificationTimeUnixTimeInMs": 1740996575658,
+            "creationTimeUnixTimeInMs": 1741002294861,
+            "modificationTimeUnixTimeInMs": 1741002294991,
             "additionalProperties": {}
         }
     ],

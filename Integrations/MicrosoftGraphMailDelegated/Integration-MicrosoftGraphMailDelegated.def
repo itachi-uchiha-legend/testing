@@ -19,8 +19,8 @@
             "IsMandatory": true,
             "Value": "https://login.microsoftonline.com",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741002217802,
-            "ModificationTimeUnixTimeInMs": 1741002217802
+            "CreationTimeUnixTimeInMs": 1740470679447,
+            "ModificationTimeUnixTimeInMs": 1740470679447
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMailDelegated",
@@ -31,8 +31,8 @@
             "IsMandatory": true,
             "Value": "https://graph.microsoft.com",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741002217802,
-            "ModificationTimeUnixTimeInMs": 1741002217802
+            "CreationTimeUnixTimeInMs": 1740470679447,
+            "ModificationTimeUnixTimeInMs": 1740470679447
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMailDelegated",
@@ -43,8 +43,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741002217802,
-            "ModificationTimeUnixTimeInMs": 1741002217802
+            "CreationTimeUnixTimeInMs": 1740470679447,
+            "ModificationTimeUnixTimeInMs": 1740470679447
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMailDelegated",
@@ -55,8 +55,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741002217802,
-            "ModificationTimeUnixTimeInMs": 1741002217802
+            "CreationTimeUnixTimeInMs": 1740470679447,
+            "ModificationTimeUnixTimeInMs": 1740470679447
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMailDelegated",
@@ -67,8 +67,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741002217802,
-            "ModificationTimeUnixTimeInMs": 1741002217802
+            "CreationTimeUnixTimeInMs": 1740470679447,
+            "ModificationTimeUnixTimeInMs": 1740470679447
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMailDelegated",
@@ -79,8 +79,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741002217802,
-            "ModificationTimeUnixTimeInMs": 1741002217802
+            "CreationTimeUnixTimeInMs": 1740470679447,
+            "ModificationTimeUnixTimeInMs": 1740470679447
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMailDelegated",
@@ -91,8 +91,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741002217802,
-            "ModificationTimeUnixTimeInMs": 1741002217802
+            "CreationTimeUnixTimeInMs": 1740470679447,
+            "ModificationTimeUnixTimeInMs": 1740470679447
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMailDelegated",
@@ -103,8 +103,8 @@
             "IsMandatory": false,
             "Value": "true",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741002217802,
-            "ModificationTimeUnixTimeInMs": 1741002217802
+            "CreationTimeUnixTimeInMs": 1740470679447,
+            "ModificationTimeUnixTimeInMs": 1740470679447
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMailDelegated",
@@ -115,8 +115,8 @@
             "IsMandatory": false,
             "Value": "true",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741002217802,
-            "ModificationTimeUnixTimeInMs": 1741002217802
+            "CreationTimeUnixTimeInMs": 1740470679447,
+            "ModificationTimeUnixTimeInMs": 1740470679447
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMailDelegated",
@@ -127,150 +127,150 @@
             "IsMandatory": false,
             "Value": "http://localhost",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741002217802,
-            "ModificationTimeUnixTimeInMs": 1741002217802
+            "CreationTimeUnixTimeInMs": 1740470679447,
+            "ModificationTimeUnixTimeInMs": 1740470679447
         }
     ],
     "IntegrationSupportedActions": [
         {
-            "Name": "Get Mailbox Account Out Of Facility Settings",
-            "Description": "Use the Get Mailbox Account Out Of Facility Settings action to retrieve the mailbox account out of facility (OOF) settings for the Google SecOps User entity provided. The Get Mailbox Account Out Of Facility Settings action uses the beta version of Microsoft Graph API. This action runs on the Google SecOps User entity.",
-            "Id": 98,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
-        },
-        {
-            "Name": "Generate Token",
-            "Description": "Use the Generate Token action to obtain a refresh token for the integration configuration with delegated authentication. Use the authorization URL that you received in the Get Authorization action. This action doesn't run on Google SecOps entities. After you generate the refresh token for the first time, we recommend you to configure and activate the Refresh Token Renewal Job so the job automatically renews and keeps the refresh token valid.",
-            "Id": 108,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
-        },
-        {
-            "Name": "Mark Email as Not Junk",
-            "Description": "Use the Mark Email as Not Junk action to mark emails as not junk in a specific mailbox. This action removes the sender from the list of blocked senders and moves the message to the Inbox folder. The Mark Email as Not Junk action uses the beta version of Microsoft Graph API. This action doesn't run on Google SecOps entities.",
-            "Id": 109,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
-        },
-        {
-            "Name": "Mark Email as Junk",
-            "Description": "Use the Mark Email as Junk action to mark emails as junk in a specified mailbox. This action adds the email sender to the list of blocked senders and moves the message to the Junk Email folder. The Mark Email as Junk action uses the beta version of Microsoft Graph API. This action doesn't run on Google SecOps entities.",
-            "Id": 110,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
-        },
-        {
             "Name": "Get Authorization",
             "Description": "Use the Get Authorization action to obtain a link with the access code for the integration configuration with delegated authentication. Copy the whole link and use it in the Generate Token action to get the refresh token. This action doesn't run on Google SecOps entities.",
-            "Id": 96,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
-        },
-        {
-            "Name": "Send Email HTML",
-            "Description": "Use the Send Email HTML action to send emails you use the Google SecOps HTML template from a specific mailbox to an arbitrary list of recipients. With appropriate permissions, the action can send emails from a mailbox other than the default one. This action doesn't run on Google SecOps entities.",
-            "Id": 97,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
-        },
-        {
-            "Name": "Wait For Email From User",
-            "Description": "Use the Wait For Email From User action to wait for the user's response that is based on an email sent using the Send Email action. This action is asynchronous. Adjust the action timeout in the Google SecOps IDE accordingly. This action doesn't run on Google SecOps entities.",
-            "Id": 99,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
-        },
-        {
-            "Name": "Run Microsoft Search Query",
-            "Description": "Use the Run Microsoft Search Query action to perform a search using Microsoft Search engine. The search bases on the constructed basic or advanced query that you specify. For more information about Microsoft Search, see Overview of the Microsoft Search API in Microsoft Graph (https://learn.microsoft.com/en-us/graph/search-concept-overview). This action doesn\u2019t run on Google SecOps entities.",
-            "Id": 100,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
-        },
-        {
-            "Name": "Send Thread Reply",
-            "Description": "Use the Send Thread Reply action to send a message as a reply to the email thread. With appropriate permissions, the action can send emails from a mailbox other than the one specified in the integration configuration. This action doesn't run on Google SecOps entities.",
-            "Id": 101,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
-        },
-        {
-            "Name": "Send Vote Email",
-            "Description": "Use the Send Vote Email action to send emails with the predefined answering options. This action uses Google SecOps HTML templates to format the email. With appropriate permissions, the Send Vote Email action can send emails from a mailbox other than the default one. This action doesn't run on Google SecOps entities.",
-            "Id": 102,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
-        },
-        {
-            "Name": "Delete Email",
-            "Description": "You can use the Delete Email action to delete one or more emails from a mailbox. This action deletes emails based on your search criteria. With the appropriate permissions, the Delete Email action can move emails into different mailboxes. This action is asynchronous. Adjust the action timeout in the Google SecOps IDE accordingly. This action doesn't run on Google SecOps entities.",
-            "Id": 103,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
-        },
-        {
-            "Name": "Download Attachments from Email",
-            "Description": "Use the Download Attachments From Email action to download attachments from emails based on the criteria provided. This action doesn't run on Google SecOps entities. This action is asynchronous. Adjust the script timeout value in the Google SecOps IDE. The action replaces the \u201c/\u201d forward slash and \u201c\\\u201d  backslash characters in the names of the downloaded attachments with the \u201c_\u201d underscore character.",
-            "Id": 104,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
-        },
-        {
-            "Name": "Move Email To Folder",
-            "Description": "Use the Move Email To Folder action to move one or multiple emails from the source email folder to the other folder in the mailbox. With the appropriate permissions, this action can move emails to other mailboxes different from the one that is provided in the integration configuration. This action is asynchronous. Adjust the action timeout in the Google SecOps IDE accordingly. This action doesn't run on Google SecOps entities.",
-            "Id": 105,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
-        },
-        {
-            "Name": "Extract Data from Attached EML",
-            "Description": "Use the Extract Data From Attached EML action to retrieve data from the email EML attachments and return it in the action results. This action supports the .eml, .msg, and .ics file formats. This action doesn't run on Google SecOps entities.",
-            "Id": 106,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
+            "Id": 144,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
         },
         {
             "Name": "Send Email",
             "Description": "Use the Send Email action to send emails from a specific mailbox to an arbitrary list of recipients. This action can send either plain text or HTML-formatted emails. With appropriate permissions, the action can send emails from a mailbox different than the one specified in the integration configuration. This action doesn't run on Google SecOps entities.",
-            "Id": 107,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
+            "Id": 145,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
         },
         {
             "Name": "Save Email to the Case",
             "Description": "Use the Save Email To The Case action to save emails or email attachments to the Google SecOps Case Wall. With the appropriate permissions, this action can save emails from mailboxes other than the one provided in the integration configuration. This action doesn't run on Google SecOps entities.",
-            "Id": 111,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
-        },
-        {
-            "Name": "Wait For Vote Email Results",
-            "Description": "Use the Wait For Vote Email Results action to wait for the user response based on the vote email sent using the Send Vote Email action. This action is asynchronous. Adjust the action timeout in the Google SecOps IDE accordingly. This action doesn't run on Google SecOps entities.",
-            "Id": 112,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
-        },
-        {
-            "Name": "Forward Email",
-            "Description": "Use the Forward Email action to forward emails that include previous threads. With the appropriate permissions, this action can send emails from a mailbox different than the one specified in the integration configuration. This action doesn't run on Google SecOps entities.",
-            "Id": 113,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
+            "Id": 146,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
         },
         {
             "Name": "Search Emails",
             "Description": "Use the Search Emails action to execute email search in the default mailbox based on the provided search criteria. With appropriate permissions, this action can run a search in other mailboxes. This action is asynchronous. Adjust the action timeout in the Google SeOps IDE accordingly. This action doesn't run on Google SecOps entities.",
-            "Id": 114,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
+            "Id": 147,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
+        },
+        {
+            "Name": "Mark Email as Not Junk",
+            "Description": "Use the Mark Email as Not Junk action to mark emails as not junk in a specific mailbox. This action removes the sender from the list of blocked senders and moves the message to the Inbox folder. The Mark Email as Not Junk action uses the beta version of Microsoft Graph API. This action doesn't run on Google SecOps entities.",
+            "Id": 148,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
+        },
+        {
+            "Name": "Run Microsoft Search Query",
+            "Description": "Use the Run Microsoft Search Query action to perform a search using Microsoft Search engine. The search bases on the constructed basic or advanced query that you specify. For more information about Microsoft Search, see Overview of the Microsoft Search API in Microsoft Graph (https://learn.microsoft.com/en-us/graph/search-concept-overview). This action doesn\u2019t run on Google SecOps entities.",
+            "Id": 149,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
+        },
+        {
+            "Name": "Send Email HTML",
+            "Description": "Use the Send Email HTML action to send emails you use the Google SecOps HTML template from a specific mailbox to an arbitrary list of recipients. With appropriate permissions, the action can send emails from a mailbox other than the default one. This action doesn't run on Google SecOps entities.",
+            "Id": 150,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
+        },
+        {
+            "Name": "Wait For Vote Email Results",
+            "Description": "Use the Wait For Vote Email Results action to wait for the user response based on the vote email sent using the Send Vote Email action. This action is asynchronous. Adjust the action timeout in the Google SecOps IDE accordingly. This action doesn't run on Google SecOps entities.",
+            "Id": 151,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
+        },
+        {
+            "Name": "Get Mailbox Account Out Of Facility Settings",
+            "Description": "Use the Get Mailbox Account Out Of Facility Settings action to retrieve the mailbox account out of facility (OOF) settings for the Google SecOps User entity provided. The Get Mailbox Account Out Of Facility Settings action uses the beta version of Microsoft Graph API. This action runs on the Google SecOps User entity.",
+            "Id": 152,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
+        },
+        {
+            "Name": "Mark Email as Junk",
+            "Description": "Use the Mark Email as Junk action to mark emails as junk in a specified mailbox. This action adds the email sender to the list of blocked senders and moves the message to the Junk Email folder. The Mark Email as Junk action uses the beta version of Microsoft Graph API. This action doesn't run on Google SecOps entities.",
+            "Id": 153,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
+        },
+        {
+            "Name": "Delete Email",
+            "Description": "You can use the Delete Email action to delete one or more emails from a mailbox. This action deletes emails based on your search criteria. With the appropriate permissions, the Delete Email action can move emails into different mailboxes. This action is asynchronous. Adjust the action timeout in the Google SecOps IDE accordingly. This action doesn't run on Google SecOps entities.",
+            "Id": 154,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
+        },
+        {
+            "Name": "Forward Email",
+            "Description": "Use the Forward Email action to forward emails that include previous threads. With the appropriate permissions, this action can send emails from a mailbox different than the one specified in the integration configuration. This action doesn't run on Google SecOps entities.",
+            "Id": 155,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
+        },
+        {
+            "Name": "Wait For Email From User",
+            "Description": "Use the Wait For Email From User action to wait for the user's response that is based on an email sent using the Send Email action. This action is asynchronous. Adjust the action timeout in the Google SecOps IDE accordingly. This action doesn't run on Google SecOps entities.",
+            "Id": 156,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
+        },
+        {
+            "Name": "Move Email To Folder",
+            "Description": "Use the Move Email To Folder action to move one or multiple emails from the source email folder to the other folder in the mailbox. With the appropriate permissions, this action can move emails to other mailboxes different from the one that is provided in the integration configuration. This action is asynchronous. Adjust the action timeout in the Google SecOps IDE accordingly. This action doesn't run on Google SecOps entities.",
+            "Id": 157,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
+        },
+        {
+            "Name": "Download Attachments from Email",
+            "Description": "Use the Download Attachments From Email action to download attachments from emails based on the criteria provided. This action doesn't run on Google SecOps entities. This action is asynchronous. Adjust the script timeout value in the Google SecOps IDE. The action replaces the \u201c/\u201d forward slash and \u201c\\\u201d  backslash characters in the names of the downloaded attachments with the \u201c_\u201d underscore character.",
+            "Id": 158,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
+        },
+        {
+            "Name": "Send Thread Reply",
+            "Description": "Use the Send Thread Reply action to send a message as a reply to the email thread. With appropriate permissions, the action can send emails from a mailbox other than the one specified in the integration configuration. This action doesn't run on Google SecOps entities.",
+            "Id": 159,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
+        },
+        {
+            "Name": "Extract Data from Attached EML",
+            "Description": "Use the Extract Data From Attached EML action to retrieve data from the email EML attachments and return it in the action results. This action supports the .eml, .msg, and .ics file formats. This action doesn't run on Google SecOps entities.",
+            "Id": 160,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
+        },
+        {
+            "Name": "Send Vote Email",
+            "Description": "Use the Send Vote Email action to send emails with the predefined answering options. This action uses Google SecOps HTML templates to format the email. With appropriate permissions, the Send Vote Email action can send emails from a mailbox other than the default one. This action doesn't run on Google SecOps entities.",
+            "Id": 161,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
+        },
+        {
+            "Name": "Generate Token",
+            "Description": "Use the Generate Token action to obtain a refresh token for the integration configuration with delegated authentication. Use the authorization URL that you received in the Get Authorization action. This action doesn't run on Google SecOps entities. After you generate the refresh token for the first time, we recommend you to configure and activate the Refresh Token Renewal Job so the job automatically renews and keeps the refresh token valid.",
+            "Id": 162,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
         },
         {
             "Name": "Ping",
             "Description": "Use the Ping action to test connectivity to the Microsoft Graph mail service. This action doesn't run on Google SecOps entities.",
-            "Id": 115,
-            "CreationTimeUnixTimeInMs": 1741002217810,
-            "ModificationTimeUnixTimeInMs": 1741002217810
+            "Id": 163,
+            "CreationTimeUnixTimeInMs": 1740470679482,
+            "ModificationTimeUnixTimeInMs": 1740470679482
         }
     ],
     "Categories": [
@@ -287,6 +287,6 @@
     "MinimumSystemVersion": 0.0,
     "ProductionIntegrationIdentifier": null,
     "Id": 0,
-    "CreationTimeUnixTimeInMs": 1741002217802,
-    "ModificationTimeUnixTimeInMs": 1741002217802
+    "CreationTimeUnixTimeInMs": 1740470679447,
+    "ModificationTimeUnixTimeInMs": 1740470679447
 }

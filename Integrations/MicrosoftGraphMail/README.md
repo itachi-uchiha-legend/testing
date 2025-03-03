@@ -20,191 +20,68 @@ Python Version - 3
 #### Dependencies
 | |
 |-|
-|colorclass-2.2.2-py2.py3-none-any.whl|
-|pyth3-0.7-py3-none-any.whl|
-|emaildata-0.3.4-py3-none-any.whl|
-|pyparsing-3.2.0-py3-none-any.whl|
-|siemplify_html2text-2020.1.16-py3-none-any.whl|
-|cryptography-42.0.8-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
-|msoffcrypto_tool-5.4.2-py3-none-any.whl|
 |requests-2.32.3-py3-none-any.whl|
-|compressed_rtf-1.0.6.tar.gz|
-|pyasn1_modules-0.4.1-py3-none-any.whl|
-|python_dateutil-2.9.0.post0-py2.py3-none-any.whl|
-|google_api_core-2.23.0-py3-none-any.whl|
-|httplib2-0.22.0-py3-none-any.whl|
-|beautifulsoup4-4.12.3-py3-none-any.whl|
-|soupsieve-2.6-py3-none-any.whl|
-|chardet-5.2.0-py3-none-any.whl|
-|protobuf-5.28.3-cp38-abi3-manylinux2014_x86_64.whl|
-|idna-3.10-py3-none-any.whl|
-|pyOpenSSL-24.1.0-py3-none-any.whl|
-|pytz-2024.2-py2.py3-none-any.whl|
-|sniffio-1.3.1-py3-none-any.whl|
-|lark-1.1.9-py3-none-any.whl|
-|typing_extensions-4.12.2-py3-none-any.whl|
-|urllib3-2.2.3-py3-none-any.whl|
-|h11-0.14.0-py3-none-any.whl|
-|pyasn1-0.6.1-py3-none-any.whl|
-|red-black-tree-mod-1.20.tar.gz|
-|uritemplate-4.1.1-py2.py3-none-any.whl|
-|rsa-4.9-py3-none-any.whl|
-|pcodedmp-1.2.6-py2.py3-none-any.whl|
-|httpx-0.27.2-py3-none-any.whl|
-|cachetools-5.5.0-py3-none-any.whl|
-|charset_normalizer-3.4.0-py3-none-any.whl|
-|pycparser-2.22-py3-none-any.whl|
-|exceptiongroup-1.2.2-py3-none-any.whl|
-|TIPCommon-2.0.1-py2.py3-none-any.whl|
-|anyio-4.6.2.post1-py3-none-any.whl|
-|googleapis_common_protos-1.65.0-py2.py3-none-any.whl|
-|icalendar-6.0.1-py3-none-any.whl|
-|olefile-0.47-py2.py3-none-any.whl|
-|proto_plus-1.25.0-py3-none-any.whl|
-|httpcore-1.0.6-py3-none-any.whl|
-|tzdata-2024.2-py2.py3-none-any.whl|
-|google_api_python_client-2.151.0-py2.py3-none-any.whl|
-|extract_msg-0.52.0-py3-none-any.whl|
-|IMAPClient-3.0.1-py2.py3-none-any.whl|
 |certifi-2024.8.30-py3-none-any.whl|
-|cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|easygui-0.98.3-py2.py3-none-any.whl|
-|six-1.16.0-py2.py3-none-any.whl|
-|tzlocal-5.2-py3-none-any.whl|
-|RTFDE-0.1.2-py3-none-any.whl|
-|oletools-0.60.2-py2.py3-none-any.whl|
-|ebcdic-1.1.1-py2.py3-none-any.whl|
-|google_auth-2.36.0-py2.py3-none-any.whl|
-|PyJWT-2.9.0-py3-none-any.whl|
+|python_dateutil-2.9.0.post0-py2.py3-none-any.whl|
 |EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
+|rsa-4.9-py3-none-any.whl|
+|anyio-4.6.2.post1-py3-none-any.whl|
+|easygui-0.98.3-py2.py3-none-any.whl|
+|icalendar-6.0.1-py3-none-any.whl|
+|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
+|httpcore-1.0.6-py3-none-any.whl|
+|olefile-0.47-py2.py3-none-any.whl|
+|uritemplate-4.1.1-py2.py3-none-any.whl|
+|soupsieve-2.6-py3-none-any.whl|
+|tzdata-2024.2-py2.py3-none-any.whl|
+|RTFDE-0.1.2-py3-none-any.whl|
+|pyasn1_modules-0.4.1-py3-none-any.whl|
+|pyOpenSSL-24.1.0-py3-none-any.whl|
+|extract_msg-0.52.0-py3-none-any.whl|
+|googleapis_common_protos-1.65.0-py2.py3-none-any.whl|
+|pyparsing-3.2.0-py3-none-any.whl|
+|pyth3-0.7-py3-none-any.whl|
+|h11-0.14.0-py3-none-any.whl|
+|emaildata-0.3.4-py3-none-any.whl|
+|cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|pycparser-2.22-py3-none-any.whl|
+|pyasn1-0.6.1-py3-none-any.whl|
+|google_api_core-2.23.0-py3-none-any.whl|
+|cryptography-42.0.8-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|typing_extensions-4.12.2-py3-none-any.whl|
+|httplib2-0.22.0-py3-none-any.whl|
+|PyJWT-2.9.0-py3-none-any.whl|
+|urllib3-2.2.3-py3-none-any.whl|
+|lark-1.1.9-py3-none-any.whl|
+|red-black-tree-mod-1.20.tar.gz|
+|google_api_python_client-2.151.0-py2.py3-none-any.whl|
+|protobuf-5.28.3-cp38-abi3-manylinux2014_x86_64.whl|
+|IMAPClient-3.0.1-py2.py3-none-any.whl|
+|TIPCommon-2.0.1-py2.py3-none-any.whl|
+|charset_normalizer-3.4.0-py3-none-any.whl|
+|tzlocal-5.2-py3-none-any.whl|
+|siemplify_html2text-2020.1.16-py3-none-any.whl|
+|sniffio-1.3.1-py3-none-any.whl|
+|chardet-5.2.0-py3-none-any.whl|
+|google_auth-2.36.0-py2.py3-none-any.whl|
+|pytz-2024.2-py2.py3-none-any.whl|
+|oletools-0.60.2-py2.py3-none-any.whl|
+|beautifulsoup4-4.12.3-py3-none-any.whl|
+|ebcdic-1.1.1-py2.py3-none-any.whl|
+|colorclass-2.2.2-py2.py3-none-any.whl|
+|cachetools-5.5.0-py3-none-any.whl|
+|compressed_rtf-1.0.6.tar.gz|
 |pycryptodome-3.21.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|msoffcrypto_tool-5.4.2-py3-none-any.whl|
+|proto_plus-1.25.0-py3-none-any.whl|
+|idna-3.10-py3-none-any.whl|
+|exceptiongroup-1.2.2-py3-none-any.whl|
+|six-1.16.0-py2.py3-none-any.whl|
+|httpx-0.27.2-py3-none-any.whl|
+|pcodedmp-1.2.6-py2.py3-none-any.whl|
 
 
 ## Actions
-#### Forward Email
-Forward email including previous threads. If permissions allow, action can send an email from a mailbox different that is specified in the integration configuration. Note: Action is not running on Siemplify entities.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Send From|Specify the optional email address from which if permissions allow, email should be sent. By default, the email will be sent from the default mailbox specified in the integration configuration.|True|String||
-|Mail ID|Specify the mail ids or internetMessageIds of the message that you want to forward.|True|String||
-|Folder Name|Specify the mailbox folder to search in. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|False|String||
-|Subject|Specify the mail subject part.|True|String||
-|Send to|Specify the arbitrary comma separated list of email addresses for the email recipients. For example: user1@company.co, user2@company.co|True|String||
-|CC|Specify the arbitrary comma separated list of email addresses to be put in the CC field of email. Format is the same as for the 'Send to' field.|False|String||
-|BCC|Arbitrary comma separated list of email addresses to be put in the BCC field of email. Format is the same as for the 'Send to' field.|False|String||
-|Attachments Paths|Specify the attachments to be added, parameter expects full paths to be provided, for example: /<work directory>/file1.pdf. Parameter accepts multiple values as a comma separated string.|False|String||
-|Mail Content|Specify the email body part.|True|String||
-|Attachment Location|Location where the attachments to be added are stored. By default, the action attempts to get the attachment from the Google Cloud storage bucket, another option is to fetch it from the local file system.|True|List|None|
-
-
-
-##### JSON Results
-```json
-{"id": "xxxxx", "createdDateTime": "2024-02-02T09:49:53Z", "lastModifiedDateTime": "2024-02-02T09:51:19Z", "changeKey": "ieiohjdskj", "categories": [], "receivedDateTime": "2024-02-02T09:49:54Z", "sentDateTime": "2024-02-02T09:49:54Z", "hasAttachments": true, "internetMessageId": "<xyz>", "subject": "xxxx", "bodyPreview": "Mail Action body", "importance": "normal", "parentFolderId": "ddd==", "conversationId": "dagazz=", "conversationIndex": "daf+UJo/clVcxTQ==", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": true, "isDraft": false, "webLink": "https://www.example.com/about", "inferenceClassification": "focused", "body": {"contentType": "text", "content": "Send Mail Action body"}, "sender": {"emailAddress": {"name": "wdzd", "address": "sample@s.com"}}, "from": {"emailAddress": {"name": "safd", "address": "xxx"}}, "toRecipients": [{"emailAddress": {"name": "xx", "address": "aef"}}], "ccRecipients": [{"emailAddress": {"name": "as", "address": "kdaw"}}], "bccRecipients": [{"emailAddress": {"name": "xxsf", "address": "wf"}}], "replyTo": [], "uniqueBody": {"contentType": "html", "content": "Mail Action body"}, "flag": {"flagStatus": "notFlagged"}}
-```
-
-
-
-#### Send Email HTML
-Send email with the Google SecOps HTML template from a specific mailbox to an arbitrary list of recipients. If permissions allow, the action sends an email from a mailbox different than the one specified in the integration configuration. Note: Action is not running on Google SecOps entities.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Send From|Optional email address to send an email from (if permissions allow it). By default, the email is sent from the default mailbox specified in the integration configuration.|True|String||
-|Subject|Email subject.|True|String||
-|Send to|Specify the arbitrary comma-separated list of email addresses for the email recipients,for example, user1@company.co, user2@company.co.|True|String||
-|CC|Arbitrary comma-separated list of email addresses to use in the CC email field. Use the same format as for the "Send to" field.|False|String||
-|BCC|Arbitrary comma-separated list of email addresses to use in the BCC email field. Use the same format for the "Send to" field.|False|String||
-|Attachments Paths|Specify the attachments to be added, parameter expects full paths to be provided, for example: /<work directory>/file1.pdf. Parameter accepts multiple values as a comma separated string.|False|String||
-|Email HTML Template|The question you would like to ask, or describe the decision you would like the recipient to be able to respond to|True|Email Content|Email HTML Template|
-|Reply-To Recipients|Comma-separated list of recipients used in the Reply-To header. Note: The Reply-To header is added to force email replies to specific email addresses instead of the email sender address stated in the From field.|False|String||
-|Attachment Location|Location where the attachments to be added are stored. By default, the action attempts to get the attachment from the Google Cloud storage bucket, another option is to fetch it from the local file system.|True|List|None|
-
-
-
-##### JSON Results
-```json
-{"createdDateTime": "2024-01-30T16:50:27Z", "lastModifiedDateTime": "2024-01-30T16:50:27Z", "changeKey": "xxxxx", "categories": [], "receivedDateTime": "2024-01-30T16:50:27Z", "sentDateTime": "2024-01-30T16:50:27Z", "hasAttachments": false, "internetMessageId": "<outlook.com>", "subject": "Testing", "bodyPreview": "bbcbcb", "importance": "normal", "parentFolderId": "xxxxx", "conversationId": "xxxxx", "conversationIndex": "xxxxxxx", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": true, "isDraft": false, "webLink": "https://example.com", "inferenceClassification": "focused", "body": {"contentType": "html", "content": "hdhdhd"}, "sender": {"emailAddress": {"name": "sdjsdjs", "address": "xxxxx"}}, "from": {"emailAddress": {"name": "jdsjdjs", "address": "xxxxxx"}}, "toRecipients": [{"emailAddress": {"name": "example@mail.com", "address": "xxxxxxx"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "uniqueBody": {"contentType": "html", "content": "ssfsf"}, "flag": {"flagStatus": "notFlagged"}, "id": "xxxxxxx"}
-```
-
-
-
-#### Wait For Email From User
-Wait for user's response based on an email sent via the "Send Mail" action. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Mail ID|Specify the id or internetMessageId of the email, which current action would be waiting for. If the message has been sent using Send Email action, please select SendEmail.JSONResult|id or Send Email.JsonResult|internetMessageId field as a placeholder. Search Emails action also can return ids for emails.|True|String|None|
-|Wait for All Recipients to Reply?|If enabled,  the action will wait for responses from all of the recipients until timeout, and not finish upon getting the first response.|False|Boolean|None|
-|Wait Stage Exclude pattern|Specify the regular expression to exclude specific replies from the wait stage. Works with subject and body parts of the email. Example is, to exclude automatic Out-Of-Office emails to be considered as recipient reply, and instead wait for actual user reply.|False|String|None|
-|Folder to Check for Reply|Specify the mailbox email folder (mailbox that was used to send the email with question) to search for the user reply in this folder. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|False|String|None|
-|Fetch Response Attachments|If enabled, if recipient replies with attachment - fetch recipient response and add it as attachment for the action result.|False|Boolean|None|
-|Limit the Amount of Information Returned in the JSON Result|If enabled, the amount of information returned by the action will be limited only to the key email fields.|False|Boolean|true|
-|Disable the Action JSON Result|If enabled, action will not return JSON result.|False|Boolean|false|
-
-
-
-##### JSON Results
-```json
-{"Responses": [{"recipient": "recipient@example.com", "content": {"@odata.etag": "W/\"dummy_etag\"", "id": "dummy_id", "createdDateTime": "2024-01-01T12:00:00Z", "lastModifiedDateTime": "2024-01-01T12:00:01Z", "changeKey": "dummy_change_key", "categories": [], "receivedDateTime": "2024-01-01T12:00:00Z", "sentDateTime": "2024-01-01T12:00:00Z", "hasAttachments": false, "internetMessageId": "<dummy_message_id@example.com>", "subject": "Dummy Subject", "bodyPreview": "Dummy Body Preview", "importance": "normal", "parentFolderId": "dummy_folder_id", "conversationId": "dummy_conversation_id", "conversationIndex": "dummy_conversation_index", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": false, "isDraft": false, "webLink": "https://outlook.office365.com/owa/?ItemID=dummy_item_id&exvsurl=1&viewmodel=ReadMessageItem", "inferenceClassification": "focused", "internetMessageHeaders": [{"name": "Received", "value": "from dummy_server by dummy_server"}, {"name": "Authentication-Results", "value": "dummy_authentication_results"},  {"name": "From", "value": "\"Dummy Sender\" <dummy_sender@example.com>"}, {"name": "To", "value": "\"Dummy Recipient\" <dummy_recipient@example.com>"}, {"name": "Subject", "value": "Dummy Subject"}, {"name": "Thread-Topic", "value": "Dummy Thread Topic"}, {"name": "Thread-Index", "value": "dummy_thread_index"}, {"name": "Date", "value": "Mon, 01 Jan 2024 12:00:00 +0000"}, {"name": "Message-ID", "value": "<dummy_message_id@example.com>"}, {"name": "References", "value": "<dummy_reference_id@example.com>"}, {"name": "In-Reply-To", "value": "<dummy_in_reply_to_id@example.com>"}, {"name": "X-MS-Exchange-Organization-SCL", "value": "0"}, {"name": "X-MS-TNEF-Correlator", "value": "dummy_correlator"}, {"name": "MIME-Version", "value": "1.0"}], "body": {"contentType": "html", "content": "<html><body>Dummy Body</body></html>"}, "sender": {"emailAddress": {"name": "Dummy Sender", "address": "dummy_sender@example.com"}}, "from": {"emailAddress": {"name": "Dummy Sender", "address": "dummy_sender@example.com"}}, "toRecipients": [{"emailAddress": {"name": "Dummy Recipient", "address": "dummy_recipient@example.com"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "uniqueBody": {"contentType": "html", "content": "<html><body>Dummy Unique Body</body></html>"}, "flag": {"flagStatus": "notFlagged"}, "singleValueExtendedProperties": [{"id": "String 0x7d", "value": "Dummy Extended Property"}]}}]}
-```
-
-
-
-#### Send Thread Reply
-Send a message as a reply to the email thread. If permissions allow, action can send an email from a mailbox different that is specified in the integration configuration. Note: Action is not running on Chronicle entities.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Send From|Specify the optional email address from which if permissions allow, email should be sent. By default, the email will be sent from the default mailbox specified in the integration configuration.|True|String||
-|Mail ID|Specify the ID or internetMessageId of the message to which you want to send a reply.|True|String||
-|Folder Name|Specify the mailbox folder to search in. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|True|String||
-|Attachments Paths|Specify the attachments to be added, parameter expects full paths to be provided, for example: /<work directory>/file1.pdf. Parameter accepts multiple values as a comma separated string.|False|String||
-|Mail Content|Specify the email body part.|True|String||
-|Reply All|If enabled, action will send a reply to all recipients related to the original email. Note: this parameter has priority over “Reply To“ parameter.|False|Boolean||
-|Reply To|Specify a comma-separated list of emails to which you want to send this reply. If nothing is provided and “Reply All“ is disabled, action will only send a reply to the sender of the email. If “Reply All“ is enabled, action will ignore this parameter.|False|String||
-|Attachment Location|Location where the attachments to be added are stored. By default, the action attempts to get the attachment from the Google Cloud storage bucket, another option is to fetch it from the local file system.|True|List|None|
-
-
-
-##### JSON Results
-```json
-{"id": "xxxx", "createdDateTime": "2024-02-02T10:57:18Z", "lastModifiedDateTime": "2024-02-02T10:57:23Z", "changeKey": "dsf+oAAQLaPjk", "categories": [], "receivedDateTime": "2024-02-02T10:57:20Z", "sentDateTime": "2024-02-02T10:57:19Z", "hasAttachments": true, "internetMessageId": "sdfhsjdfhjsdjfd", "subject": "RE: reply checking", "bodyPreview": "Reply check kr", "importance": "normal", "parentFolderId": "id", "conversationId": "id", "conversationIndex": "sdghfjfke", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": true, "isDraft": false, "webLink": "https://www.example.com/about", "inferenceClassification": "focused", "body": {"contentType": "text", "content": "Reply check kr"}, "sender": {"emailAddress": {"name": "aff", "address": "ddxsm@a.com"}}, "from": {"emailAddress": {"name": "fasf", "address": "ddxsm@a.com"}}, "toRecipients": [{"emailAddress": {"name": "wf", "address": "ddxsm@a.com"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "uniqueBody": {"contentType": "html", "content": "Reply check"}, "flag": {"flagStatus": "notFlagged"}}
-```
-
-
-
-#### Extract Data from Attached EML
-Extract data from the email EML attachments and return it in the actions JSON result. The action supports .eml, .msg, .ics file formats. Note: Action is not running on SecOps entities.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Search In Mailbox|By default, the action attempts to search for an email in the default mailbox specified in the integration configuration. If permissions allow, the action can execute search in other mailboxes. This parameter accepts multiple values as a comma-separated string.|True|String||
-|Folder Name|Specify the mailbox folder to search in. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|False|String||
-|Mail IDs|Specify the mail ids or internetMessageIds to search for. This parameter accepts multiple values as a comma-separated string.|True|String||
-|Regex Map JSON|JSON definition containing regular expressions to apply to the attached email file and produce additional key values in the action JSON result. Example of the JSON definition is as follows: {ips: \b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\b}|False|String|{}|
-
-
-
-##### JSON Results
-```json
-[{"type":"EML","subject":"examplesubject","from":"example@mail.com","to":"example1@mail.com,example2@mail.com","date":"Thu,4Jul202412:11:29+0530","text":"Someexampleintext","html":"<p>Someexampleinhtml</p>","regex":{},"regex_from_text_part":{},"id":"abcd","name":"abc.eml"},{"type":"MSG","subject":"examplesubject","from":"example@mail.com","to":"example1@mail.com,example2@mail.com","date":"Thu,4Jul202412:11:29+0530","text":"Someexampleintext","html":"<p>Someexampleinhtml</p>","regex":{},"regex_from_text_part":{},"id":"abcd","name":"abc.msg"},{"type":"ICS","subject":"examplesubject","from":"example@mail.com","to":"example1@mail.com,example2@mail.com","date":"Thu,4Jul202412:11:29+0530","text":"Someexampleintext","html":"<p>Someexampleinhtml</p>","regex":{},"regex_from_text_part":{},"id":"abcd","name":"abc.ics"}]
-```
-
-
-
 #### Delete Email
 Delete one or multiple emails from the mailbox based on provided search criteria. If permissions allow, action can move emails in mailboxes other than the one provided in the integration configuration. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities.
 Timeout - 600 Seconds
@@ -220,97 +97,12 @@ Timeout - 600 Seconds
 |Time Frame (minutes)|Specify time frame in minutes to search emails for.|False|String||
 |Only Unread|If enabled, action searches only for the unread emails.|False|Boolean||
 |How many mailboxes to process in a single batch|Specify how many mailboxes action should process in a single batch (single connection to O365). If nothing is provided, default value of 25 will be used.|False|String||
-|Limit the Amount of Information Returned in the JSON Result|If enabled, the amount of information returned by the action will be limited only to the key email fields.|False|Boolean|false|
-|Disable the Action JSON Result|If enabled, action will not return JSON result.|False|Boolean|true|
 
 
 
 ##### JSON Results
 ```json
-[{"@odata.context": "xx", "@odata.etag": "xxxx", "id": "xxxx", "createdDateTime": "2025-02-12T15:18:43Z", "lastModifiedDateTime": "2025-02-12T15:18:49Z", "changeKey": "xx+xx", "categories": [], "receivedDateTime": "2025-02-12T15:18:44Z", "sentDateTime": "2025-02-12T15:18:41Z", "hasAttachments": false, "internetMessageId": "xxx", "subject": "Re: Testing", "bodyPreview": "xxxx", "importance": "normal", "parentFolderId": "xxx", "conversationId": "xxx", "conversationIndex": "xxx", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": false, "isDraft": false, "webLink": "xxx", "inferenceClassification": "focused", "body": {"contentType": "html", "content": "xxxx"}, "sender": {"emailAddress": {"name": "Idris Elba", "address": "xxxx"}}, "from": {"emailAddress": {"name": "Idris Elba", "address": "xxx"}}, "toRecipients": [{"emailAddress": {"name": "xxxx", "address": "xxxx"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "flag": {"flagStatus": "notFlagged"}}]
-```
 
-
-
-#### Search Emails
-Execute email search in the configured mailbox based on provided search criteria. If permissions allow, action can search in mailboxes other than the one provided in the integration configuration. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities. 
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Time Frame (minutes)|Specify time frame in minutes to search emails for.|False|String||
-|Search in Mailbox|By default, the search will be executed in the default mailbox specified in the integration configuration. If permissions allow, action can search in other mailboxes as well. Parameter accepts multiple values as a comma separated string. Note that it’s not recommended to perform a search against a big number of mailboxes with this action, for complex searches it is recommended to use Exchange Extension Pack.|True|String|Default Mailbox|
-|Folder Name|Specify the mailbox folder to search in. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|True|String|Inbox|
-|Subject Filter|Specify the subject of the email to search for. Filter works with “contains” logic.|False|String||
-|Sender Filter|Specify the sender of the email to search for. Filter works with “equals” logic.|False|String||
-|Max Emails To Return|Specify how many emails action should return. If value is not provided, API default is used.|False|String||
-|Only Unread|If enabled, action will search only for unread emails.|False|Boolean|false|
-|Select All Fields For Return|If enabled, action will return all available fields for the found email.|False|Boolean|false|
-|How many mailboxes to process in a single batch|Specify how many mailboxes action should process in a single batch (single connection to O365). If nothing is provided, default value of 25 will be used.|False|String||
-|Limit the Amount of Information Returned in the JSON Result|If enabled, the amount of information returned by the action will be limited only to the key email fields.|False|Boolean|false|
-|Disable the Action JSON Result|If enabled, action will not return JSON result.|False|Boolean|false|
-
-
-
-##### JSON Results
-```json
-[{"Mailbox": "abcd@g.com", "Emails": [{"id": "xxxx", "createdDateTime": "2024-01-12T07:48:13Z", "lastModifiedDateTime": "2024-01-12T08:25:54Z", "changeKey": "xxxx", "categories": [], "receivedDateTime": "2024-01-12T07:48:14Z", "sentDateTime": "2024-01-12T07:48:10Z", "hasAttachments": false, "internetMessageId": "xxxx", "subject": "xxxx", "bodyPreview": "xxxx", "importance": "normal", "parentFolderId": "xxxx", "conversationId": "xxxx", "conversationIndex": "xxxx", "isDeliveryReceiptRequested": null, "isReadReceiptRequested": false, "isRead": true, "isDraft": false, "webLink": "dddm", "inferenceClassification": "focused", "body": {"contentType": "text", "content": "xxxx"}, "sender": {"emailAddress": {"name": "xxxx", "address": "xxxx"}}, "from": {"emailAddress": {"name": "xxxx", "address": "xxxx"}}, "toRecipients": [{"emailAddress": {"name": "xxxx", "address": "xxxx"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "flag": {"flagStatus": "notFlagged"}}]}]
-```
-
-
-
-#### Move Email To Folder
-Move one or multiple emails from source email folder to another folder in the mailbox. If permissions allow, action can move emails in mailboxes other than the one provided in the integration configuration. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Move In Mailbox|By default, move operation will be executed in the default mailbox specified in the integration configuration. If permissions allow, action can search in other mailboxes as well. If permissions allow, action can search in other mailboxes as well. Parameter accepts multiple values as a comma separated string.|True|String|Default Mailbox|
-|Source Folder Name|Specify the source folder name to move mail from. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|True|String|None|
-|Destination Folder Name|Specify the destination folder name to move mail to. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|True|String|None|
-|Mail IDs|Specify the mail ids or internetMessageIds to search for. Parameter accepts multiple values as a comma separated string. If mail id or internet message id is provided, it takes priority for the search, subject and sender filters are ignored.|False|String|None|
-|Subject Filter|Specify the subject of the email to search for. Filter works with "contains" logic.|False|String|None|
-|Sender Filter|Specify the sender of the email to search for. Filter works with "equals" logic.|False|String|None|
-|Time Frame (minutes)|Specify time frame in minutes to search emails for.|False|String|None|
-|Only Unread|If enabled, action searches only for the unread emails.|False|Boolean|None|
-|How many mailboxes to process in a single batch|Specify how many mailboxes action should process in a single batch (single connection to O365). If nothing is provided, default value of 25 will be used.|False|String||
-|Limit the Amount of Information Returned in the JSON Result|If enabled, the amount of information returned by the action will be limited only to the key email fields.|False|Boolean|false|
-|Disable the Action JSON Result|If enabled, action will not return JSON result.|False|Boolean|false|
-
-
-
-##### JSON Results
-```json
-[{"Mailbox": "example@mail.com", "Emails": [{"id": "xxxxx", "createdDateTime": "2024-02-05T10:03:14Z", "lastModifiedDateTime": "2024-02-05T16:30:11Z", "changeKey": "cxsdjjh", "categories": [], "receivedDateTime": "2024-02-05T10:03:15Z", "sentDateTime": "2024-02-05T10:03:12Z", "hasAttachments": true, "internetMessageId": "sdfhsjdfhjsdjfd", "subject": "Forwarding for the last time with attachment", "bodyPreview": "this is the mail content for testingxyzrxyzn________________________________xyzrxyznFrom: xyzxyzrxyznSent: Monday, February 5, 2024 7:48:16 AMxyzrxyznTo: example.com <example.com>xyzrxyznSubject: subjectxyzrxyznxyzrxyznmail", "importance": "normal", "parentFolderId": "id", "conversationId": "id", "conversationIndex": "hjaoihfehf", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": true, "isDraft": false, "webLink": "https://www.example.com/about", "inferenceClassification": "focused", "body": {"contentType": "html", "content": "xyz"}, "sender": {"emailAddress": {"name": "xyz", "address": "example@mail.com"}}, "from": {"emailAddress": {"name": "xyz", "address": "example@mail.com"}}, "toRecipients": [{"emailAddress": {"name": "xyz", "address": "example@mail.com"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "flag": {"flagStatus": "notFlagged"}}]}]
-```
-
-
-
-#### Send Vote Email
-Send email with easy answering options, to allow stakeholders to be included in workflow processes. This action uses Google SecOps HTML templates to format the email. If permissions allow, the action sends an email from a mailbox different than the one specified in the integration configuration. Note: This action is not running on Google SecOps entities.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Send From|Optional email address to send an email from (if permissions allow it). By default, the email is sent from the default mailbox specified in the integration configuration.|True|String||
-|Subject|Email subject.|True|String||
-|Send to|Arbitrary comma-separated list of email addresses for the email recipients, for example, user1@company.co, user2@company.co.|True|String||
-|CC|Arbitrary comma-separated list of email addresses to use in the CC email field. Use the same format as for the "Send to" field.|False|String||
-|BCC|Arbitrary comma-separated list of email addresses to use in the BCC email field. Use the same format for the "Send to" field.|False|String||
-|Attachments Paths|Specify the attachments to be added, parameter expects full paths to be provided, for example: /<work directory>/file1.pdf. Parameter accepts multiple values as a comma separated string.|False|String||
-|Email HTML Template|The question you would like to ask, or describe the decision you would like the recipient to be able to respond to|True|Email Content|Email HTML Template|
-|Structure of voting options|Structure of the vote to send to the recipients.|True|List|Yes/No|
-|Reply-To Recipients|Comma-separated list of recipients used in the Reply-To header. Note: The Reply-To header is added to force email replies to specific email addresses instead of the email sender address stated in the From field.|False|String||
-|Attachment Location|Location where the attachments to be added are stored. By default, the action attempts to get the attachment from the Google Cloud storage bucket, another option is to fetch it from the local file system.|True|List|None|
-
-
-
-##### JSON Results
-```json
-{"createdDateTime": "2024-01-30T16:50:27Z", "lastModifiedDateTime": "2024-01-30T16:50:27Z", "changeKey": "xxxxx", "categories": [], "receivedDateTime": "2024-01-30T16:50:27Z", "sentDateTime": "2024-01-30T16:50:27Z", "hasAttachments": false, "internetMessageId": "<abcd.prod.com>", "subject": "Testing", "bodyPreview": "bbcbcb", "importance": "normal", "parentFolderId": "xxxxxxx", "conversationId": "xxxxx", "conversationIndex": "xxxxxx", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": true, "isDraft": false, "webLink": "https://www.example.com/about", "inferenceClassification": "focused", "body": {"contentType": "html", "content": "hdhdhd"}, "sender": {"emailAddress": {"name": "sdjsdjs", "address": "abcd@example.com"}}, "from": {"emailAddress": {"name": "jdsjdjs", "address": "abcd@gm.com"}}, "toRecipients": [{"emailAddress": {"name": "abc@example.com", "address": "abc@example.com"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "uniqueBody": {"contentType": "html", "content": "ssfsf"}, "flag": {"flagStatus": "notFlagged"}, "id": "xxxxx"}
 ```
 
 
@@ -342,26 +134,50 @@ Timeout - 600 Seconds
 
 
 
-#### Wait For Vote Email Results
-Wait for the user response based on the vote email sent using the Send Vote Email action. This action is asynchronous. Adjust the action timeout in the IDE accordingly. This action is not working on Google SecOps entities.
+#### Extract Data from Attached EML
+Extract data from the email EML attachments and return it in the actions JSON result. The action supports .eml, .msg, .ics file formats. Note: Action is not running on SecOps entities.
 Timeout - 600 Seconds
 
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Vote Mail Sent From|By default, the email is sent from the default mailbox specified in the integration configuration. In this parameter optionally a different value can be specified, if the vote mail was sent from a different mailbox.|True|String|None|
-|Mail ID|ID or internetMessageId of the vote email that the action waits for. If the message was sent using Send Vote Email action, select SendVoteEmail.JSONResult|id or Send Email.JsonResult|internetMessageId field as a placeholder. The Search Emails action also can return email IDs.|True|String|None|
-|Wait for All Recipients to Reply?|If selected, the action waits for responses from all recipients until timeout and doesn't complete execution receiving the first response.|False|Boolean|None|
-|Wait Stage Exclude pattern|Regular expression to exclude specific replies from the wait stage. The regular expression works with the email subject and body. For example, you can use this parameter to exclude  automatic Out of Office emails wait for an actual user reply.|False|String|None|
-|Folder to Check for Reply|Email folder in the mailbox that was used to send the email with question to search for the user reply in. Parameter also accepts a comma separated list of folders to check the user response in multiple folders. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|False|String|None|
-|Folder to check for Sent Mail|Parameter can be used to specify mailbox email folder (mailbox that was used to send the email with question) to search for the sent mail in this folder. Parameter also accepts a comma separated list of folders to check the user response in multiple folders. Parameter is case sensitive. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|False|String|None|
-|Fetch Response Attachments|If selected and the recipient replies with an attachment, the action fetches the recipient response and adds it as an attachment for the action result.|False|Boolean|None|
+|Search In Mailbox|By default, the action attempts to search for an email in the default mailbox specified in the integration configuration. If permissions allow, the action can execute search in other mailboxes. This parameter accepts multiple values as a comma-separated string.|True|String||
+|Folder Name|Specify the mailbox folder to search in. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|False|String||
+|Mail IDs|Specify the mail ids or internetMessageIds to search for. This parameter accepts multiple values as a comma-separated string.|True|String||
+|Regex Map JSON|JSON definition containing regular expressions to apply to the attached email file and produce additional key values in the action JSON result. Example of the JSON definition is as follows: {ips: \b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\b}|False|String|{}|
 
 
 
 ##### JSON Results
 ```json
-{"Responses": [{"recipient": "aaa@aaa.com", "vote": "Approve"}]}
+[{"type":"EML","subject":"examplesubject","from":"example@mail.com","to":"example1@mail.com,example2@mail.com","date":"Thu,4Jul202412:11:29+0530","text":"Someexampleintext","html":"<p>Someexampleinhtml</p>","regex":{},"regex_from_text_part":{},"id":"abcd","name":"abc.eml"},{"type":"MSG","subject":"examplesubject","from":"example@mail.com","to":"example1@mail.com,example2@mail.com","date":"Thu,4Jul202412:11:29+0530","text":"Someexampleintext","html":"<p>Someexampleinhtml</p>","regex":{},"regex_from_text_part":{},"id":"abcd","name":"abc.msg"},{"type":"ICS","subject":"examplesubject","from":"example@mail.com","to":"example1@mail.com,example2@mail.com","date":"Thu,4Jul202412:11:29+0530","text":"Someexampleintext","html":"<p>Someexampleinhtml</p>","regex":{},"regex_from_text_part":{},"id":"abcd","name":"abc.ics"}]
+```
+
+
+
+#### Forward Email
+Forward email including previous threads. If permissions allow, action can send an email from a mailbox different that is specified in the integration configuration. Note: Action is not running on Siemplify entities.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Send From|Specify the optional email address from which if permissions allow, email should be sent. By default, the email will be sent from the default mailbox specified in the integration configuration.|True|String||
+|Mail ID|Specify the mail ids or internetMessageIds of the message that you want to forward.|True|String||
+|Folder Name|Specify the mailbox folder to search in. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|False|String||
+|Subject|Specify the mail subject part.|True|String||
+|Send to|Specify the arbitrary comma separated list of email addresses for the email recipients. For example: user1@company.co, user2@company.co|True|String||
+|CC|Specify the arbitrary comma separated list of email addresses to be put in the CC field of email. Format is the same as for the 'Send to' field.|False|String||
+|BCC|Arbitrary comma separated list of email addresses to be put in the BCC field of email. Format is the same as for the 'Send to' field.|False|String||
+|Attachments Paths|Specify the attachments to be added, parameter expects full paths to be provided, for example: /<work directory>/file1.pdf. Parameter accepts multiple values as a comma separated string.|False|String||
+|Mail Content|Specify the email body part.|True|String||
+|Attachment Location|Location where the attachments to be added are stored. By default, the action attempts to get the attachment from the Google Cloud storage bucket, another option is to fetch it from the local file system.|True|List|None|
+
+
+
+##### JSON Results
+```json
+{"id": "xxxxx", "createdDateTime": "2024-02-02T09:49:53Z", "lastModifiedDateTime": "2024-02-02T09:51:19Z", "changeKey": "ieiohjdskj", "categories": [], "receivedDateTime": "2024-02-02T09:49:54Z", "sentDateTime": "2024-02-02T09:49:54Z", "hasAttachments": true, "internetMessageId": "<xyz>", "subject": "xxxx", "bodyPreview": "Mail Action body", "importance": "normal", "parentFolderId": "ddd==", "conversationId": "dagazz=", "conversationIndex": "daf+UJo/clVcxTQ==", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": true, "isDraft": false, "webLink": "https://www.example.com/about", "inferenceClassification": "focused", "body": {"contentType": "text", "content": "Send Mail Action body"}, "sender": {"emailAddress": {"name": "wdzd", "address": "sample@s.com"}}, "from": {"emailAddress": {"name": "safd", "address": "xxx"}}, "toRecipients": [{"emailAddress": {"name": "xx", "address": "aef"}}], "ccRecipients": [{"emailAddress": {"name": "as", "address": "kdaw"}}], "bccRecipients": [{"emailAddress": {"name": "xxsf", "address": "wf"}}], "replyTo": [], "uniqueBody": {"contentType": "html", "content": "Mail Action body"}, "flag": {"flagStatus": "notFlagged"}}
 ```
 
 
@@ -376,6 +192,78 @@ Timeout - 600 Seconds
 ```json
 [{"Entity": "jame.bond@ex.com", "EntityResult": {"@odata.context": "https://abc.com", "id": "abcb", "availability": "Offline", "activity": "Offline", "statusMessage": null, "outOfOfficeSettings": {"message": null, "isOutOfOffice": false}}}, {"Entity": "exchang@ex.com", "EntityResult": {"@odata.context": "https://abc.com", "id": "djds", "availability": "Offline", "activity": "Offline", "statusMessage": null, "outOfOfficeSettings": {"message": null, "isOutOfOffice": false}}}]
 ```
+
+
+
+#### Mark Email as Junk
+Mark an email as junk for a specific mailbox. This action adds the email sender to the list of blocked senders and moves the message to the Junk Email folder. Note: This action uses the beta version of Microsoft Graph APIs and is not running on Google SecOps entities.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Search In Mailbox|A mailbox to search for an email in. By default, the action  attempts to search for the email in the default mailbox that you specified in the integration configuration. With correct permissions, the action can execute a search in other mailboxes. Parameter accepts multiple values as a comma separated string.|True|String||
+|Folder Name|A mailbox folder to search in.|True|String||
+|Mail IDs|Specify the mail ids or internetMessageIds to mark as junk. Parameter accepts multiple values as a comma separated string.|True|String||
+
+
+
+##### JSON Results
+```json
+
+```
+
+
+
+#### Mark Email as Not Junk
+Mark an email as not junk for a specific mailbox. This action removes the sender from the list of blocked senders and moves the message to the Inbox folder. Note: This action uses the beta version of Microsoft Graph APIs and is not running on Google SecOps entities.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Search In Mailbox|A mailbox to search for an email in. By default, the action  attempts to search for the email in the default mailbox that you specified in the integration configuration. With correct permissions, the action can execute a search in other mailboxes. Parameter accepts multiple values as a comma separated string. |True|String||
+|Folder Name|A mailbox folder to search in.|True|String||
+|Mail IDs|Specify the mail ids or internetMessageIds to mark as not junk. Parameter accepts multiple values as a comma separated string.|True|String||
+
+
+
+##### JSON Results
+```json
+
+```
+
+
+
+#### Move Email To Folder
+Move one or multiple emails from source email folder to another folder in the mailbox. If permissions allow, action can move emails in mailboxes other than the one provided in the integration configuration. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Move In Mailbox|By default, move operation will be executed in the default mailbox specified in the integration configuration. If permissions allow, action can search in other mailboxes as well. If permissions allow, action can search in other mailboxes as well. Parameter accepts multiple values as a comma separated string.|True|String|Default Mailbox|
+|Source Folder Name|Specify the source folder name to move mail from. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|True|String|None|
+|Destination Folder Name|Specify the destination folder name to move mail to. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|True|String|None|
+|Mail IDs|Specify the mail ids or internetMessageIds to search for. Parameter accepts multiple values as a comma separated string. If mail id or internet message id is provided, it takes priority for the search, subject and sender filters are ignored.|False|String|None|
+|Subject Filter|Specify the subject of the email to search for. Filter works with "contains" logic.|False|String|None|
+|Sender Filter|Specify the sender of the email to search for. Filter works with "equals" logic.|False|String|None|
+|Time Frame (minutes)|Specify time frame in minutes to search emails for.|False|String|None|
+|Only Unread|If enabled, action searches only for the unread emails.|False|Boolean|None|
+|How many mailboxes to process in a single batch|Specify how many mailboxes action should process in a single batch (single connection to O365). If nothing is provided, default value of 25 will be used.|False|String||
+
+
+
+##### JSON Results
+```json
+[{"Mailbox": "example@mail.com", "Emails": [{"id": "xxxxx", "createdDateTime": "2024-02-05T10:03:14Z", "lastModifiedDateTime": "2024-02-05T16:30:11Z", "changeKey": "cxsdjjh", "categories": [], "receivedDateTime": "2024-02-05T10:03:15Z", "sentDateTime": "2024-02-05T10:03:12Z", "hasAttachments": true, "internetMessageId": "sdfhsjdfhjsdjfd", "subject": "Forwarding for the last time with attachment", "bodyPreview": "this is the mail content for testingxyzrxyzn________________________________xyzrxyznFrom: xyzxyzrxyznSent: Monday, February 5, 2024 7:48:16 AMxyzrxyznTo: example.com <example.com>xyzrxyznSubject: subjectxyzrxyznxyzrxyznmail", "importance": "normal", "parentFolderId": "id", "conversationId": "id", "conversationIndex": "hjaoihfehf", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": true, "isDraft": false, "webLink": "https://www.example.com/about", "inferenceClassification": "focused", "body": {"contentType": "html", "content": "xyz"}, "sender": {"emailAddress": {"name": "xyz", "address": "example@mail.com"}}, "from": {"emailAddress": {"name": "xyz", "address": "example@mail.com"}}, "toRecipients": [{"emailAddress": {"name": "xyz", "address": "example@mail.com"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "flag": {"flagStatus": "notFlagged"}}]}]
+```
+
+
+
+#### Ping
+Test Connectivity
+Timeout - 600 Seconds
 
 
 
@@ -403,29 +291,29 @@ Timeout - 600 Seconds
 
 
 
-#### Mark Email as Not Junk
-Mark an email as not junk for a specific mailbox. This action removes the sender from the list of blocked senders and moves the message to the Inbox folder. Note: This action uses the beta version of Microsoft Graph APIs and is not running on Google SecOps entities.
+#### Search Emails
+Execute email search in the configured mailbox based on provided search criteria. If permissions allow, action can search in mailboxes other than the one provided in the integration configuration. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities. 
 Timeout - 600 Seconds
 
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Search In Mailbox|A mailbox to search for an email in. By default, the action  attempts to search for the email in the default mailbox that you specified in the integration configuration. With correct permissions, the action can execute a search in other mailboxes. Parameter accepts multiple values as a comma separated string. |True|String||
-|Folder Name|A mailbox folder to search in.|True|String||
-|Mail IDs|Specify the mail ids or internetMessageIds to mark as not junk. Parameter accepts multiple values as a comma separated string.|True|String||
+|Search in Mailbox|By default, the search will be executed in the default mailbox specified in the integration configuration. If permissions allow, action can search in other mailboxes as well. Parameter accepts multiple values as a comma separated string. Note that it’s not recommended to perform a search against a big number of mailboxes with this action, for complex searches it is recommended to use Exchange Extension Pack.|True|String|Default Mailbox|
+|Folder Name|Specify the mailbox folder to search in. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|True|String|Inbox|
+|Subject Filter|Specify the subject of the email to search for. Filter works with “contains” logic.|False|String||
+|Sender Filter|Specify the sender of the email to search for. Filter works with “equals” logic.|False|String||
+|Time Frame (minutes)|Specify time frame in minutes to search emails for.|False|String||
+|Max Emails To Return|Specify how many emails action should return. If value is not provided, API default is used.|False|String||
+|Only Unread|If enabled, action will search only for unread emails.|False|Boolean|false|
+|Select All Fields For Return|If enabled, action will return all available fields for the found email.|False|Boolean|false|
+|How many mailboxes to process in a single batch|Specify how many mailboxes action should process in a single batch (single connection to O365). If nothing is provided, default value of 25 will be used.|False|String||
 
 
 
 ##### JSON Results
 ```json
-
+[{"Mailbox": "abcd@g.com", "Emails": [{"id": "xxxx", "createdDateTime": "2024-01-12T07:48:13Z", "lastModifiedDateTime": "2024-01-12T08:25:54Z", "changeKey": "xxxx", "categories": [], "receivedDateTime": "2024-01-12T07:48:14Z", "sentDateTime": "2024-01-12T07:48:10Z", "hasAttachments": false, "internetMessageId": "xxxx", "subject": "xxxx", "bodyPreview": "xxxx", "importance": "normal", "parentFolderId": "xxxx", "conversationId": "xxxx", "conversationIndex": "xxxx", "isDeliveryReceiptRequested": null, "isReadReceiptRequested": false, "isRead": true, "isDraft": false, "webLink": "dddm", "inferenceClassification": "focused", "body": {"contentType": "text", "content": "xxxx"}, "sender": {"emailAddress": {"name": "xxxx", "address": "xxxx"}}, "from": {"emailAddress": {"name": "xxxx", "address": "xxxx"}}, "toRecipients": [{"emailAddress": {"name": "xxxx", "address": "xxxx"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "flag": {"flagStatus": "notFlagged"}}]}]
 ```
-
-
-
-#### Ping
-Test Connectivity
-Timeout - 600 Seconds
 
 
 
@@ -456,22 +344,126 @@ Timeout - 600 Seconds
 
 
 
-#### Mark Email as Junk
-Mark an email as junk for a specific mailbox. This action adds the email sender to the list of blocked senders and moves the message to the Junk Email folder. Note: This action uses the beta version of Microsoft Graph APIs and is not running on Google SecOps entities.
+#### Send Email HTML
+Send email with the Google SecOps HTML template from a specific mailbox to an arbitrary list of recipients. If permissions allow, the action sends an email from a mailbox different than the one specified in the integration configuration. Note: Action is not running on Google SecOps entities.
 Timeout - 600 Seconds
 
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Search In Mailbox|A mailbox to search for an email in. By default, the action  attempts to search for the email in the default mailbox that you specified in the integration configuration. With correct permissions, the action can execute a search in other mailboxes. Parameter accepts multiple values as a comma separated string.|True|String||
-|Folder Name|A mailbox folder to search in.|True|String||
-|Mail IDs|Specify the mail ids or internetMessageIds to mark as junk. Parameter accepts multiple values as a comma separated string.|True|String||
+|Send From|Optional email address to send an email from (if permissions allow it). By default, the email is sent from the default mailbox specified in the integration configuration.|True|String||
+|Subject|Email subject.|True|String||
+|Send to|Specify the arbitrary comma-separated list of email addresses for the email recipients,for example, user1@company.co, user2@company.co.|True|String||
+|CC|Arbitrary comma-separated list of email addresses to use in the CC email field. Use the same format as for the "Send to" field.|False|String||
+|BCC|Arbitrary comma-separated list of email addresses to use in the BCC email field. Use the same format for the "Send to" field.|False|String||
+|Attachments Paths|Specify the attachments to be added, parameter expects full paths to be provided, for example: /<work directory>/file1.pdf. Parameter accepts multiple values as a comma separated string.|False|String||
+|Email HTML Template|The question you would like to ask, or describe the decision you would like the recipient to be able to respond to|True|Email Content|Email HTML Template|
+|Reply-To Recipients|Comma-separated list of recipients used in the Reply-To header. Note: The Reply-To header is added to force email replies to specific email addresses instead of the email sender address stated in the From field.|False|String||
+|Attachment Location|Location where the attachments to be added are stored. By default, the action attempts to get the attachment from the Google Cloud storage bucket, another option is to fetch it from the local file system.|True|List|None|
 
 
 
 ##### JSON Results
 ```json
+{"createdDateTime": "2024-01-30T16:50:27Z", "lastModifiedDateTime": "2024-01-30T16:50:27Z", "changeKey": "xxxxx", "categories": [], "receivedDateTime": "2024-01-30T16:50:27Z", "sentDateTime": "2024-01-30T16:50:27Z", "hasAttachments": false, "internetMessageId": "<outlook.com>", "subject": "Testing", "bodyPreview": "bbcbcb", "importance": "normal", "parentFolderId": "xxxxx", "conversationId": "xxxxx", "conversationIndex": "xxxxxxx", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": true, "isDraft": false, "webLink": "https://example.com", "inferenceClassification": "focused", "body": {"contentType": "html", "content": "hdhdhd"}, "sender": {"emailAddress": {"name": "sdjsdjs", "address": "xxxxx"}}, "from": {"emailAddress": {"name": "jdsjdjs", "address": "xxxxxx"}}, "toRecipients": [{"emailAddress": {"name": "example@mail.com", "address": "xxxxxxx"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "uniqueBody": {"contentType": "html", "content": "ssfsf"}, "flag": {"flagStatus": "notFlagged"}, "id": "xxxxxxx"}
+```
 
+
+
+#### Send Thread Reply
+Send a message as a reply to the email thread. If permissions allow, action can send an email from a mailbox different that is specified in the integration configuration. Note: Action is not running on Chronicle entities.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Send From|Specify the optional email address from which if permissions allow, email should be sent. By default, the email will be sent from the default mailbox specified in the integration configuration.|True|String||
+|Mail ID|Specify the ID or internetMessageId of the message to which you want to send a reply.|True|String||
+|Folder Name|Specify the mailbox folder to search in. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|True|String||
+|Attachments Paths|Specify the attachments to be added, parameter expects full paths to be provided, for example: /<work directory>/file1.pdf. Parameter accepts multiple values as a comma separated string.|False|String||
+|Mail Content|Specify the email body part.|True|String||
+|Reply All|If enabled, action will send a reply to all recipients related to the original email. Note: this parameter has priority over “Reply To“ parameter.|False|Boolean||
+|Reply To|Specify a comma-separated list of emails to which you want to send this reply. If nothing is provided and “Reply All“ is disabled, action will only send a reply to the sender of the email. If “Reply All“ is enabled, action will ignore this parameter.|False|String||
+|Attachment Location|Location where the attachments to be added are stored. By default, the action attempts to get the attachment from the Google Cloud storage bucket, another option is to fetch it from the local file system.|True|List|None|
+
+
+
+##### JSON Results
+```json
+{"id": "xxxx", "createdDateTime": "2024-02-02T10:57:18Z", "lastModifiedDateTime": "2024-02-02T10:57:23Z", "changeKey": "dsf+oAAQLaPjk", "categories": [], "receivedDateTime": "2024-02-02T10:57:20Z", "sentDateTime": "2024-02-02T10:57:19Z", "hasAttachments": true, "internetMessageId": "sdfhsjdfhjsdjfd", "subject": "RE: reply checking", "bodyPreview": "Reply check kr", "importance": "normal", "parentFolderId": "id", "conversationId": "id", "conversationIndex": "sdghfjfke", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": true, "isDraft": false, "webLink": "https://www.example.com/about", "inferenceClassification": "focused", "body": {"contentType": "text", "content": "Reply check kr"}, "sender": {"emailAddress": {"name": "aff", "address": "ddxsm@a.com"}}, "from": {"emailAddress": {"name": "fasf", "address": "ddxsm@a.com"}}, "toRecipients": [{"emailAddress": {"name": "wf", "address": "ddxsm@a.com"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "uniqueBody": {"contentType": "html", "content": "Reply check"}, "flag": {"flagStatus": "notFlagged"}}
+```
+
+
+
+#### Send Vote Email
+Send email with easy answering options, to allow stakeholders to be included in workflow processes. This action uses Google SecOps HTML templates to format the email. If permissions allow, the action sends an email from a mailbox different than the one specified in the integration configuration. Note: This action is not running on Google SecOps entities.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Send From|Optional email address to send an email from (if permissions allow it). By default, the email is sent from the default mailbox specified in the integration configuration.|True|String||
+|Subject|Email subject.|True|String||
+|Send to|Arbitrary comma-separated list of email addresses for the email recipients, for example, user1@company.co, user2@company.co.|True|String||
+|CC|Arbitrary comma-separated list of email addresses to use in the CC email field. Use the same format as for the "Send to" field.|False|String||
+|BCC|Arbitrary comma-separated list of email addresses to use in the BCC email field. Use the same format for the "Send to" field.|False|String||
+|Attachments Paths|Specify the attachments to be added, parameter expects full paths to be provided, for example: /<work directory>/file1.pdf. Parameter accepts multiple values as a comma separated string.|False|String||
+|Email HTML Template|The question you would like to ask, or describe the decision you would like the recipient to be able to respond to|True|Email Content|Email HTML Template|
+|Structure of voting options|Structure of the vote to send to the recipients.|True|List|Yes/No|
+|Reply-To Recipients|Comma-separated list of recipients used in the Reply-To header. Note: The Reply-To header is added to force email replies to specific email addresses instead of the email sender address stated in the From field.|False|String||
+|Attachment Location|Location where the attachments to be added are stored. By default, the action attempts to get the attachment from the Google Cloud storage bucket, another option is to fetch it from the local file system.|True|List|None|
+
+
+
+##### JSON Results
+```json
+{"createdDateTime": "2024-01-30T16:50:27Z", "lastModifiedDateTime": "2024-01-30T16:50:27Z", "changeKey": "xxxxx", "categories": [], "receivedDateTime": "2024-01-30T16:50:27Z", "sentDateTime": "2024-01-30T16:50:27Z", "hasAttachments": false, "internetMessageId": "<abcd.prod.com>", "subject": "Testing", "bodyPreview": "bbcbcb", "importance": "normal", "parentFolderId": "xxxxxxx", "conversationId": "xxxxx", "conversationIndex": "xxxxxx", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": true, "isDraft": false, "webLink": "https://www.example.com/about", "inferenceClassification": "focused", "body": {"contentType": "html", "content": "hdhdhd"}, "sender": {"emailAddress": {"name": "sdjsdjs", "address": "abcd@example.com"}}, "from": {"emailAddress": {"name": "jdsjdjs", "address": "abcd@gm.com"}}, "toRecipients": [{"emailAddress": {"name": "abc@example.com", "address": "abc@example.com"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "uniqueBody": {"contentType": "html", "content": "ssfsf"}, "flag": {"flagStatus": "notFlagged"}, "id": "xxxxx"}
+```
+
+
+
+#### Wait For Email From User
+Wait for user's response based on an email sent via the "Send Mail" action. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Mail ID|Specify the id or internetMessageId of the email, which current action would be waiting for. If the message has been sent using Send Email action, please select SendEmail.JSONResult|id or Send Email.JsonResult|internetMessageId field as a placeholder. Search Emails action also can return ids for emails.|True|String|None|
+|Wait for All Recipients to Reply?|If enabled,  the action will wait for responses from all of the recipients until timeout, and not finish upon getting the first response.|False|Boolean|None|
+|Wait Stage Exclude pattern|Specify the regular expression to exclude specific replies from the wait stage. Works with subject and body parts of the email. Example is, to exclude automatic Out-Of-Office emails to be considered as recipient reply, and instead wait for actual user reply.|False|String|None|
+|Folder to Check for Reply|Specify the mailbox email folder (mailbox that was used to send the email with question) to search for the user reply in this folder. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|False|String|None|
+|Fetch Response Attachments|If enabled, if recipient replies with attachment - fetch recipient response and add it as attachment for the action result.|False|Boolean|None|
+
+
+
+##### JSON Results
+```json
+{"Responses": [{"recipient": "aaa@aaa.com", "content": "It's approved, John!"}, {"recipient": "xxx@xxx.com", "content": "I approve going forward on this"}]}
+```
+
+
+
+#### Wait For Vote Email Results
+Wait for the user response based on the vote email sent using the Send Vote Email action. This action is asynchronous. Adjust the action timeout in the IDE accordingly. This action is not working on Google SecOps entities.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Vote Mail Sent From|By default, the email is sent from the default mailbox specified in the integration configuration. In this parameter optionally a different value can be specified, if the vote mail was sent from a different mailbox.|True|String|None|
+|Mail ID|ID or internetMessageId of the vote email that the action waits for. If the message was sent using Send Vote Email action, select SendVoteEmail.JSONResult|id or Send Email.JsonResult|internetMessageId field as a placeholder. The Search Emails action also can return email IDs.|True|String|None|
+|Wait for All Recipients to Reply?|If selected, the action waits for responses from all recipients until timeout and doesn't complete execution receiving the first response.|False|Boolean|None|
+|Wait Stage Exclude pattern|Regular expression to exclude specific replies from the wait stage. The regular expression works with the email subject and body. For example, you can use this parameter to exclude  automatic Out of Office emails wait for an actual user reply.|False|String|None|
+|Folder to Check for Reply|Email folder in the mailbox that was used to send the email with question to search for the user reply in. Parameter also accepts a comma separated list of folders to check the user response in multiple folders. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|False|String|None|
+|Folder to check for Sent Mail|Parameter can be used to specify mailbox email folder (mailbox that was used to send the email with question) to search for the sent mail in this folder. Parameter also accepts a comma separated list of folders to check the user response in multiple folders. Parameter is case sensitive. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|False|String|None|
+|Fetch Response Attachments|If selected and the recipient replies with an attachment, the action fetches the recipient response and adds it as an attachment for the action result.|False|Boolean|None|
+
+
+
+##### JSON Results
+```json
+{"Responses": [{"recipient": "aaa@aaa.com", "vote": "Approve"}]}
 ```
 
 

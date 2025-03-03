@@ -19,8 +19,8 @@
             "IsMandatory": true,
             "Value": "https://siemplify.threatstream.com",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741002251806,
-            "ModificationTimeUnixTimeInMs": 1741002251806
+            "CreationTimeUnixTimeInMs": 1740996499958,
+            "ModificationTimeUnixTimeInMs": 1740996499958
         },
         {
             "IntegrationIdentifier": "SiemplifyThreatFuse",
@@ -31,8 +31,8 @@
             "IsMandatory": true,
             "Value": "https://api.threatstream.com",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741002251806,
-            "ModificationTimeUnixTimeInMs": 1741002251806
+            "CreationTimeUnixTimeInMs": 1740996499958,
+            "ModificationTimeUnixTimeInMs": 1740996499958
         },
         {
             "IntegrationIdentifier": "SiemplifyThreatFuse",
@@ -43,8 +43,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741002251806,
-            "ModificationTimeUnixTimeInMs": 1741002251806
+            "CreationTimeUnixTimeInMs": 1740996499958,
+            "ModificationTimeUnixTimeInMs": 1740996499958
         },
         {
             "IntegrationIdentifier": "SiemplifyThreatFuse",
@@ -55,8 +55,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741002251806,
-            "ModificationTimeUnixTimeInMs": 1741002251806
+            "CreationTimeUnixTimeInMs": 1740996499958,
+            "ModificationTimeUnixTimeInMs": 1740996499958
         },
         {
             "IntegrationIdentifier": "SiemplifyThreatFuse",
@@ -67,73 +67,73 @@
             "IsMandatory": false,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741002251806,
-            "ModificationTimeUnixTimeInMs": 1741002251806
+            "CreationTimeUnixTimeInMs": 1740996499958,
+            "ModificationTimeUnixTimeInMs": 1740996499958
         }
     ],
     "IntegrationSupportedActions": [
         {
-            "Name": "Ping",
-            "Description": "Test connectivity to the Siemplify ThreatFuse with parameters provided at the integration configuration page on the Marketplace tab.",
-            "Id": 132,
-            "CreationTimeUnixTimeInMs": 1741002251813,
-            "ModificationTimeUnixTimeInMs": 1741002251813
-        },
-        {
             "Name": "Enrich Entities",
             "Description": "Retrieve information about IPs, URLs, hashes or User entities with Email regexes from Siemplify ThreatFuse. If multiple records are found for the same entity, action will enrich using the latest record.",
-            "Id": 124,
-            "CreationTimeUnixTimeInMs": 1741002251813,
-            "ModificationTimeUnixTimeInMs": 1741002251813
-        },
-        {
-            "Name": "Submit Observables",
-            "Description": "Submit an observable to Siemplify ThreatFuse based on IP, URL, Hash or User entities with Email regexes from Siemplify ThreatFuse. Note: requires 'Org admin', 'Create Anomali Community Intel' and 'Approve Intel' permissions.",
-            "Id": 125,
-            "CreationTimeUnixTimeInMs": 1741002251813,
-            "ModificationTimeUnixTimeInMs": 1741002251813
-        },
-        {
-            "Name": "Get Related Hashes",
-            "Description": "Retrieve entity related hashes based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.",
-            "Id": 126,
-            "CreationTimeUnixTimeInMs": 1741002251813,
-            "ModificationTimeUnixTimeInMs": 1741002251813
-        },
-        {
-            "Name": "Get Related Domains",
-            "Description": "Retrieve entity related domains based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.",
-            "Id": 127,
-            "CreationTimeUnixTimeInMs": 1741002251813,
-            "ModificationTimeUnixTimeInMs": 1741002251813
-        },
-        {
-            "Name": "Get Related URLs",
-            "Description": "Retrieve entity related urls based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.",
-            "Id": 128,
-            "CreationTimeUnixTimeInMs": 1741002251813,
-            "ModificationTimeUnixTimeInMs": 1741002251813
+            "Id": 237,
+            "CreationTimeUnixTimeInMs": 1740996499974,
+            "ModificationTimeUnixTimeInMs": 1740996499974
         },
         {
             "Name": "Get Related Associations",
             "Description": "Retrieve entity related associations from Siemplify ThreatFuse. Configure the parameters below: choose the association types to return, specify Max Associations To Return. You can also choose to add retrieved associations as entities to the case.",
-            "Id": 129,
-            "CreationTimeUnixTimeInMs": 1741002251813,
-            "ModificationTimeUnixTimeInMs": 1741002251813
+            "Id": 238,
+            "CreationTimeUnixTimeInMs": 1740996499974,
+            "ModificationTimeUnixTimeInMs": 1740996499974
+        },
+        {
+            "Name": "Get Related Domains",
+            "Description": "Retrieve entity related domains based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.",
+            "Id": 239,
+            "CreationTimeUnixTimeInMs": 1740996499974,
+            "ModificationTimeUnixTimeInMs": 1740996499974
         },
         {
             "Name": "Get Related Email Addresses",
             "Description": "Retrieve entity related email addresses based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.",
-            "Id": 130,
-            "CreationTimeUnixTimeInMs": 1741002251813,
-            "ModificationTimeUnixTimeInMs": 1741002251813
+            "Id": 240,
+            "CreationTimeUnixTimeInMs": 1740996499974,
+            "ModificationTimeUnixTimeInMs": 1740996499974
+        },
+        {
+            "Name": "Get Related Hashes",
+            "Description": "Retrieve entity related hashes based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.",
+            "Id": 241,
+            "CreationTimeUnixTimeInMs": 1740996499974,
+            "ModificationTimeUnixTimeInMs": 1740996499974
         },
         {
             "Name": "Get Related IPs",
             "Description": "Retrieve entity related IP addresses based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.",
-            "Id": 131,
-            "CreationTimeUnixTimeInMs": 1741002251813,
-            "ModificationTimeUnixTimeInMs": 1741002251813
+            "Id": 242,
+            "CreationTimeUnixTimeInMs": 1740996499974,
+            "ModificationTimeUnixTimeInMs": 1740996499974
+        },
+        {
+            "Name": "Get Related URLs",
+            "Description": "Retrieve entity related urls based on the associations in Siemplify ThreatFuse. Supported entities: Hash, URL, IP Address, Email Address (user entity that matches email regex), Threat Actor, CVE.",
+            "Id": 243,
+            "CreationTimeUnixTimeInMs": 1740996499974,
+            "ModificationTimeUnixTimeInMs": 1740996499974
+        },
+        {
+            "Name": "Ping",
+            "Description": "Test connectivity to the Siemplify ThreatFuse with parameters provided at the integration configuration page on the Marketplace tab.",
+            "Id": 244,
+            "CreationTimeUnixTimeInMs": 1740996499974,
+            "ModificationTimeUnixTimeInMs": 1740996499974
+        },
+        {
+            "Name": "Submit Observables",
+            "Description": "Submit an observable to Siemplify ThreatFuse based on IP, URL, Hash or User entities with Email regexes from Siemplify ThreatFuse. Note: requires 'Org admin', 'Create Anomali Community Intel' and 'Approve Intel' permissions.",
+            "Id": 245,
+            "CreationTimeUnixTimeInMs": 1740996499974,
+            "ModificationTimeUnixTimeInMs": 1740996499974
         }
     ],
     "Categories": [
@@ -151,6 +151,6 @@
     "MinimumSystemVersion": 0.0,
     "ProductionIntegrationIdentifier": null,
     "Id": 0,
-    "CreationTimeUnixTimeInMs": 1741002251806,
-    "ModificationTimeUnixTimeInMs": 1741002251806
+    "CreationTimeUnixTimeInMs": 1740996499958,
+    "ModificationTimeUnixTimeInMs": 1740996499958
 }
