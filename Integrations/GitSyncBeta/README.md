@@ -206,12 +206,32 @@ Imports a connector from the repo.
 |Include Visual Families|False|Boolean|false|
 |Include Mappings|False|Boolean|false|
 
+#### Push Simulated Cases GitSyncBeta
+Export simulate cases to the repo
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Commit|True|String||
+|Repo URL|False|String|None|
+|Branch|False|String|None|
+|Commit Author|False|String||
+|Simulated Cases|True|String||
+
 #### Pull Integration GitSyncBeta
 Install an integration or update an installed one.
 
 |Name|IsMandatory|Type|DefaultValue|
 |----|-----------|----|------------|
 |Install Whitelist|True|String||
+|Repo URL|False|String|None|
+|Branch|False|String|None|
+
+#### Pull Jobs GitSyncBeta
+Imports a job from the repo.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Job Whitelist|True|String||
 |Repo URL|False|String|None|
 |Branch|False|String|None|
 
@@ -226,26 +246,6 @@ Exports a custom family to the repo.
 |Commit Author|False|String||
 |Family Name|True|String||
 |Readme Addon|False|String||
-
-#### Push Simulated Cases GitSyncBeta
-Export simulate cases to the repo
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Commit|True|String||
-|Repo URL|False|String|None|
-|Branch|False|String|None|
-|Commit Author|False|String||
-|Simulated Cases|True|String||
-
-#### Pull Jobs GitSyncBeta
-Imports a job from the repo.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Job Whitelist|True|String||
-|Repo URL|False|String|None|
-|Branch|False|String|None|
 
 #### Push Mappings GitSyncBeta
 Exports mappings  to the repo.
