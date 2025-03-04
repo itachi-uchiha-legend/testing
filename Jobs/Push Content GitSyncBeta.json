@@ -1,6 +1,6 @@
 {
-    "lastRunStatus": 0,
-    "lastRunTime": 1741004628334,
+    "lastRunStatus": null,
+    "lastRunTime": null,
     "uniqueIdentifier": "30f2da6b-e1aa-4b1e-9455-c0630a258f85",
     "id": 0,
     "jobDefinitionId": 0,
@@ -198,7 +198,7 @@
     ],
     "runIntervalInSeconds": 600,
     "creationTime": "2025-03-03T12:23:12.825Z",
-    "lastModificationTime": "2025-03-03T12:31:35.501Z",
+    "lastModificationTime": "2025-03-04T06:31:29.231Z",
     "isSystemJob": false,
     "jobDefinitionName": "Push Content GitSyncBeta",
     "agentIdentifier": null

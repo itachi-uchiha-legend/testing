@@ -12,6 +12,13 @@ Event Name Field: event_type
 ### Parameters
 |Name|Description|Is Mandatory|Value|
 |----|-----------|------------|-----|
+|Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field. Default is .* to catch all and return the value unchanged. Used to allow the user to manipulate the environment field via regex logic. If the regex pattern is null or empty, or the environment value is null, the final environment result is ""|False|.*|
+|API Root|Vmware Carbon Black Cloud API Root URL|True|https://defense.conferdeploy.net/api|
+|Organization Key|Vmware Carbon Black Cloud Organization Key, Eg. 7DDDD9DD|True|7DESJ9GN|
+|API ID|Vmware Carbon Black Cloud API ID (Custom API Key ID)|True|***************|
+|API Secret Key|Vmware Carbon Black Cloud API Secret Key (Custom API Secret Key)|True|***************|
+|Verify SSL|Verify SSL certificates for HTTPS requests to Microsoft Azure.|False|false|
+|Max Alerts Per Cycle|How many alerts should be processed during one connector run.|True|100|
 |Minimum Severity to Fetch|Minimum severity of Carbon Black Cloud alert to be ingested to Siemplify, for example, 4 or 7|False|4|
 |What Alert Field to use for Name field|What Carbon Black Cloud alert field should be used for the Siemplify Alert Name field. Possible values are: type, policy_name|True|type|
 |What Alert Field to use for Rule Generator|What Carbon Black Cloud alert field should be used for the Siemplify Alert Rule Generator field. Possible values are: type, policy_name|True|type|
@@ -28,11 +35,4 @@ Event Name Field: event_type
 |Alert Name Template|If specified, connector will use this value from the CB Cloud API response for alert data for Siemplify Alert Name. You can provide placeholders in the following format: [name of the field]. Example: CBCLOUD Alert - [reason]. Note: the maximum length for the field is 256 characters. If nothing is provided or user provides an invalid template, connector will use the default alert name.|False||
 |Script Timeout (Seconds)|The timeout limit (in seconds) for the python process running current script|True|180|
 |Environment Field Name|Describes the name of the field where the environment name is stored. If the environment field isn't found, the environment is ""|False||
-|Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field. Default is .* to catch all and return the value unchanged. Used to allow the user to manipulate the environment field via regex logic. If the regex pattern is null or empty, or the environment value is null, the final environment result is ""|False|.*|
-|API Root|Vmware Carbon Black Cloud API Root URL|True|https://defense.conferdeploy.net/api|
-|Organization Key|Vmware Carbon Black Cloud Organization Key, Eg. 7DDDD9DD|True|7DESJ9GN|
-|API ID|Vmware Carbon Black Cloud API ID (Custom API Key ID)|True|***************|
-|API Secret Key|Vmware Carbon Black Cloud API Secret Key (Custom API Secret Key)|True|***************|
-|Verify SSL|Verify SSL certificates for HTTPS requests to Microsoft Azure.|False|false|
-|Max Alerts Per Cycle|How many alerts should be processed during one connector run.|True|100|
 
