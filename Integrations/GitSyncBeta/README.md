@@ -7,13 +7,13 @@ Python Version - 3
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Repo URL|Repository URL. The URL must start with 'https' for HTTPS+Token or 'git@' for SSH+Cert.|True|String||
 |Branch|Target branch|True|String||
 |Git Password/Token/SSH Key|Git Password/Token/SSH Key (Base64). RSA and Ed25519 are supported.|True|Password|None|
 |Git Username|Git Username|False|String||
 |Commit Author|Commit Author. Must be in the following format: 'James Bond <james.bond@gmail.com>'|False|String||
 |Siemplify Verify SSL|Siemplify Verify SSL|False|Boolean|true|
 |Git Verify SSL|Git Verify SSL|False|Boolean|true|
+|Repo URL|Repository URL. The URL must start with 'https' for HTTPS+Token or 'git@' for SSH+Cert.|True|String||
 
 
 #### Dependencies
@@ -166,6 +166,15 @@ Install an integration or update an installed one.
 |Repo URL|False|String|None|
 |Branch|False|String|None|
 
+#### Pull Jobs GitSyncBeta
+Imports a job from the repo.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Job Whitelist|True|String||
+|Repo URL|False|String|None|
+|Branch|False|String|None|
+
 #### Push Job GitSyncBeta
 Export a job to the repo
 
@@ -177,15 +186,6 @@ Export a job to the repo
 |Commit Author|False|String||
 |Job Whitelist|True|String||
 |Readme Addon|False|String||
-
-#### Pull Jobs GitSyncBeta
-Imports a job from the repo.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Job Whitelist|True|String||
-|Repo URL|False|String|None|
-|Branch|False|String|None|
 
 #### Pull Connector GitSyncBeta
 Imports a connector from the repo.

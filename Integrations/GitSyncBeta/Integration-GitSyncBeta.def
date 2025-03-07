@@ -12,18 +12,6 @@
   "IntegrationProperties": [
     {
       "IntegrationIdentifier": "GitSyncBeta",
-      "PropertyName": "Repo URL",
-      "PropertyDescription": "Repository URL. The URL must start with 'https' for HTTPS+Token or 'git@' for SSH+Cert.",
-      "PropertyDisplayName": "Repo URL",
-      "PropertyType": 2,
-      "IsMandatory": true,
-      "Value": "",
-      "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741349407161,
-      "ModificationTimeUnixTimeInMs": 1741349407161
-    },
-    {
-      "IntegrationIdentifier": "GitSyncBeta",
       "PropertyName": "Branch",
       "PropertyDescription": "Target branch",
       "PropertyDisplayName": "Branch",
@@ -31,8 +19,8 @@
       "IsMandatory": true,
       "Value": "",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741349407161,
-      "ModificationTimeUnixTimeInMs": 1741349407161
+      "CreationTimeUnixTimeInMs": 1741349528414,
+      "ModificationTimeUnixTimeInMs": 1741349528414
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -43,8 +31,8 @@
       "IsMandatory": true,
       "Value": null,
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741349407161,
-      "ModificationTimeUnixTimeInMs": 1741349407161
+      "CreationTimeUnixTimeInMs": 1741349528414,
+      "ModificationTimeUnixTimeInMs": 1741349528414
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -55,8 +43,8 @@
       "IsMandatory": false,
       "Value": "",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741349407161,
-      "ModificationTimeUnixTimeInMs": 1741349407161
+      "CreationTimeUnixTimeInMs": 1741349528414,
+      "ModificationTimeUnixTimeInMs": 1741349528414
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -67,8 +55,8 @@
       "IsMandatory": false,
       "Value": "",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741349407161,
-      "ModificationTimeUnixTimeInMs": 1741349407161
+      "CreationTimeUnixTimeInMs": 1741349528414,
+      "ModificationTimeUnixTimeInMs": 1741349528414
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -79,8 +67,8 @@
       "IsMandatory": false,
       "Value": "true",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741349407161,
-      "ModificationTimeUnixTimeInMs": 1741349407161
+      "CreationTimeUnixTimeInMs": 1741349528414,
+      "ModificationTimeUnixTimeInMs": 1741349528414
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -91,8 +79,20 @@
       "IsMandatory": false,
       "Value": "true",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741349407161,
-      "ModificationTimeUnixTimeInMs": 1741349407161
+      "CreationTimeUnixTimeInMs": 1741349528414,
+      "ModificationTimeUnixTimeInMs": 1741349528414
+    },
+    {
+      "IntegrationIdentifier": "GitSyncBeta",
+      "PropertyName": "Repo URL",
+      "PropertyDescription": "Repository URL. The URL must start with 'https' for HTTPS+Token or 'git@' for SSH+Cert.",
+      "PropertyDisplayName": "Repo URL",
+      "PropertyType": 2,
+      "IsMandatory": true,
+      "Value": "",
+      "Id": 0,
+      "CreationTimeUnixTimeInMs": 1741349528414,
+      "ModificationTimeUnixTimeInMs": 1741349528414
     }
   ],
   "IntegrationSupportedActions": [
@@ -100,8 +100,8 @@
       "Name": "Ping",
       "Description": "Test connectivity to GitSync",
       "Id": 228,
-      "CreationTimeUnixTimeInMs": 1741349407101,
-      "ModificationTimeUnixTimeInMs": 1741349407170
+      "CreationTimeUnixTimeInMs": 1741349528356,
+      "ModificationTimeUnixTimeInMs": 1741349528419
     }
   ],
   "Categories": [],
@@ -116,6 +116,6 @@
   "MinimumSystemVersion": 0.0,
   "ProductionIntegrationIdentifier": null,
   "Id": 0,
-  "CreationTimeUnixTimeInMs": 1741349407161,
-  "ModificationTimeUnixTimeInMs": 1741349407161
+  "CreationTimeUnixTimeInMs": 1741349528414,
+  "ModificationTimeUnixTimeInMs": 1741349528414
 }

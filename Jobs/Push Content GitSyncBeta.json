@@ -14,182 +14,182 @@
     "version": 1,
     "parameters": [
         {
-            "id": 214290,
+            "id": 214590,
             "isMandatory": true,
             "name": "Commit",
             "type": 2,
             "value": "aab"
         },
         {
-            "id": 214291,
+            "id": 214591,
             "isMandatory": false,
             "name": "Repo URL",
             "type": 2,
             "value": "https://github.com/itachi-uchiha-legend/testing.git"
         },
         {
-            "id": 214292,
+            "id": 214592,
             "isMandatory": false,
             "name": "Branch",
             "type": 2,
             "value": "main"
         },
         {
-            "id": 214293,
+            "id": 214593,
             "isMandatory": false,
             "name": "Commit Author",
             "type": 2,
             "value": "itachi-uchiha-legend <rkumbhar@google.com>"
         },
         {
-            "id": 214294,
+            "id": 214594,
             "isMandatory": false,
             "name": "Commit Passwords",
             "type": 0,
             "value": "false"
         },
         {
-            "id": 214295,
+            "id": 214595,
             "isMandatory": false,
             "name": "Integrations",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214296,
+            "id": 214596,
             "isMandatory": false,
             "name": "Playbooks",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214297,
+            "id": 214597,
             "isMandatory": false,
             "name": "Jobs",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214298,
+            "id": 214598,
             "isMandatory": false,
             "name": "Connectors",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214299,
+            "id": 214599,
             "isMandatory": false,
             "name": "Integration Instances",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214300,
+            "id": 214600,
             "isMandatory": false,
             "name": "Visual Families",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214301,
+            "id": 214601,
             "isMandatory": false,
             "name": "Mappings",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214302,
+            "id": 214602,
             "isMandatory": false,
             "name": "Environments",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214303,
+            "id": 214603,
             "isMandatory": false,
             "name": "Dynamic Parameters",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214304,
+            "id": 214604,
             "isMandatory": false,
             "name": "Logo",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214305,
+            "id": 214605,
             "isMandatory": false,
             "name": "Case Tags",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214306,
+            "id": 214606,
             "isMandatory": false,
             "name": "Case Stages",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214307,
+            "id": 214607,
             "isMandatory": false,
             "name": "Case Title Settings",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214308,
+            "id": 214608,
             "isMandatory": false,
             "name": "Case Close Reasons",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214309,
+            "id": 214609,
             "isMandatory": false,
             "name": "Networks",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214310,
+            "id": 214610,
             "isMandatory": false,
             "name": "Domains",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214311,
+            "id": 214611,
             "isMandatory": false,
             "name": "Custom Lists",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214312,
+            "id": 214612,
             "isMandatory": false,
             "name": "Email Templates",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214313,
+            "id": 214613,
             "isMandatory": false,
             "name": "Blacklists",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214314,
+            "id": 214614,
             "isMandatory": false,
             "name": "SLA Records",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214315,
+            "id": 214615,
             "isMandatory": false,
             "name": "Simulated Cases",
             "type": 0,
@@ -198,7 +198,7 @@
     ],
     "runIntervalInSeconds": 600,
     "creationTime": "2025-03-03T12:23:12.825Z",
-    "lastModificationTime": "2025-03-07T12:10:42.094Z",
+    "lastModificationTime": "2025-03-07T12:12:08.663Z",
     "isSystemJob": false,
     "jobDefinitionName": "Push Content GitSyncBeta",
     "agentIdentifier": null
