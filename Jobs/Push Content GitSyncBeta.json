@@ -14,48 +14,6 @@
     "version": 1,
     "parameters": [
         {
-            "id": 214685,
-            "isMandatory": false,
-            "name": "Domains",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214686,
-            "isMandatory": false,
-            "name": "Custom Lists",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214687,
-            "isMandatory": false,
-            "name": "Email Templates",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214688,
-            "isMandatory": false,
-            "name": "Blacklists",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214689,
-            "isMandatory": false,
-            "name": "SLA Records",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214690,
-            "isMandatory": false,
-            "name": "Simulated Cases",
-            "type": 0,
-            "value": "true"
-        },
-        {
             "id": 214665,
             "isMandatory": true,
             "name": "Commit",
@@ -194,11 +152,53 @@
             "name": "Networks",
             "type": 0,
             "value": "true"
+        },
+        {
+            "id": 214685,
+            "isMandatory": false,
+            "name": "Domains",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214686,
+            "isMandatory": false,
+            "name": "Custom Lists",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214687,
+            "isMandatory": false,
+            "name": "Email Templates",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214688,
+            "isMandatory": false,
+            "name": "Blacklists",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214689,
+            "isMandatory": false,
+            "name": "SLA Records",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214690,
+            "isMandatory": false,
+            "name": "Simulated Cases",
+            "type": 0,
+            "value": "true"
         }
     ],
     "runIntervalInSeconds": 600,
     "creationTime": "2025-03-03T12:23:12.825Z",
-    "lastModificationTime": "2025-03-07T12:26:42.404Z",
+    "lastModificationTime": "2025-03-07T12:39:03.422Z",
     "isSystemJob": false,
     "jobDefinitionName": "Push Content GitSyncBeta",
     "agentIdentifier": null

@@ -19,8 +19,8 @@
       "IsMandatory": true,
       "Value": "",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741350368418,
-      "ModificationTimeUnixTimeInMs": 1741350368418
+      "CreationTimeUnixTimeInMs": 1741351108311,
+      "ModificationTimeUnixTimeInMs": 1741351108311
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -31,8 +31,8 @@
       "IsMandatory": true,
       "Value": null,
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741350368418,
-      "ModificationTimeUnixTimeInMs": 1741350368418
+      "CreationTimeUnixTimeInMs": 1741351108311,
+      "ModificationTimeUnixTimeInMs": 1741351108311
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -43,8 +43,8 @@
       "IsMandatory": false,
       "Value": "",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741350368418,
-      "ModificationTimeUnixTimeInMs": 1741350368418
+      "CreationTimeUnixTimeInMs": 1741351108311,
+      "ModificationTimeUnixTimeInMs": 1741351108311
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -55,8 +55,8 @@
       "IsMandatory": false,
       "Value": "",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741350368418,
-      "ModificationTimeUnixTimeInMs": 1741350368418
+      "CreationTimeUnixTimeInMs": 1741351108311,
+      "ModificationTimeUnixTimeInMs": 1741351108311
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -67,8 +67,8 @@
       "IsMandatory": false,
       "Value": "true",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741350368418,
-      "ModificationTimeUnixTimeInMs": 1741350368418
+      "CreationTimeUnixTimeInMs": 1741351108311,
+      "ModificationTimeUnixTimeInMs": 1741351108311
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -79,8 +79,8 @@
       "IsMandatory": false,
       "Value": "true",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741350368418,
-      "ModificationTimeUnixTimeInMs": 1741350368418
+      "CreationTimeUnixTimeInMs": 1741351108311,
+      "ModificationTimeUnixTimeInMs": 1741351108311
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -91,8 +91,8 @@
       "IsMandatory": true,
       "Value": "",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741350368418,
-      "ModificationTimeUnixTimeInMs": 1741350368418
+      "CreationTimeUnixTimeInMs": 1741351108311,
+      "ModificationTimeUnixTimeInMs": 1741351108311
     }
   ],
   "IntegrationSupportedActions": [
@@ -100,8 +100,8 @@
       "Name": "Ping",
       "Description": "Test connectivity to GitSync",
       "Id": 228,
-      "CreationTimeUnixTimeInMs": 1741350368357,
-      "ModificationTimeUnixTimeInMs": 1741350368426
+      "CreationTimeUnixTimeInMs": 1741351108246,
+      "ModificationTimeUnixTimeInMs": 1741351108318
     }
   ],
   "Categories": [],
@@ -116,6 +116,6 @@
   "MinimumSystemVersion": 0.0,
   "ProductionIntegrationIdentifier": null,
   "Id": 0,
-  "CreationTimeUnixTimeInMs": 1741350368418,
-  "ModificationTimeUnixTimeInMs": 1741350368418
+  "CreationTimeUnixTimeInMs": 1741351108311,
+  "ModificationTimeUnixTimeInMs": 1741351108311
 }
