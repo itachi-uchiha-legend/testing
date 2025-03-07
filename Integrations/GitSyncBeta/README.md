@@ -145,18 +145,6 @@ Export simulate cases to the repo
 |Commit Author|False|String||
 |Simulated Cases|True|String||
 
-#### Push Integration GitSyncBeta
-Push an integration to repo. This action will overwrite the entire folder.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Commit|True|String||
-|Push Whitelist|True|String||
-|Repo URL|False|String|None|
-|Branch|False|String|None|
-|Commit Author|False|String||
-|Readme Addon|False|String||
-
 #### Pull Integration GitSyncBeta
 Install an integration or update an installed one.
 
@@ -174,6 +162,18 @@ Imports a job from the repo.
 |Job Whitelist|True|String||
 |Repo URL|False|String|None|
 |Branch|False|String|None|
+
+#### Push Integration GitSyncBeta
+Push an integration to repo. This action will overwrite the entire folder.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Commit|True|String||
+|Push Whitelist|True|String||
+|Repo URL|False|String|None|
+|Branch|False|String|None|
+|Commit Author|False|String||
+|Readme Addon|False|String||
 
 #### Push Job GitSyncBeta
 Export a job to the repo

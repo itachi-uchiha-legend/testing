@@ -14,6 +14,20 @@
     "version": 1,
     "parameters": [
         {
+            "id": 214691,
+            "isMandatory": true,
+            "name": "Commit",
+            "type": 2,
+            "value": "Push Content GitSyncBeta1 job after change"
+        },
+        {
+            "id": 214692,
+            "isMandatory": false,
+            "name": "Repo URL",
+            "type": 2,
+            "value": "https://github.com/itachi-uchiha-legend/testing.git"
+        },
+        {
             "id": 214693,
             "isMandatory": false,
             "name": "Branch",
@@ -119,20 +133,6 @@
             "value": "true"
         },
         {
-            "id": 214691,
-            "isMandatory": true,
-            "name": "Commit",
-            "type": 2,
-            "value": "Push Content GitSyncBeta1 job after change"
-        },
-        {
-            "id": 214692,
-            "isMandatory": false,
-            "name": "Repo URL",
-            "type": 2,
-            "value": "https://github.com/itachi-uchiha-legend/testing.git"
-        },
-        {
             "id": 214708,
             "isMandatory": false,
             "name": "Case Title Settings",
@@ -198,7 +198,7 @@
     ],
     "runIntervalInSeconds": 60,
     "creationTime": "2025-03-03T11:38:19.549Z",
-    "lastModificationTime": "2025-03-07T12:18:46.091Z",
+    "lastModificationTime": "2025-03-07T12:26:42.481Z",
     "isSystemJob": false,
     "jobDefinitionName": "Push Content GitSyncBeta",
     "agentIdentifier": null
