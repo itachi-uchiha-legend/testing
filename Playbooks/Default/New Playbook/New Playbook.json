@@ -16,7 +16,7 @@
     "categoryId": 1,
     "originalPlaybookIdentifier": "9b61c105-b362-4571-95eb-7ca426217c10",
     "creationTimeUnixTimeInMs": 1741172504707,
-    "modificationTimeUnixTimeInMs": 1741346221397,
+    "modificationTimeUnixTimeInMs": 1741349153272,
     "trigger": {
         "id": 0,
         "identifier": "2b5a84e6-cb34-4502-a2dd-7661dd69ad55",
@@ -174,8 +174,8 @@
             "workflowIdentifier": "ff36f207-a1cf-4694-bc61-ac88c2027856",
             "isTouchedByAi": false,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1741346221397,
-            "modificationTimeUnixTimeInMs": 1741346221397,
+            "creationTimeUnixTimeInMs": 1741349153202,
+            "modificationTimeUnixTimeInMs": 1741349153272,
             "additionalProperties": {}
         }
     ],

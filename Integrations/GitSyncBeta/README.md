@@ -166,6 +166,15 @@ Install an integration or update an installed one.
 |Repo URL|False|String|None|
 |Branch|False|String|None|
 
+#### Pull Jobs GitSyncBeta
+Imports a job from the repo.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Job Whitelist|True|String||
+|Repo URL|False|String|None|
+|Branch|False|String|None|
+
 #### Push Job GitSyncBeta
 Export a job to the repo
 
@@ -177,15 +186,6 @@ Export a job to the repo
 |Commit Author|False|String||
 |Job Whitelist|True|String||
 |Readme Addon|False|String||
-
-#### Pull Jobs GitSyncBeta
-Imports a job from the repo.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Job Whitelist|True|String||
-|Repo URL|False|String|None|
-|Branch|False|String|None|
 
 #### Pull Connector GitSyncBeta
 Imports a connector from the repo.
