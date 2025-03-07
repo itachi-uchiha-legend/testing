@@ -198,7 +198,7 @@
     ],
     "runIntervalInSeconds": 60,
     "creationTime": "2025-03-03T11:38:19.549Z",
-    "lastModificationTime": "2025-03-07T12:06:30.575Z",
+    "lastModificationTime": "2025-03-07T12:08:24.186Z",
     "isSystemJob": false,
     "jobDefinitionName": "Push Content GitSyncBeta",
     "agentIdentifier": null
