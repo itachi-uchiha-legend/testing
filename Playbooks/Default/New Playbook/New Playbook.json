@@ -1,7 +1,7 @@
 {
     "id": 0,
-    "identifier": "17c3da1e-7283-403a-9a4b-c41e9614feb2",
-    "version": "1",
+    "identifier": "ff36f207-a1cf-4694-bc61-ac88c2027856",
+    "version": "0",
     "isEnabled": true,
     "isDebugMode": false,
     "name": "New Playbook",
@@ -14,12 +14,12 @@
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "17c3da1e-7283-403a-9a4b-c41e9614feb2",
-    "creationTimeUnixTimeInMs": 1740996575658,
-    "modificationTimeUnixTimeInMs": 1741004668725,
+    "originalPlaybookIdentifier": "9b61c105-b362-4571-95eb-7ca426217c10",
+    "creationTimeUnixTimeInMs": 1741172504707,
+    "modificationTimeUnixTimeInMs": 1741346221397,
     "trigger": {
         "id": 0,
-        "identifier": "e9d8f2d2-8995-4e69-85d3-01a6a9d0a333",
+        "identifier": "2b5a84e6-cb34-4502-a2dd-7661dd69ad55",
         "type": 8,
         "logicalOperator": 0,
         "conditions": [
@@ -33,7 +33,7 @@
     "steps": [
         {
             "parallelActions": [],
-            "identifier": "7a60a008-8916-41ca-b6c5-d7fcd136e057",
+            "identifier": "5cac267e-841c-4205-b1dd-3a8d2f3ed4c3",
             "originalStepIdentifier": "7a60a008-8916-41ca-b6c5-d7fcd136e057",
             "isAutomatic": true,
             "isSkippable": false,
@@ -102,7 +102,7 @@
                 },
                 {
                     "name": "IntegrationInstance",
-                    "value": "250ef21d-874b-4aa5-8e72-8e051892042e",
+                    "value": "5a10cc8e-fe05-417d-928e-320b08c79b94",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -171,11 +171,11 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "17c3da1e-7283-403a-9a4b-c41e9614feb2",
+            "workflowIdentifier": "ff36f207-a1cf-4694-bc61-ac88c2027856",
             "isTouchedByAi": false,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1741004668689,
-            "modificationTimeUnixTimeInMs": 1741004668725,
+            "creationTimeUnixTimeInMs": 1741346221397,
+            "modificationTimeUnixTimeInMs": 1741346221397,
             "additionalProperties": {}
         }
     ],

@@ -1,6 +1,6 @@
 {
     "id": 0,
-    "identifier": "c3d72830-49cf-4ba2-835d-1792837dea83",
+    "identifier": "dceef0c7-9a75-4b63-b0f0-78eeddad96d0",
     "version": "1",
     "isEnabled": true,
     "isDebugMode": false,
@@ -14,12 +14,12 @@
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "c3d72830-49cf-4ba2-835d-1792837dea83",
+    "originalPlaybookIdentifier": "dceef0c7-9a75-4b63-b0f0-78eeddad96d0",
     "creationTimeUnixTimeInMs": 1740996575229,
-    "modificationTimeUnixTimeInMs": 1741004668493,
+    "modificationTimeUnixTimeInMs": 1741346220621,
     "trigger": {
         "id": 0,
-        "identifier": "092e0245-70b5-4f16-819a-991774370a7c",
+        "identifier": "294f8a22-0a27-46ba-95c0-968a8a30de3a",
         "type": 8,
         "logicalOperator": 0,
         "conditions": [
@@ -171,11 +171,11 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "c3d72830-49cf-4ba2-835d-1792837dea83",
+            "workflowIdentifier": "dceef0c7-9a75-4b63-b0f0-78eeddad96d0",
             "isTouchedByAi": false,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1741004668426,
-            "modificationTimeUnixTimeInMs": 1741004668493,
+            "creationTimeUnixTimeInMs": 1741346220427,
+            "modificationTimeUnixTimeInMs": 1741346220621,
             "additionalProperties": {}
         }
     ],
