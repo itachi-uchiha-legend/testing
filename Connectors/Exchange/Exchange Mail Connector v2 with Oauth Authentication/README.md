@@ -12,6 +12,12 @@ Event Name Field: event_name
 ### Parameters
 |Name|Description|Is Mandatory|Value|
 |----|-----------|------------|-----|
+|Case Name Template|When provided, connector will add a new key called "custom_case_name" to the Siemplify Event. It can used to have a customer case name. Please refer to the documentation portal for more details. You can provide placeholders in the following format: [name of the field]. Example: Phishing - [event_mailbox]. Note: connector will use first Siemplify Event for placeholders. Only keys that have string value will be handled.|False||
+|Alert Name Template|If provided, connector will use this value for Siemplify Alert Name. Please refer to the documentation portal for more details. You can provide placeholders in the following format: [name of the field]. Example: Phishing - [event_mailbox]. Note: connector will use first Siemplify Event for placeholders. Only keys that have string value will be handled. If nothing is provided or user provides an invalid template, connector will use the default alert name.|False||
+|Email Padding Period (minutes)|Specify an optional time period in minutes connector should fetch emails for prior to the latest timestamp.|False|0|
+|Base64 Encoded Private Key|Specify a base64 encoded private key that will be used to decrypt the email.|False||
+|Base64 Encoded Certificate|Specify a base64 encoded certificate that will be used to decrypt the email.|False||
+|Base64 Encoded CA certificate|Specify a base64 encoded trusted CA certificate for signature verification.|False||
 |Unread Emails Only|If checked, cases will be pulled only from unread emails|False|false|
 |Mark Emails as Read|If checked, after the emails have been pulled they will be marked as read|False|false|
 |Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field. Default is .* to catch all and return value unchanged. Used to allow the user to manipulate the environment field via regex logic. If regex pattern is null or empty, or the environment value is null, the final environment result is ""|False||
@@ -40,10 +46,4 @@ Event Name Field: event_name
 |Environment Field Name|Describes the name of the field where the environment name is stored. If the environment field isn't found, the environment is the default environment.|False||
 |Script Timeout (Seconds)|Timeout limit for the python process running the current script.|True|60|
 |Attach Original EML|If checked, the original email will be attached to the case info as an eml file|False|false|
-|Case Name Template|When provided, connector will add a new key called "custom_case_name" to the Siemplify Event. It can used to have a customer case name. Please refer to the documentation portal for more details. You can provide placeholders in the following format: [name of the field]. Example: Phishing - [event_mailbox]. Note: connector will use first Siemplify Event for placeholders. Only keys that have string value will be handled.|False||
-|Alert Name Template|If provided, connector will use this value for Siemplify Alert Name. Please refer to the documentation portal for more details. You can provide placeholders in the following format: [name of the field]. Example: Phishing - [event_mailbox]. Note: connector will use first Siemplify Event for placeholders. Only keys that have string value will be handled. If nothing is provided or user provides an invalid template, connector will use the default alert name.|False||
-|Email Padding Period (minutes)|Specify an optional time period in minutes connector should fetch emails for prior to the latest timestamp.|False|0|
-|Base64 Encoded Private Key|Specify a base64 encoded private key that will be used to decrypt the email.|False||
-|Base64 Encoded Certificate|Specify a base64 encoded certificate that will be used to decrypt the email.|False||
-|Base64 Encoded CA certificate|Specify a base64 encoded trusted CA certificate for signature verification.|False||
 

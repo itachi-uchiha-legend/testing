@@ -1,6 +1,6 @@
 {
     "lastRunStatus": 0,
-    "lastRunTime": 1741349449123,
+    "lastRunTime": 1741349567343,
     "uniqueIdentifier": "ab36b73f-e8cb-46a8-95ec-49243aff5508",
     "id": 0,
     "jobDefinitionId": 0,
@@ -14,170 +14,170 @@
     "version": 1,
     "parameters": [
         {
-            "id": 214578,
-            "isMandatory": false,
-            "name": "Logo",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214579,
-            "isMandatory": false,
-            "name": "Case Tags",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214580,
-            "isMandatory": false,
-            "name": "Case Stages",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214581,
-            "isMandatory": false,
-            "name": "Case Title Settings",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214582,
-            "isMandatory": false,
-            "name": "Case Close Reasons",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214583,
-            "isMandatory": false,
-            "name": "Networks",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214584,
-            "isMandatory": false,
-            "name": "Domains",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214585,
-            "isMandatory": false,
-            "name": "Custom Lists",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214586,
-            "isMandatory": false,
-            "name": "Email Templates",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214587,
-            "isMandatory": false,
-            "name": "Blacklists",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214588,
-            "isMandatory": false,
-            "name": "SLA Records",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214589,
-            "isMandatory": false,
-            "name": "Simulated Cases",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214567,
+            "id": 214267,
             "isMandatory": false,
             "name": "Repo URL",
             "type": 2,
             "value": "https://github.com/itachi-uchiha-legend/testing.git"
         },
         {
-            "id": 214568,
+            "id": 214268,
             "isMandatory": false,
             "name": "Branch",
             "type": 2,
             "value": "main"
         },
         {
-            "id": 214569,
+            "id": 214269,
             "isMandatory": false,
             "name": "Integrations",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214570,
+            "id": 214270,
             "isMandatory": false,
             "name": "Playbooks",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214571,
+            "id": 214271,
             "isMandatory": false,
             "name": "Jobs",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214572,
+            "id": 214272,
             "isMandatory": false,
             "name": "Connectors",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214573,
+            "id": 214273,
             "isMandatory": false,
             "name": "Integration Instances",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214574,
+            "id": 214274,
             "isMandatory": false,
             "name": "Visual Families",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214575,
+            "id": 214275,
             "isMandatory": false,
             "name": "Mappings",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214576,
+            "id": 214276,
             "isMandatory": false,
             "name": "Environments",
             "type": 0,
             "value": "true"
         },
         {
-            "id": 214577,
+            "id": 214277,
             "isMandatory": false,
             "name": "Dynamic Parameters",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214278,
+            "isMandatory": false,
+            "name": "Logo",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214279,
+            "isMandatory": false,
+            "name": "Case Tags",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214280,
+            "isMandatory": false,
+            "name": "Case Stages",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214281,
+            "isMandatory": false,
+            "name": "Case Title Settings",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214282,
+            "isMandatory": false,
+            "name": "Case Close Reasons",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214283,
+            "isMandatory": false,
+            "name": "Networks",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214284,
+            "isMandatory": false,
+            "name": "Domains",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214285,
+            "isMandatory": false,
+            "name": "Custom Lists",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214286,
+            "isMandatory": false,
+            "name": "Email Templates",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214287,
+            "isMandatory": false,
+            "name": "Blacklists",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214288,
+            "isMandatory": false,
+            "name": "SLA Records",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214289,
+            "isMandatory": false,
+            "name": "Simulated Cases",
             "type": 0,
             "value": "true"
         }
     ],
     "runIntervalInSeconds": 60,
     "creationTime": "2025-03-03T11:43:27.818Z",
-    "lastModificationTime": "2025-03-07T12:12:08.519Z",
+    "lastModificationTime": "2025-03-07T12:12:47.353Z",
     "isSystemJob": false,
     "jobDefinitionName": "Pull Content GitSyncBeta",
     "agentIdentifier": null
