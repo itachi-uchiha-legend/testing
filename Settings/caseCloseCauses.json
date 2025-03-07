@@ -177,14 +177,14 @@
     {
         "rootCause": "External attack",
         "forCloseReason": 0,
-        "id": 1,
+        "id": 99,
         "creationTimeUnixTimeInMs": 1739776836997,
         "modificationTimeUnixTimeInMs": 1741350403184
     },
     {
         "rootCause": "System/application malfunction",
         "forCloseReason": 0,
-        "id": 2,
+        "id": 98,
         "creationTimeUnixTimeInMs": 1739776836997,
         "modificationTimeUnixTimeInMs": 1741350403203
     }
