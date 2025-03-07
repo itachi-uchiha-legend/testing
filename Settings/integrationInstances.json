@@ -1,128 +1,6 @@
 [
     {
         "environment": "Default Environment",
-        "integrationIdentifier": "GitSyncBeta",
-        "settings": {
-            "instanceDescription": null,
-            "instanceName": "System Default Instance",
-            "settings": [
-                {
-                    "integrationIdentifier": "GitSyncBeta",
-                    "propertyName": "Repo URL",
-                    "propertyDescription": "Repository URL. The URL must start with 'https' for HTTPS+Token or 'git@' for SSH+Cert.",
-                    "propertyDisplayName": "Repo URL",
-                    "propertyType": 2,
-                    "isMandatory": true,
-                    "value": "",
-                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
-                    "environment": null,
-                    "id": 131,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0
-                },
-                {
-                    "integrationIdentifier": "GitSyncBeta",
-                    "propertyName": "Branch",
-                    "propertyDescription": "Target branch",
-                    "propertyDisplayName": "Branch",
-                    "propertyType": 2,
-                    "isMandatory": true,
-                    "value": "",
-                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
-                    "environment": null,
-                    "id": 132,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0
-                },
-                {
-                    "integrationIdentifier": "GitSyncBeta",
-                    "propertyName": "Git Password/Token/SSH Key",
-                    "propertyDescription": "Git Password/Token/SSH Key (Base64). RSA and Ed25519 are supported.",
-                    "propertyDisplayName": "Git Password/Token/SSH Key",
-                    "propertyType": 3,
-                    "isMandatory": true,
-                    "value": "",
-                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
-                    "environment": null,
-                    "id": 133,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0
-                },
-                {
-                    "integrationIdentifier": "GitSyncBeta",
-                    "propertyName": "Git Username",
-                    "propertyDescription": "Git Username",
-                    "propertyDisplayName": "Git Username",
-                    "propertyType": 2,
-                    "isMandatory": false,
-                    "value": "",
-                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
-                    "environment": null,
-                    "id": 134,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0
-                },
-                {
-                    "integrationIdentifier": "GitSyncBeta",
-                    "propertyName": "Commit Author",
-                    "propertyDescription": "Commit Author. Must be in the following format: 'James Bond <james.bond@gmail.com>'",
-                    "propertyDisplayName": "Commit Author",
-                    "propertyType": 2,
-                    "isMandatory": false,
-                    "value": "",
-                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
-                    "environment": null,
-                    "id": 135,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0
-                },
-                {
-                    "integrationIdentifier": "GitSyncBeta",
-                    "propertyName": "Siemplify Verify SSL",
-                    "propertyDescription": "Siemplify Verify SSL",
-                    "propertyDisplayName": "Siemplify Verify SSL",
-                    "propertyType": 0,
-                    "isMandatory": false,
-                    "value": "True",
-                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
-                    "environment": null,
-                    "id": 136,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0
-                },
-                {
-                    "integrationIdentifier": "GitSyncBeta",
-                    "propertyName": "Git Verify SSL",
-                    "propertyDescription": "Git Verify SSL",
-                    "propertyDisplayName": "Git Verify SSL",
-                    "propertyType": 0,
-                    "isMandatory": false,
-                    "value": "True",
-                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
-                    "environment": null,
-                    "id": 137,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0
-                },
-                {
-                    "integrationIdentifier": "GitSyncBeta",
-                    "propertyName": "AgentIdentifier",
-                    "propertyDescription": null,
-                    "propertyDisplayName": "Agent",
-                    "propertyType": 9,
-                    "isMandatory": false,
-                    "value": null,
-                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
-                    "environment": null,
-                    "id": 138,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0
-                }
-            ]
-        }
-    },
-    {
-        "environment": "Default Environment",
         "integrationIdentifier": "MicrosoftGraphMail",
         "settings": {
             "instanceDescription": "",
@@ -795,6 +673,128 @@
                     "integrationInstance": "cff1cdda-d25a-470f-a861-a035b1a524fd",
                     "environment": null,
                     "id": 26,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                }
+            ]
+        }
+    },
+    {
+        "environment": "Default Environment",
+        "integrationIdentifier": "GitSyncBeta",
+        "settings": {
+            "instanceDescription": null,
+            "instanceName": "System Default Instance",
+            "settings": [
+                {
+                    "integrationIdentifier": "GitSyncBeta",
+                    "propertyName": "Repo URL",
+                    "propertyDescription": "Repository URL. The URL must start with 'https' for HTTPS+Token or 'git@' for SSH+Cert.",
+                    "propertyDisplayName": "Repo URL",
+                    "propertyType": 2,
+                    "isMandatory": true,
+                    "value": "",
+                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
+                    "environment": null,
+                    "id": 131,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "GitSyncBeta",
+                    "propertyName": "Branch",
+                    "propertyDescription": "Target branch",
+                    "propertyDisplayName": "Branch",
+                    "propertyType": 2,
+                    "isMandatory": true,
+                    "value": "",
+                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
+                    "environment": null,
+                    "id": 132,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "GitSyncBeta",
+                    "propertyName": "Git Password/Token/SSH Key",
+                    "propertyDescription": "Git Password/Token/SSH Key (Base64). RSA and Ed25519 are supported.",
+                    "propertyDisplayName": "Git Password/Token/SSH Key",
+                    "propertyType": 3,
+                    "isMandatory": true,
+                    "value": "",
+                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
+                    "environment": null,
+                    "id": 133,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "GitSyncBeta",
+                    "propertyName": "Git Username",
+                    "propertyDescription": "Git Username",
+                    "propertyDisplayName": "Git Username",
+                    "propertyType": 2,
+                    "isMandatory": false,
+                    "value": "",
+                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
+                    "environment": null,
+                    "id": 134,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "GitSyncBeta",
+                    "propertyName": "Commit Author",
+                    "propertyDescription": "Commit Author. Must be in the following format: 'James Bond <james.bond@gmail.com>'",
+                    "propertyDisplayName": "Commit Author",
+                    "propertyType": 2,
+                    "isMandatory": false,
+                    "value": "",
+                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
+                    "environment": null,
+                    "id": 135,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "GitSyncBeta",
+                    "propertyName": "Siemplify Verify SSL",
+                    "propertyDescription": "Siemplify Verify SSL",
+                    "propertyDisplayName": "Siemplify Verify SSL",
+                    "propertyType": 0,
+                    "isMandatory": false,
+                    "value": "True",
+                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
+                    "environment": null,
+                    "id": 136,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "GitSyncBeta",
+                    "propertyName": "Git Verify SSL",
+                    "propertyDescription": "Git Verify SSL",
+                    "propertyDisplayName": "Git Verify SSL",
+                    "propertyType": 0,
+                    "isMandatory": false,
+                    "value": "True",
+                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
+                    "environment": null,
+                    "id": 137,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "GitSyncBeta",
+                    "propertyName": "AgentIdentifier",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Agent",
+                    "propertyType": 9,
+                    "isMandatory": false,
+                    "value": null,
+                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
+                    "environment": null,
+                    "id": 138,
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0
                 }
