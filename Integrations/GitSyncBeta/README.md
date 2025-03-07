@@ -145,24 +145,6 @@ Export simulate cases to the repo
 |Commit Author|False|String||
 |Simulated Cases|True|String||
 
-#### Pull Integration GitSyncBeta
-Install an integration or update an installed one.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Install Whitelist|True|String||
-|Repo URL|False|String|None|
-|Branch|False|String|None|
-
-#### Pull Jobs GitSyncBeta
-Imports a job from the repo.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Job Whitelist|True|String||
-|Repo URL|False|String|None|
-|Branch|False|String|None|
-
 #### Push Integration GitSyncBeta
 Push an integration to repo. This action will overwrite the entire folder.
 
@@ -175,6 +157,15 @@ Push an integration to repo. This action will overwrite the entire folder.
 |Commit Author|False|String||
 |Readme Addon|False|String||
 
+#### Pull Integration GitSyncBeta
+Install an integration or update an installed one.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Install Whitelist|True|String||
+|Repo URL|False|String|None|
+|Branch|False|String|None|
+
 #### Push Job GitSyncBeta
 Export a job to the repo
 
@@ -186,6 +177,15 @@ Export a job to the repo
 |Commit Author|False|String||
 |Job Whitelist|True|String||
 |Readme Addon|False|String||
+
+#### Pull Jobs GitSyncBeta
+Imports a job from the repo.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Job Whitelist|True|String||
+|Repo URL|False|String|None|
+|Branch|False|String|None|
 
 #### Pull Connector GitSyncBeta
 Imports a connector from the repo.
@@ -224,6 +224,15 @@ Exports playbooks or blocks to the repo
 |Readme Addon|False|String||
 |Include Playbook Blocks|False|Boolean|true|
 
+#### Pull Custom Family GitSyncBeta
+Imports a custom family from the repo.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Repo URL|False|String|None|
+|Branch|False|String|None|
+|Family Name|True|String||
+
 #### Push Connectors GitSyncBeta
 Exports a connector to the repo.
 
@@ -237,15 +246,6 @@ Exports a connector to the repo.
 |Include Mappings|False|Boolean|false|
 |Readme Addon|False|String||
 |Commit|True|String||
-
-#### Pull Custom Family GitSyncBeta
-Imports a custom family from the repo.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Repo URL|False|String|None|
-|Branch|False|String|None|
-|Family Name|True|String||
 
 #### Pull Playbook GitSyncBeta
 Pulls and Installs a playbook or block from the repo. NOTE: Please verify you're not overwriting existing playbooks
