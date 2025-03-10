@@ -688,20 +688,6 @@
             "settings": [
                 {
                     "integrationIdentifier": "GitSyncBeta",
-                    "propertyName": "Branch",
-                    "propertyDescription": "Target branch",
-                    "propertyDisplayName": "Branch",
-                    "propertyType": 2,
-                    "isMandatory": true,
-                    "value": "",
-                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
-                    "environment": null,
-                    "id": 132,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0
-                },
-                {
-                    "integrationIdentifier": "GitSyncBeta",
                     "propertyName": "Git Password/Token/SSH Key",
                     "propertyDescription": "Git Password/Token/SSH Key (Base64). RSA and Ed25519 are supported.",
                     "propertyDisplayName": "Git Password/Token/SSH Key",
@@ -797,6 +783,20 @@
                     "id": 138,
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "GitSyncBeta",
+                    "propertyName": "Branch",
+                    "propertyDescription": "Target branch",
+                    "propertyDisplayName": "Branch",
+                    "propertyType": 2,
+                    "isMandatory": true,
+                    "value": "",
+                    "integrationInstance": "d2f7ba73-5167-4e32-9304-4366b4895b74",
+                    "environment": null,
+                    "id": 132,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
                 }
             ]
         }
@@ -808,20 +808,6 @@
             "instanceDescription": "",
             "instanceName": "GitSyncBeta_1",
             "settings": [
-                {
-                    "integrationIdentifier": "GitSyncBeta",
-                    "propertyName": "Branch",
-                    "propertyDescription": "Target branch",
-                    "propertyDisplayName": "Branch",
-                    "propertyType": 2,
-                    "isMandatory": true,
-                    "value": "main",
-                    "integrationInstance": "61b1be61-5b92-4001-937d-9071ed8ba00e",
-                    "environment": null,
-                    "id": 5271,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0
-                },
                 {
                     "integrationIdentifier": "GitSyncBeta",
                     "propertyName": "Git Password/Token/SSH Key",
@@ -917,6 +903,20 @@
                     "integrationInstance": "61b1be61-5b92-4001-937d-9071ed8ba00e",
                     "environment": null,
                     "id": 5277,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "GitSyncBeta",
+                    "propertyName": "Branch",
+                    "propertyDescription": "Target branch",
+                    "propertyDisplayName": "Branch",
+                    "propertyType": 2,
+                    "isMandatory": true,
+                    "value": "main",
+                    "integrationInstance": "61b1be61-5b92-4001-937d-9071ed8ba00e",
+                    "environment": null,
+                    "id": 5271,
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0
                 }

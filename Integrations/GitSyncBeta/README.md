@@ -7,13 +7,13 @@ Python Version - 3
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Branch|Target branch|True|String||
 |Git Password/Token/SSH Key|Git Password/Token/SSH Key (Base64). RSA and Ed25519 are supported.|True|Password|None|
 |Git Username|Git Username|False|String||
 |Commit Author|Commit Author. Must be in the following format: 'James Bond <james.bond@gmail.com>'|False|String||
 |Siemplify Verify SSL|Siemplify Verify SSL|False|Boolean|true|
 |Git Verify SSL|Git Verify SSL|False|Boolean|true|
 |Repo URL|Repository URL. The URL must start with 'https' for HTTPS+Token or 'git@' for SSH+Cert.|True|String||
+|Branch|Target branch|True|String||
 
 
 #### Dependencies
@@ -60,15 +60,6 @@ Installs content from the repo.
 
 |Name|IsMandatory|Type|DefaultValue|
 |----|-----------|----|------------|
-|Environments|False|Boolean|true|
-|Dynamic Parameters|False|Boolean|true|
-|Logo|False|Boolean|true|
-|Case Tags|False|Boolean|true|
-|Case Stages|False|Boolean|true|
-|Case Title Settings|False|Boolean|true|
-|Case Close Reasons|False|Boolean|true|
-|Networks|False|Boolean|true|
-|Domains|False|Boolean|true|
 |Custom Lists|False|Boolean|true|
 |Email Templates|False|Boolean|true|
 |Blacklists|False|Boolean|true|
@@ -83,6 +74,15 @@ Installs content from the repo.
 |Integration Instances|False|Boolean|true|
 |Visual Families|False|Boolean|true|
 |Mappings|False|Boolean|true|
+|Environments|False|Boolean|true|
+|Dynamic Parameters|False|Boolean|true|
+|Logo|False|Boolean|true|
+|Case Tags|False|Boolean|true|
+|Case Stages|False|Boolean|true|
+|Case Title Settings|False|Boolean|true|
+|Case Close Reasons|False|Boolean|true|
+|Networks|False|Boolean|true|
+|Domains|False|Boolean|true|
 
 #### Push Connectors GitSyncBeta
 Exports a connector to the repo.
@@ -130,6 +130,17 @@ Push all content of this platform to git
 |SLA Records|False|Boolean|true|
 |Simulated Cases|False|Boolean|true|
 
+#### Push Simulated Cases GitSyncBeta
+Export simulate cases to the repo
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Commit|True|String||
+|Repo URL|False|String|None|
+|Branch|False|String|None|
+|Commit Author|False|String||
+|Simulated Cases|True|String||
+
 #### Pull Mappings GitSyncBeta
 Imports mappings from the repo.
 
@@ -148,17 +159,6 @@ Imports simulated cases from the repo.
 |Repo URL|False|String|None|
 |Branch|False|String|None|
 
-#### Push Simulated Cases GitSyncBeta
-Export simulate cases to the repo
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Commit|True|String||
-|Repo URL|False|String|None|
-|Branch|False|String|None|
-|Commit Author|False|String||
-|Simulated Cases|True|String||
-
 #### Pull Custom Family GitSyncBeta
 Imports a custom family from the repo.
 
@@ -167,6 +167,15 @@ Imports a custom family from the repo.
 |Repo URL|False|String|None|
 |Branch|False|String|None|
 |Family Name|True|String||
+
+#### Pull Integration GitSyncBeta
+Install an integration or update an installed one.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Install Whitelist|True|String||
+|Repo URL|False|String|None|
+|Branch|False|String|None|
 
 #### Push Integration GitSyncBeta
 Push an integration to repo. This action will overwrite the entire folder.
@@ -180,12 +189,12 @@ Push an integration to repo. This action will overwrite the entire folder.
 |Commit Author|False|String||
 |Readme Addon|False|String||
 
-#### Pull Integration GitSyncBeta
-Install an integration or update an installed one.
+#### Pull Jobs GitSyncBeta
+Imports a job from the repo.
 
 |Name|IsMandatory|Type|DefaultValue|
 |----|-----------|----|------------|
-|Install Whitelist|True|String||
+|Job Whitelist|True|String||
 |Repo URL|False|String|None|
 |Branch|False|String|None|
 
@@ -200,15 +209,6 @@ Export a job to the repo
 |Commit Author|False|String||
 |Job Whitelist|True|String||
 |Readme Addon|False|String||
-
-#### Pull Jobs GitSyncBeta
-Imports a job from the repo.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Job Whitelist|True|String||
-|Repo URL|False|String|None|
-|Branch|False|String|None|
 
 #### Pull Connector GitSyncBeta
 Imports a connector from the repo.

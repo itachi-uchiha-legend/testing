@@ -12,18 +12,6 @@
   "IntegrationProperties": [
     {
       "IntegrationIdentifier": "GitSyncBeta",
-      "PropertyName": "Branch",
-      "PropertyDescription": "Target branch",
-      "PropertyDisplayName": "Branch",
-      "PropertyType": 2,
-      "IsMandatory": true,
-      "Value": "",
-      "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741588649560,
-      "ModificationTimeUnixTimeInMs": 1741588649560
-    },
-    {
-      "IntegrationIdentifier": "GitSyncBeta",
       "PropertyName": "Git Password/Token/SSH Key",
       "PropertyDescription": "Git Password/Token/SSH Key (Base64). RSA and Ed25519 are supported.",
       "PropertyDisplayName": "Git Password/Token/SSH Key",
@@ -31,8 +19,8 @@
       "IsMandatory": true,
       "Value": null,
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741588649560,
-      "ModificationTimeUnixTimeInMs": 1741588649560
+      "CreationTimeUnixTimeInMs": 1741589034707,
+      "ModificationTimeUnixTimeInMs": 1741589034707
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -43,8 +31,8 @@
       "IsMandatory": false,
       "Value": "",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741588649560,
-      "ModificationTimeUnixTimeInMs": 1741588649560
+      "CreationTimeUnixTimeInMs": 1741589034707,
+      "ModificationTimeUnixTimeInMs": 1741589034707
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -55,8 +43,8 @@
       "IsMandatory": false,
       "Value": "",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741588649560,
-      "ModificationTimeUnixTimeInMs": 1741588649560
+      "CreationTimeUnixTimeInMs": 1741589034707,
+      "ModificationTimeUnixTimeInMs": 1741589034707
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -67,8 +55,8 @@
       "IsMandatory": false,
       "Value": "true",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741588649560,
-      "ModificationTimeUnixTimeInMs": 1741588649560
+      "CreationTimeUnixTimeInMs": 1741589034707,
+      "ModificationTimeUnixTimeInMs": 1741589034707
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -79,8 +67,8 @@
       "IsMandatory": false,
       "Value": "true",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741588649560,
-      "ModificationTimeUnixTimeInMs": 1741588649560
+      "CreationTimeUnixTimeInMs": 1741589034707,
+      "ModificationTimeUnixTimeInMs": 1741589034707
     },
     {
       "IntegrationIdentifier": "GitSyncBeta",
@@ -91,8 +79,20 @@
       "IsMandatory": true,
       "Value": "",
       "Id": 0,
-      "CreationTimeUnixTimeInMs": 1741588649560,
-      "ModificationTimeUnixTimeInMs": 1741588649560
+      "CreationTimeUnixTimeInMs": 1741589034707,
+      "ModificationTimeUnixTimeInMs": 1741589034707
+    },
+    {
+      "IntegrationIdentifier": "GitSyncBeta",
+      "PropertyName": "Branch",
+      "PropertyDescription": "Target branch",
+      "PropertyDisplayName": "Branch",
+      "PropertyType": 2,
+      "IsMandatory": true,
+      "Value": "",
+      "Id": 0,
+      "CreationTimeUnixTimeInMs": 1741589034707,
+      "ModificationTimeUnixTimeInMs": 1741589034707
     }
   ],
   "IntegrationSupportedActions": [
@@ -100,8 +100,8 @@
       "Name": "Ping",
       "Description": "Test connectivity to GitSync",
       "Id": 228,
-      "CreationTimeUnixTimeInMs": 1741588649447,
-      "ModificationTimeUnixTimeInMs": 1741588649586
+      "CreationTimeUnixTimeInMs": 1741589034629,
+      "ModificationTimeUnixTimeInMs": 1741589034718
     }
   ],
   "Categories": [],
@@ -116,6 +116,6 @@
   "MinimumSystemVersion": 0.0,
   "ProductionIntegrationIdentifier": null,
   "Id": 0,
-  "CreationTimeUnixTimeInMs": 1741588649560,
-  "ModificationTimeUnixTimeInMs": 1741588649560
+  "CreationTimeUnixTimeInMs": 1741589034707,
+  "ModificationTimeUnixTimeInMs": 1741589034707
 }
