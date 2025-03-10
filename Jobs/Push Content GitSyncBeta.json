@@ -14,6 +14,62 @@
     "version": 1,
     "parameters": [
         {
+            "id": 214665,
+            "isMandatory": true,
+            "name": "Commit",
+            "type": 2,
+            "value": "aab"
+        },
+        {
+            "id": 214666,
+            "isMandatory": false,
+            "name": "Repo URL",
+            "type": 2,
+            "value": "https://github.com/itachi-uchiha-legend/testing.git"
+        },
+        {
+            "id": 214667,
+            "isMandatory": false,
+            "name": "Branch",
+            "type": 2,
+            "value": "main"
+        },
+        {
+            "id": 214668,
+            "isMandatory": false,
+            "name": "Commit Author",
+            "type": 2,
+            "value": "itachi-uchiha-legend <rkumbhar@google.com>"
+        },
+        {
+            "id": 214669,
+            "isMandatory": false,
+            "name": "Commit Passwords",
+            "type": 0,
+            "value": "false"
+        },
+        {
+            "id": 214670,
+            "isMandatory": false,
+            "name": "Integrations",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214671,
+            "isMandatory": false,
+            "name": "Playbooks",
+            "type": 0,
+            "value": "true"
+        },
+        {
+            "id": 214672,
+            "isMandatory": false,
+            "name": "Jobs",
+            "type": 0,
+            "value": "true"
+        },
+        {
             "id": 214673,
             "isMandatory": false,
             "name": "Connectors",
@@ -138,67 +194,11 @@
             "name": "Simulated Cases",
             "type": 0,
             "value": "true"
-        },
-        {
-            "id": 214665,
-            "isMandatory": true,
-            "name": "Commit",
-            "type": 2,
-            "value": "aab"
-        },
-        {
-            "id": 214666,
-            "isMandatory": false,
-            "name": "Repo URL",
-            "type": 2,
-            "value": "https://github.com/itachi-uchiha-legend/testing.git"
-        },
-        {
-            "id": 214667,
-            "isMandatory": false,
-            "name": "Branch",
-            "type": 2,
-            "value": "main"
-        },
-        {
-            "id": 214668,
-            "isMandatory": false,
-            "name": "Commit Author",
-            "type": 2,
-            "value": "itachi-uchiha-legend <rkumbhar@google.com>"
-        },
-        {
-            "id": 214669,
-            "isMandatory": false,
-            "name": "Commit Passwords",
-            "type": 0,
-            "value": "false"
-        },
-        {
-            "id": 214670,
-            "isMandatory": false,
-            "name": "Integrations",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214671,
-            "isMandatory": false,
-            "name": "Playbooks",
-            "type": 0,
-            "value": "true"
-        },
-        {
-            "id": 214672,
-            "isMandatory": false,
-            "name": "Jobs",
-            "type": 0,
-            "value": "true"
         }
     ],
     "runIntervalInSeconds": 600,
     "creationTime": "2025-03-03T12:23:12.825Z",
-    "lastModificationTime": "2025-03-10T06:44:31.893Z",
+    "lastModificationTime": "2025-03-10T07:02:25.092Z",
     "isSystemJob": false,
     "jobDefinitionName": "Push Content GitSyncBeta",
     "agentIdentifier": null
