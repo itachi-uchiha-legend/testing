@@ -14,48 +14,6 @@
     "version": 1,
     "parameters": [
         {
-            "id": 214691,
-            "isMandatory": true,
-            "name": "Commit",
-            "type": 2,
-            "value": "Push Content GitSyncBeta1 job after change"
-        },
-        {
-            "id": 214692,
-            "isMandatory": false,
-            "name": "Repo URL",
-            "type": 2,
-            "value": "https://github.com/itachi-uchiha-legend/testing.git"
-        },
-        {
-            "id": 214693,
-            "isMandatory": false,
-            "name": "Branch",
-            "type": 2,
-            "value": "main"
-        },
-        {
-            "id": 214694,
-            "isMandatory": false,
-            "name": "Commit Author",
-            "type": 2,
-            "value": "itachi-uchiha-legend <rkumbhar@google.com>"
-        },
-        {
-            "id": 214695,
-            "isMandatory": false,
-            "name": "Commit Passwords",
-            "type": 0,
-            "value": "false"
-        },
-        {
-            "id": 214696,
-            "isMandatory": false,
-            "name": "Integrations",
-            "type": 0,
-            "value": "true"
-        },
-        {
             "id": 214697,
             "isMandatory": false,
             "name": "Playbooks",
@@ -194,11 +152,53 @@
             "name": "Simulated Cases",
             "type": 0,
             "value": "true"
+        },
+        {
+            "id": 214691,
+            "isMandatory": true,
+            "name": "Commit",
+            "type": 2,
+            "value": "Push Content GitSyncBeta1 job after change"
+        },
+        {
+            "id": 214692,
+            "isMandatory": false,
+            "name": "Repo URL",
+            "type": 2,
+            "value": "https://github.com/itachi-uchiha-legend/testing.git"
+        },
+        {
+            "id": 214693,
+            "isMandatory": false,
+            "name": "Branch",
+            "type": 2,
+            "value": "main"
+        },
+        {
+            "id": 214694,
+            "isMandatory": false,
+            "name": "Commit Author",
+            "type": 2,
+            "value": "itachi-uchiha-legend <rkumbhar@google.com>"
+        },
+        {
+            "id": 214695,
+            "isMandatory": false,
+            "name": "Commit Passwords",
+            "type": 0,
+            "value": "false"
+        },
+        {
+            "id": 214696,
+            "isMandatory": false,
+            "name": "Integrations",
+            "type": 0,
+            "value": "true"
         }
     ],
     "runIntervalInSeconds": 60,
     "creationTime": "2025-03-03T11:38:19.549Z",
-    "lastModificationTime": "2025-03-07T12:39:03.508Z",
+    "lastModificationTime": "2025-03-10T06:07:20.41Z",
     "isSystemJob": false,
     "jobDefinitionName": "Push Content GitSyncBeta",
     "agentIdentifier": null

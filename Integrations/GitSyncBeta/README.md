@@ -55,6 +55,35 @@ None
 
 ## Jobs
 
+#### Pull Content GitSyncBeta
+Installs content from the repo.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Environments|False|Boolean|true|
+|Dynamic Parameters|False|Boolean|true|
+|Logo|False|Boolean|true|
+|Case Tags|False|Boolean|true|
+|Case Stages|False|Boolean|true|
+|Case Title Settings|False|Boolean|true|
+|Case Close Reasons|False|Boolean|true|
+|Networks|False|Boolean|true|
+|Domains|False|Boolean|true|
+|Custom Lists|False|Boolean|true|
+|Email Templates|False|Boolean|true|
+|Blacklists|False|Boolean|true|
+|SLA Records|False|Boolean|true|
+|Simulated Cases|False|Boolean|true|
+|Repo URL|False|String||
+|Branch|False|String|None|
+|Integrations|False|Boolean|true|
+|Playbooks|False|Boolean|true|
+|Jobs|False|Boolean|true|
+|Connectors|False|Boolean|true|
+|Integration Instances|False|Boolean|true|
+|Visual Families|False|Boolean|true|
+|Mappings|False|Boolean|true|
+
 #### Push Connectors GitSyncBeta
 Exports a connector to the repo.
 
@@ -69,22 +98,16 @@ Exports a connector to the repo.
 |Readme Addon|False|String||
 |Commit|True|String||
 
-#### Pull Custom Family GitSyncBeta
-Imports a custom family from the repo.
+#### Push Content GitSyncBeta
+Push all content of this platform to git
 
 |Name|IsMandatory|Type|DefaultValue|
 |----|-----------|----|------------|
+|Commit|True|String||
 |Repo URL|False|String|None|
 |Branch|False|String|None|
-|Family Name|True|String||
-
-#### Pull Content GitSyncBeta
-Installs content from the repo.
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Repo URL|False|String||
-|Branch|False|String|None|
+|Commit Author|False|String||
+|Commit Passwords|False|Boolean|false|
 |Integrations|False|Boolean|true|
 |Playbooks|False|Boolean|true|
 |Jobs|False|Boolean|true|
@@ -125,38 +148,6 @@ Imports simulated cases from the repo.
 |Repo URL|False|String|None|
 |Branch|False|String|None|
 
-#### Push Content GitSyncBeta
-Push all content of this platform to git
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|Commit|True|String||
-|Repo URL|False|String|None|
-|Branch|False|String|None|
-|Commit Author|False|String||
-|Commit Passwords|False|Boolean|false|
-|Integrations|False|Boolean|true|
-|Playbooks|False|Boolean|true|
-|Jobs|False|Boolean|true|
-|Connectors|False|Boolean|true|
-|Integration Instances|False|Boolean|true|
-|Visual Families|False|Boolean|true|
-|Mappings|False|Boolean|true|
-|Environments|False|Boolean|true|
-|Dynamic Parameters|False|Boolean|true|
-|Logo|False|Boolean|true|
-|Case Tags|False|Boolean|true|
-|Case Stages|False|Boolean|true|
-|Case Title Settings|False|Boolean|true|
-|Case Close Reasons|False|Boolean|true|
-|Networks|False|Boolean|true|
-|Domains|False|Boolean|true|
-|Custom Lists|False|Boolean|true|
-|Email Templates|False|Boolean|true|
-|Blacklists|False|Boolean|true|
-|SLA Records|False|Boolean|true|
-|Simulated Cases|False|Boolean|true|
-
 #### Push Simulated Cases GitSyncBeta
 Export simulate cases to the repo
 
@@ -167,6 +158,15 @@ Export simulate cases to the repo
 |Branch|False|String|None|
 |Commit Author|False|String||
 |Simulated Cases|True|String||
+
+#### Pull Custom Family GitSyncBeta
+Imports a custom family from the repo.
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|Repo URL|False|String|None|
+|Branch|False|String|None|
+|Family Name|True|String||
 
 #### Push Integration GitSyncBeta
 Push an integration to repo. This action will overwrite the entire folder.
