@@ -187,5 +187,12 @@
         "id": 9,
         "creationTimeUnixTimeInMs": 1739776836997,
         "modificationTimeUnixTimeInMs": 1741588688482
+    },
+    {
+        "rootCause": "Unknown",
+        "forCloseReason": 0,
+        "id": 99,
+        "creationTimeUnixTimeInMs": 1739776836997,
+        "modificationTimeUnixTimeInMs": 1741588688482
     }
 ]
