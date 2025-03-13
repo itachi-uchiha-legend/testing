@@ -19,8 +19,8 @@
             "IsMandatory": true,
             "Value": "https://tap.phishmecloud.com",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741781686446,
-            "ModificationTimeUnixTimeInMs": 1741781686446
+            "CreationTimeUnixTimeInMs": 1741848219853,
+            "ModificationTimeUnixTimeInMs": 1741848219853
         },
         {
             "IntegrationIdentifier": "CofenseTriage",
@@ -31,8 +31,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741781686446,
-            "ModificationTimeUnixTimeInMs": 1741781686446
+            "CreationTimeUnixTimeInMs": 1741848219853,
+            "ModificationTimeUnixTimeInMs": 1741848219853
         },
         {
             "IntegrationIdentifier": "CofenseTriage",
@@ -43,8 +43,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741781686446,
-            "ModificationTimeUnixTimeInMs": 1741781686446
+            "CreationTimeUnixTimeInMs": 1741848219853,
+            "ModificationTimeUnixTimeInMs": 1741848219853
         },
         {
             "IntegrationIdentifier": "CofenseTriage",
@@ -55,108 +55,108 @@
             "IsMandatory": false,
             "Value": "false",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1741781686446,
-            "ModificationTimeUnixTimeInMs": 1741781686446
+            "CreationTimeUnixTimeInMs": 1741848219853,
+            "ModificationTimeUnixTimeInMs": 1741848219853
         }
     ],
     "IntegrationSupportedActions": [
         {
             "Name": "Get Report Headers",
             "Description": "Return information about the header related to the report from Cofense Triage.",
-            "Id": 2269,
-            "CreationTimeUnixTimeInMs": 1741781686456,
-            "ModificationTimeUnixTimeInMs": 1741781686456
+            "Id": 2299,
+            "CreationTimeUnixTimeInMs": 1741848219862,
+            "ModificationTimeUnixTimeInMs": 1741848219862
         },
         {
             "Name": "Get Threat Indicator Details",
             "Description": "Return information about the entities based on the threat indicator details from Cofense Triage. Note: Only MD5 and SHA256 hashes are supported.",
-            "Id": 2270,
-            "CreationTimeUnixTimeInMs": 1741781686456,
-            "ModificationTimeUnixTimeInMs": 1741781686456
+            "Id": 2300,
+            "CreationTimeUnixTimeInMs": 1741848219862,
+            "ModificationTimeUnixTimeInMs": 1741848219862
         },
         {
             "Name": "Download Report Preview",
             "Description": "Download image preview from the email related to the report from Cofense Triage.",
-            "Id": 2271,
-            "CreationTimeUnixTimeInMs": 1741781686456,
-            "ModificationTimeUnixTimeInMs": 1741781686456
+            "Id": 2301,
+            "CreationTimeUnixTimeInMs": 1741848219862,
+            "ModificationTimeUnixTimeInMs": 1741848219862
         },
         {
             "Name": "Ping",
             "Description": "Test connectivity to the Cofense Triage with parameters provided at the integration configuration page on the Marketplace tab.",
-            "Id": 2272,
-            "CreationTimeUnixTimeInMs": 1741781686456,
-            "ModificationTimeUnixTimeInMs": 1741781686456
+            "Id": 2302,
+            "CreationTimeUnixTimeInMs": 1741848219862,
+            "ModificationTimeUnixTimeInMs": 1741848219862
         },
         {
             "Name": "List Categories",
             "Description": "List available categories in Cofense Triage.",
-            "Id": 2273,
-            "CreationTimeUnixTimeInMs": 1741781686456,
-            "ModificationTimeUnixTimeInMs": 1741781686456
+            "Id": 2303,
+            "CreationTimeUnixTimeInMs": 1741848219862,
+            "ModificationTimeUnixTimeInMs": 1741848219862
         },
         {
             "Name": "Get Report Reporters",
             "Description": "Return information about the reporter related to the report from Cofense Triage.",
-            "Id": 2274,
-            "CreationTimeUnixTimeInMs": 1741781686456,
-            "ModificationTimeUnixTimeInMs": 1741781686456
+            "Id": 2304,
+            "CreationTimeUnixTimeInMs": 1741848219862,
+            "ModificationTimeUnixTimeInMs": 1741848219862
         },
         {
             "Name": "List Reports Related To Threat Indicators",
             "Description": "List reports related to threat indicators in Cofense Triage.",
-            "Id": 2275,
-            "CreationTimeUnixTimeInMs": 1741781686456,
-            "ModificationTimeUnixTimeInMs": 1741781686456
+            "Id": 2305,
+            "CreationTimeUnixTimeInMs": 1741848219862,
+            "ModificationTimeUnixTimeInMs": 1741848219862
         },
         {
             "Name": "Categorize Report",
             "Description": "Categorize a report in Cofense Triage.",
-            "Id": 2276,
-            "CreationTimeUnixTimeInMs": 1741781686456,
-            "ModificationTimeUnixTimeInMs": 1741781686456
+            "Id": 2306,
+            "CreationTimeUnixTimeInMs": 1741848219862,
+            "ModificationTimeUnixTimeInMs": 1741848219862
         },
         {
             "Name": "Get Domain Details",
             "Description": "Return information about the domain from Cofense Triage.",
-            "Id": 2277,
-            "CreationTimeUnixTimeInMs": 1741781686456,
-            "ModificationTimeUnixTimeInMs": 1741781686456
+            "Id": 2307,
+            "CreationTimeUnixTimeInMs": 1741848219862,
+            "ModificationTimeUnixTimeInMs": 1741848219862
         },
         {
             "Name": "EnrichURL",
             "Description": "Return information about the URL from Cofense Triage.",
-            "Id": 2278,
-            "CreationTimeUnixTimeInMs": 1741781686456,
-            "ModificationTimeUnixTimeInMs": 1741781686456
+            "Id": 2308,
+            "CreationTimeUnixTimeInMs": 1741848219862,
+            "ModificationTimeUnixTimeInMs": 1741848219862
         },
         {
             "Name": "Execute Playbook",
             "Description": "Initiate a playbook execution in Cofense Triage.",
-            "Id": 2279,
-            "CreationTimeUnixTimeInMs": 1741781686456,
-            "ModificationTimeUnixTimeInMs": 1741781686456
+            "Id": 2309,
+            "CreationTimeUnixTimeInMs": 1741848219862,
+            "ModificationTimeUnixTimeInMs": 1741848219862
         },
         {
             "Name": "Add Tags To Report",
             "Description": "Add tags to a report in Cofense Triage.",
-            "Id": 2280,
-            "CreationTimeUnixTimeInMs": 1741781686456,
-            "ModificationTimeUnixTimeInMs": 1741781686456
+            "Id": 2310,
+            "CreationTimeUnixTimeInMs": 1741848219862,
+            "ModificationTimeUnixTimeInMs": 1741848219862
         },
         {
             "Name": "List Playbooks",
             "Description": "List available playbooks in Cofense Triage.",
-            "Id": 2281,
-            "CreationTimeUnixTimeInMs": 1741781686456,
-            "ModificationTimeUnixTimeInMs": 1741781686456
+            "Id": 2311,
+            "CreationTimeUnixTimeInMs": 1741848219862,
+            "ModificationTimeUnixTimeInMs": 1741848219862
         },
         {
             "Name": "Download Report Email",
             "Description": "Download raw email related to the report from Cofense Triage.",
-            "Id": 2282,
-            "CreationTimeUnixTimeInMs": 1741781686456,
-            "ModificationTimeUnixTimeInMs": 1741781686456
+            "Id": 2312,
+            "CreationTimeUnixTimeInMs": 1741848219862,
+            "ModificationTimeUnixTimeInMs": 1741848219862
         }
     ],
     "Categories": [
@@ -174,6 +174,6 @@
     "MinimumSystemVersion": 0.0,
     "ProductionIntegrationIdentifier": null,
     "Id": 0,
-    "CreationTimeUnixTimeInMs": 1741781686446,
-    "ModificationTimeUnixTimeInMs": 1741781686446
+    "CreationTimeUnixTimeInMs": 1741848219853,
+    "ModificationTimeUnixTimeInMs": 1741848219853
 }
