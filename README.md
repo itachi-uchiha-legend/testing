@@ -27,6 +27,7 @@
 |Name|Description|
 |----|-----------|
 |CrowdStrikeFalcon||
+|CrowdStrikeFalcon1||
 |New Playbook||
 |New Playbook 1||
 
