@@ -6,7 +6,7 @@
     "isDebugMode": false,
     "name": "CrowdStrikeFalcon1",
     "creator": "617a5300-e723-45bc-bacc-298bad4fd27e",
-    "modifiedBy": "Siemplify automation",
+    "modifiedBy": "617a5300-e723-45bc-bacc-298bad4fd27e",
     "priority": 2,
     "description": "",
     "environments": [
@@ -16,7 +16,7 @@
     "categoryId": 1,
     "originalPlaybookIdentifier": "228d6fe0-c00e-4321-b791-c5a9a73dea73",
     "creationTimeUnixTimeInMs": 1742969676990,
-    "modificationTimeUnixTimeInMs": 1743007838628,
+    "modificationTimeUnixTimeInMs": 1743007885021,
     "trigger": {
         "id": 0,
         "identifier": "b79b7ec5-51dd-4665-9f01-853370ce97e8",
@@ -175,8 +175,8 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1743007838585,
-            "modificationTimeUnixTimeInMs": 1743007838628,
+            "creationTimeUnixTimeInMs": 1743007884966,
+            "modificationTimeUnixTimeInMs": 1743007885021,
             "additionalProperties": {}
         }
     ],
@@ -187,8 +187,17 @@
         "debugBaseAlertId": null,
         "debugAlertId": null
     },
-    "entityAccessLevel": 2,
-    "defaultAccessLevel": 2,
-    "permissions": [],
+    "entityAccessLevel": 1,
+    "defaultAccessLevel": 1,
+    "permissions": [
+        {
+            "workflowOriginalIdentifier": "228d6fe0-c00e-4321-b791-c5a9a73dea73",
+            "user": "617a5300-e723-45bc-bacc-298bad4fd27e",
+            "accessLevel": 2,
+            "id": 1,
+            "creationTimeUnixTimeInMs": 1743007885048,
+            "modificationTimeUnixTimeInMs": 1743007885048
+        }
+    ],
     "overviewTemplates": []
 }
