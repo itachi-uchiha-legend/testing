@@ -26,6 +26,7 @@
 ## Playbooks
 |Name|Description|
 |----|-----------|
+|CrowdStrikeFalcon||
 |New Playbook||
 |New Playbook 1||
 
