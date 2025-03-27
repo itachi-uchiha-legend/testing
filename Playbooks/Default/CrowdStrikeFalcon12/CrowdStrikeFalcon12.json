@@ -1,0 +1,203 @@
+{
+    "id": 0,
+    "identifier": "ac9d0df9-068a-410f-ada5-6e5eec91f510",
+    "version": "0",
+    "isEnabled": true,
+    "isDebugMode": false,
+    "name": "CrowdStrikeFalcon12",
+    "creator": "617a5300-e723-45bc-bacc-298bad4fd27e",
+    "modifiedBy": "617a5300-e723-45bc-bacc-298bad4fd27e",
+    "priority": 2,
+    "description": "",
+    "environments": [
+        "Default Environment"
+    ],
+    "categoryName": "Default",
+    "categoryId": 1,
+    "originalPlaybookIdentifier": "228d6fe0-c00e-4321-b791-c5a9a73dea73",
+    "creationTimeUnixTimeInMs": 1742969676990,
+    "modificationTimeUnixTimeInMs": 1743007996311,
+    "trigger": {
+        "id": 0,
+        "identifier": "b79b7ec5-51dd-4665-9f01-853370ce97e8",
+        "type": 8,
+        "logicalOperator": 0,
+        "conditions": [
+            {
+                "fieldName": "",
+                "value": "",
+                "matchType": 0
+            }
+        ]
+    },
+    "steps": [
+        {
+            "parallelActions": [],
+            "identifier": "6279cb9b-3a4c-4661-84de-6e7b7173d596",
+            "originalStepIdentifier": "2c9be394-85c9-457a-8184-7441f5a29b03",
+            "isAutomatic": true,
+            "isSkippable": false,
+            "instanceName": "CrowdStrikeFalcon_Add Identity Protection Detection Comment_1",
+            "name": "CrowdStrikeFalcon_Add Identity Protection Detection Comment",
+            "integration": "CrowdStrikeFalcon",
+            "description": "Add a comment to identity protection detection in Crowdstrike.",
+            "actionProvider": "Scripts",
+            "actionName": "CrowdStrikeFalcon_Add Identity Protection Detection Comment",
+            "type": 0,
+            "parameters": [
+                {
+                    "name": "AssignedUsers",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "DynamicInjectionInstancePlaceholder",
+                    "value": "",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "FallbackIntegrationInstance",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "FetchInstanceByName",
+                    "value": "false",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "HasApprovalLink",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "IntegrationInstance",
+                    "value": "eb21e6cf-1227-48df-b155-53036be9b2f8",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "MessageToAssignee",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "PendingActionTimeout",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "ScriptName",
+                    "value": "CrowdStrikeFalcon_Add Identity Protection Detection Comment",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "ScriptParametersEntityFields",
+                    "value": "{\"Detection ID\":\"27fe4e476ca3490b8476b2b6650e5a74:ind:2a1c5ef609ac479ba77f8ca5879c82fc:416977862841607-10304-95420944\",\"Comment\":\"Prod test\"}",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "SelectedScopeName",
+                    "value": "All entities",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                }
+            ],
+            "autoSkipOnFailure": false,
+            "isDebugMockData": false,
+            "debugData": null,
+            "parentStepContainerId": null,
+            "workflowIdentifier": "ac9d0df9-068a-410f-ada5-6e5eec91f510",
+            "isTouchedByAi": false,
+            "startLoopStepIdentifier": null,
+            "id": 0,
+            "creationTimeUnixTimeInMs": 1743007996271,
+            "modificationTimeUnixTimeInMs": 1743007996311,
+            "additionalProperties": {}
+        }
+    ],
+    "stepsRelations": [],
+    "templateName": null,
+    "playbookType": 0,
+    "debugData": {
+        "debugBaseAlertId": null,
+        "debugAlertId": null
+    },
+    "entityAccessLevel": 1,
+    "defaultAccessLevel": 1,
+    "permissions": [
+        {
+            "workflowOriginalIdentifier": "228d6fe0-c00e-4321-b791-c5a9a73dea73",
+            "user": "617a5300-e723-45bc-bacc-298bad4fd27e",
+            "accessLevel": 2,
+            "id": 2,
+            "creationTimeUnixTimeInMs": 1743007996325,
+            "modificationTimeUnixTimeInMs": 1743007996325
+        }
+    ],
+    "overviewTemplates": []
+}

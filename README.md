@@ -28,6 +28,7 @@
 |----|-----------|
 |CrowdStrikeFalcon||
 |CrowdStrikeFalcon1||
+|CrowdStrikeFalcon12||
 |New Playbook||
 |New Playbook 1||
 
