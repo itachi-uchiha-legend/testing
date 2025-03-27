@@ -1,6 +1,6 @@
 {
     "id": 0,
-    "identifier": "8b02b3aa-b011-4e7b-b9f5-0aeee03bd385",
+    "identifier": "cab8afbf-c7f6-4051-b9b8-0da2213f9751",
     "version": "0",
     "isEnabled": true,
     "isDebugMode": false,
@@ -14,12 +14,12 @@
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "228d6fe0-c00e-4321-b791-c5a9a73dea73",
-    "creationTimeUnixTimeInMs": 1742969676990,
-    "modificationTimeUnixTimeInMs": 1743076221504,
+    "originalPlaybookIdentifier": "cab8afbf-c7f6-4051-b9b8-0da2213f9751",
+    "creationTimeUnixTimeInMs": 1743076642114,
+    "modificationTimeUnixTimeInMs": 1743076642114,
     "trigger": {
         "id": 0,
-        "identifier": "e900916c-4ff1-40e4-8e6b-6a63209614b6",
+        "identifier": "a637bb58-d1cc-491b-97b4-4ebfad939da7",
         "type": 8,
         "logicalOperator": 0,
         "conditions": [
@@ -171,12 +171,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "8b02b3aa-b011-4e7b-b9f5-0aeee03bd385",
+            "workflowIdentifier": "cab8afbf-c7f6-4051-b9b8-0da2213f9751",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1743076221467,
-            "modificationTimeUnixTimeInMs": 1743076221504,
+            "creationTimeUnixTimeInMs": 1743076642076,
+            "modificationTimeUnixTimeInMs": 1743076642114,
             "additionalProperties": {}
         }
     ],
@@ -191,12 +191,12 @@
     "defaultAccessLevel": 2,
     "permissions": [
         {
-            "workflowOriginalIdentifier": "228d6fe0-c00e-4321-b791-c5a9a73dea73",
+            "workflowOriginalIdentifier": "cab8afbf-c7f6-4051-b9b8-0da2213f9751",
             "user": "617a5300-e723-45bc-bacc-298bad4fd27e",
             "accessLevel": 2,
-            "id": 5,
-            "creationTimeUnixTimeInMs": 1743076221518,
-            "modificationTimeUnixTimeInMs": 1743076221518
+            "id": 7,
+            "creationTimeUnixTimeInMs": 1743076642124,
+            "modificationTimeUnixTimeInMs": 1743076642124
         }
     ],
     "overviewTemplates": []
