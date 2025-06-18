@@ -10,6 +10,7 @@
 |CrowdStrike Falcon|CrowdStrike Falcon is the leader in next-generation endpoint protection, threat intelligence and incident response through cloud-based endpoint protection.|
 |CyberX|The most widely-deployed ICS, SCADA & IIoT security platform that continuously reduces OT network risk via ICS threat monitoring & asset discovery.|
 |CyberArk Credential Provider|CyberArk’s Secrets Manager Credential Providers, part of the Privileged Access Security solution, is used to eliminate hard coded application credentials embedded in applications, scripts or configuration files, and allows these highly-sensitive passwords to be centrally stored, logged and managed within the Vault.|
+|EmailUtilities|A set of utility actions to assist with working with emails.  Includes actions to parse EMLs and analyze email headers.|
 |Exchange|Integration provides support for Microsoft Exchange 2010 - 2019 and Microsoft Office365 mail servers. Integration uses Exchange Web Services (EWS) for communication. Integration includes a series of actions to send out emails and work with received emails, along with a connector to monitor specific mailboxes and ingest emails from that mailboxes as alerts to Google SecOps for further analysis.|
 |GitSyncBeta|Sync Google SecOps integrations, playbooks, and settings with a GitHub, BitBucket or GitLab instance|
 |Google Chronicle|Google SecOps enables you to examine the aggregated security information for your enterprise going back for months or longer. Use Google SecOps to search across all of the domains accessed from within your enterprise. To enable the Google API client to communicate with the Backstory API you will need Google Developer Service Account Credential, https://developers.google.com/identity/protocols/OAuth2#serviceaccount.|
@@ -20,6 +21,7 @@
 |Parsing Form Requests||
 |ServiceNow|An incident ticketing integration exchanges ticket data between your ServiceNow instance and Google SecOps system.|
 |Slack|Slack is where work flows. It's where the people you need, the information you share, and the tools you use come together to get things done.|
+|Sophos|Secure cloud workloads, data, apps, and access from the latest advanced threats and vulnerabilities.|
 |Tools|A set of utility actions for data manipulation and common platform tasks to power up playbook capabilities.|
 
 
