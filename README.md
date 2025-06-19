@@ -28,16 +28,7 @@
 ## Playbooks
 |Name|Description|
 |----|-----------|
-|AT_Test_Dev_1||
-|BBVA||
-|CrowdStrikeFalcon||
-|CrowdStrikeFalcon1||
-|CrowdStrikeFalcon12||
-|CrowdStrikeFalcon123||
 |New Playbook||
-|New Playbook 1||
-|New Playbook11||
-|New hhha||
 
 
 ## Jobs
