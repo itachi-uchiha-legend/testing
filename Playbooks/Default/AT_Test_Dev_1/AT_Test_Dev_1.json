@@ -1,26 +1,26 @@
 {
     "hasRestrictedEnvironments": false,
     "id": 0,
-    "identifier": "c36052f2-ec23-4ffa-8db7-a9a972c4d210",
-    "version": "0",
-    "isEnabled": false,
+    "identifier": "cfe2c58c-6ba1-4dcd-b17b-01b3e897dce9",
+    "version": "1",
+    "isEnabled": true,
     "isDebugMode": false,
-    "name": "New Playbook 1",
-    "creator": "Siemplify automation",
+    "name": "AT_Test_Dev_1",
+    "creator": "e1788b75-7ef3-4894-9c97-0c03e85a9a55",
     "modifiedBy": "e1788b75-7ef3-4894-9c97-0c03e85a9a55",
     "priority": 2,
     "description": "",
     "environments": [
-        "Default Environment"
+        "*"
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "c36052f2-ec23-4ffa-8db7-a9a972c4d210",
-    "creationTimeUnixTimeInMs": 1750328164245,
-    "modificationTimeUnixTimeInMs": 1750328164245,
+    "originalPlaybookIdentifier": "cfe2c58c-6ba1-4dcd-b17b-01b3e897dce9",
+    "creationTimeUnixTimeInMs": 1750327230615,
+    "modificationTimeUnixTimeInMs": 1750327230615,
     "trigger": {
         "id": 0,
-        "identifier": "d4617825-51af-47c4-9ee3-705e924645f9",
+        "identifier": "0d22139a-886a-476d-b142-689a41f3aed9",
         "type": 8,
         "logicalOperator": 0,
         "conditions": [
@@ -34,16 +34,16 @@
     "steps": [
         {
             "parallelActions": [],
-            "identifier": "d9a99276-4814-401b-92f6-f53e6c2f9843",
-            "originalStepIdentifier": "098e6fb2-c3d0-4edb-9007-b58d130fedad",
+            "identifier": "a9238471-0549-471f-bae6-94c9f10a7e6b",
+            "originalStepIdentifier": "a9238471-0549-471f-bae6-94c9f10a7e6b",
             "isAutomatic": true,
             "isSkippable": false,
-            "instanceName": "VirusTotalV3_Download File_1",
-            "name": "VirusTotalV3_Download File",
-            "integration": "VirusTotalV3",
-            "description": "Download file from VirusTotal. Supported entities: Filehash. Note: this action requires a VT Enterprise token. Only MD5, SHA-1, SHA-256 hashes are supported.",
+            "instanceName": "SiemplifyUtilities_Query Joiner_1",
+            "name": "SiemplifyUtilities_Query Joiner",
+            "integration": "SiemplifyUtilities",
+            "description": "Form query string from given parameters.",
             "actionProvider": "Scripts",
-            "actionName": "VirusTotalV3_Download File",
+            "actionName": "SiemplifyUtilities_Query Joiner",
             "type": 0,
             "parameters": [
                 {
@@ -70,7 +70,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": null,
+                    "value": "92fe5ca1-a001-413a-9ef5-4321a0f0ba76",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -103,7 +103,7 @@
                 },
                 {
                     "name": "IntegrationInstance",
-                    "value": null,
+                    "value": "AutomaticEnvironment",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -136,7 +136,7 @@
                 },
                 {
                     "name": "ScriptName",
-                    "value": "VirusTotalV3_Download File",
+                    "value": "SiemplifyUtilities_Query Joiner",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -147,7 +147,7 @@
                 },
                 {
                     "name": "ScriptParametersEntityFields",
-                    "value": "{\"Download Folder Path\":\"/tmp\",\"Overwrite\":true}",
+                    "value": "{\"Values\":\"ewfe,rbr\",\"Query Field\":\"ScrIP\",\"Query Operator\":\"AND\",\"Add Quotes\":true,\"Add Double Quotes\":false}",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -166,18 +166,29 @@
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
                     "additionalProperties": {}
+                },
+                {
+                    "name": "UseEntitiesLoopScope",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
                 }
             ],
             "autoSkipOnFailure": false,
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "c36052f2-ec23-4ffa-8db7-a9a972c4d210",
+            "workflowIdentifier": "cfe2c58c-6ba1-4dcd-b17b-01b3e897dce9",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750328164245,
-            "modificationTimeUnixTimeInMs": 1750328164245,
+            "creationTimeUnixTimeInMs": 1750327230615,
+            "modificationTimeUnixTimeInMs": 1750327230615,
             "additionalProperties": {}
         }
     ],
