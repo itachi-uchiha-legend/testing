@@ -16,7 +16,7 @@
     "categoryId": 1,
     "originalPlaybookIdentifier": "3231f51e-a416-41d1-a888-9915bd99d01c",
     "creationTimeUnixTimeInMs": 1750340131262,
-    "modificationTimeUnixTimeInMs": 1750340131262,
+    "modificationTimeUnixTimeInMs": 1750340407435,
     "trigger": {
         "id": 0,
         "identifier": "c64805cc-8848-4654-806b-f9ec1575b02d",
@@ -58,7 +58,7 @@
                 },
                 {
                     "name": "DynamicInjectionInstancePlaceholder",
-                    "value": "",
+                    "value": "Shared_GitSync_BBVA",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -69,7 +69,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "f11ee38b-5db9-46c7-a626-794129bb523e",
+                    "value": "8dcb3f48-8c7e-4887-9390-d18f30a62473",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -80,7 +80,7 @@
                 },
                 {
                     "name": "FetchInstanceByName",
-                    "value": "false",
+                    "value": "true",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -197,8 +197,8 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750340131262,
-            "modificationTimeUnixTimeInMs": 1750340131262,
+            "creationTimeUnixTimeInMs": 1750340407205,
+            "modificationTimeUnixTimeInMs": 1750340407435,
             "additionalProperties": {}
         }
     ],
