@@ -1,25 +1,25 @@
 {
     "id": 0,
-    "identifier": "d9ba77f9-23cc-439d-a05b-776fbfa4af9b",
+    "identifier": "a4372e2e-4204-4cfc-ad7e-3d6c42653d5e",
     "version": "1",
     "isEnabled": true,
     "isDebugMode": false,
-    "name": "New Playbook",
+    "name": "New Playbook11",
     "creator": "737b9926-9a53-468b-9768-0bb7f20672db",
     "modifiedBy": "737b9926-9a53-468b-9768-0bb7f20672db",
     "priority": 2,
     "description": "",
     "environments": [
-        "Default Environment"
+        "*"
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "d9ba77f9-23cc-439d-a05b-776fbfa4af9b",
-    "creationTimeUnixTimeInMs": 1750324756789,
-    "modificationTimeUnixTimeInMs": 1750324756789,
+    "originalPlaybookIdentifier": "a4372e2e-4204-4cfc-ad7e-3d6c42653d5e",
+    "creationTimeUnixTimeInMs": 1750324918025,
+    "modificationTimeUnixTimeInMs": 1750324918025,
     "trigger": {
         "id": 0,
-        "identifier": "3a1c2aae-d012-47b9-b7fd-c6a4d4483569",
+        "identifier": "58552d22-56c5-4460-ae55-c3d91518227a",
         "type": 8,
         "logicalOperator": 0,
         "conditions": [
@@ -33,16 +33,16 @@
     "steps": [
         {
             "parallelActions": [],
-            "identifier": "b496bc98-9599-43e3-8010-f479912b9699",
-            "originalStepIdentifier": "b496bc98-9599-43e3-8010-f479912b9699",
+            "identifier": "6700fcc5-6d4d-4347-a9be-71eb077c0c05",
+            "originalStepIdentifier": "6700fcc5-6d4d-4347-a9be-71eb077c0c05",
             "isAutomatic": true,
             "isSkippable": false,
-            "instanceName": "Sophos_Get Events Log_1",
-            "name": "Sophos_Get Events Log",
-            "integration": "Sophos",
-            "description": "Retrieve logs related to the endpoints in Sophos. Supported entities: IP Address, Hostname. Note: events are accessible from API only for 24 hours. Requires valid \u201cSIEM API Root\u201d, \u201cAPI Key\u201d and \u201cBase 64 Auth Payload\u201d provided in the integration configuration.",
+            "instanceName": "GitSync_Ping_1",
+            "name": "GitSync_Ping",
+            "integration": "GitSync",
+            "description": "Test connectivity to GitSync",
             "actionProvider": "Scripts",
-            "actionName": "Sophos_Get Events Log",
+            "actionName": "GitSync_Ping",
             "type": 0,
             "parameters": [
                 {
@@ -69,7 +69,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": null,
+                    "value": "8dcb3f48-8c7e-4887-9390-d18f30a62473",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -102,7 +102,7 @@
                 },
                 {
                     "name": "IntegrationInstance",
-                    "value": "b8cce174-cb77-4bdc-b804-2b604f311f01",
+                    "value": "AutomaticEnvironment",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -146,7 +146,7 @@
                 },
                 {
                     "name": "ScriptName",
-                    "value": "Sophos_Get Events Log",
+                    "value": "GitSync_Ping",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -157,7 +157,7 @@
                 },
                 {
                     "name": "ScriptParametersEntityFields",
-                    "value": "{\"Timeframe\":\"12\",\"Max Events To Return\":\"50\"}",
+                    "value": "{}",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -193,12 +193,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "d9ba77f9-23cc-439d-a05b-776fbfa4af9b",
+            "workflowIdentifier": "a4372e2e-4204-4cfc-ad7e-3d6c42653d5e",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750324756789,
-            "modificationTimeUnixTimeInMs": 1750324756789,
+            "creationTimeUnixTimeInMs": 1750324918025,
+            "modificationTimeUnixTimeInMs": 1750324918025,
             "additionalProperties": {}
         }
     ],

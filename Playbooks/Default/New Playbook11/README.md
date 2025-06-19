@@ -1,4 +1,4 @@
-# New Playbook
+# New Playbook11
 
 
 
@@ -28,5 +28,5 @@
 ### Involved Steps (Unordered)
 |Step Name|Description|Integration|Original Action|
 |---------|-----------|-----------|---------------|
-|Sophos_Get Events Log_1|Retrieve logs related to the endpoints in Sophos. Supported entities: IP Address, Hostname. Note: events are accessible from API only for 24 hours. Requires valid “SIEM API Root”, “API Key” and “Base 64 Auth Payload” provided in the integration configuration.|Sophos|Get Events Log|
+|GitSync_Ping_1|Test connectivity to GitSync|GitSync|Ping|
 
