@@ -31,4 +31,5 @@
 |Siemplify_Open Web Url_1|Generate a browser link|Siemplify|Open Web Url|
 |SiemplifyUtilities_Ping_1|Test Connectivity|SiemplifyUtilities|Ping|
 |Siemplify_Ping_1|Test Connectivity|Siemplify|Ping|
+|Siemplify_Case Tag_1|Add given tag to the case the current alert is grouped to|Siemplify|Case Tag|
 

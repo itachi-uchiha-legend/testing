@@ -17,7 +17,7 @@
     "categoryId": 1,
     "originalPlaybookIdentifier": "3e6dd2f3-504a-4554-a493-7b6d4cac6e05",
     "creationTimeUnixTimeInMs": 1750359079233,
-    "modificationTimeUnixTimeInMs": 1750359232363,
+    "modificationTimeUnixTimeInMs": 1750407753898,
     "trigger": {
         "id": 0,
         "identifier": "a2171caa-450b-4bed-b60b-e8de82b55317",
@@ -189,8 +189,8 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750359232297,
-            "modificationTimeUnixTimeInMs": 1750359232363,
+            "creationTimeUnixTimeInMs": 1750407753799,
+            "modificationTimeUnixTimeInMs": 1750407753898,
             "additionalProperties": {}
         },
         {
@@ -349,8 +349,8 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750359232297,
-            "modificationTimeUnixTimeInMs": 1750359232363,
+            "creationTimeUnixTimeInMs": 1750407753799,
+            "modificationTimeUnixTimeInMs": 1750407753898,
             "additionalProperties": {}
         },
         {
@@ -510,8 +510,168 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750359232297,
-            "modificationTimeUnixTimeInMs": 1750359232363,
+            "creationTimeUnixTimeInMs": 1750407753799,
+            "modificationTimeUnixTimeInMs": 1750407753898,
+            "additionalProperties": {}
+        },
+        {
+            "parallelActions": [],
+            "identifier": "992e9363-7aa7-4ad1-8e17-8abbad9be8e5",
+            "originalStepIdentifier": "992e9363-7aa7-4ad1-8e17-8abbad9be8e5",
+            "isAutomatic": true,
+            "isSkippable": false,
+            "instanceName": "Siemplify_Case Tag_1",
+            "name": "Siemplify_Case Tag",
+            "integration": "Siemplify",
+            "description": "Add given tag to the case the current alert is grouped to",
+            "actionProvider": "Scripts",
+            "actionName": "Siemplify_Case Tag",
+            "type": 0,
+            "parameters": [
+                {
+                    "name": "AssignedUsers",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "DynamicInjectionInstancePlaceholder",
+                    "value": "",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "FallbackIntegrationInstance",
+                    "value": "2e4c909c-9bfd-4708-bfa9-c403f0ee3df0",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {},
+                    "FallbackInstanceDisplayName": "Siemplify_Default"
+                },
+                {
+                    "name": "FetchInstanceByName",
+                    "value": "false",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "HasApprovalLink",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "IntegrationInstance",
+                    "value": "AutomaticEnvironment",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "MessageToAssignee",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "PendingActionTimeout",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "ScriptName",
+                    "value": "Siemplify_Case Tag",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "ScriptParametersEntityFields",
+                    "value": "{\"Tag\":\"test\"}",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "SelectedScopeName",
+                    "value": "All entities",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "UseEntitiesLoopScope",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                }
+            ],
+            "autoSkipOnFailure": false,
+            "isDebugMockData": false,
+            "debugData": null,
+            "parentStepContainerId": null,
+            "workflowIdentifier": "3e6dd2f3-504a-4554-a493-7b6d4cac6e05",
+            "isTouchedByAi": false,
+            "startLoopStepIdentifier": null,
+            "id": 0,
+            "creationTimeUnixTimeInMs": 1750407753898,
+            "modificationTimeUnixTimeInMs": 1750407753898,
             "additionalProperties": {}
         }
     ],
@@ -526,6 +686,12 @@
             "condition": "",
             "fromStep": "35440461-fdd5-41e8-a1b3-179fd1798913",
             "toStep": "4833ac7b-40cc-4fcb-9ce5-7f8fafc7d572",
+            "destinationActionStatus": 0
+        },
+        {
+            "condition": "",
+            "fromStep": "22f567b9-4f0c-4d5b-aeb5-4cec3d29887a",
+            "toStep": "992e9363-7aa7-4ad1-8e17-8abbad9be8e5",
             "destinationActionStatus": 0
         }
     ],
