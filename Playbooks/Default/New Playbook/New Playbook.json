@@ -76,7 +76,8 @@
                     "id": 0,
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
+                    "additionalProperties": {},
+                    "InstanceDisplayName": "Siemplify_1"
                 },
                 {
                     "name": "FetchInstanceByName",
@@ -394,7 +395,8 @@
                     "id": 0,
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
+                    "additionalProperties": {},
+                    "InstanceDisplayName": "Siemplify_1"
                 },
                 {
                     "name": "FetchInstanceByName",
