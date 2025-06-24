@@ -1,32 +1,32 @@
 {
     "hasRestrictedEnvironments": false,
     "id": 0,
-    "identifier": "52a21691-60a2-4af1-aff4-d6c5a3267e5f",
+    "identifier": "2fe25975-5e6c-46f5-8a8f-d4d5f063b954",
     "version": "1",
     "isEnabled": true,
     "isDebugMode": false,
-    "name": "New Playbook",
+    "name": "New Block",
     "creator": "e1788b75-7ef3-4894-9c97-0c03e85a9a55",
     "modifiedBy": "e1788b75-7ef3-4894-9c97-0c03e85a9a55",
     "priority": 2,
-    "description": "",
+    "description": "An embedded workflow that can receive inputs and return an output.",
     "environments": [
         "*"
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "52a21691-60a2-4af1-aff4-d6c5a3267e5f",
-    "creationTimeUnixTimeInMs": 1750789391417,
-    "modificationTimeUnixTimeInMs": 1750789391417,
+    "originalPlaybookIdentifier": "2fe25975-5e6c-46f5-8a8f-d4d5f063b954",
+    "creationTimeUnixTimeInMs": 1750789348816,
+    "modificationTimeUnixTimeInMs": 1750789348816,
     "trigger": {
         "id": 0,
-        "identifier": "b036fc44-028e-45e1-a617-b9af0e356814",
-        "type": 8,
+        "identifier": "2f85a761-d0e7-4348-8c77-b67c5b6fbc6b",
+        "type": 11,
         "logicalOperator": 0,
         "conditions": [
             {
-                "fieldName": "",
-                "value": "",
+                "fieldName": "CaseId",
+                "value": "[Case.Id]",
                 "matchType": 0
             }
         ]
@@ -34,16 +34,16 @@
     "steps": [
         {
             "parallelActions": [],
-            "identifier": "7d153b76-c278-4d3f-9cb9-5e072ab386e3",
-            "originalStepIdentifier": "7d153b76-c278-4d3f-9cb9-5e072ab386e3",
+            "identifier": "25182424-d689-4050-b9f0-256fbf99368a",
+            "originalStepIdentifier": "25182424-d689-4050-b9f0-256fbf99368a",
             "isAutomatic": true,
             "isSkippable": false,
-            "instanceName": "SiemplifyUtilities_List Operations_1",
-            "name": "SiemplifyUtilities_List Operations",
+            "instanceName": "SiemplifyUtilities_Get Deployment URL_1",
+            "name": "SiemplifyUtilities_Get Deployment URL",
             "integration": "SiemplifyUtilities",
-            "description": "Provide operations on lists.",
+            "description": "Get the URL that leads back to the instance this action is running on.",
             "actionProvider": "Scripts",
-            "actionName": "SiemplifyUtilities_List Operations",
+            "actionName": "SiemplifyUtilities_Get Deployment URL",
             "type": 0,
             "parameters": [
                 {
@@ -137,7 +137,7 @@
                 },
                 {
                     "name": "ScriptName",
-                    "value": "SiemplifyUtilities_List Operations",
+                    "value": "SiemplifyUtilities_Get Deployment URL",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -148,7 +148,7 @@
                 },
                 {
                     "name": "ScriptParametersEntityFields",
-                    "value": "{\"First List\":\"\",\"Second List\":\"\",\"Delimiter\":\"\",\"Operator\":\"\"}",
+                    "value": "{}",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -184,105 +184,28 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "52a21691-60a2-4af1-aff4-d6c5a3267e5f",
+            "workflowIdentifier": "2fe25975-5e6c-46f5-8a8f-d4d5f063b954",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750789391417,
-            "modificationTimeUnixTimeInMs": 1750789391417,
+            "creationTimeUnixTimeInMs": 1750789348816,
+            "modificationTimeUnixTimeInMs": 1750789348816,
             "additionalProperties": {}
         },
         {
             "parallelActions": [],
-            "identifier": "d031b4f5-db1e-47bd-9147-47e37659b231",
-            "originalStepIdentifier": "d031b4f5-db1e-47bd-9147-47e37659b231",
+            "identifier": "f0790947-e159-498a-b899-d4c29b6c290c",
+            "originalStepIdentifier": "f0790947-e159-498a-b899-d4c29b6c290c",
             "isAutomatic": true,
             "isSkippable": false,
-            "instanceName": "New Block_1",
-            "name": "New Block",
-            "integration": "Siemplify",
-            "description": "An embedded workflow that can receive inputs and return an output.",
+            "instanceName": "Output_1",
+            "name": "Output",
+            "integration": "Flow",
+            "description": "",
             "actionProvider": "Flow",
-            "actionName": "NestedAction",
-            "type": 5,
+            "actionName": "OutputAction",
+            "type": 6,
             "parameters": [
-                {
-                    "name": "AssignedUsers",
-                    "value": null,
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "HasApprovalLink",
-                    "value": null,
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "MessageToAssignee",
-                    "value": null,
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "NestedWorkflowIdentifier",
-                    "value": "2fe25975-5e6c-46f5-8a8f-d4d5f063b954",
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "NestedWorkflowInputs",
-                    "value": "[{\"FieldName\":\"CaseId\",\"MatchType\":0,\"Value\":\"[Case.Id]\"}]",
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "PendingActionTimeout",
-                    "value": null,
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "NestedWorkflowSteps",
-                    "value": "[{\"identifier\":\"25182424-d689-4050-b9f0-256fbf99368a\",\"integration\":\"SiemplifyUtilities\",\"actionName\":\"SiemplifyUtilities_Get Deployment URL\",\"instanceName\":\"SiemplifyUtilities_Get Deployment URL_1\",\"stepType\":0}]",
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
                 {
                     "name": "NestedWorkflowOutput",
                     "value": null,
@@ -299,25 +222,25 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "52a21691-60a2-4af1-aff4-d6c5a3267e5f",
+            "workflowIdentifier": "2fe25975-5e6c-46f5-8a8f-d4d5f063b954",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750789391417,
-            "modificationTimeUnixTimeInMs": 1750789391417,
+            "creationTimeUnixTimeInMs": 1750789348816,
+            "modificationTimeUnixTimeInMs": 1750789348816,
             "additionalProperties": {}
         }
     ],
     "stepsRelations": [
         {
             "condition": "",
-            "fromStep": "7d153b76-c278-4d3f-9cb9-5e072ab386e3",
-            "toStep": "d031b4f5-db1e-47bd-9147-47e37659b231",
+            "fromStep": "25182424-d689-4050-b9f0-256fbf99368a",
+            "toStep": "f0790947-e159-498a-b899-d4c29b6c290c",
             "destinationActionStatus": 0
         }
     ],
     "templateName": null,
-    "playbookType": 0,
+    "playbookType": 1,
     "debugData": {
         "debugBaseAlertId": null,
         "debugAlertId": null
