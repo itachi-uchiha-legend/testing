@@ -1,7 +1,7 @@
 {
     "hasRestrictedEnvironments": false,
     "id": 0,
-    "identifier": "595cb774-8e2a-41b8-8986-d8fb9bd0bd9a",
+    "identifier": "1b674702-9de8-485c-8c60-14e26a0e1f27",
     "version": "0",
     "isEnabled": true,
     "isDebugMode": false,
@@ -17,10 +17,10 @@
     "categoryId": 1,
     "originalPlaybookIdentifier": "04b6440b-3d2f-499e-83c4-ee2a2b9d182e",
     "creationTimeUnixTimeInMs": 1750325819879,
-    "modificationTimeUnixTimeInMs": 1750326056416,
+    "modificationTimeUnixTimeInMs": 1750759831655,
     "trigger": {
         "id": 0,
-        "identifier": "169deadb-a994-4574-a7b3-3eb8b259f1ae",
+        "identifier": "46cc477f-4a2e-4871-98a8-9b359fae6210",
         "type": 8,
         "logicalOperator": 0,
         "conditions": [
@@ -34,7 +34,7 @@
     "steps": [
         {
             "parallelActions": [],
-            "identifier": "7af7ebef-15e3-4308-8d26-c727130abbe4",
+            "identifier": "251920c3-fa6f-405f-9f8c-6b4b09c46ed6",
             "originalStepIdentifier": "7a29f902-5bf7-44f8-9cca-501a1da72a9b",
             "isAutomatic": true,
             "isSkippable": false,
@@ -103,14 +103,15 @@
                 },
                 {
                     "name": "IntegrationInstance",
-                    "value": "b4c403b3-071f-4bad-84f9-b8465e63d6cd",
+                    "value": "452744d3-fcce-45b8-97f8-bd95ecaca8c3",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
                     "id": 0,
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
+                    "additionalProperties": {},
+                    "InstanceDisplayName": "System Default Instance"
                 },
                 {
                     "name": "MessageToAssignee",
@@ -183,12 +184,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "595cb774-8e2a-41b8-8986-d8fb9bd0bd9a",
+            "workflowIdentifier": "1b674702-9de8-485c-8c60-14e26a0e1f27",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750326056416,
-            "modificationTimeUnixTimeInMs": 1750326056416,
+            "creationTimeUnixTimeInMs": 1750759831655,
+            "modificationTimeUnixTimeInMs": 1750759831655,
             "additionalProperties": {}
         }
     ],
@@ -204,23 +205,23 @@
     "permissions": [],
     "overviewTemplates": [
         {
-            "id": 5,
-            "identifier": "8d869380-93fb-4548-9b0f-0c031b141092",
+            "id": 6,
+            "identifier": "e07f1a83-8773-4b68-8086-a37eb499a22d",
             "name": "has",
             "creator": null,
-            "playbookIdentifier": "595cb774-8e2a-41b8-8986-d8fb9bd0bd9a",
+            "playbookIdentifier": "1b674702-9de8-485c-8c60-14e26a0e1f27",
             "type": 0,
             "widgets": [
                 {
                     "metadata": {
-                        "id": 20,
-                        "identifier": "ed87ce97-52be-4119-9925-41a5f23a88ed",
+                        "id": 22,
+                        "identifier": "6369bd37-188b-4530-845b-57237b3047d5",
                         "title": "HTML",
                         "width": 2,
                         "order": 1,
                         "description": "",
                         "type": 3,
-                        "templateIdentifier": "8d869380-93fb-4548-9b0f-0c031b141092",
+                        "templateIdentifier": "e07f1a83-8773-4b68-8086-a37eb499a22d",
                         "predefinedWidgetTemplateIdentifier": null,
                         "actionIdentifier": null,
                         "stepIdentifier": null,
@@ -245,17 +246,17 @@
                 },
                 {
                     "metadata": {
-                        "id": 21,
-                        "identifier": "8fe5de02-a7d8-48f1-9faa-9c607a63e6e2",
+                        "id": 23,
+                        "identifier": "eb9e70c5-7429-46cf-9482-0186e25b99a0",
                         "title": "Siemplify_Get Similar Cases_1",
                         "width": 1,
                         "order": 2,
                         "description": "This widget highlights the most important items in Siemplify - Get Similar Cases.",
                         "type": 3,
-                        "templateIdentifier": "8d869380-93fb-4548-9b0f-0c031b141092",
+                        "templateIdentifier": "e07f1a83-8773-4b68-8086-a37eb499a22d",
                         "predefinedWidgetTemplateIdentifier": "37d5d512-6e08-4a2a-9c95-1c99f9192321",
                         "actionIdentifier": null,
-                        "stepIdentifier": "7af7ebef-15e3-4308-8d26-c727130abbe4",
+                        "stepIdentifier": "251920c3-fa6f-405f-9f8c-6b4b09c46ed6",
                         "stepIntegration": null,
                         "blockStepIdentifier": null,
                         "blockStepInstanceName": null,
@@ -285,7 +286,7 @@
             "roles": [
                 1
             ],
-            "creationTimeUnixTimeInMs": 1750326056416
+            "creationTimeUnixTimeInMs": 1750759831655
         }
     ],
     "creationSource": 1
