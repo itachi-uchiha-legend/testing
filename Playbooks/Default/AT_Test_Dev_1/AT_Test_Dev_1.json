@@ -17,7 +17,7 @@
     "categoryId": 1,
     "originalPlaybookIdentifier": "cfe2c58c-6ba1-4dcd-b17b-01b3e897dce9",
     "creationTimeUnixTimeInMs": 1750327230615,
-    "modificationTimeUnixTimeInMs": 1750770461553,
+    "modificationTimeUnixTimeInMs": 1750771480676,
     "trigger": {
         "id": 0,
         "identifier": "0d22139a-886a-476d-b142-689a41f3aed9",
@@ -188,8 +188,8 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750770461469,
-            "modificationTimeUnixTimeInMs": 1750770461553,
+            "creationTimeUnixTimeInMs": 1750771480601,
+            "modificationTimeUnixTimeInMs": 1750771480676,
             "additionalProperties": {}
         },
         {
@@ -348,8 +348,8 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750770461553,
-            "modificationTimeUnixTimeInMs": 1750770461553,
+            "creationTimeUnixTimeInMs": 1750771480601,
+            "modificationTimeUnixTimeInMs": 1750771480676,
             "additionalProperties": {}
         },
         {
@@ -508,8 +508,8 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750770461469,
-            "modificationTimeUnixTimeInMs": 1750770461553,
+            "creationTimeUnixTimeInMs": 1750771480601,
+            "modificationTimeUnixTimeInMs": 1750771480676,
             "additionalProperties": {}
         },
         {
@@ -668,8 +668,8 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750770461469,
-            "modificationTimeUnixTimeInMs": 1750770461553,
+            "creationTimeUnixTimeInMs": 1750771480601,
+            "modificationTimeUnixTimeInMs": 1750771480676,
             "additionalProperties": {}
         },
         {
@@ -828,8 +828,8 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750770461469,
-            "modificationTimeUnixTimeInMs": 1750770461553,
+            "creationTimeUnixTimeInMs": 1750771480601,
+            "modificationTimeUnixTimeInMs": 1750771480676,
             "additionalProperties": {}
         },
         {
@@ -988,8 +988,123 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750770461469,
-            "modificationTimeUnixTimeInMs": 1750770461553,
+            "creationTimeUnixTimeInMs": 1750771480601,
+            "modificationTimeUnixTimeInMs": 1750771480676,
+            "additionalProperties": {}
+        },
+        {
+            "parallelActions": [],
+            "identifier": "d3bf5c37-3432-4a18-acff-b0aeb44903ab",
+            "originalStepIdentifier": "d3bf5c37-3432-4a18-acff-b0aeb44903ab",
+            "isAutomatic": true,
+            "isSkippable": false,
+            "instanceName": "AT_Test_Dev_Block_1_1",
+            "name": "AT_Test_Dev_Block_1",
+            "integration": "Siemplify",
+            "description": "An embedded workflow that can receive inputs and return an output.",
+            "actionProvider": "Flow",
+            "actionName": "NestedAction",
+            "type": 5,
+            "parameters": [
+                {
+                    "name": "AssignedUsers",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "HasApprovalLink",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "MessageToAssignee",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "NestedWorkflowIdentifier",
+                    "value": "302cd553-97ba-4b8f-a140-347aa77c8396",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "NestedWorkflowInputs",
+                    "value": "[{\"FieldName\":\"Values\",\"MatchType\":0,\"Value\":\"asdf, nlk\"},{\"FieldName\":\"Query Field\",\"MatchType\":0,\"Value\":\"ASDF\"},{\"FieldName\":\"Query Operators\",\"MatchType\":0,\"Value\":\"AND\"},{\"FieldName\":\"Add Quotes\",\"MatchType\":0,\"Value\":\"true\"}]",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "PendingActionTimeout",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "NestedWorkflowSteps",
+                    "value": "[{\"identifier\":\"12e45a7d-1a32-4e7e-aa49-e07ce20e2eb9\",\"integration\":\"SiemplifyUtilities\",\"actionName\":\"SiemplifyUtilities_Query Joiner\",\"instanceName\":\"SiemplifyUtilities_Query Joiner_1\",\"stepType\":0}]",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "NestedWorkflowOutput",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                }
+            ],
+            "autoSkipOnFailure": false,
+            "isDebugMockData": false,
+            "debugData": null,
+            "parentStepContainerId": null,
+            "workflowIdentifier": "cfe2c58c-6ba1-4dcd-b17b-01b3e897dce9",
+            "isTouchedByAi": false,
+            "startLoopStepIdentifier": null,
+            "id": 0,
+            "creationTimeUnixTimeInMs": 1750771480676,
+            "modificationTimeUnixTimeInMs": 1750771480676,
             "additionalProperties": {}
         }
     ],
@@ -1022,6 +1137,12 @@
             "condition": "",
             "fromStep": "010d36e0-aa00-42e5-ad61-4df9dd25249d",
             "toStep": "c2607864-cb5b-455a-9da2-ec14384bc9ae",
+            "destinationActionStatus": 0
+        },
+        {
+            "condition": "",
+            "fromStep": "53939e93-3c16-479c-91db-242794a6dec4",
+            "toStep": "d3bf5c37-3432-4a18-acff-b0aeb44903ab",
             "destinationActionStatus": 0
         }
     ],

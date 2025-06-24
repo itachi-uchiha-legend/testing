@@ -35,3 +35,7 @@
 |SiemplifyUtilities_Count List_1|Count the number of items on a list - separated by a configurable delimiter.|SiemplifyUtilities|Count List|
 |SiemplifyUtilities_Ping_2|Test Connectivity|SiemplifyUtilities|Ping|
 
+### Involved Blocks
+|Name|Description|
+|----|-----------|
+|AT_Test_Dev_Block_1|An embedded workflow that can receive inputs and return an output.|
