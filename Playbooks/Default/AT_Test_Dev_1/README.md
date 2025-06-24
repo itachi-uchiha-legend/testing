@@ -28,6 +28,7 @@
 ### Involved Steps (Unordered)
 |Step Name|Description|Integration|Original Action|
 |---------|-----------|-----------|---------------|
+|SiemplifyUtilities_List Operations_1|Provide operations on lists.|SiemplifyUtilities|List Operations|
 |SiemplifyUtilities_Ping_1|Test Connectivity|SiemplifyUtilities|Ping|
 |SiemplifyUtilities_Query Joiner_1|Form query string from given parameters.|SiemplifyUtilities|Query Joiner|
 |SiemplifyUtilities_Count List_1|Count the number of items on a list - separated by a configurable delimiter.|SiemplifyUtilities|Count List|
