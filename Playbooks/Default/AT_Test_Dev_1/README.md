@@ -28,5 +28,6 @@
 ### Involved Steps (Unordered)
 |Step Name|Description|Integration|Original Action|
 |---------|-----------|-----------|---------------|
+|SiemplifyUtilities_Ping_1|Test Connectivity|SiemplifyUtilities|Ping|
 |SiemplifyUtilities_Query Joiner_1|Form query string from given parameters.|SiemplifyUtilities|Query Joiner|
 
