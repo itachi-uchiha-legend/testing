@@ -3,6 +3,8 @@
 |----|------|-----------|
 |AT_Test_Dev_1|Default||
 |AT_Test_Dev_Block_1|Default|An embedded workflow that can receive inputs and return an output.|
+|New Block|Default|An embedded workflow that can receive inputs and return an output.|
 |New Playbook|Default||
 |New Playbook 1|Default||
 |New hhha|Default||
+|Playbook_Actions|Default||
