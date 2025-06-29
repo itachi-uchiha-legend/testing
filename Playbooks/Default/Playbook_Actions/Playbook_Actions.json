@@ -1,12 +1,12 @@
 {
     "id": 0,
-    "identifier": "355920c2-c0ef-423d-a5fb-e79b19031eb2",
+    "identifier": "f558d265-d126-46f2-8838-93ea6132cf46",
     "version": "1",
     "isEnabled": true,
     "isDebugMode": false,
     "name": "Playbook_Actions",
-    "creator": "bc91ae5a-65ad-40bd-aa54-2cfabde49698",
-    "modifiedBy": "bc91ae5a-65ad-40bd-aa54-2cfabde49698",
+    "creator": "973d7959-bcd7-48fa-8b56-37fa8244951d",
+    "modifiedBy": "973d7959-bcd7-48fa-8b56-37fa8244951d",
     "priority": 2,
     "description": "",
     "environments": [
@@ -14,12 +14,12 @@
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "355920c2-c0ef-423d-a5fb-e79b19031eb2",
+    "originalPlaybookIdentifier": "f558d265-d126-46f2-8838-93ea6132cf46",
     "creationTimeUnixTimeInMs": 1751184291441,
-    "modificationTimeUnixTimeInMs": 1751184642038,
+    "modificationTimeUnixTimeInMs": 1751186024930,
     "trigger": {
         "id": 0,
-        "identifier": "548a961f-08dc-4d22-a5de-89f1812dd790",
+        "identifier": "ca52f7a0-e03c-41b0-a203-e328ae20c36b",
         "type": 8,
         "logicalOperator": 0,
         "conditions": [
@@ -31,6 +31,166 @@
         ]
     },
     "steps": [
+        {
+            "parallelActions": [],
+            "identifier": "2c4daba1-cbb3-49d1-a672-2517606ca642",
+            "originalStepIdentifier": "2c4daba1-cbb3-49d1-a672-2517606ca642",
+            "isAutomatic": true,
+            "isSkippable": false,
+            "instanceName": "VirusTotalV3_Get Related Domains_1",
+            "name": "VirusTotalV3_Get Related Domains",
+            "integration": "VirusTotalV3",
+            "description": "Get related domains to the provided entities from VirusTotal. Note: this action requires a VT Enterprise token. Supported entities: IP, URL, Filehash, Hostname, Domain. Note: only MD5, SHA-1 and SHA-256 are supported.",
+            "actionProvider": "Scripts",
+            "actionName": "VirusTotalV3_Get Related Domains",
+            "type": 0,
+            "parameters": [
+                {
+                    "name": "AssignedUsers",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "DynamicInjectionInstancePlaceholder",
+                    "value": "",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "FallbackIntegrationInstance",
+                    "value": "74f874b3-c98a-413b-99bb-845f8fecc5c8",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {},
+                    "FallbackInstanceDisplayName": "VirusTotalV3_4"
+                },
+                {
+                    "name": "FetchInstanceByName",
+                    "value": "false",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "HasApprovalLink",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "IntegrationInstance",
+                    "value": "AutomaticEnvironment",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "MessageToAssignee",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "PendingActionTimeout",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "ScriptName",
+                    "value": "VirusTotalV3_Get Related Domains",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "ScriptParametersEntityFields",
+                    "value": "{\"Results\":\"Combined\",\"Max Domains To Return\":\"40\"}",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "SelectedScopeName",
+                    "value": "All entities",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "UseEntitiesLoopScope",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                }
+            ],
+            "autoSkipOnFailure": false,
+            "isDebugMockData": false,
+            "debugData": null,
+            "parentStepContainerId": null,
+            "workflowIdentifier": "f558d265-d126-46f2-8838-93ea6132cf46",
+            "isTouchedByAi": false,
+            "startLoopStepIdentifier": null,
+            "id": 0,
+            "creationTimeUnixTimeInMs": 1751186024930,
+            "modificationTimeUnixTimeInMs": 1751186024930,
+            "additionalProperties": {}
+        },
         {
             "parallelActions": [],
             "identifier": "5d043f4f-43cc-4293-a642-6bcb77659ee4",
@@ -69,7 +229,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "c3d6d4f8-05ea-4850-a89f-4aa39fa8e017",
+                    "value": "4cdfc6ec-859a-4c1c-a3de-cd62739b8c50",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -183,12 +343,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "355920c2-c0ef-423d-a5fb-e79b19031eb2",
+            "workflowIdentifier": "f558d265-d126-46f2-8838-93ea6132cf46",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751184641848,
-            "modificationTimeUnixTimeInMs": 1751184642038,
+            "creationTimeUnixTimeInMs": 1751186024785,
+            "modificationTimeUnixTimeInMs": 1751186024930,
             "additionalProperties": {}
         },
         {
@@ -229,7 +389,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "f5e862c1-5272-4e7f-b23b-7fbf8768d5d9",
+                    "value": "6ee89512-5e26-4225-8a1b-ff789b563d81",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -343,12 +503,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "355920c2-c0ef-423d-a5fb-e79b19031eb2",
+            "workflowIdentifier": "f558d265-d126-46f2-8838-93ea6132cf46",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751184642038,
-            "modificationTimeUnixTimeInMs": 1751184642038,
+            "creationTimeUnixTimeInMs": 1751186024785,
+            "modificationTimeUnixTimeInMs": 1751186024930,
             "additionalProperties": {}
         },
         {
@@ -411,7 +571,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "f5e862c1-5272-4e7f-b23b-7fbf8768d5d9",
+                    "value": "6ee89512-5e26-4225-8a1b-ff789b563d81",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -525,12 +685,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "355920c2-c0ef-423d-a5fb-e79b19031eb2",
+            "workflowIdentifier": "f558d265-d126-46f2-8838-93ea6132cf46",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751184642038,
-            "modificationTimeUnixTimeInMs": 1751184642038,
+            "creationTimeUnixTimeInMs": 1751186024785,
+            "modificationTimeUnixTimeInMs": 1751186024930,
             "additionalProperties": {}
         },
         {
@@ -571,7 +731,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "c3d6d4f8-05ea-4850-a89f-4aa39fa8e017",
+                    "value": "4cdfc6ec-859a-4c1c-a3de-cd62739b8c50",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -685,16 +845,22 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "355920c2-c0ef-423d-a5fb-e79b19031eb2",
+            "workflowIdentifier": "f558d265-d126-46f2-8838-93ea6132cf46",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751184641848,
-            "modificationTimeUnixTimeInMs": 1751184642038,
+            "creationTimeUnixTimeInMs": 1751186024785,
+            "modificationTimeUnixTimeInMs": 1751186024930,
             "additionalProperties": {}
         }
     ],
     "stepsRelations": [
+        {
+            "condition": "",
+            "fromStep": "819e4f8e-04c5-435b-a29f-8711541e84a3",
+            "toStep": "2c4daba1-cbb3-49d1-a672-2517606ca642",
+            "destinationActionStatus": 0
+        },
         {
             "condition": "",
             "fromStep": "f8b14ee3-cc82-4d51-aa66-21cd3b24ba54",
@@ -729,7 +895,7 @@
             "identifier": "283fde24-45ef-453d-be38-2202d11532f7",
             "name": "Widgets",
             "creator": null,
-            "playbookIdentifier": "355920c2-c0ef-423d-a5fb-e79b19031eb2",
+            "playbookIdentifier": "f558d265-d126-46f2-8838-93ea6132cf46",
             "type": 0,
             "widgets": [
                 {
