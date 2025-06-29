@@ -1,12 +1,12 @@
 {
     "id": 0,
-    "identifier": "e6c8869b-78eb-4471-9fcb-2ce194bfd6a3",
+    "identifier": "f86d3c54-49d6-4795-9a86-c61415b91659",
     "version": "1",
     "isEnabled": true,
     "isDebugMode": false,
     "name": "New Block",
-    "creator": "bc91ae5a-65ad-40bd-aa54-2cfabde49698",
-    "modifiedBy": "bc91ae5a-65ad-40bd-aa54-2cfabde49698",
+    "creator": "973d7959-bcd7-48fa-8b56-37fa8244951d",
+    "modifiedBy": "973d7959-bcd7-48fa-8b56-37fa8244951d",
     "priority": 2,
     "description": "An embedded workflow that can receive inputs and return an output.",
     "environments": [
@@ -14,12 +14,12 @@
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "e6c8869b-78eb-4471-9fcb-2ce194bfd6a3",
+    "originalPlaybookIdentifier": "f86d3c54-49d6-4795-9a86-c61415b91659",
     "creationTimeUnixTimeInMs": 1751221258905,
-    "modificationTimeUnixTimeInMs": 1751221612140,
+    "modificationTimeUnixTimeInMs": 1751222641916,
     "trigger": {
         "id": 0,
-        "identifier": "f48db660-5a75-490b-8358-da92d77593cd",
+        "identifier": "b1b3e14a-f0e5-4546-b34c-99db0016187f",
         "type": 11,
         "logicalOperator": 0,
         "conditions": []
@@ -85,7 +85,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "e5ee30ec-1496-48cc-8bc5-cf8b5c472c8d",
+                    "value": "4cdfc6ec-859a-4c1c-a3de-cd62739b8c50",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -198,12 +198,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "e6c8869b-78eb-4471-9fcb-2ce194bfd6a3",
+            "workflowIdentifier": "f86d3c54-49d6-4795-9a86-c61415b91659",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751221612014,
-            "modificationTimeUnixTimeInMs": 1751221612140,
+            "creationTimeUnixTimeInMs": 1751222641721,
+            "modificationTimeUnixTimeInMs": 1751222641916,
             "additionalProperties": {}
         },
         {
@@ -236,12 +236,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "e6c8869b-78eb-4471-9fcb-2ce194bfd6a3",
+            "workflowIdentifier": "f86d3c54-49d6-4795-9a86-c61415b91659",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751221612014,
-            "modificationTimeUnixTimeInMs": 1751221612140,
+            "creationTimeUnixTimeInMs": 1751222641721,
+            "modificationTimeUnixTimeInMs": 1751222641916,
             "additionalProperties": {}
         },
         {
@@ -282,7 +282,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "2ab429a1-232d-412c-97ae-03d742cf571d",
+                    "value": "4cdfc6ec-859a-4c1c-a3de-cd62739b8c50",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -395,12 +395,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "e6c8869b-78eb-4471-9fcb-2ce194bfd6a3",
+            "workflowIdentifier": "f86d3c54-49d6-4795-9a86-c61415b91659",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751221612140,
-            "modificationTimeUnixTimeInMs": 1751221612140,
+            "creationTimeUnixTimeInMs": 1751222641721,
+            "modificationTimeUnixTimeInMs": 1751222641916,
             "additionalProperties": {}
         },
         {
@@ -441,7 +441,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "054035b0-6807-488c-bfe2-4b48f9ba6215",
+                    "value": "4cdfc6ec-859a-4c1c-a3de-cd62739b8c50",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -554,12 +554,171 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "e6c8869b-78eb-4471-9fcb-2ce194bfd6a3",
+            "workflowIdentifier": "f86d3c54-49d6-4795-9a86-c61415b91659",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751221612014,
-            "modificationTimeUnixTimeInMs": 1751221612140,
+            "creationTimeUnixTimeInMs": 1751222641721,
+            "modificationTimeUnixTimeInMs": 1751222641916,
+            "additionalProperties": {}
+        },
+        {
+            "parallelActions": [],
+            "identifier": "eac76398-2de1-4377-b858-69aad7a30a85",
+            "originalStepIdentifier": "eac76398-2de1-4377-b858-69aad7a30a85",
+            "isAutomatic": true,
+            "isSkippable": false,
+            "instanceName": "VirusTotalV3_Add Vote To Entity_1",
+            "name": "VirusTotalV3_Add Vote To Entity",
+            "integration": "VirusTotalV3",
+            "description": "Add a vote to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported",
+            "actionProvider": "Scripts",
+            "actionName": "VirusTotalV3_Add Vote To Entity",
+            "type": 0,
+            "parameters": [
+                {
+                    "name": "AssignedUsers",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "DynamicInjectionInstancePlaceholder",
+                    "value": "",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "FallbackIntegrationInstance",
+                    "value": "a84200d5-8170-4354-8259-de1a59343771",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "FetchInstanceByName",
+                    "value": "false",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "HasApprovalLink",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "IntegrationInstance",
+                    "value": "AutomaticEnvironment",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "MessageToAssignee",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "PendingActionTimeout",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "ScriptName",
+                    "value": "VirusTotalV3_Add Vote To Entity",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "ScriptParametersEntityFields",
+                    "value": "{\"Vote\":\"Malicious\"}",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "SelectedScopeName",
+                    "value": "All entities",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "UseEntitiesLoopScope",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                }
+            ],
+            "autoSkipOnFailure": false,
+            "isDebugMockData": false,
+            "debugData": null,
+            "parentStepContainerId": null,
+            "workflowIdentifier": "f86d3c54-49d6-4795-9a86-c61415b91659",
+            "isTouchedByAi": false,
+            "startLoopStepIdentifier": null,
+            "id": 0,
+            "creationTimeUnixTimeInMs": 1751222641916,
+            "modificationTimeUnixTimeInMs": 1751222641916,
             "additionalProperties": {}
         }
     ],
@@ -572,7 +731,7 @@
         },
         {
             "condition": "",
-            "fromStep": "7f75b398-187e-44ed-9911-eb025aa1b6e1",
+            "fromStep": "eac76398-2de1-4377-b858-69aad7a30a85",
             "toStep": "4c26c477-77d0-4947-80d7-b923d0ba6bd4",
             "destinationActionStatus": 0
         },
@@ -580,6 +739,12 @@
             "condition": "",
             "fromStep": "267c2faa-681c-46aa-855b-1b62f47bee2b",
             "toStep": "7f75b398-187e-44ed-9911-eb025aa1b6e1",
+            "destinationActionStatus": 0
+        },
+        {
+            "condition": "",
+            "fromStep": "7f75b398-187e-44ed-9911-eb025aa1b6e1",
+            "toStep": "eac76398-2de1-4377-b858-69aad7a30a85",
             "destinationActionStatus": 0
         }
     ],
