@@ -16,7 +16,7 @@
     "categoryId": 1,
     "originalPlaybookIdentifier": "1b8d6a19-6fb3-491d-aef6-355efb0ebb6f",
     "creationTimeUnixTimeInMs": 1751221420677,
-    "modificationTimeUnixTimeInMs": 1751221952574,
+    "modificationTimeUnixTimeInMs": 1751222997478,
     "trigger": {
         "id": 0,
         "identifier": "4f0a0a8f-729e-48ff-b29f-6200b5756b93",
@@ -187,8 +187,8 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751221952465,
-            "modificationTimeUnixTimeInMs": 1751221952574,
+            "creationTimeUnixTimeInMs": 1751222997316,
+            "modificationTimeUnixTimeInMs": 1751222997478,
             "additionalProperties": {}
         },
         {
@@ -347,8 +347,168 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751221952574,
-            "modificationTimeUnixTimeInMs": 1751221952574,
+            "creationTimeUnixTimeInMs": 1751222997316,
+            "modificationTimeUnixTimeInMs": 1751222997478,
+            "additionalProperties": {}
+        },
+        {
+            "parallelActions": [],
+            "identifier": "5cc2b68a-fccb-4e09-bcb8-2ffd220b0742",
+            "originalStepIdentifier": "5cc2b68a-fccb-4e09-bcb8-2ffd220b0742",
+            "isAutomatic": true,
+            "isSkippable": false,
+            "instanceName": "VirusTotalV3_Enrich IP_1",
+            "name": "VirusTotalV3_Enrich IP",
+            "integration": "VirusTotalV3",
+            "description": "Enrich IP using information from VirusTotal. Supported entities: IP address.",
+            "actionProvider": "Scripts",
+            "actionName": "VirusTotalV3_Enrich IP",
+            "type": 0,
+            "parameters": [
+                {
+                    "name": "AssignedUsers",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "DynamicInjectionInstancePlaceholder",
+                    "value": "",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "FallbackIntegrationInstance",
+                    "value": "a84200d5-8170-4354-8259-de1a59343771",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {},
+                    "FallbackInstanceDisplayName": "VirusTotalV3_6"
+                },
+                {
+                    "name": "FetchInstanceByName",
+                    "value": "false",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "HasApprovalLink",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "IntegrationInstance",
+                    "value": "AutomaticEnvironment",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "MessageToAssignee",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "PendingActionTimeout",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "ScriptName",
+                    "value": "VirusTotalV3_Enrich IP",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "ScriptParametersEntityFields",
+                    "value": "{\"Engine Threshold\":\"1\",\"Engine Percentage Threshold\":\"1\",\"Engine Whitelist\":\"\",\"Retrieve Comments\":true,\"Create Insight\":true,\"Only Suspicious Entity Insight\":false,\"Max Comments To Return\":\"10\",\"Widget Theme\":\"Dark\",\"Fetch Widget\":true}",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "SelectedScopeName",
+                    "value": "All entities",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "UseEntitiesLoopScope",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                }
+            ],
+            "autoSkipOnFailure": false,
+            "isDebugMockData": false,
+            "debugData": null,
+            "parentStepContainerId": null,
+            "workflowIdentifier": "1b8d6a19-6fb3-491d-aef6-355efb0ebb6f",
+            "isTouchedByAi": false,
+            "startLoopStepIdentifier": null,
+            "id": 0,
+            "creationTimeUnixTimeInMs": 1751222997478,
+            "modificationTimeUnixTimeInMs": 1751222997478,
             "additionalProperties": {}
         },
         {
@@ -462,8 +622,8 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751221952465,
-            "modificationTimeUnixTimeInMs": 1751222641916,
+            "creationTimeUnixTimeInMs": 1751222997316,
+            "modificationTimeUnixTimeInMs": 1751222997478,
             "additionalProperties": {}
         },
         {
@@ -622,8 +782,8 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751221952574,
-            "modificationTimeUnixTimeInMs": 1751221952574,
+            "creationTimeUnixTimeInMs": 1751222997316,
+            "modificationTimeUnixTimeInMs": 1751222997478,
             "additionalProperties": {}
         }
     ],
@@ -638,6 +798,12 @@
             "condition": "",
             "fromStep": "cf7b96b3-408d-4854-9e61-b60dedd38dac",
             "toStep": "07dc1a76-c25e-4e98-8647-45c86f0d55c3",
+            "destinationActionStatus": 0
+        },
+        {
+            "condition": "",
+            "fromStep": "07dc1a76-c25e-4e98-8647-45c86f0d55c3",
+            "toStep": "5cc2b68a-fccb-4e09-bcb8-2ffd220b0742",
             "destinationActionStatus": 0
         },
         {
