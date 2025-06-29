@@ -17,11 +17,10 @@ An embedded workflow that can receive inputs and return an output.
 ##### Input Parameters
 |Name|Default Value|
 |----|-------------|
-|CaseId|[Case.Id]|
 
 
 ### Involved Steps (Unordered)
 |Step Name|Description|Integration|Original Action|
 |---------|-----------|-----------|---------------|
-|SiemplifyUtilities_Get Deployment URL_1|Get the URL that leads back to the instance this action is running on.|SiemplifyUtilities|Get Deployment URL|
+|VirusTotalV3_Add Comment To Entity_1|Add a comment to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported|VirusTotalV3|Add Comment To Entity|
 
