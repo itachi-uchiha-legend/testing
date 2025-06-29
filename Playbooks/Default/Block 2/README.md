@@ -22,5 +22,5 @@ An embedded workflow that can receive inputs and return an output.
 ### Involved Steps (Unordered)
 |Step Name|Description|Integration|Original Action|
 |---------|-----------|-----------|---------------|
-|VirusTotalV3_Get Related Domains_1|Get related domains to the provided entities from VirusTotal. Note: this action requires a VT Enterprise token. Supported entities: IP, URL, Filehash, Hostname, Domain. Note: only MD5, SHA-1 and SHA-256 are supported.|VirusTotalV3|Get Related Domains|
+|VirusTotalV3_Enrich IOC_1|Enrich IOCs using information from VirusTotal.|VirusTotalV3|Enrich IOC|
 
