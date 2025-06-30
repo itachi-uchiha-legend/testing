@@ -22,6 +22,8 @@ An embedded workflow that can receive inputs and return an output.
 ### Involved Steps (Unordered)
 |Step Name|Description|Integration|Original Action|
 |---------|-----------|-----------|---------------|
+|VirusTotalV3_Enrich URL_1|Enrich URL using information from VirusTotal. Supported entities: URL.|VirusTotalV3|Enrich URL|
+|VirusTotalV3_Enrich IP_1|Enrich IP using information from VirusTotal. Supported entities: IP address.|VirusTotalV3|Enrich IP|
 |VirusTotalV3_Get Graph Details_1|Get detailed information about graphs in VirusTotal.|VirusTotalV3|Get Graph Details|
 |VirusTotalV3_Add Comment To Entity_1|Add a comment to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported|VirusTotalV3|Add Comment To Entity|
 

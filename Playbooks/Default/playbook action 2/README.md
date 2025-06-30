@@ -28,6 +28,8 @@
 ### Involved Steps (Unordered)
 |Step Name|Description|Integration|Original Action|
 |---------|-----------|-----------|---------------|
+|VirusTotalV3_Enrich IOC_1|Enrich IOCs using information from VirusTotal.|VirusTotalV3|Enrich IOC|
+|VirusTotalV3_Enrich IP_1|Enrich IP using information from VirusTotal. Supported entities: IP address.|VirusTotalV3|Enrich IP|
 |VirusTotalV3_Add Vote To Entity_1|Add a vote to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported|VirusTotalV3|Add Vote To Entity|
 |VirusTotalV3_Add Comment To Entity_1|Add a comment to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported|VirusTotalV3|Add Comment To Entity|
 
