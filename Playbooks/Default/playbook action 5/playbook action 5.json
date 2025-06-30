@@ -1,12 +1,13 @@
 {
+    "hasRestrictedEnvironments": false,
     "id": 0,
-    "identifier": "9eae2685-c620-4464-8e26-cd713dcee860",
+    "identifier": "b076d247-8e7e-4977-83e0-9a0011d8590f",
     "version": "1",
     "isEnabled": true,
     "isDebugMode": false,
     "name": "playbook action 5",
     "creator": "973d7959-bcd7-48fa-8b56-37fa8244951d",
-    "modifiedBy": "973d7959-bcd7-48fa-8b56-37fa8244951d",
+    "modifiedBy": "Siemplify automation",
     "priority": 2,
     "description": "",
     "environments": [
@@ -14,12 +15,12 @@
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "9eae2685-c620-4464-8e26-cd713dcee860",
-    "creationTimeUnixTimeInMs": 1751285566951,
-    "modificationTimeUnixTimeInMs": 1751285602647,
+    "originalPlaybookIdentifier": "b076d247-8e7e-4977-83e0-9a0011d8590f",
+    "creationTimeUnixTimeInMs": 1751287389104,
+    "modificationTimeUnixTimeInMs": 1751287389104,
     "trigger": {
         "id": 0,
-        "identifier": "6ea7224c-5b70-4215-874e-5f0c10ba5384",
+        "identifier": "d7829db6-d9cb-4921-b6ce-9d03d6033033",
         "type": 8,
         "logicalOperator": 0,
         "conditions": [
@@ -80,7 +81,7 @@
                 },
                 {
                     "name": "NestedWorkflowIdentifier",
-                    "value": "fa456a68-5e8a-441d-adee-03c45101f0a2",
+                    "value": "8fcedda3-c595-42e5-95ae-cd391debbfde",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -138,12 +139,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "9eae2685-c620-4464-8e26-cd713dcee860",
+            "workflowIdentifier": "b076d247-8e7e-4977-83e0-9a0011d8590f",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751285602647,
-            "modificationTimeUnixTimeInMs": 1751285602647,
+            "creationTimeUnixTimeInMs": 1751287389104,
+            "modificationTimeUnixTimeInMs": 1751287389104,
             "additionalProperties": {}
         },
         {
@@ -184,7 +185,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "5223c91d-c832-44cf-87a1-e2a3dbe0c26c",
+                    "value": "f433bd59-05b2-4f14-bfb0-a92f4368fce7",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -298,12 +299,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "9eae2685-c620-4464-8e26-cd713dcee860",
+            "workflowIdentifier": "b076d247-8e7e-4977-83e0-9a0011d8590f",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751285602532,
-            "modificationTimeUnixTimeInMs": 1751285602647,
+            "creationTimeUnixTimeInMs": 1751287389104,
+            "modificationTimeUnixTimeInMs": 1751287389104,
             "additionalProperties": {}
         },
         {
@@ -344,7 +345,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "74f874b3-c98a-413b-99bb-845f8fecc5c8",
+                    "value": "ba5f76a5-ad11-4d6b-9e26-b71a0d15d2ee",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -352,7 +353,7 @@
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
                     "additionalProperties": {},
-                    "FallbackInstanceDisplayName": "VirusTotalV3_4"
+                    "FallbackInstanceDisplayName": "VirusTotalV3_1"
                 },
                 {
                     "name": "FetchInstanceByName",
@@ -458,12 +459,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "9eae2685-c620-4464-8e26-cd713dcee860",
+            "workflowIdentifier": "b076d247-8e7e-4977-83e0-9a0011d8590f",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751285602532,
-            "modificationTimeUnixTimeInMs": 1751285602647,
+            "creationTimeUnixTimeInMs": 1751287389104,
+            "modificationTimeUnixTimeInMs": 1751287389104,
             "additionalProperties": {}
         }
     ],

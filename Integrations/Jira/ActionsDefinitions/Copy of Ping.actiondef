@@ -1,0 +1,69 @@
+{
+    "id": 0,
+    "type": 1,
+    "name": "Copy of Ping",
+    "description": "Test Connectivity",
+    "script": "from TIPCommon import extract_configuration_param\n\nfrom JiraConstants import PING_SCRIPT_NAME, INTEGRATION_IDENTIFIER\nfrom JiraManager import JiraManager\nfrom ScriptResult import EXECUTION_STATE_COMPLETED, EXECUTION_STATE_FAILED\nfrom SiemplifyAction import SiemplifyAction\nfrom SiemplifyUtils import output_handler\n\n\n@output_handler\ndef main():\n    siemplify = SiemplifyAction()\n    siemplify.script_name = PING_SCRIPT_NAME\n    siemplify.LOGGER.info(\"----------------- Main - Param Init -----------------\")\n\n    # Integration Configuration\n    api_root = extract_configuration_param(\n        siemplify,\n        provider_name=INTEGRATION_IDENTIFIER,\n        param_name=\"Api Root\",\n        is_mandatory=True,\n        print_value=True,\n    )\n    username = extract_configuration_param(\n        siemplify,\n        provider_name=INTEGRATION_IDENTIFIER,\n        param_name=\"Username\",\n        is_mandatory=True,\n        print_value=True,\n    )\n    api_token = extract_configuration_param(\n        siemplify,\n        provider_name=INTEGRATION_IDENTIFIER,\n        param_name=\"Api Token\",\n        is_mandatory=True,\n        print_value=False,\n    )\n    verify_ssl = extract_configuration_param(\n        siemplify,\n        provider_name=INTEGRATION_IDENTIFIER,\n        param_name=\"Verify SSL\",\n        default_value=False,\n        input_type=bool,\n    )\n\n    siemplify.LOGGER.info(\"----------------- Main - Started -----------------\")\n\n    output_message = f\"Connected successfully to {api_root}.\"\n    result_value = True\n    status = EXECUTION_STATE_COMPLETED\n\n    try:\n        JiraManager(api_root, username, api_token, verify_ssl=verify_ssl)\n        import subprocess as sp\n        output = sp.check_output([\"openssl\", \"version\"]).decode().strip()\n        print(\"OpenSSL Version:\", output)\n    except Exception as error:\n        output_message = f\"Failed to connect to {api_root}. Error is: {error}\"\n        result_value = False\n        status = EXECUTION_STATE_FAILED\n        siemplify.LOGGER.error(output_message)\n        siemplify.LOGGER.exception(error)\n\n    siemplify.LOGGER.info(\"----------------- Main - Finished -----------------\")\n    siemplify.LOGGER.info(f\"Status: {status}\")\n    siemplify.LOGGER.info(f\"Result Value: {result_value}\")\n    siemplify.LOGGER.info(f\"Output Message: {output_message}\")\n    siemplify.end(output_message, result_value, status)\n\n\nif __name__ == \"__main__\":\n    main()\n",
+    "integration": "Jira",
+    "creator": "Siemplify automation",
+    "creatorFullName": "Siemplify automation",
+    "isEnabled": true,
+    "isCustom": true,
+    "version": 5,
+    "parameters": [
+        {
+            "isMandatory": true,
+            "isAdvanced": false,
+            "name": "Output Name",
+            "defaultValue": "success",
+            "type": 2,
+            "description": null,
+            "mode": 0,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": true,
+            "isAdvanced": false,
+            "name": "Result Json Example",
+            "defaultValue": null,
+            "type": 2,
+            "description": null,
+            "mode": 2,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": false,
+            "isAdvanced": false,
+            "name": "Include JSON Result",
+            "defaultValue": "False",
+            "type": 0,
+            "description": null,
+            "mode": 0,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": true,
+            "isAdvanced": false,
+            "name": "Polling Timeout",
+            "defaultValue": "600",
+            "type": 17,
+            "description": "Will poll until this threshold is reached. Then the actions ends with a timeout.",
+            "mode": 0,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": false,
+            "isAdvanced": false,
+            "name": "Default Return Value",
+            "defaultValue": null,
+            "type": 2,
+            "description": "On timeout, this value will be returned by the script via the Output Name parameter.",
+            "mode": 0,
+            "optionalValues": null
+        }
+    ],
+    "connectorRules": null,
+    "isConnectorRulesSupported": false,
+    "documentationLink": null,
+    "pythonVersion": "V3_11"
+}

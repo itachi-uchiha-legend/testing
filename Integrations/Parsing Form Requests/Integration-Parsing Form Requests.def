@@ -1,0 +1,57 @@
+{
+  "IsAvailableForCommunity": false,
+  "Identifier": "Parsing Form Requests",
+  "ShouldInstalledInSystem": false,
+  "Version": 3.0,
+  "DisplayName": "Parsing Form Requests",
+  "Description": "",
+  "ImageBase64": null,
+  "SvgImage": null,
+  "IsCustom": true,
+  "PythonVersion": 3,
+  "IntegrationProperties": [],
+  "IntegrationSupportedActions": [
+    {
+      "Name": "EnrichUserFields for Hubspot",
+      "Description": "Parsing the email message of the request(Community, Community Cloud, Cloud Trial, and more..)",
+      "Id": 752,
+      "CreationTimeUnixTimeInMs": 1751287329369,
+      "ModificationTimeUnixTimeInMs": 1751287329369
+    },
+    {
+      "Name": "EnrichUserFields",
+      "Description": "Parsing the email message of the request(Community, Community Cloud, Cloud Trial, and more..)",
+      "Id": 753,
+      "CreationTimeUnixTimeInMs": 1751287329369,
+      "ModificationTimeUnixTimeInMs": 1751287329369
+    },
+    {
+      "Name": "SOAR EnrichUserFields",
+      "Description": "Parsing the email message of the request(Community, Community Cloud, Cloud Trial, and more..)",
+      "Id": 754,
+      "CreationTimeUnixTimeInMs": 1751287329369,
+      "ModificationTimeUnixTimeInMs": 1751287329369
+    },
+    {
+      "Name": "ParsingPartnersLicenseRenewalRequest",
+      "Description": "Parsing the email message of the request(Community, Community Cloud, Cloud Trial, and more..)",
+      "Id": 755,
+      "CreationTimeUnixTimeInMs": 1751287329369,
+      "ModificationTimeUnixTimeInMs": 1751287329369
+    }
+  ],
+  "Categories": [],
+  "HasConnectors": false,
+  "DocumentationLink": null,
+  "IsCertified": false,
+  "UploaderFullName": "Tehila Gourary",
+  "PublishComment": null,
+  "UploaderEmail": "Tehila@siemplify.co",
+  "UploaderImageBase64": "",
+  "UploaderProfileLink": null,
+  "MinimumSystemVersion": 0.0,
+  "ProductionIntegrationIdentifier": null,
+  "Id": 0,
+  "CreationTimeUnixTimeInMs": 1751287329363,
+  "ModificationTimeUnixTimeInMs": 1751287329363
+}

@@ -1,0 +1,99 @@
+{
+    "id": 0,
+    "type": 2,
+    "name": "Copy of Sync Comments",
+    "description": "Sync comments between Siemplify alert\u2019s case and corresponding Jira ticket. Sync mechanism works in both ways, Siemplify \u2192 Jira and Jira \u2192 Siemplify",
+    "script": "from datetime import timezone\n\nimport requests\nimport urllib3\nfrom JiraConstants import SYNC_COMMENTS_SCRIPT, DEFAULT_DAYS_BACKWARDS, DEFAULT_SIEMPLIFY_COMMENT_PREFIX, DEFAULT_JIRA_COMMENT_PREFIX, \\\n    JIRA_TAG, CASE_STATUS_OPEN, MIN_DAYS_BACKWARDS, PRODUCT, JIRA_TIME_FORMAT\nfrom JiraManager import JiraManager\nfrom exceptions import JiraManagerError\nfrom utils import load_csv_to_list\nfrom TIPCommon import get_last_success_time\n\nfrom SiemplifyJob import SiemplifyJob\nfrom SiemplifyUtils import convert_unixtime_to_datetime, unix_now, output_handler, convert_datetime_to_unix_time\n\nurllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)\nrequests.packages.urllib3.disable_warnings()\n\nJIRA_ISSUE_CONTEXT_VALUE_IDENTIFIER = \"JIRA_ISSUE_KEY\"\n\n@output_handler\ndef main():\n    siemplify = SiemplifyJob()\n    siemplify.API_ROOT = \"https://him:8443/api\"\n    siemplify.script_name = SYNC_COMMENTS_SCRIPT\n    siemplify.LOGGER.info('--------------- JOB STARTED ---------------')\n\n    api_root = siemplify.extract_job_param(param_name='API Root', is_mandatory=True, print_value=True)\n    username = siemplify.extract_job_param(param_name='Username', is_mandatory=True, print_value=True)\n    api_token = siemplify.extract_job_param(param_name='API Token', is_mandatory=True, print_value=False)\n    project_names = siemplify.extract_job_param(param_name='Project Names', is_mandatory=False, print_value=True)\n\n    try:\n        days_backwards = siemplify.extract_job_param(param_name='Days Backwards', input_type=int, default_value=DEFAULT_DAYS_BACKWARDS,\n                                                     is_mandatory=False, print_value=True)\n        siemplify_comment_prefix = siemplify.extract_job_param(param_name='Siemplify Comment Prefix', is_mandatory=True, print_value=True,\n                                                               default_value=DEFAULT_SIEMPLIFY_COMMENT_PREFIX)\n        jira_comment_prefix = siemplify.extract_job_param(param_name='Jira Comment Prefix', is_mandatory=True,\n                                                          default_value=DEFAULT_JIRA_COMMENT_PREFIX, print_value=True)\n        project_names = load_csv_to_list(project_names, \"Project Names\")\n        fetch_time = get_last_success_time(siemplify, offset_with_metric={'days': days_backwards}, print_value=False)\n        fetch_time_ms = convert_datetime_to_unix_time(fetch_time)\n        siemplify.LOGGER.info('Last fetch time. Date time:{}. Unix:{}'.format(fetch_time, fetch_time_ms))\n        new_timestamp = unix_now()\n\n        if days_backwards < MIN_DAYS_BACKWARDS:\n            raise Exception(\"\\\"Days Backwards\\\" parameter must be greater or equal than {}\".format(MIN_DAYS_BACKWARDS))\n\n        jira_manager = JiraManager(api_root, username, api_token, logger=siemplify.LOGGER)\n\n        siemplify.LOGGER.info('--- Start synchronizing Issues Comments from Siemplify to Jira ---')\n\n        fetched_open_cases_ids = siemplify.get_cases_by_filter(statuses=[CASE_STATUS_OPEN], tags=[JIRA_TAG])\n        siemplify.LOGGER.info('Found {} open cases with tag {}'.format(len(fetched_open_cases_ids), JIRA_TAG))\n\n        case_and_issue_keys = {}\n\n        for case_id in fetched_open_cases_ids:\n            case = siemplify._get_case_by_id(case_id)\n            case_identifier = case.get(\"identifier\")\n            case_comments = siemplify.get_case_comments(case_identifier)\n            # Update all cases related to issue of Jira\n            for alert in case.get('cyber_alerts', []):\n                # If the issue was ingested by the connector\n                issue_key = alert.get('additional_data') if alert.get('reporting_product') != PRODUCT \\\n                    else alert.get('additional_properties', {}).get('AlertName')\n\n                # If issue was opened from a playbook\n                if not issue_key:\n                    issue_key = siemplify.get_context_property(2, alert.get('alert_group_identifier'), JIRA_ISSUE_CONTEXT_VALUE_IDENTIFIER)\n\n                if issue_key:\n                    case_and_issue_keys.update({issue_key: case_id})\n                    # Add the comment to Jira ticket\n                    for comment in case_comments:\n                        comment_time = convert_unixtime_to_datetime(comment.get(\"modification_time_unix_time_in_ms\"))\n\n                        # Filter already created comments and comments that already were processed by the job\n                        if comment_time < fetch_time or comment.get(\"comment\", jira_comment_prefix).startswith(jira_comment_prefix):\n                            continue\n\n                        try:\n                            comment_text = \"{0} - {1}: {2}\".format(siemplify_comment_prefix, case_id, comment.get(\"comment\"))\n                            siemplify.LOGGER.info(f\"Adding jira comment with id {comment.get('id')} to issue {issue_key}\")\n                            jira_manager.add_comment(issue_key, comment_text)\n                            siemplify.LOGGER.info(\"Successfully added comment to issue {}\".format(issue_key))\n                        except Exception as error:\n                            siemplify.LOGGER.error(f\"Failed to add comment to issue {issue_key}, error: {error}\")\n                            siemplify.LOGGER.exception(error)\n                else:\n                    siemplify.LOGGER.info(f\"Cannot find issue key. Comments from case {case_identifier} not added to issue\")\n\n        siemplify.LOGGER.info(\" --- Finish synchronize comments from Siemplify cases to Jira issues --- \")\n        siemplify.LOGGER.info('--- Start synchronize Issues Comments from Jira to Siemplify ---')\n\n        # Adjust fetch time to JIRA server's timezone\n        jira_server_time = jira_manager.get_server_time()\n        siemplify.LOGGER.info(\"JIRA server time: {}\".format(jira_server_time.isoformat()))\n        fetch_time_jira_timezone_adjusted = fetch_time.replace(tzinfo=timezone.utc).astimezone(jira_server_time.tzinfo)\n        siemplify.LOGGER.info(\"Adjusted last fetch time to server time: {}\".format(fetch_time_jira_timezone_adjusted.isoformat()))\n\n        jira_last_time_format = fetch_time_jira_timezone_adjusted.strftime(JIRA_TIME_FORMAT)\n        # Fetch modified issues since last fetch time\n        last_modified_issues = jira_manager.list_issues(\n            updated_from=jira_last_time_format,\n            project_key_list=project_names\n        )\n        siemplify.LOGGER.info(f'Found {len(last_modified_issues)} issues that modified since '\n                              f'{fetch_time_jira_timezone_adjusted.isoformat()} (Server Timezone)')\n\n        for issue_key in last_modified_issues:\n            comments_to_add = jira_manager.get_issue_comments_since_time(issue_key, fetch_time_ms)\n            siemplify.LOGGER.info(f\"{issue_key} has {len(comments_to_add)} comments since {fetch_time.isoformat()}\")\n\n            # Filter jira issue comments that were added by siemplify\n            comments_to_add = [comment for comment in comments_to_add if\n                               comment.body and siemplify_comment_prefix not in comment.body]\n\n            if not comments_to_add:\n                siemplify.LOGGER.info(f\"No new comments found in issue: {issue_key}\")\n                continue\n\n            siemplify.LOGGER.info(f\"Found {len(comments_to_add)} new comments of issue {issue_key} to add to siemplify\")\n\n            try:\n                # Find corresponding Siemplify cases to add comment\n                case_id = case_and_issue_keys.get(issue_key, None)\n                if not case_id:\n                    siemplify.LOGGER.info(f\"No open siemplify case were found for issue key {issue_key} and tag {JIRA_TAG}\")\n                    continue\n\n                if comments_to_add:\n                    for comment in comments_to_add:\n                        try:\n                            siemplify.LOGGER.info(f\"Adding jira comment with id {comment.id} to case with id {case_id}\")\n                            comment_text = \"{0} - {1}: {2}\".format(jira_comment_prefix, issue_key, comment.body)\n                            siemplify.add_comment(comment_text, case_id, None)\n                            siemplify.LOGGER.info(f\"Successfully added comment to case\")\n                        except Exception as error:\n                            siemplify.LOGGER.error(f\"Failed to add jira comment with id {comment.id} to case with id {case_id}\")\n                            siemplify.LOGGER.exception(error)\n\n            except Exception as error:\n                siemplify.LOGGER.error(f\"Failed to sync jira issue key {issue_key} comments with corresponding siemplify case\")\n                siemplify.LOGGER.exception(error)\n\n        siemplify.save_timestamp(new_timestamp=new_timestamp)\n        siemplify.LOGGER.info(\" --- Finish synchronize comments from Jira issues to cases --- \")\n        siemplify.LOGGER.info('--------------- JOB FINISHED ---------------')\n\n    except (JiraManagerError, Exception) as error:\n        siemplify.LOGGER.error(f'Got exception on main handler. Error: {error}')\n        siemplify.LOGGER.exception(error)\n        raise\n\n\nif __name__ == '__main__':\n    main()",
+    "integration": "Jira",
+    "creator": "Siemplify automation",
+    "creatorFullName": "Siemplify automation",
+    "isEnabled": true,
+    "isCustom": true,
+    "version": 7,
+    "parameters": [
+        {
+            "isMandatory": true,
+            "isAdvanced": false,
+            "name": "API Root",
+            "defaultValue": "https://{jira_address}",
+            "type": 2,
+            "description": null,
+            "mode": 1,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": true,
+            "isAdvanced": false,
+            "name": "Username",
+            "defaultValue": "",
+            "type": 2,
+            "description": null,
+            "mode": 1,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": true,
+            "isAdvanced": false,
+            "name": "API Token",
+            "defaultValue": "",
+            "type": 3,
+            "description": null,
+            "mode": 1,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": false,
+            "isAdvanced": false,
+            "name": "Environment",
+            "defaultValue": "",
+            "type": 2,
+            "description": null,
+            "mode": 1,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": false,
+            "isAdvanced": false,
+            "name": "Project Names",
+            "defaultValue": "project names separated by comma",
+            "type": 2,
+            "description": null,
+            "mode": 1,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": false,
+            "isAdvanced": false,
+            "name": "Days Backwards",
+            "defaultValue": "1",
+            "type": 2,
+            "description": null,
+            "mode": 1,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": true,
+            "isAdvanced": false,
+            "name": "Siemplify Comment Prefix",
+            "defaultValue": "SIEMPLIFY:",
+            "type": 2,
+            "description": null,
+            "mode": 1,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": true,
+            "isAdvanced": false,
+            "name": "Jira Comment Prefix",
+            "defaultValue": "Jira Comment Sync Job:",
+            "type": 2,
+            "description": null,
+            "mode": 1,
+            "optionalValues": null
+        }
+    ],
+    "connectorRules": null,
+    "isConnectorRulesSupported": false,
+    "documentationLink": null,
+    "pythonVersion": "V3_11"
+}
