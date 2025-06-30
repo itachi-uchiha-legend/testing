@@ -1,10 +1,10 @@
 {
     "id": 0,
-    "identifier": "23bfbcd0-535a-4330-87d6-89325080de03",
+    "identifier": "bd3a9a79-4b5f-438e-9f2e-7c4dbfbf0dca",
     "version": "1",
     "isEnabled": true,
     "isDebugMode": false,
-    "name": "Block 3",
+    "name": "Block 4",
     "creator": "973d7959-bcd7-48fa-8b56-37fa8244951d",
     "modifiedBy": "973d7959-bcd7-48fa-8b56-37fa8244951d",
     "priority": 2,
@@ -14,12 +14,12 @@
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "23bfbcd0-535a-4330-87d6-89325080de03",
-    "creationTimeUnixTimeInMs": 1751224152165,
-    "modificationTimeUnixTimeInMs": 1751224152165,
+    "originalPlaybookIdentifier": "bd3a9a79-4b5f-438e-9f2e-7c4dbfbf0dca",
+    "creationTimeUnixTimeInMs": 1751244692611,
+    "modificationTimeUnixTimeInMs": 1751244692611,
     "trigger": {
         "id": 0,
-        "identifier": "37fdadd6-aaca-4430-b5f7-07cf32e7f3bb",
+        "identifier": "f90e6a7b-87df-4280-acb4-8ecadd2ad5f0",
         "type": 11,
         "logicalOperator": 0,
         "conditions": []
@@ -27,54 +27,16 @@
     "steps": [
         {
             "parallelActions": [],
-            "identifier": "593f9534-24ee-4612-8525-1912b93617ba",
-            "originalStepIdentifier": "593f9534-24ee-4612-8525-1912b93617ba",
+            "identifier": "09f4b6dd-b587-414f-aa4d-da1b4aa06987",
+            "originalStepIdentifier": "09f4b6dd-b587-414f-aa4d-da1b4aa06987",
             "isAutomatic": true,
             "isSkippable": false,
-            "instanceName": "Output_1",
-            "name": "Output",
-            "integration": "Flow",
-            "description": "",
-            "actionProvider": "Flow",
-            "actionName": "OutputAction",
-            "type": 6,
-            "parameters": [
-                {
-                    "name": "NestedWorkflowOutput",
-                    "value": null,
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                }
-            ],
-            "autoSkipOnFailure": false,
-            "isDebugMockData": false,
-            "debugData": null,
-            "parentStepContainerId": null,
-            "workflowIdentifier": "23bfbcd0-535a-4330-87d6-89325080de03",
-            "isTouchedByAi": false,
-            "startLoopStepIdentifier": null,
-            "id": 0,
-            "creationTimeUnixTimeInMs": 1751224152165,
-            "modificationTimeUnixTimeInMs": 1751224152165,
-            "additionalProperties": {}
-        },
-        {
-            "parallelActions": [],
-            "identifier": "f7687422-aef2-4153-accd-2038ea0da0bf",
-            "originalStepIdentifier": "f7687422-aef2-4153-accd-2038ea0da0bf",
-            "isAutomatic": true,
-            "isSkippable": false,
-            "instanceName": "VirusTotalV3_Add Vote To Entity_1",
-            "name": "VirusTotalV3_Add Vote To Entity",
+            "instanceName": "VirusTotalV3_Add Comment To Entity_1",
+            "name": "VirusTotalV3_Add Comment To Entity",
             "integration": "VirusTotalV3",
-            "description": "Add a vote to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported",
+            "description": "Add a comment to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported",
             "actionProvider": "Scripts",
-            "actionName": "VirusTotalV3_Add Vote To Entity",
+            "actionName": "VirusTotalV3_Add Comment To Entity",
             "type": 0,
             "parameters": [
                 {
@@ -101,7 +63,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "ac89693a-cba6-477b-a1ac-df00a7f82a58",
+                    "value": "5223c91d-c832-44cf-87a1-e2a3dbe0c26c",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -109,7 +71,7 @@
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
                     "additionalProperties": {},
-                    "FallbackInstanceDisplayName": "VirusTotalV3_5"
+                    "FallbackInstanceDisplayName": "VirusTotalV3_3"
                 },
                 {
                     "name": "FetchInstanceByName",
@@ -168,7 +130,7 @@
                 },
                 {
                     "name": "ScriptName",
-                    "value": "VirusTotalV3_Add Vote To Entity",
+                    "value": "VirusTotalV3_Add Comment To Entity",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -179,7 +141,7 @@
                 },
                 {
                     "name": "ScriptParametersEntityFields",
-                    "value": "{\"Vote\":\"Malicious\"}",
+                    "value": "{\"Comment\":\"comment\"}",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -215,20 +177,58 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "23bfbcd0-535a-4330-87d6-89325080de03",
+            "workflowIdentifier": "bd3a9a79-4b5f-438e-9f2e-7c4dbfbf0dca",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751224152165,
-            "modificationTimeUnixTimeInMs": 1751224152165,
+            "creationTimeUnixTimeInMs": 1751244692611,
+            "modificationTimeUnixTimeInMs": 1751244692611,
+            "additionalProperties": {}
+        },
+        {
+            "parallelActions": [],
+            "identifier": "e55565c8-7f50-45b8-b2b0-3186c28cfd32",
+            "originalStepIdentifier": "e55565c8-7f50-45b8-b2b0-3186c28cfd32",
+            "isAutomatic": true,
+            "isSkippable": false,
+            "instanceName": "Output_1",
+            "name": "Output",
+            "integration": "Flow",
+            "description": "",
+            "actionProvider": "Flow",
+            "actionName": "OutputAction",
+            "type": 6,
+            "parameters": [
+                {
+                    "name": "NestedWorkflowOutput",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                }
+            ],
+            "autoSkipOnFailure": false,
+            "isDebugMockData": false,
+            "debugData": null,
+            "parentStepContainerId": null,
+            "workflowIdentifier": "bd3a9a79-4b5f-438e-9f2e-7c4dbfbf0dca",
+            "isTouchedByAi": false,
+            "startLoopStepIdentifier": null,
+            "id": 0,
+            "creationTimeUnixTimeInMs": 1751244692611,
+            "modificationTimeUnixTimeInMs": 1751244692611,
             "additionalProperties": {}
         }
     ],
     "stepsRelations": [
         {
             "condition": "",
-            "fromStep": "f7687422-aef2-4153-accd-2038ea0da0bf",
-            "toStep": "593f9534-24ee-4612-8525-1912b93617ba",
+            "fromStep": "09f4b6dd-b587-414f-aa4d-da1b4aa06987",
+            "toStep": "e55565c8-7f50-45b8-b2b0-3186c28cfd32",
             "destinationActionStatus": 0
         }
     ],
