@@ -36,6 +36,7 @@
 |Block 4|An embedded workflow that can receive inputs and return an output.|
 |Block 5|An embedded workflow that can receive inputs and return an output.|
 |Block 6|An embedded workflow that can receive inputs and return an output.|
+|Lock Playbook||
 |New Block|An embedded workflow that can receive inputs and return an output.|
 |New Playbook||
 |New Playbook 1||
@@ -51,6 +52,7 @@
 |Playbook_Actions_3||
 |Playbook_Actions_4||
 |RA_Playbook_1||
+|Siemplify||
 
 
 ## Jobs
