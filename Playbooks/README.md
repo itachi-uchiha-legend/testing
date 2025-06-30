@@ -15,6 +15,7 @@
 |New Playbook 1|Default||
 |New hhha|Default||
 |Playbook-1|Default||
+|Playbook-2|Default||
 |Playbook-Action-Block-Content-1|Default||
 |Playbook-Content-2|Default||
 |Playbook-Content-3|Default||
