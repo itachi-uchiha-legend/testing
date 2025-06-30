@@ -26,6 +26,12 @@
 |VirusTotalV3|VirusTotal was founded in 2004 as a free service that analyzes files and URLs for viruses, worms, trojans and other kinds of malicious content. Our goal is to make the internet a safer place through collaboration between members of the antivirus industry, researchers and end users of all kinds. Fortune 500 companies, governments and leading security companies are all part of the VirusTotal community, which has grown to over 500,000 registered users.This integration was created using the 3rd iteration of VT API.|
 
 
+## Connectors
+|Name|Description|Has Mappings|
+|----|-----------|------------|
+|Google Chronicle - Chronicle Alerts Connector|Pull information about Rule based alerts from Google Chronicle. Note: dynamic list is used for filtering purposes. For all of the details please visit the documentation portal.|True|
+
+
 ## Playbooks
 |Name|Description|
 |----|-----------|
@@ -45,6 +51,7 @@
 ## Jobs
 |Name|Description|
 |----|-----------|
+|Delete Case Files History|Delete case files that are older than X days from Done and Error folders of the ETL|
 |Pull Content GitSyncBeta|Installs content from the repo.|
 |Push Content GitSyncBeta|Push all content of this platform to git|
 |Push Content GitSyncBeta1|Push all content of this platform to git|
