@@ -31,14 +31,8 @@
 ## Playbooks
 |Name|Description|
 |----|-----------|
-|Lock Playbook||
 |New Block|An embedded workflow that can receive inputs and return an output.|
-|Playbook-1||
-|Playbook-2||
-|Playbook-6||
 |Playbook_Action_Block_1||
-|RA_Playbook_1||
-|Siemplify||
 
 
 ## Jobs
