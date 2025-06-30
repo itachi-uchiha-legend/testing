@@ -17,6 +17,8 @@
 |Playbook-1|Default||
 |Playbook-2|Default||
 |Playbook-4|Default||
+|Playbook-5|Default||
+|Playbook-6|Default||
 |Playbook-Action-Block-Content-1|Default||
 |Playbook-Content-2|Default||
 |Playbook-Content-3|Default||
