@@ -1,0 +1,79 @@
+{
+    "id": 0,
+    "type": 2,
+    "name": "Tits Sync Closure",
+    "description": "Close tickets in Jira if corresponding Siemplify alerts were closed.",
+    "script": "from datetime import timezone\n\nfrom SiemplifyJob import SiemplifyJob\nfrom SiemplifyUtils import output_handler, convert_datetime_to_unix_time, unix_now\nfrom TIPCommon import extract_action_param\nfrom TIPCommon import get_last_success_time\n\nfrom JiraConstants import (\n    JIRA_CLOSED_STATUS,\n    JIRA_ISSUE_KEY,\n    JIRA_PROJECT_KEY,\n    PRODUCT,\n    JIRA_TAG,\n    SYNC_CLOSURE_SCRIPT,\n    ROOT_CAUSE,\n    REASON,\n    COMMENT,\n    JIRA_TIME_FORMAT,\n    CASE_STATUS_OPEN,\n    MIN_DAYS_BACKWARDS,\n)\nfrom JiraManager import JiraManager\nfrom exceptions import JiraManagerError\nfrom utils import get_case_and_alert_ids_for_issue_key, load_csv_to_list\n\n\n@output_handler\ndef main():\n    siemplify = SiemplifyJob()\n    siemplify.API_ROOT = \"https://him:8443/api\"\n    siemplify.script_name = SYNC_CLOSURE_SCRIPT\n    siemplify.LOGGER.info(\"--------------- JOB STARTED ---------------\")\n\n    api_root = extract_action_param(\n        siemplify=siemplify, param_name=\"API Root\", is_mandatory=True, print_value=True\n    )\n    username = extract_action_param(\n        siemplify=siemplify, param_name=\"Username\", is_mandatory=True, print_value=True\n    )\n    api_token = extract_action_param(\n        siemplify=siemplify,\n        param_name=\"API Token\",\n        is_mandatory=True,\n        print_value=False,\n    )\n    project_names = extract_action_param(\n        siemplify=siemplify,\n        param_name=\"Project Names\",\n        is_mandatory=False,\n        print_value=True,\n    )\n    environment_ = extract_action_param(\n        siemplify=siemplify,\n        param_name=\"Environment\",\n        print_value=True,\n    )\n    environments = [environment_] if environment_ else []\n\n    try:\n        days_backwards = extract_action_param(\n            siemplify=siemplify,\n            param_name=\"Days Backwards\",\n            input_type=int,\n            is_mandatory=True,\n            print_value=True,\n        )\n        project_names = load_csv_to_list(project_names, \"Project Names\")\n        fetch_time = get_last_success_time(\n            siemplify, offset_with_metric={\"days\": days_backwards}, print_value=False\n        )\n        fetch_time_ms = convert_datetime_to_unix_time(fetch_time)\n        siemplify.LOGGER.info(\n            f\"Last fetch time. Date time:{fetch_time}. Unix:{fetch_time_ms}\"\n        )\n        new_timestamp = unix_now()\n\n        if days_backwards < MIN_DAYS_BACKWARDS:\n            raise Exception(\n                f'\"Days Backwards\" parameter must be greater or equal than {MIN_DAYS_BACKWARDS}'\n            )\n\n        jira_manager = JiraManager(api_root, username, api_token)\n\n        filtered_closed_cases = []\n        closed_alerts_issue_keys = []\n\n        for project_name in project_names:\n            try:\n                siemplify.LOGGER.info(\n                    f\"Fetching ticket ids for closed cases of project {project_name}\"\n                )\n                ticket_ids_for_closed_cases = (\n                    siemplify.get_alerts_ticket_ids_from_cases_closed_since_timestamp(\n                        fetch_time_ms,\n                        None,\n                    )\n                )\n                siemplify.LOGGER.info(\n                    f\"Successfully fetched {len(ticket_ids_for_closed_cases)} ticket ids of closed cases with rule \"\n                    f\"since {fetch_time_ms} (Unix)\"\n                )\n                for ticket_id in ticket_ids_for_closed_cases:\n                    try:\n                        cases_ids = siemplify.get_cases_by_filter(\n                            environments=environments,\n                            ticked_ids_free_search=ticket_id,\n                            tags=[JIRA_TAG],\n                        )\n                        filtered_closed_cases.extend(\n                            [\n                                siemplify._get_case_by_id(case_id)\n                                for case_id in cases_ids\n                            ]\n                        )\n                    except Exception as e:\n                        siemplify.LOGGER.error(\n                            f\"Failed to fetch case with ticket id {ticket_id}. Reason {e}\"\n                        )\n            except Exception as error:\n                siemplify.LOGGER.error(\n                    f\"Failed to get alert ticket ids from closed cases since last fetch time for project {project_name}\"\n                )\n                siemplify.LOGGER.exception(error)\n\n        siemplify.LOGGER.info(\n            f\"Found {len(filtered_closed_cases)} closed cases with tag {JIRA_TAG} since last fetch time\"\n        )\n        siemplify.LOGGER.info(\"--- Start Closing Issues in Jira ---\")\n\n        for case in filtered_closed_cases:\n            for alert in case.get(\"cyber_alerts\", []):\n                issue_key = (\n                    alert.get(\"additional_data\")\n                    if alert.get(\"reporting_product\") != PRODUCT\n                    else alert.get(\"additional_properties\", {}).get(\"AlertName\")\n                )\n                if not issue_key:\n                    issue_key = siemplify.get_context_property(\n                        2,\n                        alert.get(\"alert_group_identifier\"),\n                        JIRA_ISSUE_KEY,\n                    )\n\n                issue_project = (\n                    alert.get(\"security_events\", [])[0]\n                    .get(\"additional_properties\", {})\n                    .get(\"project_name\")\n                )\n                if not issue_project:\n                    issue_project = siemplify.get_context_property(\n                        2,\n                        alert.get(\"alert_group_identifier\"),\n                        JIRA_PROJECT_KEY,\n                    )\n\n                if issue_key:\n                    try:\n                        siemplify.LOGGER.info(\n                            f\"Updating issue {issue_key} of project {issue_project} to status {JIRA_CLOSED_STATUS}\"\n                        )\n                        jira_manager.update_issue(issue_key, status=JIRA_CLOSED_STATUS)\n                        siemplify.LOGGER.info(\n                            f\"Jira issue - {issue_key} status was updated to {JIRA_CLOSED_STATUS}\"\n                        )\n                        closed_alerts_issue_keys.append(issue_key)\n                    except JiraManagerError as error:\n                        siemplify.LOGGER.error(\n                            f\"Failed to update issue {issue_key} with status {JIRA_CLOSED_STATUS}. It might be already closed\"\n                        )\n                        siemplify.LOGGER.exception(error)\n\n        siemplify.LOGGER.info(\n            \"--- Finish synchronize closure from Siemplify to Jira issues ---\"\n        )\n\n        siemplify.LOGGER.info(\"--- Start Closing Alerts in Siemplify ---\")\n\n        # Adjust fetch time to JIRA server's timezone\n        jira_server_time = jira_manager.get_server_time()\n        siemplify.LOGGER.info(f\"JIRA server time: {jira_server_time.isoformat()}\")\n        fetch_time_jira_timezone_adjusted = fetch_time.replace(\n            tzinfo=timezone.utc\n        ).astimezone(jira_server_time.tzinfo)\n        siemplify.LOGGER.info(\n            f\"Adjusted last fetch time to server time: {fetch_time_jira_timezone_adjusted.isoformat()}\"\n        )\n\n        # Fetched closed issues from Jira\n        jira_last_time_format = fetch_time_jira_timezone_adjusted.strftime(\n            JIRA_TIME_FORMAT\n        )\n        done_issues = jira_manager.list_issues(\n            updated_from=jira_last_time_format,\n            status_list=[JIRA_CLOSED_STATUS],\n            project_key_list=project_names,\n        )\n        siemplify.LOGGER.info(\n            f\"Found {len(done_issues)} {JIRA_CLOSED_STATUS} issues since {fetch_time_jira_timezone_adjusted.isoformat()} (Server Timezone)\"\n        )\n\n        for issue_key in done_issues:\n            # Filter already close alerts\n            siemplify.LOGGER.info(f\"DONE ISSUES:{done_issues}\")\n            siemplify.LOGGER.info(f\"ISSUE KEY:{issue_key}\")\n            siemplify.LOGGER.info(f\"CLOSED ISSUES:{closed_alerts_issue_keys}\")\n            if issue_key in closed_alerts_issue_keys:\n                continue\n\n            # Find open siemplify cases that needs to be closed\n            cases_ids_for_issue = siemplify.get_cases_by_filter(\n                environments=environments,\n                ticked_ids_free_search=issue_key,\n                tags=[JIRA_TAG],\n                statuses=[CASE_STATUS_OPEN],\n            )\n            if not cases_ids_for_issue:\n                fetched_open_cases_ids = siemplify.get_cases_by_filter(\n                    environments=environments,\n                    statuses=[CASE_STATUS_OPEN],\n                    tags=[JIRA_TAG],\n                )\n                case_details = {}\n                for case_id in fetched_open_cases_ids:\n                    case = siemplify._get_case_by_id(case_id)\n                    case_alerts = case.get(\"cyber_alerts\", [])\n                    case_details[case_id] = case_alerts\n\n                cases_ids_for_issue = list(\n                    {\n                        case_id\n                        for case_id, _ in get_case_and_alert_ids_for_issue_key(\n                            case_details=case_details,\n                            issue_key=issue_key,\n                            chronicle_soar=siemplify,\n                        )\n                    }\n                )\n\n            if not cases_ids_for_issue:\n                siemplify.LOGGER.info(\n                    f\"No open siemplify cases were found for issue key {issue_key} and tag {JIRA_TAG}\"\n                )\n                continue\n\n            for case_id in cases_ids_for_issue:\n                case_obj = siemplify._get_case_by_id(case_id)\n                if case_obj:\n                    # Get case alerts to close\n                    case_alerts = case_obj.get(\"cyber_alerts\", [])\n\n                    # Find alerts with matching tag and alert identifier matching closed jira issue\n                    alerts_to_close = [\n                        (case_obj.get(\"identifier\"), alert.get(\"identifier\"))\n                        for alert in case_alerts\n                        if issue_key\n                        in [alert.get(\"external_id\"), alert.get(\"additional_data\")]\n                    ] or get_case_and_alert_ids_for_issue_key(\n                        case_details=case_details,\n                        issue_key=issue_key,\n                        chronicle_soar=siemplify,\n                    )\n\n                    for case_obj_id, alert_id in alerts_to_close:\n                        try:\n                            siemplify.LOGGER.info(\n                                f\"Closing alert {alert_id} with case id {case_id} of issue key {issue_key}\"\n                            )\n                            siemplify.close_alert(\n                                root_cause=ROOT_CAUSE,\n                                reason=REASON,\n                                comment=COMMENT,\n                                case_id=case_obj_id,\n                                alert_id=alert_id,\n                            )\n                            siemplify.LOGGER.info(\n                                f\"Alert with issue key {issue_key} was closed\"\n                            )\n                        except Exception as error:\n                            siemplify.LOGGER.error(\n                                f\"Failed to close alert {alert_id} of case {case_obj_id}\"\n                            )\n                            siemplify.LOGGER.exception(error)\n\n        siemplify.save_timestamp(new_timestamp=new_timestamp)\n        siemplify.LOGGER.info(\n            \" --- Finish synchronize closure from Jira to Siemplify alerts --- \"\n        )\n        siemplify.LOGGER.info(\"--------------- JOB FINISHED ---------------\")\n\n    except (JiraManagerError, Exception) as error:\n        siemplify.LOGGER.error(f\"Got exception on main handler. Error: {error}\")\n        siemplify.LOGGER.exception(error)\n        raise\n\n\nif __name__ == \"__main__\":\n    main()\n",
+    "integration": "Jira",
+    "creator": "0b1ed000-19d4-466f-bd2e-2b190f9f1cd3",
+    "creatorFullName": "0b1ed000-19d4-466f-bd2e-2b190f9f1cd3",
+    "isEnabled": true,
+    "isCustom": true,
+    "version": 3,
+    "parameters": [
+        {
+            "isMandatory": true,
+            "isAdvanced": false,
+            "name": "API Root",
+            "defaultValue": "https://{jira_address}",
+            "type": 2,
+            "description": null,
+            "mode": 1,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": true,
+            "isAdvanced": false,
+            "name": "Username",
+            "defaultValue": "",
+            "type": 2,
+            "description": null,
+            "mode": 1,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": true,
+            "isAdvanced": false,
+            "name": "API Token",
+            "defaultValue": "",
+            "type": 3,
+            "description": null,
+            "mode": 1,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": false,
+            "isAdvanced": false,
+            "name": "Environment",
+            "defaultValue": "",
+            "type": 2,
+            "description": null,
+            "mode": 1,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": true,
+            "isAdvanced": false,
+            "name": "Project Names",
+            "defaultValue": "project names separated by comma",
+            "type": 2,
+            "description": null,
+            "mode": 1,
+            "optionalValues": null
+        },
+        {
+            "isMandatory": true,
+            "isAdvanced": false,
+            "name": "Days Backwards",
+            "defaultValue": "1",
+            "type": 2,
+            "description": null,
+            "mode": 1,
+            "optionalValues": null
+        }
+    ],
+    "connectorRules": null,
+    "isConnectorRulesSupported": false,
+    "documentationLink": null,
+    "pythonVersion": "V3_11"
+}
