@@ -36,6 +36,7 @@
 |New Block 3|An embedded workflow that can receive inputs and return an output.|
 |Playbook Action 2||
 |Playbook Action 3||
+|Playbook action 4||
 |Playbook_Action_Block_1||
 
 

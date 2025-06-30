@@ -14,43 +14,43 @@ Python Version - 3
 #### Dependencies
 | |
 |-|
-|pycparser-2.22-py3-none-any.whl|
-|requests_file-2.1.0-py2.py3-none-any.whl|
 |cachetools-5.5.0-py3-none-any.whl|
-|pycryptodome-3.21.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|tldextract-5.1.3-py3-none-any.whl|
-|pyparsing-3.2.0-py3-none-any.whl|
-|TIPCommon-2.0.6-py2.py3-none-any.whl|
-|bcrypt-4.2.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|filelock-3.16.1-py3-none-any.whl|
-|cryptography-43.0.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|proto_plus-1.25.0-py3-none-any.whl|
-|sniffio-1.3.1-py3-none-any.whl|
-|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
-|PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl|
-|urllib3-2.2.3-py3-none-any.whl|
 |rsa-4.9-py3-none-any.whl|
 |requests-2.32.3-py3-none-any.whl|
-|uritemplate-4.1.1-py2.py3-none-any.whl|
-|h11-0.14.0-py3-none-any.whl|
-|cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|googleapis_common_protos-1.65.0-py2.py3-none-any.whl|
-|google_auth-2.36.0-py2.py3-none-any.whl|
-|chardet-5.2.0-py3-none-any.whl|
-|protobuf-5.28.3-cp38-abi3-manylinux2014_x86_64.whl|
-|certifi-2024.8.30-py3-none-any.whl|
-|pyasn1-0.6.1-py3-none-any.whl|
-|httpx-0.27.2-py3-none-any.whl|
-|pyasn1_modules-0.4.1-py3-none-any.whl|
-|charset_normalizer-3.3.2-py3-none-any.whl|
-|httpcore-1.0.6-py3-none-any.whl|
-|EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
-|paramiko-3.5.0-py3-none-any.whl|
-|google_api_core-2.23.0-py3-none-any.whl|
 |httplib2-0.22.0-py3-none-any.whl|
-|anyio-4.6.2.post1-py3-none-any.whl|
-|google_api_python_client-2.151.0-py2.py3-none-any.whl|
+|TIPCommon-2.0.6-py2.py3-none-any.whl|
+|proto_plus-1.25.0-py3-none-any.whl|
+|pycparser-2.22-py3-none-any.whl|
+|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
+|PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl|
+|pyasn1_modules-0.4.1-py3-none-any.whl|
+|protobuf-5.28.3-cp38-abi3-manylinux2014_x86_64.whl|
+|filelock-3.16.1-py3-none-any.whl|
 |idna-3.10-py3-none-any.whl|
+|chardet-5.2.0-py3-none-any.whl|
+|google_api_python_client-2.151.0-py2.py3-none-any.whl|
+|paramiko-3.5.0-py3-none-any.whl|
+|urllib3-2.2.3-py3-none-any.whl|
+|sniffio-1.3.1-py3-none-any.whl|
+|h11-0.14.0-py3-none-any.whl|
+|httpcore-1.0.6-py3-none-any.whl|
+|googleapis_common_protos-1.65.0-py2.py3-none-any.whl|
+|requests_file-2.1.0-py2.py3-none-any.whl|
+|bcrypt-4.2.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|pycryptodome-3.21.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|certifi-2024.8.30-py3-none-any.whl|
+|cryptography-43.0.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|anyio-4.6.2.post1-py3-none-any.whl|
+|tldextract-5.1.3-py3-none-any.whl|
+|pyparsing-3.2.0-py3-none-any.whl|
+|EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
+|cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|google_api_core-2.23.0-py3-none-any.whl|
+|httpx-0.27.2-py3-none-any.whl|
+|google_auth-2.36.0-py2.py3-none-any.whl|
+|charset_normalizer-3.3.2-py3-none-any.whl|
+|uritemplate-4.1.1-py2.py3-none-any.whl|
+|pyasn1-0.6.1-py3-none-any.whl|
 
 
 ## Actions
@@ -196,9 +196,6 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Widget Theme|Specify the theme for the widget.|False|List|Dark|
-|Engine Threshold|Specify how many engines should mark the entity as malicious or suspicious, for Siemplify to label it as suspicious. Note: if "Engine Whitelist" contains values, action will only count results from those engines.|False|String||
-|Engine Percentage Threshold|Specify the percentage of engines should mark the entity as malicious or suspicious, for Siemplify to label it as suspicious. Note: if "Engine Whitelist" contains values, action will only count the percentage from those engines. If both "Engine Threshold" and "Engine Percentage Threshold" are provided, "Engine Threshold" will be used. Maximum value: 100. Minimum: 0.|False|String||
 |Engine Whitelist|Specify a comma-separated list of engines that should be used to retrieve information, whether an entity is malicious or not. Example: AlienVault,Kaspersky. Note: if nothing is specified in this parameter, action will take results from every available engine. If the engine didn't return any information about the entity it’s not going to be counted for the parameters "Engine Threshold" and "Engine Percentage Threshold".|False|String||
 |Resubmit URL|If enabled, action will resubmit urls for analysis instead of using the latest information.|False|Boolean|false|
 |Retrieve Comments|If enabled, action will retrieve comments about the entity.|False|Boolean|true|
@@ -206,7 +203,10 @@ Timeout - 600 Seconds
 |Create Insight|If enabled, action will create an insight containing information about the entities.|False|Boolean|true|
 |Max Comments To Return|Specify how many comments to return. Default: 10.|False|String|10|
 |Resubmit After (Days)|Specify how many days since the last submission should pass for the entity to be submitted again. Note: parameter "Resubmit URL" needs to be enabled. Default: 30.|False|String|30|
+|Widget Theme|Specify the theme for the widget.|False|List|Dark|
 |Fetch Widget|If enabled, action will fetch augmented widget related to the entity.|False|Boolean|true|
+|Engine Threshold|Specify how many engines should mark the entity as malicious or suspicious, for Siemplify to label it as suspicious. Note: if "Engine Whitelist" contains values, action will only count results from those engines.|False|String||
+|Engine Percentage Threshold|Specify the percentage of engines should mark the entity as malicious or suspicious, for Siemplify to label it as suspicious. Note: if "Engine Whitelist" contains values, action will only count the percentage from those engines. If both "Engine Threshold" and "Engine Percentage Threshold" are provided, "Engine Threshold" will be used. Maximum value: 100. Minimum: 0.|False|String||
 
 
 
@@ -258,63 +258,6 @@ Timeout - 600 Seconds
 ##### JSON Results
 ```json
 [{"attributes": {"comments_count": 0, "creation_date": 1561372988, "graph_data": {"description": "WannaCry", "version": "5.0.0"}, "last_modified_date": 1604654635, "links": [{"connection_type": "itw_domains", "source": "ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5xxxxxxx", "target": "relationships_itw_domains_ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5xxxxxxx"}, {"connection_type": "itw_domains", "source": "relationships_itw_domains_ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5xxxxxxx", "target": "download.eu-west-3.fromsmash.co"}], "nodes": [{"entity_attributes": {"has_detections": true, "type_tag": "peexe"}, "entity_id": "ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5xxxxxxx", "index": 0, "text": "WannaCry", "type": "file", "x": 165.34444655878607, "y": -193.3118919470504}, {"entity_attributes": {"has_detections": true, "type_tag": "peexe"}, "entity_id": "f0105b922f41b0ee8595e0e7d989c9ba69d4a38337211dcbe86e0xxxxxxx", "index": 59, "text": "", "type": "file", "x": 132.60777217135902, "y": -290.66187835602557}, {"entity_attributes": {"has_detections": true, "type_tag": "peexe"}, "entity_id": "1e06140672b73dfe337dfde7bc9dead5612bdbf4a8069be5de78fxxxxx", "index": 60, "text": "", "type": "file", "x": 141.39419531904667, "y": -302.35889366568784}, {"entity_attributes": {"has_detections": true, "type_tag": "peexe"}, "entity_id": "9021dd020a9b81172d24ed40fbbeacd54bf066c9061bed2xxxxxx", "index": 61, "text": "", "type": "file", "x": 114.82059942884831, "y": -293.56997811560984}, {"entity_attributes": {"has_detections": true, "type_tag": "peexe"}, "entity_id": "ae55d74a872e43887e742ff7116613f6d070a2e33d79f14cfxxxxx", "index": 62, "text": "", "type": "file", "x": 126.86409288335071, "y": -301.46251809050034}, {"entity_attributes": {"has_detections": true, "type_tag": "peexe"}, "entity_id": "ea03d23c039a0cab6e18f3b6b5085db5b08eb44766e473f56axxxxx", "index": 63, "text": "", "type": "file", "x": 156.72129220301676, "y": -303.5222755944866}, {"entity_attributes": {}, "entity_id": "www.ifferfsodp9ifjajhgosurijfaewrwxxxxx.com", "fx": 25.78605596600282, "fy": -406.15274163028903, "index": 64, "text": "Kill Switch", "type": "domain", "x": 25.78605596600282, "y": -406.15274163028903}, {"entity_attributes": {}, "entity_id": "relationships_itw_domains_ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5xxxxxxx", "index": 65, "text": "", "type": "relationship", "x": 220.98374993706935, "y": -174.52499019748032}, {"entity_attributes": {}, "entity_id": "relationships_embedded_domains_ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5xxxxxxx", "fx": 45, "fy": -66, "index": 66, "text": "", "type": "relationship", "x": 45, "y": -66}, {"entity_attributes": {}, "entity_id": "relationships_overlay_parents_ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5xxxxxxx", "fx": 249, "fy": -377, "index": 67, "text": "", "type": "relationship", "x": 249, "y": -377}, {"entity_attributes": {}, "entity_id": "relationships_pcap_parents_ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5xxxxxxx", "fx": 295, "fy": -71, "index": 68, "text": "", "type": "relationship", "x": 295, "y": -71}, {"entity_attributes": {}, "entity_id": "relationships_itw_urls_ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5xxxxxxx", "index": 69, "text": "", "type": "relationship", "x": 115.81335574307816, "y": -162.98602190650118}, {"entity_attributes": {}, "entity_id": "relationships_compressed_parents_ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5xxxxxxx", "index": 70, "text": "", "type": "relationship", "x": 211.62527508884813, "y": -234.43557262290537}, {"entity_attributes": {}, "entity_id": "relationships_contacted_ips_ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5xxxxxxx", "index": 71, "text": "", "type": "relationship", "x": 174.73575904497537, "y": -136.95921332562654}, {"entity_attributes": {}, "entity_id": "relationships_pe_resource_parents_ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5xxxxxxx", "index": 72, "text": "", "type": "relationship", "x": 109.52858763507761, "y": -229.70476261661278}, {"entity_attributes": {}, "entity_id": "relationships_execution_parents_ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5xxxxxxx", "index": 73, "text": "", "type": "relationship", "x": 143.3159050174847, "y": -252.85444757386298}, {"entity_attributes": {}, "entity_id": "relationships_contacted_domains_32f24601153be0885f11d62e0a8a2f0280a2034fc981dxxxxxxx", "index": 74, "text": "", "type": "relationship", "x": 58.34284702784282, "y": -343.70034091068004}], "position": {"scale": "1", "x": 510, "y": 729}, "private": false, "views_count": 130979}, "id": "g8a8c71844d5444f98fd3ef10e3ccc94f894c32f05f86417xxxx", "links": {"self": "https://www.virustotal.com/api/v3/graphs/g8a8c71844d5444f98fd3ef10e3ccc94f894c32f05f86417xxxx"}, "type": "graph"}]
-```
-
-
-
-#### Get Related Domains
-Get related domains to the provided entities from VirusTotal. Note: this action requires a VT Enterprise token. Supported entities: IP, URL, Filehash, Hostname, Domain. Note: only MD5, SHA-1 and SHA-256 are supported.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Results|Specify how the JSON result should look like. If "Combined" is selected then action will return all of the unique results that were found among the provided entities. If "Per Entity" is selected, then action will return all of the unique items per entity.|False|List|Combined|
-|Max Domains To Return|Specify how many URLs to return. Depending on the parameter "Results", this parameter will behave differently. For "Combined" the limit will define how many results to return from ALL entities. For "Per Entity" this parameter dictates how many results to return per entity. Default: 40.|False|String|40|
-
-
-
-##### JSON Results
-```json
-{"domain": ["192.x.x.xrouter.771xxx.xyz", "192.x.x.xemail.bursxxx.com", "192.x.x.xnetbxx.pbn.nl", "192.x.x.xetherwxxx.io", "192.x.x.xwww.china-chenxxxx.com", "192.x.x.xsmtp1.mail.hxxxx.com.tw", "192.x.x.xwww.cqhonxxxxx.com"], "EntityResults":[{"Entity":"192.xxx.xx.x","EntityResult":["192.xxx.xx.xwww.xxx.com","192.xxx.xx.xtestradu.xxx.playground.ownzones.dev"]},{"Entity":"www.example.com","EntityResult":["xxx.example.com","xxx.example.com"]}]}
-```
-
-
-
-#### Get Related Hashes
-Get related hashes to the provided entities from VirusTotal. Note: this action requires a VT Enterprise token. Supported entities: IP, URL, Filehash, Hostname, Domain. Note: only MD5, SHA-1 and SHA-256 are supported.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Results|Specify how the JSON result should look like. If "Combined" is selected then action will return all of the unique results that were found among the provided entities. If "Per Entity" is selected, then action will return all of the unique items per entity.|False|List|Combined|
-|Max Hashes To Return|Specify how many URLs to return. Depending on the parameter "Results", this parameter will behave differently. For "Combined" the limit will define how many results to return from ALL entities. For "Per Entity" this parameter dictates how many results to return per entity. Default: 40.|False|String|40|
-
-
-
-##### JSON Results
-```json
-{"sha256_hashes": ["8b2e701e91101955c73865589a4c72999aeabc11043f712e0xxxxx", "0b01ec5df4dfdafc887303ac3d9c0ab1d13fd8aaf60499168fxxxx", "e23334f6454b5a889bb232211c4ec9df91a10e6c587ed20a9200xxxx", "cf29825d5b1bff484597c35f5b9e6c8e32068a0105715569xxxx", "729b785931e3acb5a45220c588f9f5a6638a2720ebb41fc606xxxx"],"EntityResults":[{"Entity":"HTTP://MARKOSSOLOMON.COM/F1Q7QX.PHP","EntityResult":["576448fd7f4d93f8b4def78755425580a1dfb9f7404d6c73378c74xxxxxxxxxx","69fb7b96d2da05f2aef88efc9e788ede343c9112ae164fe026e504xxxxxxxxxx"]},{"Entity":"192.xxx.xx.x","EntityResult":["81c1ecc1bbb512788887bcab692e6cd6a9a0ffc1f5620c3305c54dxxxxxxxxxx","e206fd22c59022f7ccf96f8b389fd78c07409adc1f9eb4ef2b2702xxxxxxxxxx"]}]}
-```
-
-
-
-#### Get Related IPs
-Get related IPs to the provided entities from VirusTotal. Note: this action requires a VT Enterprise token. Supported entities: URL, Filehash, Hostname, Domain. Note: only MD5, SHA-1 and SHA-256 are supported.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Results|Specify how the JSON result should look like. If "Combined" is selected then action will return all of the unique results that were found among the provided entities. If "Per Entity" is selected, then action will return all of the unique items per entity.|False|List|Combined|
-|Max IPs To Return|Specify how many URLs to return. Depending on the parameter "Results", this parameter will behave differently. For "Combined" the limit will define how many results to return from ALL entities. For "Per Entity" this parameter dictates how many results to return per entity. Default: 40.|False|String|40|
-
-
-
-##### JSON Results
-```json
-{"ips": ["72.21.xx.xx", "23.54.xx.xx", "169.254.xx.xx", "169.254.xx.xx", "192.168.xx.xx"],"EntityResults":[{"Entity":"https://docs.example.com/","EntityResult":["104.114.xx.xxx","23.66.xxx.xxx"]},{"Entity":"www.example.com","EntityResult":["93.184.xxx.xx","0.0.xx.xx"]}]}
 ```
 
 
@@ -431,6 +374,63 @@ Timeout - 600 Seconds
 ##### JSON Results
 ```json
 {"results": [{"Entity": "/opt/siemplify/siemplify_xxxx/filename.txt", "EntityResult": {"attributes": {"downloadable": false, "exiftool": {"FileType": "TXT", "FileTypeExtension": "txt", "LineCount": "1", "MIMEEncoding": "us-ascii", "MIMEType": "text/plain", "Newlines": "(none)", "WordCount": "5"}, "first_submission_date": 1605871686, "last_analysis_date": 1607708121, "last_analysis_results": {"ALYac": {"category": "undetected", "engine_name": "ALYac", "engine_update": "20201211", "engine_version": "1.1.1.5", "method": "blacklist", "result": null}, "APEX": {"category": "type-unsupported", "engine_name": "APEX", "engine_update": "20201210", "engine_version": "6.107", "method": "blacklist", "result": null}, "Symantec": {"category": "undetected", "engine_name": "Symantec", "engine_update": "20201211", "engine_version": "1.13.0.0", "method": "blacklist", "result": null}, "SymantecMobileInsight": {"category": "type-unsupported", "engine_name": "SymantecMobileInsight", "engine_update": "20200813", "engine_version": "2.0", "method": "blacklist", "result": null}, "TACHYON": {"category": "undetected", "engine_name": "TACHYON", "engine_update": "20201211", "engine_version": "2020-12-11.02", "method": "blacklist", "result": null}, "Tencent": {"category": "undetected", "engine_name": "Tencent", "engine_update": "20201211", "engine_version": "1.0.0.1", "method": "blacklist", "result": null}, "TotalDefense": {"category": "undetected", "engine_name": "TotalDefense", "engine_update": "20201211", "engine_version": "37.1.62.1", "method": "blacklist", "result": null}, "Trapmine": {"category": "type-unsupported", "engine_name": "Trapmine", "engine_update": "20200727", "engine_version": "3.5.0.1023", "method": "blacklist", "result": null}, "TrendMicro": {"category": "undetected", "engine_name": "TrendMicro", "engine_update": "20201211", "engine_version": "11.0.0.1006", "method": "blacklist", "result": null}, "TrendMicro-HouseCall": {"category": "undetected", "engine_name": "TrendMicro-HouseCall", "engine_update": "20201211", "engine_version": "10.0.0.1040", "method": "blacklist", "result": null}, "Trustlook": {"category": "type-unsupported", "engine_name": "Trustlook", "engine_update": "20201211", "engine_version": "1.0", "method": "blacklist", "result": null}, "VBA32": {"category": "undetected", "engine_name": "VBA32", "engine_update": "20201211", "engine_version": "4.4.1", "method": "blacklist", "result": null}, "VIPRE": {"category": "undetected", "engine_name": "VIPRE", "engine_update": "20201211", "engine_version": "88852", "method": "blacklist", "result": null}, "ViRobot": {"category": "undetected", "engine_name": "ViRobot", "engine_update": "20201211", "engine_version": "2014.3.20.0", "method": "blacklist", "result": null}, "Webroot": {"category": "type-unsupported", "engine_name": "Webroot", "engine_update": "20201211", "engine_version": "1.0.0.403", "method": "blacklist", "result": null}, "Yandex": {"category": "undetected", "engine_name": "Yandex", "engine_update": "20201211", "engine_version": "5.5.2.24", "method": "blacklist", "result": null}, "Zillya": {"category": "undetected", "engine_name": "Zillya", "engine_update": "20201210", "engine_version": "2.0.0.4242", "method": "blacklist", "result": null}, "ZoneAlarm": {"category": "undetected", "engine_name": "ZoneAlarm", "engine_update": "20201211", "engine_version": "1.0", "method": "blacklist", "result": null}, "Zoner": {"category": "undetected", "engine_name": "Zoner", "engine_update": "20201211", "engine_version": "0.0.0.0", "method": "blacklist", "result": null}, "eGambit": {"category": "type-unsupported", "engine_name": "eGambit", "engine_update": "20201211", "engine_version": null, "method": "blacklist", "result": null}}, "last_analysis_stats": {"confirmed-timeout": 0, "failure": 0, "harmless": 0, "malicious": 0, "suspicious": 0, "timeout": 0, "type-unsupported": 16, "undetected": 60}, "last_modification_date": 1607708175, "last_submission_date": 1607708121, "magic": "ASCII text, with no line terminators", "md5": "14f7cd7d7236f90f5f89f8c29xxxx", "meaningful_name": "filename.txt", "names": ["filename.txt"], "reputation": 0, "sha1": "18e8b90568bf4a3597d8763369079ab8xxxx", "sha256": "4373067a02da95c57bbc073ac3a68ce33ed11a545dcxxxx", "size": 40, "ssdeep": "3:i1wJDNVYD3uK:i1EDxxxx", "tags": ["text"], "times_submitted": 11, "tlsh": "TNULL", "total_votes": {"harmless": 0, "malicious": 0}, "type_description": "Text", "type_extension": "txt", "type_tag": "text", "unique_sources": 1}, "id": "4373067a02da95c57bbc073ac3a68ce33ed11a545dcxxxx", "links": {"self": "https://www.virustotal.com/api/v3/files/4373067a02da95c57bbc073ac3a68ce33ed11a545dcxxxx"},  "related_mitre_tactics": [{"id": "TA0002", "name": "Execution"}], "related_mitre_techniques": [{"id": "T1129", "name": "Shared Modules", "severity": "INFO"}], "type": "file"}}], "is_risky": false}
+```
+
+
+
+#### Get Related Hashes
+Get related hashes to the provided entities from VirusTotal. Note: this action requires a VT Enterprise token. Supported entities: IP, URL, Filehash, Hostname, Domain. Note: only MD5, SHA-1 and SHA-256 are supported.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Results|Specify how the JSON result should look like. If "Combined" is selected then action will return all of the unique results that were found among the provided entities. If "Per Entity" is selected, then action will return all of the unique items per entity.|False|List|Combined|
+|Max Hashes To Return|Specify how many URLs to return. Depending on the parameter "Results", this parameter will behave differently. For "Combined" the limit will define how many results to return from ALL entities. For "Per Entity" this parameter dictates how many results to return per entity. Default: 40.|False|String|40|
+
+
+
+##### JSON Results
+```json
+{"sha256_hashes": ["8b2e701e91101955c73865589a4c72999aeabc11043f712e0xxxxx", "0b01ec5df4dfdafc887303ac3d9c0ab1d13fd8aaf60499168fxxxx", "e23334f6454b5a889bb232211c4ec9df91a10e6c587ed20a9200xxxx", "cf29825d5b1bff484597c35f5b9e6c8e32068a0105715569xxxx", "729b785931e3acb5a45220c588f9f5a6638a2720ebb41fc606xxxx"],"EntityResults":[{"Entity":"HTTP://MARKOSSOLOMON.COM/F1Q7QX.PHP","EntityResult":["576448fd7f4d93f8b4def78755425580a1dfb9f7404d6c73378c74xxxxxxxxxx","69fb7b96d2da05f2aef88efc9e788ede343c9112ae164fe026e504xxxxxxxxxx"]},{"Entity":"192.xxx.xx.x","EntityResult":["81c1ecc1bbb512788887bcab692e6cd6a9a0ffc1f5620c3305c54dxxxxxxxxxx","e206fd22c59022f7ccf96f8b389fd78c07409adc1f9eb4ef2b2702xxxxxxxxxx"]}]}
+```
+
+
+
+#### Get Related Domains
+Get related domains to the provided entities from VirusTotal. Note: this action requires a VT Enterprise token. Supported entities: IP, URL, Filehash, Hostname, Domain. Note: only MD5, SHA-1 and SHA-256 are supported.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Results|Specify how the JSON result should look like. If "Combined" is selected then action will return all of the unique results that were found among the provided entities. If "Per Entity" is selected, then action will return all of the unique items per entity.|False|List|Combined|
+|Max Domains To Return|Specify how many URLs to return. Depending on the parameter "Results", this parameter will behave differently. For "Combined" the limit will define how many results to return from ALL entities. For "Per Entity" this parameter dictates how many results to return per entity. Default: 40.|False|String|40|
+
+
+
+##### JSON Results
+```json
+{"domain": ["192.x.x.xrouter.771xxx.xyz", "192.x.x.xemail.bursxxx.com", "192.x.x.xnetbxx.pbn.nl", "192.x.x.xetherwxxx.io", "192.x.x.xwww.china-chenxxxx.com", "192.x.x.xsmtp1.mail.hxxxx.com.tw", "192.x.x.xwww.cqhonxxxxx.com"], "EntityResults":[{"Entity":"192.xxx.xx.x","EntityResult":["192.xxx.xx.xwww.xxx.com","192.xxx.xx.xtestradu.xxx.playground.ownzones.dev"]},{"Entity":"www.example.com","EntityResult":["xxx.example.com","xxx.example.com"]}]}
+```
+
+
+
+#### Get Related IPs
+Get related IPs to the provided entities from VirusTotal. Note: this action requires a VT Enterprise token. Supported entities: URL, Filehash, Hostname, Domain. Note: only MD5, SHA-1 and SHA-256 are supported.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Results|Specify how the JSON result should look like. If "Combined" is selected then action will return all of the unique results that were found among the provided entities. If "Per Entity" is selected, then action will return all of the unique items per entity.|False|List|Combined|
+|Max IPs To Return|Specify how many URLs to return. Depending on the parameter "Results", this parameter will behave differently. For "Combined" the limit will define how many results to return from ALL entities. For "Per Entity" this parameter dictates how many results to return per entity. Default: 40.|False|String|40|
+
+
+
+##### JSON Results
+```json
+{"ips": ["72.21.xx.xx", "23.54.xx.xx", "169.254.xx.xx", "169.254.xx.xx", "192.168.xx.xx"],"EntityResults":[{"Entity":"https://docs.example.com/","EntityResult":["104.114.xx.xxx","23.66.xxx.xxx"]},{"Entity":"www.example.com","EntityResult":["93.184.xxx.xx","0.0.xx.xx"]}]}
 ```
 
 

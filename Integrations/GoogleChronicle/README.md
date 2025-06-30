@@ -17,56 +17,97 @@ Python Version - 3
 #### Dependencies
 | |
 |-|
-|requests_file-2.1.0-py2.py3-none-any.whl|
-|pycryptodome-3.21.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|cachetools-5.5.1-py3-none-any.whl|
-|google_api_core-2.24.1-py3-none-any.whl|
-|tldextract-5.1.3-py3-none-any.whl|
-|filelock-3.16.1-py3-none-any.whl|
-|EnvironmentCommon-1.0.2-py2.py3-none-any.whl|
-|sniffio-1.3.1-py3-none-any.whl|
-|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
-|regex-2024.11.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
 |rsa-4.9-py3-none-any.whl|
-|googleapis_common_protos-1.67.0-py2.py3-none-any.whl|
 |requests-2.32.3-py3-none-any.whl|
-|google_auth-2.38.0-py2.py3-none-any.whl|
-|uritemplate-4.1.1-py2.py3-none-any.whl|
-|h11-0.14.0-py3-none-any.whl|
-|protobuf-5.29.3-cp38-abi3-manylinux2014_x86_64.whl|
-|charset_normalizer-3.4.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|anyio-4.8.0-py3-none-any.whl|
-|TIPCommon-2.0.7-py2.py3-none-any.whl|
-|typing_extensions-4.12.2-py3-none-any.whl|
-|pyasn1-0.6.1-py3-none-any.whl|
-|pyasn1_modules-0.4.1-py3-none-any.whl|
-|pyparsing-3.2.1-py3-none-any.whl|
-|httpcore-1.0.7-py3-none-any.whl|
-|httpx-0.28.1-py3-none-any.whl|
 |httplib2-0.22.0-py3-none-any.whl|
 |proto_plus-1.26.0-py3-none-any.whl|
-|google_api_python_client-2.161.0-py2.py3-none-any.whl|
-|idna-3.10-py3-none-any.whl|
+|EnvironmentCommon-1.0.2-py2.py3-none-any.whl|
+|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
+|protobuf-5.29.3-cp38-abi3-manylinux2014_x86_64.whl|
 |urllib3-2.3.0-py3-none-any.whl|
+|pyasn1_modules-0.4.1-py3-none-any.whl|
+|filelock-3.16.1-py3-none-any.whl|
+|httpcore-1.0.7-py3-none-any.whl|
+|idna-3.10-py3-none-any.whl|
+|anyio-4.8.0-py3-none-any.whl|
+|TIPCommon-2.0.7-py2.py3-none-any.whl|
+|googleapis_common_protos-1.67.0-py2.py3-none-any.whl|
 |certifi-2025.1.31-py3-none-any.whl|
+|cachetools-5.5.1-py3-none-any.whl|
+|sniffio-1.3.1-py3-none-any.whl|
+|charset_normalizer-3.4.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|h11-0.14.0-py3-none-any.whl|
+|google_api_python_client-2.161.0-py2.py3-none-any.whl|
+|httpx-0.28.1-py3-none-any.whl|
+|requests_file-2.1.0-py2.py3-none-any.whl|
+|google_auth-2.38.0-py2.py3-none-any.whl|
+|pyparsing-3.2.1-py3-none-any.whl|
+|typing_extensions-4.12.2-py3-none-any.whl|
+|pycryptodome-3.21.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|tldextract-5.1.3-py3-none-any.whl|
+|google_api_core-2.24.1-py3-none-any.whl|
+|regex-2024.11.6-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|uritemplate-4.1.1-py2.py3-none-any.whl|
+|pyasn1-0.6.1-py3-none-any.whl|
 
 
 ## Actions
-#### List IOCs
-List all of the IoCs discovered within your enterprise within the specified time range.
+#### Lookup Similar Alerts
+Lookup similar alerts in Google Chronicle. Supported Chronicle alert types: RULE, EXTERNAL, IOC. Note: this action can only work with alerts that come from the "Chronicle Alerts Connector". Note: action can only fetch 10000 alerts. Make sure to narrow down the timeframe for better results.
 Timeout - 600 Seconds
 
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Start Time|Fetches IOC Domain from the specified time. Value should be in RFC 3339 format (e.g. 2018-11-05T12:00:00Z). If not supplied, the default is the UTC time corresponding to 3 days earlier than current time.|False|String||
-|Max IoCs to Fetch|Specify the maximum number of IoCs to return. You can specify between 1 and 10,000. The default is 50.|False|String|50|
+|Time Frame|Specify a time frame for the results. If "Alert Time Till Now" is selected, action will use start time of the alert as start time for the search and end time will be current time. If "30 Minutes Around Alert Time" is selected, action will search the alerts 30 minutes before the alert happened till the 30 minutes after the alert has happened.  Same idea applies to "1 Hour Around Alert Time" and "5 Minutes Around Alert Time".|False|List|Last Hour|
+|IOCs / Assets|Specify a comma-separated list of IOCs or assets that you want to find in the alerts. Note: action will perform a different search for each item provided.|True|String||
+|Similarity By|Specify what attributes need to be used, when the action is to search for similar alerts. If "Alert Name and Alert Type" is selected, action will try to find all of the alerts that have the same alert name and IOCs/Assets for the underlying alert type. If "Product" is selected, then action will try to find all of the alerts that originate from the same product and have the same IOCs/Assets, action will search among both "EXTERNAL" and "Rule" alerts. If "Only IOCs/Assets" is enabled, action will match the similarity only based upon the items provided in the parameter "IOCs/Assets", action will search among both "EXTERNAL" and "Rule" alerts.|False|List|Alert Name and Product|
 
 
 
 ##### JSON Results
 ```json
-[{"artifactIndicator": {"domain": "npatni-sysops"}, "sources": ["ACME-IOC-IP-DOMAIN"], "categories": ["C2"], "assetIndicators": [{"assetIpAddress": "172.30.202.229"}], "iocIngestTimestamp": "2024-12-10T13:52:38.780150Z", "firstSeenTimestamp": "2025-01-13T14:01:00Z", "lastSeenTimestamp": "2025-01-13T14:01:00Z", "filterProperties": {"stringProperties": {"TLD": {"values": [{"rawValue": "Invalid"}]}, "IOC CATEGORIES": {"values": [{"rawValue": "C2"}]}, "IOC FEED": {"values": [{"rawValue": "ACME-IOC-IP-DOMAIN"}]}}}, "logType": "UDM", "feedName": "ACME-IOC-IP-DOMAIN", "id": "Cg1ucGF0bmktc3lzb3BzEMgB", "fieldAndValue": {"value": "npatni-sysops", "valueType": "DOMAIN_NAME"}, "artifact": {"domainName": "npatni-sysops"}, "iocIngestTime": "2024-12-10T13:52:38.780150Z", "firstSeenTime": "2025-01-13T14:01:00Z", "lastSeenTime": "2025-01-13T14:01:00Z"}, {"artifactIndicator": {"destinationIpAddress": "35.246.203.0"}, "sources": ["ACME-IOC-IP-PORT-C2"], "categories": ["C2"], "assetIndicators": [{"assetIpAddress": "172.30.202.229"}], "iocIngestTimestamp": "2024-01-10T22:04:34.267566Z", "firstSeenTimestamp": "2025-01-13T14:00:00Z", "lastSeenTimestamp": "2025-01-13T14:00:00Z", "filterProperties": {"stringProperties": {"IOC CATEGORIES": {"values": [{"rawValue": "C2"}]}, "IOC FEED": {"values": [{"rawValue": "ACME-IOC-IP-PORT-C2"}]}}}, "logType": "CATCH_ALL", "feedName": "ACME-IOC-IP-PORT-C2", "id": "CgwzNS4yNDYuMjAzLjAQyQE", "fieldAndValue": {"value": "35.246.203.0", "valueType": "RESOLVED_IP_ADDRESS"}, "artifact": {"destinationIpAddress": "35.246.203.0"}, "iocIngestTime": "2024-01-10T22:04:34.267566Z", "firstSeenTime": "2025-01-13T14:00:00Z", "lastSeenTime": "2025-01-13T14:00:00Z"}, {"artifactIndicator": {"hashSha256": "bc866cfcdda37e24dc2634dc282c7a0e6f55209da17a8fa105b07414c0e7c527"}, "sources": ["ACME-IOC-FILE-HASH"], "categories": ["C2"], "assetIndicators": [{"namespace": "Yuriy", "assetIpAddress": "172.30.202.229"}, {"namespace": "Yuriy", "mac": "00:50:56:a2:b8:a0"}, {"namespace": "Yuriy", "hostname": "exlab2019-ad"}], "iocIngestTimestamp": "2025-01-10T13:52:38.780150Z", "firstSeenTimestamp": "2024-12-15T09:07:02Z", "lastSeenTimestamp": "2025-01-14T16:07:14Z", "filterProperties": {"stringProperties": {"IOC CATEGORIES": {"values": [{"rawValue": "C2"}]}, "IOC FEED": {"values": [{"rawValue": "ACME-IOC-FILE-HASH"}]}}}, "logType": "CATCH_ALL", "feedName": "ACME-IOC-FILE-HASH", "id": "CkBiYzg2NmNmY2RkYTM3ZTI0ZGMyNjM0ZGMyODJjN2EwZTZmNTUyMDlkYTE3YThmYTEwNWIwNzQxNGMwZTdjNTI3ELEC", "fieldAndValue": {"value": "bc866cfcdda37e24dc2634dc282c7a0e6f55209da17a8fa105b07414c0e7c527", "valueType": "HASH_SHA256"}, "artifact": {"hashSha256": "bc866cfcdda37e24dc2634dc282c7a0e6f55209da17a8fa105b07414c0e7c527"}, "iocIngestTime": "2025-01-10T13:52:38.780150Z", "firstSeenTime": "2024-12-15T09:07:02Z", "lastSeenTime": "2025-01-14T16:07:14Z"}]
+{"count":4,"distinct":[{"first_seen":"2021-12-01T20:47:02Z","last_seen":"2021-12-02T00:47:02Z","product_name":"Office 365","used_ioc_asset":"10.169.xxx.xxx","name":"Threat Model Positive Score:74","hostnames":"host-name","urls":"www.test.com","ips":"10.169.xxx.xxx","subjects":"Invoice for Goods","users":"test-user1, test-user2","email_addresses":"stanlee4@acme.com, tony@starkindustries.com","hashes":"xxxxxxxxxxxxxxxx","processes":"pr1, pr2","rule_urls":["www.rule-url.com"]},{"first_seen":"2021-12-01T20:47:02Z","last_seen":"2021-12-02T00:47:02Z","product_name":"Office 365","used_ioc_asset":"stanlee4@acme.com","name":"Threat Model Positive Score:74","hostnames":"host-name","urls":"www.test.com","ips":"10.169.xxx.xxx","subjects":"Invoice for Goods","users":"test-user1, test-user2","email_addresses":"stanlee4@acme.com, tony@starkindustries.com","hashes":"xxxxxxxxxxxxxxxx","processes":"pr1, pr2","rule_urls":["www.rule-url.com"]}],"processed_alerts":210,"run_time":0.640103,"external_url":"www.external-url.com"}
+```
+
+
+
+#### Enrich IP
+Enrich IP entities using information from IOCs in Google Chronicle. Supported entities: IP address.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Create Insight|If enabled, action will create an insight containing information about the entities.|False|Boolean|true|
+|Only Suspicious Insight|If enabled, action will only create an insight for entities that are marked as suspicious. Note: "Create Insight" parameter needs to be enabled.|False|Boolean|false|
+|Lowest Suspicious Severity|Specify the lowest severity that should be associated with IP in order to mark it suspicious.|True|List|Medium|
+|Mark Suspicious N/A Severity|If enabled, action will mark the entity as suspicious, if information about severity is not available.|False|Boolean|True|
+
+
+
+##### JSON Results
+```json
+[{"Entity": "43.143.207.121", "EntityResult": {"sources": [{"category": "Indicator was published in publicly available sources", "firstActiveTime": "1970-01-01T00:00:01Z", "lastActiveTime": "9999-12-31T23:59:59Z", "addresses": [{"ipAddress": "K4/PeQ=="}], "rawSeverity": "low", "confidenceScore": {"strRawConfidenceScore": "67"}}], "feeds": [{"metadata": {"title": "Mandiant Open Source Intelligence", "description": "Open Source Intel IoC", "confidenceScoreBucket": {"rangeEnd": 100}}, "iocs": [{"categorization": "Indicator was published in publicly available sources", "activeTimerange": {"start": "1970-01-01T00:00:01Z", "end": "9999-12-31T23:59:59Z"}, "ipAndPorts": {"ipAddress": "K4/PeQ=="}, "confidenceScore": "67", "rawSeverity": "Low"}]}], "ioc_data_found": "false"}}]
+```
+
+
+
+#### Remove Values From Reference List
+Remove values from a reference list in Google Chronicle.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Reference List Name|Specify the display name of the reference list that needs to be updated.|True|String||
+|Values|Specify a comma-separated list of values that need to be removed from a reference list.|True|String||
+
+
+
+##### JSON Results
+```json
+{"name": "projects/xxxx/locations/us/instances/yyyy/referenceLists/testList", "displayName": "testList", "revisionCreateTime": "2025-01-16T09:15:33.753071Z", "description": "Test reference list", "entries": [{"value": "domain1.com"}], "syntaxType": "REFERENCE_LIST_SYNTAX_TYPE_PLAIN_TEXT_STRING", "scopeInfo": {"referenceListScope": {}}, "createTime": "2025-01-16T09:15:33.753071Z", "lines": ["domain1.com"]}
 ```
 
 
@@ -93,21 +134,64 @@ Timeout - 600 Seconds
 
 
 
-#### Remove Values From Reference List
-Remove values from a reference list in Google Chronicle.
+#### Execute UDM Query
+Execute custom UDM query in Google Chronicle. Note: 120 action executions are allowed per hour.
 Timeout - 600 Seconds
 
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Reference List Name|Specify the display name of the reference list that needs to be updated.|True|String||
-|Values|Specify a comma-separated list of values that need to be removed from a reference list.|True|String||
+|Query|Specify the query that needs to be executed in Chronicle.|True|String||
+|Time Frame|Specify a time frame for the results. If "Alert Time Till Now" is selected, action will use start time of the alert as start time for the search and end time will be current time. If "30 Minutes Around Alert Time" is selected, action will search the alerts 30 minutes before the alert happened till the 30 minutes after the alert has happened.  Same idea applies to "1 Hour Around Alert Time" and "5 Minutes Around Alert Time". If "Custom" is selected, you also need to provide "Start Time".|False|List|Last Hour|
+|Start Time|Specify the start time for the results. This parameter is mandatory, if "Custom" is selected for the "Time Frame" parameter. Format: ISO 8601. Note: The maximum time window (start time to end time) is 90 days.|False|String||
+|End Time|Specify the end time for the results. Format: ISO 8601. If nothing is provided and "Custom" is selected for the "Time Frame" parameter then this parameter will use current time. Note: The maximum time window (start time to end time) is 90 days.|False|String||
+|Max Results To Return|Specify how many results to return for the query. Default: 50. Maximum: 10000.|False|String|50|
 
 
 
 ##### JSON Results
 ```json
-{"name": "projects/xxxx/locations/us/instances/yyyy/referenceLists/testList", "displayName": "testList", "revisionCreateTime": "2025-01-16T09:15:33.753071Z", "description": "Test reference list", "entries": [{"value": "domain1.com"}], "syntaxType": "REFERENCE_LIST_SYNTAX_TYPE_PLAIN_TEXT_STRING", "scopeInfo": {"referenceListScope": {}}, "createTime": "2025-01-16T09:15:33.753071Z", "lines": ["domain1.com"]}
+{"events":[{"name":"02c2c701c5bb7e7042701axxxxxxxxxx,4,16496990275xxxxx,EMAIL,","udm":{"metadata":{"eventTimestamp":"2022-04-11T17:43:47.586Z","eventType":"EMAIL_TRANSACTION","productName":"Chronicle Internal","ingestedTimestamp":"2022-04-11T15:50:21.912562Z","enrichmentState":"ENRICHED"},"principal":{"hostname":"test-pc","assetId":"CS:8973060bcf1d441a8cf10exxxxxxxxxx","user":{"userid":"test","userDisplayName":"test test","windowsSid":"S-1-5-21-2623356xxx-8883713xxx-9684409xxx-xxxxx","emailAddresses":["test@example.com"],"productObjectId":"test","attribute":{"labels":[{"key":"2FA Enabled","value":"false"}]},"groupIdentifiers":["Contractors"],"title":"IT Support Agent","department":["Cymbal Investments IT Contractors"]},"ip":["10.2.xx.xxx"],"mac":["b5:1c:8b:xx:xx:xx"],"location":{"city":"San Francisco","state":"California","countryOrRegion":"US"},"asset":{"hostname":"test-pc","assetId":"CS:8973060bcf1d441a8cf10exxxxxxxxxx","ip":["10.2.xx.xxx"],"mac":["b5:1c:8b:xx:xx:xx"]}},"securityResult":[{"action":["ALLOW"]}],"network":{"email":{"from":"test@example.com","to":["test@example.com"],"subject":["I did not create this service account"]}}}},{"name":"02c2c701c5bb7e7042701axxxxxxxxxx,3,16496987245xxxxx,EMAIL,","udm":{"metadata":{"eventTimestamp":"2022-04-11T17:38:44.586Z","eventType":"EMAIL_TRANSACTION","productName":"Chronicle Internal","ingestedTimestamp":"2022-04-11T15:50:21.912562Z","enrichmentState":"ENRICHED"},"principal":{"hostname":"test-pc","assetId":"CS:8973060bcf1d441a8cf10exxxxxxxxxx","user":{"userid":"test","userDisplayName":"test test","windowsSid":"S-1-5-21-2623356xxx-8883713xxx-9684409xxx-xxxxx","emailAddresses":["test@example.com"],"productObjectId":"test","attribute":{"labels":[{"key":"2FA Enabled","value":"false"}]},"groupIdentifiers":["Contractors"],"title":"IT Support Agent","department":["Cymbal Investments IT Contractors"]},"ip":["10.2.xx.xxx"],"mac":["b5:1c:8b:xx:xx:xx"],"location":{"city":"San Francisco","state":"California","countryOrRegion":"US"},"asset":{"hostname":"test-pc","assetId":"CS:8973060bcf1d441a8cf10exxxxxxxxxx","ip":["10.2.xx.xxx"],"mac":["b5:1c:8b:xx:xx:xx"]}},"securityResult":[{"action":["ALLOW"]}],"network":{"email":{"from":"test@example.com","to":["test@example.com"],"subject":["Did you create this service account"]}}}}]}
+```
+
+
+
+#### List IOCs
+List all of the IoCs discovered within your enterprise within the specified time range.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Start Time|Fetches IOC Domain from the specified time. Value should be in RFC 3339 format (e.g. 2018-11-05T12:00:00Z). If not supplied, the default is the UTC time corresponding to 3 days earlier than current time.|False|String||
+|Max IoCs to Fetch|Specify the maximum number of IoCs to return. You can specify between 1 and 10,000. The default is 50.|False|String|50|
+
+
+
+##### JSON Results
+```json
+[{"artifactIndicator": {"domain": "npatni-sysops"}, "sources": ["ACME-IOC-IP-DOMAIN"], "categories": ["C2"], "assetIndicators": [{"assetIpAddress": "172.30.202.229"}], "iocIngestTimestamp": "2024-12-10T13:52:38.780150Z", "firstSeenTimestamp": "2025-01-13T14:01:00Z", "lastSeenTimestamp": "2025-01-13T14:01:00Z", "filterProperties": {"stringProperties": {"TLD": {"values": [{"rawValue": "Invalid"}]}, "IOC CATEGORIES": {"values": [{"rawValue": "C2"}]}, "IOC FEED": {"values": [{"rawValue": "ACME-IOC-IP-DOMAIN"}]}}}, "logType": "UDM", "feedName": "ACME-IOC-IP-DOMAIN", "id": "Cg1ucGF0bmktc3lzb3BzEMgB", "fieldAndValue": {"value": "npatni-sysops", "valueType": "DOMAIN_NAME"}, "artifact": {"domainName": "npatni-sysops"}, "iocIngestTime": "2024-12-10T13:52:38.780150Z", "firstSeenTime": "2025-01-13T14:01:00Z", "lastSeenTime": "2025-01-13T14:01:00Z"}, {"artifactIndicator": {"destinationIpAddress": "35.246.203.0"}, "sources": ["ACME-IOC-IP-PORT-C2"], "categories": ["C2"], "assetIndicators": [{"assetIpAddress": "172.30.202.229"}], "iocIngestTimestamp": "2024-01-10T22:04:34.267566Z", "firstSeenTimestamp": "2025-01-13T14:00:00Z", "lastSeenTimestamp": "2025-01-13T14:00:00Z", "filterProperties": {"stringProperties": {"IOC CATEGORIES": {"values": [{"rawValue": "C2"}]}, "IOC FEED": {"values": [{"rawValue": "ACME-IOC-IP-PORT-C2"}]}}}, "logType": "CATCH_ALL", "feedName": "ACME-IOC-IP-PORT-C2", "id": "CgwzNS4yNDYuMjAzLjAQyQE", "fieldAndValue": {"value": "35.246.203.0", "valueType": "RESOLVED_IP_ADDRESS"}, "artifact": {"destinationIpAddress": "35.246.203.0"}, "iocIngestTime": "2024-01-10T22:04:34.267566Z", "firstSeenTime": "2025-01-13T14:00:00Z", "lastSeenTime": "2025-01-13T14:00:00Z"}, {"artifactIndicator": {"hashSha256": "bc866cfcdda37e24dc2634dc282c7a0e6f55209da17a8fa105b07414c0e7c527"}, "sources": ["ACME-IOC-FILE-HASH"], "categories": ["C2"], "assetIndicators": [{"namespace": "Yuriy", "assetIpAddress": "172.30.202.229"}, {"namespace": "Yuriy", "mac": "00:50:56:a2:b8:a0"}, {"namespace": "Yuriy", "hostname": "exlab2019-ad"}], "iocIngestTimestamp": "2025-01-10T13:52:38.780150Z", "firstSeenTimestamp": "2024-12-15T09:07:02Z", "lastSeenTimestamp": "2025-01-14T16:07:14Z", "filterProperties": {"stringProperties": {"IOC CATEGORIES": {"values": [{"rawValue": "C2"}]}, "IOC FEED": {"values": [{"rawValue": "ACME-IOC-FILE-HASH"}]}}}, "logType": "CATCH_ALL", "feedName": "ACME-IOC-FILE-HASH", "id": "CkBiYzg2NmNmY2RkYTM3ZTI0ZGMyNjM0ZGMyODJjN2EwZTZmNTUyMDlkYTE3YThmYTEwNWIwNzQxNGMwZTdjNTI3ELEC", "fieldAndValue": {"value": "bc866cfcdda37e24dc2634dc282c7a0e6f55209da17a8fa105b07414c0e7c527", "valueType": "HASH_SHA256"}, "artifact": {"hashSha256": "bc866cfcdda37e24dc2634dc282c7a0e6f55209da17a8fa105b07414c0e7c527"}, "iocIngestTime": "2025-01-10T13:52:38.780150Z", "firstSeenTime": "2024-12-15T09:07:02Z", "lastSeenTime": "2025-01-14T16:07:14Z"}]
+```
+
+
+
+#### Execute Retrohunt
+Execute a rule retrohunt in Google Chronicle.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Rule ID|Specify the ID of the rule for which you want to run retrohunt.|True|String||
+|Time Frame|Specify a time frame for the results. If “Alert Time Till Now” is selected, action will use start time of the alert as start time for the search and end time will be current time. If “30 Minutes Around Alert Time” is selected, action will search the alerts 30 minutes before the alert happened till the 30 minutes after the alert has happened.  Same idea applies to “1 Hour Around Alert Time” and “5 Minutes Around Alert Time”. If “Custom” is selected, you also need to provide “Start Time”.|False|List|Last Hour|
+|Start Time|Specify the start time for the results. This parameter is mandatory, if “Custom” is selected for the “Time Frame” parameter. Format: ISO 8601.|False|String||
+|End Time|Specify the end time for the results. Format: ISO 8601. If nothing is provided and “Custom” is selected for the “Time Frame” parameter then this parameter will use current time.|False|String||
+
+
+
+##### JSON Results
+```json
+{"retrohuntId": "xxxxxxxxx-xxxxx-xxxxx-89e8-xxxxxxxxx", "ruleId": "xxxxxxxxx-xxf66d-xx4cec-xx-xxxxxxxxx", "versionId": "xxxxxxxxx-f66d-xx-b682-xxxxxxxxx@xxxxxxxxx", "eventStartTime": "2023-10-14T02:02:49.943Z", "eventEndTime": "2023-10-14T07:02:49.943Z", "retrohuntStartTime": "2023-10-16T12:28:09.042884Z", "state": "RUNNING", "name": "projects/365xxxxxxxxxx/locations/us/instances/df6xxxxxxxxxx/operations/oh_db3xxxxxxxxxx", "metadata": {"@type": "type.googleapis.com/google.cloud.chronicle.v1main.RetrohuntMetadata", "retrohunt": "projects/365xxxxxxxxxx/locations/us/instances/df6xxxxxxxxxx/rules/ru_a83xxxxxxxxxx@v_173xxxxxxxxxx/retrohunts/oh_db3xxxxxxxxxx", "executionInterval": {"startTime": "2025-01-09T13:30:10.098Z", "endTime": "2025-01-09T14:30:10.098Z"}}}
 ```
 
 
@@ -131,24 +215,46 @@ Timeout - 600 Seconds
 
 
 
-#### Get Reference Lists
-Get available reference lists in Google Chronicle.
+#### Ping
+Test connectivity to the Google Chronicle with parameters provided at the integration configuration page on the Marketplace tab.
+Timeout - 600 Seconds
+
+
+
+#### Get Rule Details
+Fetch information about a rule in Google Chronicle.
 Timeout - 600 Seconds
 
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Filter Key|Specify the key that needs to be used to filter reference lists. Name option refers to a display name of the reference list.|False|List|Select One|
-|Filter Logic|Specify what filter logic should be applied.|False|List|Equal|
-|Filter Value|Specify what value should be used in the filter. If “Equal“ is selected, action will try to find the exact match among results and if “Contains“ is selected, action will try to find results that contain that substring. “Equal” works with “title” parameter, while “Contains” works with all values in response. If nothing is provided in this parameter, the filter will not be applied.|False|String||
-|Expanded Details|If enabled, action will return detailed information about the reference lists.|False|Boolean||
-|Max Reference Lists To Return|Specify how many reference lists to return. Default: 100.|False|String|100|
+|Rule ID|Specify the ID of the rule for which you want to fetch details.|True|String||
 
 
 
 ##### JSON Results
 ```json
-[{"name": "projects/xxxx/locations/us/instances/yyyy/referenceLists/testList", "displayName": "testList", "revisionCreateTime": "2025-01-09T15:53:10.851775Z", "description": "Test reference list", "syntaxType": "REFERENCE_LIST_SYNTAX_TYPE_PLAIN_TEXT_STRING", "scopeInfo": {"referenceListScope": {}}, "createTime": "2025-01-09T15:53:10.851775Z"}]
+{"name": "projects/xxxx/locations/us/instances/yyyy/rules/ru_7d66bc00-7164-4c56-bb6a-66f19524983c", "revisionId": "v_1733917896_973567000", "displayName": "Test_rule_SingleEvent", "text": "rule Test_rule_SingleEvent {\n  // This rule matches single events. Rules can also match multiple events within\n  // some time window. For details about how to write a multi-event rule, see\n  // https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#single-event_versus_multi-event\n\n  meta:\n    // Allows for storage of arbitrary key-value pairs of rule details - who\n    // wrote it, what it detects on, version control, etc.\n    // The \"author\" and \"severity\" fields are special, as they are used as\n    // columns on the rules dashboard. If you'd like to be able to sort based on\n    // these fields on the dashboard, make sure to add them here.\n    // Severity value, by convention, should be \"Low\", \"Medium\" or \"High\"\n    author = \"bhusingh\"\n    description = \"windowed single event example rule\"\n    //severity = \"Medium\"\n\n  events:\n    $e.metadata.event_type = \"USER_LOGIN\"\n    $e.principal.user.userid = $user\n\n  //outcome:\n    // For a multi-event rule an aggregation function is required\n    // e.g., risk_score = max(0)\n    // See https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#outcome_conditionals_example_rule\n    //$risk_score = 0\n  match:\n    $user over 1m\n\n  condition:\n    #e > 0\n}\n", "author": "bhusingh", "metadata": {"author": "bhusingh", "description": "windowed single event example rule", "severity": null}, "createTime": "2024-12-11T11:36:18.192127Z", "revisionCreateTime": "2024-12-11T11:51:36.973567Z", "compilationState": "SUCCEEDED", "type": "SINGLE_EVENT", "allowedRunFrequencies": ["LIVE", "HOURLY", "DAILY"], "etag": "CMj55boGEJjondAD", "ruleId": "ru_7d66bc00-7164-4c56-bb6a-66f19524983c", "versionId": "ru_7d66bc00-7164-4c56-bb6a-66f19524983c@v_1733917896_973567000", "ruleName": "Test_rule_SingleEvent", "ruleText": "rule Test_rule_SingleEvent {\n  // This rule matches single events. Rules can also match multiple events within\n  // some time window. For details about how to write a multi-event rule, see\n  // https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#single-event_versus_multi-event\n\n  meta:\n    // Allows for storage of arbitrary key-value pairs of rule details - who\n    // wrote it, what it detects on, version control, etc.\n    // The \"author\" and \"severity\" fields are special, as they are used as\n    // columns on the rules dashboard. If you'd like to be able to sort based on\n    // these fields on the dashboard, make sure to add them here.\n    // Severity value, by convention, should be \"Low\", \"Medium\" or \"High\"\n    author = \"bhusingh\"\n    description = \"windowed single event example rule\"\n    //severity = \"Medium\"\n\n  events:\n    $e.metadata.event_type = \"USER_LOGIN\"\n    $e.principal.user.userid = $user\n\n  //outcome:\n    // For a multi-event rule an aggregation function is required\n    // e.g., risk_score = max(0)\n    // See https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#outcome_conditionals_example_rule\n    //$risk_score = 0\n  match:\n    $user over 1m\n\n  condition:\n    #e > 0\n}\n", "ruleType": "SINGLE_EVENT", "versionCreateTime": "2024-12-11T11:51:36.973567Z"}
+```
+
+
+
+#### Is Value In Reference List
+Check, if provided values are found in reference lists in Google Chronicle.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Reference List Names|Specify a comma-separated list of display names of the reference list that needs to be searched.|True|String||
+|Values|Specify a comma-separated list of values that need to be searched in reference lists.|True|String||
+|Case Insensitive Search|If enabled, action will perform case insensitive matching.|False|Boolean|true|
+
+
+
+##### JSON Results
+```json
+[{"Entity": "domain.com", "EntityResult": {"found_in": [], "not_found_in": "testList", "overall_status": "not found"}}]
 ```
 
 
@@ -177,24 +283,6 @@ Timeout - 600 Seconds
 
 
 
-#### Get Rule Details
-Fetch information about a rule in Google Chronicle.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Rule ID|Specify the ID of the rule for which you want to fetch details.|True|String||
-
-
-
-##### JSON Results
-```json
-{"name": "projects/xxxx/locations/us/instances/yyyy/rules/ru_7d66bc00-7164-4c56-bb6a-66f19524983c", "revisionId": "v_1733917896_973567000", "displayName": "Test_rule_SingleEvent", "text": "rule Test_rule_SingleEvent {\n  // This rule matches single events. Rules can also match multiple events within\n  // some time window. For details about how to write a multi-event rule, see\n  // https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#single-event_versus_multi-event\n\n  meta:\n    // Allows for storage of arbitrary key-value pairs of rule details - who\n    // wrote it, what it detects on, version control, etc.\n    // The \"author\" and \"severity\" fields are special, as they are used as\n    // columns on the rules dashboard. If you'd like to be able to sort based on\n    // these fields on the dashboard, make sure to add them here.\n    // Severity value, by convention, should be \"Low\", \"Medium\" or \"High\"\n    author = \"bhusingh\"\n    description = \"windowed single event example rule\"\n    //severity = \"Medium\"\n\n  events:\n    $e.metadata.event_type = \"USER_LOGIN\"\n    $e.principal.user.userid = $user\n\n  //outcome:\n    // For a multi-event rule an aggregation function is required\n    // e.g., risk_score = max(0)\n    // See https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#outcome_conditionals_example_rule\n    //$risk_score = 0\n  match:\n    $user over 1m\n\n  condition:\n    #e > 0\n}\n", "author": "bhusingh", "metadata": {"author": "bhusingh", "description": "windowed single event example rule", "severity": null}, "createTime": "2024-12-11T11:36:18.192127Z", "revisionCreateTime": "2024-12-11T11:51:36.973567Z", "compilationState": "SUCCEEDED", "type": "SINGLE_EVENT", "allowedRunFrequencies": ["LIVE", "HOURLY", "DAILY"], "etag": "CMj55boGEJjondAD", "ruleId": "ru_7d66bc00-7164-4c56-bb6a-66f19524983c", "versionId": "ru_7d66bc00-7164-4c56-bb6a-66f19524983c@v_1733917896_973567000", "ruleName": "Test_rule_SingleEvent", "ruleText": "rule Test_rule_SingleEvent {\n  // This rule matches single events. Rules can also match multiple events within\n  // some time window. For details about how to write a multi-event rule, see\n  // https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#single-event_versus_multi-event\n\n  meta:\n    // Allows for storage of arbitrary key-value pairs of rule details - who\n    // wrote it, what it detects on, version control, etc.\n    // The \"author\" and \"severity\" fields are special, as they are used as\n    // columns on the rules dashboard. If you'd like to be able to sort based on\n    // these fields on the dashboard, make sure to add them here.\n    // Severity value, by convention, should be \"Low\", \"Medium\" or \"High\"\n    author = \"bhusingh\"\n    description = \"windowed single event example rule\"\n    //severity = \"Medium\"\n\n  events:\n    $e.metadata.event_type = \"USER_LOGIN\"\n    $e.principal.user.userid = $user\n\n  //outcome:\n    // For a multi-event rule an aggregation function is required\n    // e.g., risk_score = max(0)\n    // See https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview#outcome_conditionals_example_rule\n    //$risk_score = 0\n  match:\n    $user over 1m\n\n  condition:\n    #e > 0\n}\n", "ruleType": "SINGLE_EVENT", "versionCreateTime": "2024-12-11T11:51:36.973567Z"}
-```
-
-
-
 #### Get Detection Details
 Fetch information about a detection in Google Chronicle.
 Timeout - 600 Seconds
@@ -214,106 +302,24 @@ Timeout - 600 Seconds
 
 
 
-#### Execute Retrohunt
-Execute a rule retrohunt in Google Chronicle.
+#### Get Reference Lists
+Get available reference lists in Google Chronicle.
 Timeout - 600 Seconds
 
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Rule ID|Specify the ID of the rule for which you want to run retrohunt.|True|String||
-|Time Frame|Specify a time frame for the results. If “Alert Time Till Now” is selected, action will use start time of the alert as start time for the search and end time will be current time. If “30 Minutes Around Alert Time” is selected, action will search the alerts 30 minutes before the alert happened till the 30 minutes after the alert has happened.  Same idea applies to “1 Hour Around Alert Time” and “5 Minutes Around Alert Time”. If “Custom” is selected, you also need to provide “Start Time”.|False|List|Last Hour|
-|Start Time|Specify the start time for the results. This parameter is mandatory, if “Custom” is selected for the “Time Frame” parameter. Format: ISO 8601.|False|String||
-|End Time|Specify the end time for the results. Format: ISO 8601. If nothing is provided and “Custom” is selected for the “Time Frame” parameter then this parameter will use current time.|False|String||
+|Filter Key|Specify the key that needs to be used to filter reference lists. Name option refers to a display name of the reference list.|False|List|Select One|
+|Filter Logic|Specify what filter logic should be applied.|False|List|Equal|
+|Filter Value|Specify what value should be used in the filter. If “Equal“ is selected, action will try to find the exact match among results and if “Contains“ is selected, action will try to find results that contain that substring. “Equal” works with “title” parameter, while “Contains” works with all values in response. If nothing is provided in this parameter, the filter will not be applied.|False|String||
+|Expanded Details|If enabled, action will return detailed information about the reference lists.|False|Boolean||
+|Max Reference Lists To Return|Specify how many reference lists to return. Default: 100.|False|String|100|
 
 
 
 ##### JSON Results
 ```json
-{"retrohuntId": "xxxxxxxxx-xxxxx-xxxxx-89e8-xxxxxxxxx", "ruleId": "xxxxxxxxx-xxf66d-xx4cec-xx-xxxxxxxxx", "versionId": "xxxxxxxxx-f66d-xx-b682-xxxxxxxxx@xxxxxxxxx", "eventStartTime": "2023-10-14T02:02:49.943Z", "eventEndTime": "2023-10-14T07:02:49.943Z", "retrohuntStartTime": "2023-10-16T12:28:09.042884Z", "state": "RUNNING", "name": "projects/365xxxxxxxxxx/locations/us/instances/df6xxxxxxxxxx/operations/oh_db3xxxxxxxxxx", "metadata": {"@type": "type.googleapis.com/google.cloud.chronicle.v1main.RetrohuntMetadata", "retrohunt": "projects/365xxxxxxxxxx/locations/us/instances/df6xxxxxxxxxx/rules/ru_a83xxxxxxxxxx@v_173xxxxxxxxxx/retrohunts/oh_db3xxxxxxxxxx", "executionInterval": {"startTime": "2025-01-09T13:30:10.098Z", "endTime": "2025-01-09T14:30:10.098Z"}}}
-```
-
-
-
-#### Enrich IP
-Enrich IP entities using information from IOCs in Google Chronicle. Supported entities: IP address.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Create Insight|If enabled, action will create an insight containing information about the entities.|False|Boolean|true|
-|Only Suspicious Insight|If enabled, action will only create an insight for entities that are marked as suspicious. Note: "Create Insight" parameter needs to be enabled.|False|Boolean|false|
-|Lowest Suspicious Severity|Specify the lowest severity that should be associated with IP in order to mark it suspicious.|True|List|Medium|
-|Mark Suspicious N/A Severity|If enabled, action will mark the entity as suspicious, if information about severity is not available.|False|Boolean|True|
-
-
-
-##### JSON Results
-```json
-[{"Entity": "43.143.207.121", "EntityResult": {"sources": [{"category": "Indicator was published in publicly available sources", "firstActiveTime": "1970-01-01T00:00:01Z", "lastActiveTime": "9999-12-31T23:59:59Z", "addresses": [{"ipAddress": "K4/PeQ=="}], "rawSeverity": "low", "confidenceScore": {"strRawConfidenceScore": "67"}}], "feeds": [{"metadata": {"title": "Mandiant Open Source Intelligence", "description": "Open Source Intel IoC", "confidenceScoreBucket": {"rangeEnd": 100}}, "iocs": [{"categorization": "Indicator was published in publicly available sources", "activeTimerange": {"start": "1970-01-01T00:00:01Z", "end": "9999-12-31T23:59:59Z"}, "ipAndPorts": {"ipAddress": "K4/PeQ=="}, "confidenceScore": "67", "rawSeverity": "Low"}]}], "ioc_data_found": "false"}}]
-```
-
-
-
-#### Execute UDM Query
-Execute custom UDM query in Google Chronicle. Note: 120 action executions are allowed per hour.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Query|Specify the query that needs to be executed in Chronicle.|True|String||
-|Time Frame|Specify a time frame for the results. If "Alert Time Till Now" is selected, action will use start time of the alert as start time for the search and end time will be current time. If "30 Minutes Around Alert Time" is selected, action will search the alerts 30 minutes before the alert happened till the 30 minutes after the alert has happened.  Same idea applies to "1 Hour Around Alert Time" and "5 Minutes Around Alert Time". If "Custom" is selected, you also need to provide "Start Time".|False|List|Last Hour|
-|Start Time|Specify the start time for the results. This parameter is mandatory, if "Custom" is selected for the "Time Frame" parameter. Format: ISO 8601. Note: The maximum time window (start time to end time) is 90 days.|False|String||
-|End Time|Specify the end time for the results. Format: ISO 8601. If nothing is provided and "Custom" is selected for the "Time Frame" parameter then this parameter will use current time. Note: The maximum time window (start time to end time) is 90 days.|False|String||
-|Max Results To Return|Specify how many results to return for the query. Default: 50. Maximum: 10000.|False|String|50|
-
-
-
-##### JSON Results
-```json
-{"events":[{"name":"02c2c701c5bb7e7042701axxxxxxxxxx,4,16496990275xxxxx,EMAIL,","udm":{"metadata":{"eventTimestamp":"2022-04-11T17:43:47.586Z","eventType":"EMAIL_TRANSACTION","productName":"Chronicle Internal","ingestedTimestamp":"2022-04-11T15:50:21.912562Z","enrichmentState":"ENRICHED"},"principal":{"hostname":"test-pc","assetId":"CS:8973060bcf1d441a8cf10exxxxxxxxxx","user":{"userid":"test","userDisplayName":"test test","windowsSid":"S-1-5-21-2623356xxx-8883713xxx-9684409xxx-xxxxx","emailAddresses":["test@example.com"],"productObjectId":"test","attribute":{"labels":[{"key":"2FA Enabled","value":"false"}]},"groupIdentifiers":["Contractors"],"title":"IT Support Agent","department":["Cymbal Investments IT Contractors"]},"ip":["10.2.xx.xxx"],"mac":["b5:1c:8b:xx:xx:xx"],"location":{"city":"San Francisco","state":"California","countryOrRegion":"US"},"asset":{"hostname":"test-pc","assetId":"CS:8973060bcf1d441a8cf10exxxxxxxxxx","ip":["10.2.xx.xxx"],"mac":["b5:1c:8b:xx:xx:xx"]}},"securityResult":[{"action":["ALLOW"]}],"network":{"email":{"from":"test@example.com","to":["test@example.com"],"subject":["I did not create this service account"]}}}},{"name":"02c2c701c5bb7e7042701axxxxxxxxxx,3,16496987245xxxxx,EMAIL,","udm":{"metadata":{"eventTimestamp":"2022-04-11T17:38:44.586Z","eventType":"EMAIL_TRANSACTION","productName":"Chronicle Internal","ingestedTimestamp":"2022-04-11T15:50:21.912562Z","enrichmentState":"ENRICHED"},"principal":{"hostname":"test-pc","assetId":"CS:8973060bcf1d441a8cf10exxxxxxxxxx","user":{"userid":"test","userDisplayName":"test test","windowsSid":"S-1-5-21-2623356xxx-8883713xxx-9684409xxx-xxxxx","emailAddresses":["test@example.com"],"productObjectId":"test","attribute":{"labels":[{"key":"2FA Enabled","value":"false"}]},"groupIdentifiers":["Contractors"],"title":"IT Support Agent","department":["Cymbal Investments IT Contractors"]},"ip":["10.2.xx.xxx"],"mac":["b5:1c:8b:xx:xx:xx"],"location":{"city":"San Francisco","state":"California","countryOrRegion":"US"},"asset":{"hostname":"test-pc","assetId":"CS:8973060bcf1d441a8cf10exxxxxxxxxx","ip":["10.2.xx.xxx"],"mac":["b5:1c:8b:xx:xx:xx"]}},"securityResult":[{"action":["ALLOW"]}],"network":{"email":{"from":"test@example.com","to":["test@example.com"],"subject":["Did you create this service account"]}}}}]}
-```
-
-
-
-#### Lookup Similar Alerts
-Lookup similar alerts in Google Chronicle. Supported Chronicle alert types: RULE, EXTERNAL, IOC. Note: this action can only work with alerts that come from the "Chronicle Alerts Connector". Note: action can only fetch 10000 alerts. Make sure to narrow down the timeframe for better results.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Time Frame|Specify a time frame for the results. If "Alert Time Till Now" is selected, action will use start time of the alert as start time for the search and end time will be current time. If "30 Minutes Around Alert Time" is selected, action will search the alerts 30 minutes before the alert happened till the 30 minutes after the alert has happened.  Same idea applies to "1 Hour Around Alert Time" and "5 Minutes Around Alert Time".|False|List|Last Hour|
-|IOCs / Assets|Specify a comma-separated list of IOCs or assets that you want to find in the alerts. Note: action will perform a different search for each item provided.|True|String||
-|Similarity By|Specify what attributes need to be used, when the action is to search for similar alerts. If "Alert Name and Alert Type" is selected, action will try to find all of the alerts that have the same alert name and IOCs/Assets for the underlying alert type. If "Product" is selected, then action will try to find all of the alerts that originate from the same product and have the same IOCs/Assets, action will search among both "EXTERNAL" and "Rule" alerts. If "Only IOCs/Assets" is enabled, action will match the similarity only based upon the items provided in the parameter "IOCs/Assets", action will search among both "EXTERNAL" and "Rule" alerts.|False|List|Alert Name and Product|
-
-
-
-##### JSON Results
-```json
-{"count":4,"distinct":[{"first_seen":"2021-12-01T20:47:02Z","last_seen":"2021-12-02T00:47:02Z","product_name":"Office 365","used_ioc_asset":"10.169.xxx.xxx","name":"Threat Model Positive Score:74","hostnames":"host-name","urls":"www.test.com","ips":"10.169.xxx.xxx","subjects":"Invoice for Goods","users":"test-user1, test-user2","email_addresses":"stanlee4@acme.com, tony@starkindustries.com","hashes":"xxxxxxxxxxxxxxxx","processes":"pr1, pr2","rule_urls":["www.rule-url.com"]},{"first_seen":"2021-12-01T20:47:02Z","last_seen":"2021-12-02T00:47:02Z","product_name":"Office 365","used_ioc_asset":"stanlee4@acme.com","name":"Threat Model Positive Score:74","hostnames":"host-name","urls":"www.test.com","ips":"10.169.xxx.xxx","subjects":"Invoice for Goods","users":"test-user1, test-user2","email_addresses":"stanlee4@acme.com, tony@starkindustries.com","hashes":"xxxxxxxxxxxxxxxx","processes":"pr1, pr2","rule_urls":["www.rule-url.com"]}],"processed_alerts":210,"run_time":0.640103,"external_url":"www.external-url.com"}
-```
-
-
-
-#### Is Value In Reference List
-Check, if provided values are found in reference lists in Google Chronicle.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Reference List Names|Specify a comma-separated list of display names of the reference list that needs to be searched.|True|String||
-|Values|Specify a comma-separated list of values that need to be searched in reference lists.|True|String||
-|Case Insensitive Search|If enabled, action will perform case insensitive matching.|False|Boolean|true|
-
-
-
-##### JSON Results
-```json
-[{"Entity": "domain.com", "EntityResult": {"found_in": [], "not_found_in": "testList", "overall_status": "not found"}}]
+[{"name": "projects/xxxx/locations/us/instances/yyyy/referenceLists/testList", "displayName": "testList", "revisionCreateTime": "2025-01-09T15:53:10.851775Z", "description": "Test reference list", "syntaxType": "REFERENCE_LIST_SYNTAX_TYPE_PLAIN_TEXT_STRING", "scopeInfo": {"referenceListScope": {}}, "createTime": "2025-01-09T15:53:10.851775Z"}]
 ```
 
 
@@ -336,12 +342,6 @@ Timeout - 600 Seconds
 ```json
 [{"Entity": "facebooktoday.cc", "EntityResult": {"sources": [{"category": "Indicator was published in publicly available sources", "firstActiveTime": "1970-01-01T00:00:01Z", "lastActiveTime": "9999-12-31T23:59:59Z", "addresses": [{"domain": "facebooktoday.cc"}], "rawSeverity": "medium", "confidenceScore": {"strRawConfidenceScore": "100"}}, {"category": "Phishing", "firstActiveTime": null, "lastActiveTime": "2020-11-27T14:31:37Z", "addresses": [{"domain": "facebooktoday.cc"}, {"ipAddress": "ImaItA=="}], "rawSeverity": "high", "confidenceScore": {"strRawConfidenceScore": "high"}}, {"category": "Indicator was published in publicly available sources", "firstActiveTime": "1970-01-01T00:00:01Z", "lastActiveTime": "9999-12-31T23:59:59Z", "addresses": [{"domain": "facebooktoday.cc"}], "rawSeverity": "medium", "confidenceScore": {"strRawConfidenceScore": "100"}}], "feeds": [{"metadata": {"title": "Mandiant Open Source Intelligence", "description": "Open Source Intel IoC", "confidenceScoreBucket": {"rangeEnd": 100}}, "iocs": [{"domainAndPorts": {"domain": "facebooktoday.cc"}, "categorization": "Indicator was published in publicly available sources", "activeTimerange": {"start": "1970-01-01T00:00:01Z", "end": "9999-12-31T23:59:59Z"}, "confidenceScore": "100", "rawSeverity": "Medium"}]}, {"metadata": {"title": "ESET Threat Intelligence", "description": "ESET Threat Intelligence"}, "iocs": [{"domainAndPorts": {"domain": "facebooktoday.cc"}, "categorization": "Phishing", "activeTimerange": {"end": "2020-11-27T14:31:37Z"}, "ipAndPorts": {"ipAddress": "ImaItA=="}, "confidenceScore": "High", "rawSeverity": "High"}]}, {"metadata": {"title": "Mandiant Active Breach Intelligence", "description": "Mandiant Active Breach IoC", "confidenceScoreBucket": {"rangeEnd": 100}}, "iocs": [{"domainAndPorts": {"domain": "facebooktoday.cc"}, "categorization": "Indicator was published in publicly available sources", "activeTimerange": {"start": "1970-01-01T00:00:01Z", "end": "9999-12-31T23:59:59Z"}, "confidenceScore": "100", "rawSeverity": "Medium"}]}], "ioc_data_found": "false"}}]
 ```
-
-
-
-#### Ping
-Test connectivity to the Google Chronicle with parameters provided at the integration configuration page on the Marketplace tab.
-Timeout - 600 Seconds
 
 
 
