@@ -29,6 +29,7 @@
 |Step Name|Description|Integration|Original Action|
 |---------|-----------|-----------|---------------|
 |VirusTotalV3_Add Comment To Entity_1|Add a comment to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported|VirusTotalV3|Add Comment To Entity|
+|VirusTotalV3_Add Vote To Entity_1|Add a vote to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported|VirusTotalV3|Add Vote To Entity|
 
 ### Involved Blocks
 |Name|Description|
