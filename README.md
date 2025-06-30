@@ -45,6 +45,7 @@
 |Playbook-2||
 |Playbook-4||
 |Playbook-5||
+|Playbook-6||
 |Playbook-Action-Block-Content-1||
 |Playbook-Content-2||
 |Playbook-Content-3||
