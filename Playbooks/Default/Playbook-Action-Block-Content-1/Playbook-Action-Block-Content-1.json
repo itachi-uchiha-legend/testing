@@ -16,7 +16,7 @@
     "categoryId": 1,
     "originalPlaybookIdentifier": "5e589cbf-d30b-4a6f-83d0-3330c91d99fe",
     "creationTimeUnixTimeInMs": 1751244748041,
-    "modificationTimeUnixTimeInMs": 1751244785047,
+    "modificationTimeUnixTimeInMs": 1751245811527,
     "trigger": {
         "id": 0,
         "identifier": "a0f9c50b-fddc-4df7-a39f-640c360fe0ec",
@@ -187,8 +187,8 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751244784918,
-            "modificationTimeUnixTimeInMs": 1751244785047,
+            "creationTimeUnixTimeInMs": 1751245811415,
+            "modificationTimeUnixTimeInMs": 1751245811527,
             "additionalProperties": {}
         },
         {
@@ -347,8 +347,168 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751244784918,
-            "modificationTimeUnixTimeInMs": 1751244785047,
+            "creationTimeUnixTimeInMs": 1751245811415,
+            "modificationTimeUnixTimeInMs": 1751245811527,
+            "additionalProperties": {}
+        },
+        {
+            "parallelActions": [],
+            "identifier": "98c9f659-c395-4fa2-a84e-bb0b5f1d8ec8",
+            "originalStepIdentifier": "98c9f659-c395-4fa2-a84e-bb0b5f1d8ec8",
+            "isAutomatic": true,
+            "isSkippable": false,
+            "instanceName": "VirusTotalV3_Add Vote To Entity_1",
+            "name": "VirusTotalV3_Add Vote To Entity",
+            "integration": "VirusTotalV3",
+            "description": "Add a vote to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported",
+            "actionProvider": "Scripts",
+            "actionName": "VirusTotalV3_Add Vote To Entity",
+            "type": 0,
+            "parameters": [
+                {
+                    "name": "AssignedUsers",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "DynamicInjectionInstancePlaceholder",
+                    "value": "",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "FallbackIntegrationInstance",
+                    "value": "ac89693a-cba6-477b-a1ac-df00a7f82a58",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {},
+                    "FallbackInstanceDisplayName": "VirusTotalV3_5"
+                },
+                {
+                    "name": "FetchInstanceByName",
+                    "value": "false",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "HasApprovalLink",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "IntegrationInstance",
+                    "value": "AutomaticEnvironment",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "MessageToAssignee",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "PendingActionTimeout",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "ScriptName",
+                    "value": "VirusTotalV3_Add Vote To Entity",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "ScriptParametersEntityFields",
+                    "value": "{\"Vote\":\"Malicious\"}",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "SelectedScopeName",
+                    "value": "All entities",
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                },
+                {
+                    "name": "UseEntitiesLoopScope",
+                    "value": null,
+                    "type": null,
+                    "isMandatory": false,
+                    "defaultValue": null,
+                    "id": 0,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0,
+                    "additionalProperties": {}
+                }
+            ],
+            "autoSkipOnFailure": false,
+            "isDebugMockData": false,
+            "debugData": null,
+            "parentStepContainerId": null,
+            "workflowIdentifier": "5e589cbf-d30b-4a6f-83d0-3330c91d99fe",
+            "isTouchedByAi": false,
+            "startLoopStepIdentifier": null,
+            "id": 0,
+            "creationTimeUnixTimeInMs": 1751245811527,
+            "modificationTimeUnixTimeInMs": 1751245811527,
             "additionalProperties": {}
         },
         {
@@ -462,8 +622,8 @@
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751244784918,
-            "modificationTimeUnixTimeInMs": 1751244785047,
+            "creationTimeUnixTimeInMs": 1751245811415,
+            "modificationTimeUnixTimeInMs": 1751245811527,
             "additionalProperties": {}
         }
     ],
@@ -472,6 +632,12 @@
             "condition": "",
             "fromStep": "9c494446-efe3-4b69-9ef9-4bd4c1ce7b98",
             "toStep": "58845b66-06cd-4622-9958-73c9e1b0757b",
+            "destinationActionStatus": 0
+        },
+        {
+            "condition": "",
+            "fromStep": "58845b66-06cd-4622-9958-73c9e1b0757b",
+            "toStep": "98c9f659-c395-4fa2-a84e-bb0b5f1d8ec8",
             "destinationActionStatus": 0
         },
         {

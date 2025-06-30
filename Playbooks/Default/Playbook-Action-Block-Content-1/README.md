@@ -30,6 +30,7 @@
 |---------|-----------|-----------|---------------|
 |VirusTotalV3_Ping_1|Test connectivity to the VirusTotal with parameters provided at the integration configuration page on the Marketplace tab.|VirusTotalV3|Ping|
 |VirusTotalV3_Get Related URLs_1|Get related urls to the provided entities from VirusTotal. Note: this action requires a VT Enterprise token. Supported entities: IP, URL, Filehash, Hostname, Domain. Note: only MD5, SHA-1 and SHA-256 are supported.|VirusTotalV3|Get Related URLs|
+|VirusTotalV3_Add Vote To Entity_1|Add a vote to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported|VirusTotalV3|Add Vote To Entity|
 
 ### Involved Blocks
 |Name|Description|
