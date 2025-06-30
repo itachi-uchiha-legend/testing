@@ -35,12 +35,14 @@
 |Block 3|An embedded workflow that can receive inputs and return an output.|
 |Block 4|An embedded workflow that can receive inputs and return an output.|
 |Block 5|An embedded workflow that can receive inputs and return an output.|
+|Block 6|An embedded workflow that can receive inputs and return an output.|
 |New Block|An embedded workflow that can receive inputs and return an output.|
 |New Playbook||
 |New Playbook 1||
 |New hhha||
 |Playbook-Action-Block-Content-1||
 |Playbook-Content-2||
+|Playbook-Content-3||
 |Playbook_Action_Block_1||
 |Playbook_Action_Block_2||
 |Playbook_Action_Block_3||
