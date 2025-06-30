@@ -41,6 +41,7 @@
 |New Block 3|An embedded workflow that can receive inputs and return an output.|
 |New Block 4|An embedded workflow that can receive inputs and return an output.|
 |New Playbook||
+|New Playbook 1||
 |playbook action 1||
 |playbook action 2||
 |playbook action 3||

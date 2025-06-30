@@ -9,7 +9,7 @@
     "creatorFullName": "Siemplify automation",
     "isEnabled": true,
     "isCustom": true,
-    "version": 10,
+    "version": 11,
     "parameters": [
         {
             "isMandatory": true,

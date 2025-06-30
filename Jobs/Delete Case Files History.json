@@ -1,6 +1,6 @@
 {
     "lastRunStatus": 0,
-    "lastRunTime": 1751287446645,
+    "lastRunTime": 1751288148042,
     "uniqueIdentifier": "612eeb8a-b627-4893-8840-13e29a40b752",
     "id": 0,
     "jobDefinitionId": 0,
@@ -23,7 +23,7 @@
     ],
     "runIntervalInSeconds": 60,
     "creationTime": "2025-06-19T13:37:59.602Z",
-    "lastModificationTime": "2025-06-30T12:44:06.653Z",
+    "lastModificationTime": "2025-06-30T12:55:48.053Z",
     "isSystemJob": false,
     "jobDefinitionName": "Delete Case Files History",
     "agentIdentifier": null
