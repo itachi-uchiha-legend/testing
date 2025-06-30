@@ -1,194 +1,40 @@
 {
     "id": 0,
-    "identifier": "cad9a925-ece9-411f-b387-d0c2b67c6257",
+    "identifier": "5a53b2e4-07d4-4dc8-8fe8-2dc582da7916",
     "version": "1",
     "isEnabled": true,
     "isDebugMode": false,
-    "name": "New Block 1",
-    "creator": "Siemplify automation",
+    "name": "playbook action 2",
+    "creator": "bc91ae5a-65ad-40bd-aa54-2cfabde49698",
     "modifiedBy": "bc91ae5a-65ad-40bd-aa54-2cfabde49698",
     "priority": 2,
-    "description": "An embedded workflow that can receive inputs and return an output.",
+    "description": "",
     "environments": [
         "*"
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "cad9a925-ece9-411f-b387-d0c2b67c6257",
-    "creationTimeUnixTimeInMs": 1751283251116,
-    "modificationTimeUnixTimeInMs": 1751283374783,
+    "originalPlaybookIdentifier": "5a53b2e4-07d4-4dc8-8fe8-2dc582da7916",
+    "creationTimeUnixTimeInMs": 1751283497842,
+    "modificationTimeUnixTimeInMs": 1751283497842,
     "trigger": {
         "id": 0,
-        "identifier": "9055e4f4-a89b-4a8e-a8ab-bd83125ba79c",
-        "type": 11,
+        "identifier": "5930087d-2c41-42b8-81f9-b030a8313fc0",
+        "type": 8,
         "logicalOperator": 0,
-        "conditions": []
+        "conditions": [
+            {
+                "fieldName": "",
+                "value": "",
+                "matchType": 0
+            }
+        ]
     },
     "steps": [
         {
             "parallelActions": [],
-            "identifier": "394ec843-142c-4dbb-ab6d-c90b3986723c",
-            "originalStepIdentifier": "394ec843-142c-4dbb-ab6d-c90b3986723c",
-            "isAutomatic": true,
-            "isSkippable": false,
-            "instanceName": "VirusTotalV3_Add Comment To Entity_2",
-            "name": "VirusTotalV3_Add Comment To Entity",
-            "integration": "VirusTotalV3",
-            "description": "Add a comment to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported",
-            "actionProvider": "Scripts",
-            "actionName": "VirusTotalV3_Add Comment To Entity",
-            "type": 0,
-            "parameters": [
-                {
-                    "name": "AssignedUsers",
-                    "value": null,
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "DynamicInjectionInstancePlaceholder",
-                    "value": "",
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "FallbackIntegrationInstance",
-                    "value": "38f5a3a3-a437-43db-8006-6cd397b3db86",
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {},
-                    "FallbackInstanceDisplayName": "VirusTotalV3_2"
-                },
-                {
-                    "name": "FetchInstanceByName",
-                    "value": "false",
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "HasApprovalLink",
-                    "value": null,
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "IntegrationInstance",
-                    "value": "AutomaticEnvironment",
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "MessageToAssignee",
-                    "value": null,
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "PendingActionTimeout",
-                    "value": null,
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "ScriptName",
-                    "value": "VirusTotalV3_Add Comment To Entity",
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "ScriptParametersEntityFields",
-                    "value": "{\"Comment\":\"cdssd\"}",
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "SelectedScopeName",
-                    "value": "All entities",
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                },
-                {
-                    "name": "UseEntitiesLoopScope",
-                    "value": null,
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                }
-            ],
-            "autoSkipOnFailure": false,
-            "isDebugMockData": false,
-            "debugData": null,
-            "parentStepContainerId": null,
-            "workflowIdentifier": "cad9a925-ece9-411f-b387-d0c2b67c6257",
-            "isTouchedByAi": false,
-            "startLoopStepIdentifier": null,
-            "id": 0,
-            "creationTimeUnixTimeInMs": 1751283374783,
-            "modificationTimeUnixTimeInMs": 1751283374783,
-            "additionalProperties": {}
-        },
-        {
-            "parallelActions": [],
-            "identifier": "3d55acee-7d12-40c6-98eb-792fb18bf4be",
-            "originalStepIdentifier": "3d55acee-7d12-40c6-98eb-792fb18bf4be",
+            "identifier": "515debaa-f782-479e-a1c6-c57ae66fd796",
+            "originalStepIdentifier": "515debaa-f782-479e-a1c6-c57ae66fd796",
             "isAutomatic": true,
             "isSkippable": false,
             "instanceName": "VirusTotalV3_Add Vote To Entity_1",
@@ -223,7 +69,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "4df95faa-6177-4b93-82a9-ec35839f9522",
+                    "value": "90de8295-e24f-449d-a544-3989170da605",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -231,7 +77,7 @@
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
                     "additionalProperties": {},
-                    "FallbackInstanceDisplayName": "VirusTotalV3_3"
+                    "FallbackInstanceDisplayName": "VirusTotalV3_4"
                 },
                 {
                     "name": "FetchInstanceByName",
@@ -337,56 +183,18 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "cad9a925-ece9-411f-b387-d0c2b67c6257",
+            "workflowIdentifier": "5a53b2e4-07d4-4dc8-8fe8-2dc582da7916",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751283374783,
-            "modificationTimeUnixTimeInMs": 1751283374783,
+            "creationTimeUnixTimeInMs": 1751283497842,
+            "modificationTimeUnixTimeInMs": 1751283497842,
             "additionalProperties": {}
         },
         {
             "parallelActions": [],
-            "identifier": "86dd4965-5070-4d7b-a3b5-30b56ee21d80",
-            "originalStepIdentifier": "86dd4965-5070-4d7b-a3b5-30b56ee21d80",
-            "isAutomatic": true,
-            "isSkippable": false,
-            "instanceName": "Output_1",
-            "name": "Output",
-            "integration": "Flow",
-            "description": "",
-            "actionProvider": "Flow",
-            "actionName": "OutputAction",
-            "type": 6,
-            "parameters": [
-                {
-                    "name": "NestedWorkflowOutput",
-                    "value": null,
-                    "type": null,
-                    "isMandatory": false,
-                    "defaultValue": null,
-                    "id": 0,
-                    "creationTimeUnixTimeInMs": 0,
-                    "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
-                }
-            ],
-            "autoSkipOnFailure": false,
-            "isDebugMockData": false,
-            "debugData": null,
-            "parentStepContainerId": null,
-            "workflowIdentifier": "cad9a925-ece9-411f-b387-d0c2b67c6257",
-            "isTouchedByAi": false,
-            "startLoopStepIdentifier": null,
-            "id": 0,
-            "creationTimeUnixTimeInMs": 1751283374638,
-            "modificationTimeUnixTimeInMs": 1751283374783,
-            "additionalProperties": {}
-        },
-        {
-            "parallelActions": [],
-            "identifier": "f1948b39-7d7a-4696-8b20-9d2fc723c622",
-            "originalStepIdentifier": "f1948b39-7d7a-4696-8b20-9d2fc723c622",
+            "identifier": "af5f5602-a0d2-410f-bea2-de0c2718676a",
+            "originalStepIdentifier": "af5f5602-a0d2-410f-bea2-de0c2718676a",
             "isAutomatic": true,
             "isSkippable": false,
             "instanceName": "VirusTotalV3_Add Comment To Entity_1",
@@ -421,7 +229,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "573bea0b-0d83-4626-b2a5-e794545e80bc",
+                    "value": "4df95faa-6177-4b93-82a9-ec35839f9522",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -429,7 +237,7 @@
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
                     "additionalProperties": {},
-                    "FallbackInstanceDisplayName": "VirusTotalV3_5"
+                    "FallbackInstanceDisplayName": "VirusTotalV3_3"
                 },
                 {
                     "name": "FetchInstanceByName",
@@ -499,7 +307,7 @@
                 },
                 {
                     "name": "ScriptParametersEntityFields",
-                    "value": "{\"Comment\":\"comment\"}",
+                    "value": "{\"Comment\":\"fdsdfsdfsd\"}",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -535,37 +343,25 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "cad9a925-ece9-411f-b387-d0c2b67c6257",
+            "workflowIdentifier": "5a53b2e4-07d4-4dc8-8fe8-2dc582da7916",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751283374638,
-            "modificationTimeUnixTimeInMs": 1751283374783,
+            "creationTimeUnixTimeInMs": 1751283497842,
+            "modificationTimeUnixTimeInMs": 1751283497842,
             "additionalProperties": {}
         }
     ],
     "stepsRelations": [
         {
             "condition": "",
-            "fromStep": "3d55acee-7d12-40c6-98eb-792fb18bf4be",
-            "toStep": "394ec843-142c-4dbb-ab6d-c90b3986723c",
-            "destinationActionStatus": 0
-        },
-        {
-            "condition": "",
-            "fromStep": "f1948b39-7d7a-4696-8b20-9d2fc723c622",
-            "toStep": "3d55acee-7d12-40c6-98eb-792fb18bf4be",
-            "destinationActionStatus": 0
-        },
-        {
-            "condition": "",
-            "fromStep": "394ec843-142c-4dbb-ab6d-c90b3986723c",
-            "toStep": "86dd4965-5070-4d7b-a3b5-30b56ee21d80",
+            "fromStep": "af5f5602-a0d2-410f-bea2-de0c2718676a",
+            "toStep": "515debaa-f782-479e-a1c6-c57ae66fd796",
             "destinationActionStatus": 0
         }
     ],
     "templateName": null,
-    "playbookType": 1,
+    "playbookType": 0,
     "debugData": {
         "debugBaseAlertId": null,
         "debugAlertId": null
