@@ -69,7 +69,8 @@
             "siemAlertId": null,
             "updatedFields": [],
             "alertUpdateSupported": false,
-            "alertMetadata": {}
+            "alertMetadata": {},
+            "dataAccessScope": null
         }
     ],
     "type": 0,

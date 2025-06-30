@@ -20,6 +20,7 @@
 |Microsoft Teams|Microsoft Teams is a platform that combines workplace chat, meetings, notes, and attachmentsQuick Guide: you must first register your app at Microsoft App Registration Portal, Configure Microsoft Teams Integration, Run the action 'Get Authorization', Run the action 'Generate Token'.|
 |Netskope|The Netskope Security Cloud helps the world’s largest organizations take full advantage of the cloud and web without sacrificing security.|
 |Parsing Form Requests||
+|SCC Enterprise|SCC Enterprise integration to set up the SCC Enterprise env|
 |ServiceNow|An incident ticketing integration exchanges ticket data between your ServiceNow instance and Google SecOps system.|
 |Slack|Slack is where work flows. It's where the people you need, the information you share, and the tools you use come together to get things done.|
 |Sophos|Secure cloud workloads, data, apps, and access from the latest advanced threats and vulnerabilities.|
@@ -30,34 +31,10 @@
 ## Playbooks
 |Name|Description|
 |----|-----------|
-|AT_Test_Dev_1||
-|AT_Test_Dev_Block_1|An embedded workflow that can receive inputs and return an output.|
-|Block 1|An embedded workflow that can receive inputs and return an output.|
-|Block 2|An embedded workflow that can receive inputs and return an output.|
-|Block 3|An embedded workflow that can receive inputs and return an output.|
-|Block 4|An embedded workflow that can receive inputs and return an output.|
-|Block 5|An embedded workflow that can receive inputs and return an output.|
-|Block 6|An embedded workflow that can receive inputs and return an output.|
 |Lock Playbook||
-|New Block|An embedded workflow that can receive inputs and return an output.|
-|New Playbook||
-|New Playbook 1||
-|New hhha||
 |Playbook-1||
 |Playbook-2||
-|Playbook-4||
-|Playbook-5||
 |Playbook-6||
-|Playbook-Action-Block-Content-1||
-|Playbook-Content-2||
-|Playbook-Content-3||
-|Playbook_Action_Block_1||
-|Playbook_Action_Block_2||
-|Playbook_Action_Block_3||
-|Playbook_Actions||
-|Playbook_Actions_2||
-|Playbook_Actions_3||
-|Playbook_Actions_4||
 |RA_Playbook_1||
 |Siemplify||
 
@@ -68,4 +45,5 @@
 |Pull Content GitSyncBeta|Installs content from the repo.|
 |Push Content GitSyncBeta|Push all content of this platform to git|
 |Push Content GitSyncBeta1|Push all content of this platform to git|
+|Sync SCC-Jira Tickets|This job will synchronize tickets in the Jira and Chronicle SOAR case. As a part of synchronization the job will work with comments and status of Chronicle SOAR cases.|
 

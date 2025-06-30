@@ -20,6 +20,7 @@
         "properties": {},
         "isSystem": true,
         "aliases": [],
-        "instanceUrl": null
+        "instanceUrl": null,
+        "dataAccessScopes": []
     }
 ]
