@@ -29,10 +29,12 @@
 ## Playbooks
 |Name|Description|
 |----|-----------|
+|New Block|An embedded workflow that can receive inputs and return an output.|
 |New Block 1|An embedded workflow that can receive inputs and return an output.|
 |New Block 2|An embedded workflow that can receive inputs and return an output.|
 |New Block 3|An embedded workflow that can receive inputs and return an output.|
 |New Block 4|An embedded workflow that can receive inputs and return an output.|
+|New Playbook||
 |playbook action 1||
 |playbook action 2||
 |playbook action 3||
