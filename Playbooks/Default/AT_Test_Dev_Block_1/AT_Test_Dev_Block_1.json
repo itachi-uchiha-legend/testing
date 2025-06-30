@@ -1,13 +1,12 @@
 {
-    "hasRestrictedEnvironments": false,
     "id": 0,
-    "identifier": "302cd553-97ba-4b8f-a140-347aa77c8396",
+    "identifier": "e478fb31-ab9e-4317-b1cd-809816f9cada",
     "version": "1",
     "isEnabled": true,
     "isDebugMode": false,
     "name": "AT_Test_Dev_Block_1",
     "creator": "e1788b75-7ef3-4894-9c97-0c03e85a9a55",
-    "modifiedBy": "e1788b75-7ef3-4894-9c97-0c03e85a9a55",
+    "modifiedBy": "973d7959-bcd7-48fa-8b56-37fa8244951d",
     "priority": 2,
     "description": "An embedded workflow that can receive inputs and return an output.",
     "environments": [
@@ -15,12 +14,12 @@
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "302cd553-97ba-4b8f-a140-347aa77c8396",
-    "creationTimeUnixTimeInMs": 1750771303986,
-    "modificationTimeUnixTimeInMs": 1750771315690,
+    "originalPlaybookIdentifier": "e478fb31-ab9e-4317-b1cd-809816f9cada",
+    "creationTimeUnixTimeInMs": 1751246674923,
+    "modificationTimeUnixTimeInMs": 1751246674923,
     "trigger": {
         "id": 0,
-        "identifier": "2fbeafd7-29aa-408c-a1b3-1f6eb3ac0707",
+        "identifier": "84b02651-adf1-45b4-b885-749f01f4cfc3",
         "type": 11,
         "logicalOperator": 0,
         "conditions": [
@@ -85,7 +84,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "cad16488-8b16-4749-9d7e-c02d0e5891de",
+                    "value": "3b2d1ab2-e1ed-4b6b-8e1d-eba9f2886204",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -93,7 +92,7 @@
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
                     "additionalProperties": {},
-                    "FallbackInstanceDisplayName": "SiemplifyUtilities_5"
+                    "FallbackInstanceDisplayName": "SiemplifyUtilities_1"
                 },
                 {
                     "name": "FetchInstanceByName",
@@ -199,12 +198,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "302cd553-97ba-4b8f-a140-347aa77c8396",
+            "workflowIdentifier": "e478fb31-ab9e-4317-b1cd-809816f9cada",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750771303986,
-            "modificationTimeUnixTimeInMs": 1750771303986,
+            "creationTimeUnixTimeInMs": 1751246674923,
+            "modificationTimeUnixTimeInMs": 1751246674923,
             "additionalProperties": {}
         },
         {
@@ -237,12 +236,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "302cd553-97ba-4b8f-a140-347aa77c8396",
+            "workflowIdentifier": "e478fb31-ab9e-4317-b1cd-809816f9cada",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750771303986,
-            "modificationTimeUnixTimeInMs": 1750771303986,
+            "creationTimeUnixTimeInMs": 1751246674923,
+            "modificationTimeUnixTimeInMs": 1751246674923,
             "additionalProperties": {}
         }
     ],

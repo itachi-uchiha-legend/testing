@@ -1,13 +1,12 @@
 {
-    "hasRestrictedEnvironments": false,
     "id": 0,
-    "identifier": "52a21691-60a2-4af1-aff4-d6c5a3267e5f",
+    "identifier": "783d6a3d-b223-452b-a7cd-35e7a7b9a0e3",
     "version": "1",
     "isEnabled": true,
     "isDebugMode": false,
     "name": "New Playbook",
     "creator": "e1788b75-7ef3-4894-9c97-0c03e85a9a55",
-    "modifiedBy": "e1788b75-7ef3-4894-9c97-0c03e85a9a55",
+    "modifiedBy": "973d7959-bcd7-48fa-8b56-37fa8244951d",
     "priority": 2,
     "description": "",
     "environments": [
@@ -15,12 +14,12 @@
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "52a21691-60a2-4af1-aff4-d6c5a3267e5f",
-    "creationTimeUnixTimeInMs": 1750789391417,
-    "modificationTimeUnixTimeInMs": 1750789391417,
+    "originalPlaybookIdentifier": "783d6a3d-b223-452b-a7cd-35e7a7b9a0e3",
+    "creationTimeUnixTimeInMs": 1751246677229,
+    "modificationTimeUnixTimeInMs": 1751246677229,
     "trigger": {
         "id": 0,
-        "identifier": "b036fc44-028e-45e1-a617-b9af0e356814",
+        "identifier": "ec2ba01f-34f1-4cea-8922-a6d5b467ef05",
         "type": 8,
         "logicalOperator": 0,
         "conditions": [
@@ -70,7 +69,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "cad16488-8b16-4749-9d7e-c02d0e5891de",
+                    "value": "3b2d1ab2-e1ed-4b6b-8e1d-eba9f2886204",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -78,7 +77,7 @@
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
                     "additionalProperties": {},
-                    "FallbackInstanceDisplayName": "SiemplifyUtilities_5"
+                    "FallbackInstanceDisplayName": "SiemplifyUtilities_1"
                 },
                 {
                     "name": "FetchInstanceByName",
@@ -184,12 +183,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "52a21691-60a2-4af1-aff4-d6c5a3267e5f",
+            "workflowIdentifier": "783d6a3d-b223-452b-a7cd-35e7a7b9a0e3",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750789391417,
-            "modificationTimeUnixTimeInMs": 1750789391417,
+            "creationTimeUnixTimeInMs": 1751246677229,
+            "modificationTimeUnixTimeInMs": 1751246677229,
             "additionalProperties": {}
         },
         {
@@ -241,7 +240,7 @@
                 },
                 {
                     "name": "NestedWorkflowIdentifier",
-                    "value": "2fe25975-5e6c-46f5-8a8f-d4d5f063b954",
+                    "value": "f86d3c54-49d6-4795-9a86-c61415b91659",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -274,7 +273,7 @@
                 },
                 {
                     "name": "NestedWorkflowSteps",
-                    "value": "[{\"identifier\":\"25182424-d689-4050-b9f0-256fbf99368a\",\"integration\":\"SiemplifyUtilities\",\"actionName\":\"SiemplifyUtilities_Get Deployment URL\",\"instanceName\":\"SiemplifyUtilities_Get Deployment URL_1\",\"stepType\":0}]",
+                    "value": "[{\"identifier\":\"267c2faa-681c-46aa-855b-1b62f47bee2b\",\"integration\":\"VirusTotalV3\",\"actionName\":\"VirusTotalV3_Enrich Hash\",\"instanceName\":\"VirusTotalV3_Enrich Hash_1\",\"stepType\":0},{\"identifier\":\"7f75b398-187e-44ed-9911-eb025aa1b6e1\",\"integration\":\"VirusTotalV3\",\"actionName\":\"VirusTotalV3_Enrich IOC\",\"instanceName\":\"VirusTotalV3_Enrich IOC_1\",\"stepType\":0},{\"identifier\":\"ac4a1bd5-cffe-4453-b221-ed80d60d7eaa\",\"integration\":\"VirusTotalV3\",\"actionName\":\"VirusTotalV3_Add Comment To Entity\",\"instanceName\":\"VirusTotalV3_Add Comment To Entity_1\",\"stepType\":0},{\"identifier\":\"eac76398-2de1-4377-b858-69aad7a30a85\",\"integration\":\"VirusTotalV3\",\"actionName\":\"VirusTotalV3_Add Vote To Entity\",\"instanceName\":\"VirusTotalV3_Add Vote To Entity_1\",\"stepType\":0}]",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -299,12 +298,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "52a21691-60a2-4af1-aff4-d6c5a3267e5f",
+            "workflowIdentifier": "783d6a3d-b223-452b-a7cd-35e7a7b9a0e3",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750789391417,
-            "modificationTimeUnixTimeInMs": 1750789391417,
+            "creationTimeUnixTimeInMs": 1751246677229,
+            "modificationTimeUnixTimeInMs": 1751246677229,
             "additionalProperties": {}
         }
     ],

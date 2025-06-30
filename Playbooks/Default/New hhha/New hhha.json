@@ -1,13 +1,12 @@
 {
-    "hasRestrictedEnvironments": false,
     "id": 0,
-    "identifier": "1b674702-9de8-485c-8c60-14e26a0e1f27",
+    "identifier": "e06008a8-6c13-493e-8550-937ac6a2a400",
     "version": "0",
     "isEnabled": true,
     "isDebugMode": false,
     "name": "New hhha",
     "creator": "e1788b75-7ef3-4894-9c97-0c03e85a9a55",
-    "modifiedBy": "e1788b75-7ef3-4894-9c97-0c03e85a9a55",
+    "modifiedBy": "973d7959-bcd7-48fa-8b56-37fa8244951d",
     "priority": 2,
     "description": "",
     "environments": [
@@ -15,12 +14,12 @@
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "04b6440b-3d2f-499e-83c4-ee2a2b9d182e",
-    "creationTimeUnixTimeInMs": 1750325819879,
-    "modificationTimeUnixTimeInMs": 1750759831655,
+    "originalPlaybookIdentifier": "e06008a8-6c13-493e-8550-937ac6a2a400",
+    "creationTimeUnixTimeInMs": 1751246678688,
+    "modificationTimeUnixTimeInMs": 1751246678688,
     "trigger": {
         "id": 0,
-        "identifier": "46cc477f-4a2e-4871-98a8-9b359fae6210",
+        "identifier": "5752290c-0097-49ac-9cae-8c09d66896b8",
         "type": 8,
         "logicalOperator": 0,
         "conditions": [
@@ -103,7 +102,7 @@
                 },
                 {
                     "name": "IntegrationInstance",
-                    "value": "452744d3-fcce-45b8-97f8-bd95ecaca8c3",
+                    "value": "9eab07c3-a6e0-410d-abf0-226fdb2deee1",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -184,12 +183,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "1b674702-9de8-485c-8c60-14e26a0e1f27",
+            "workflowIdentifier": "e06008a8-6c13-493e-8550-937ac6a2a400",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750759831655,
-            "modificationTimeUnixTimeInMs": 1750759831655,
+            "creationTimeUnixTimeInMs": 1751246678688,
+            "modificationTimeUnixTimeInMs": 1751246678688,
             "additionalProperties": {}
         }
     ],
@@ -209,7 +208,7 @@
             "identifier": "e07f1a83-8773-4b68-8086-a37eb499a22d",
             "name": "has",
             "creator": null,
-            "playbookIdentifier": "1b674702-9de8-485c-8c60-14e26a0e1f27",
+            "playbookIdentifier": "e06008a8-6c13-493e-8550-937ac6a2a400",
             "type": 0,
             "widgets": [
                 {
@@ -286,7 +285,7 @@
             "roles": [
                 1
             ],
-            "creationTimeUnixTimeInMs": 1750759831655
+            "creationTimeUnixTimeInMs": 1751246678688
         }
     ],
     "creationSource": 1

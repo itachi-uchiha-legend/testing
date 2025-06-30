@@ -1,13 +1,12 @@
 {
-    "hasRestrictedEnvironments": false,
     "id": 0,
-    "identifier": "c36052f2-ec23-4ffa-8db7-a9a972c4d210",
+    "identifier": "43cbd479-751a-418d-8c84-b80f4bb9d994",
     "version": "0",
     "isEnabled": false,
     "isDebugMode": false,
     "name": "New Playbook 1",
     "creator": "Siemplify automation",
-    "modifiedBy": "e1788b75-7ef3-4894-9c97-0c03e85a9a55",
+    "modifiedBy": "973d7959-bcd7-48fa-8b56-37fa8244951d",
     "priority": 2,
     "description": "",
     "environments": [
@@ -15,12 +14,12 @@
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "c36052f2-ec23-4ffa-8db7-a9a972c4d210",
-    "creationTimeUnixTimeInMs": 1750328164245,
-    "modificationTimeUnixTimeInMs": 1750328164245,
+    "originalPlaybookIdentifier": "43cbd479-751a-418d-8c84-b80f4bb9d994",
+    "creationTimeUnixTimeInMs": 1751246680873,
+    "modificationTimeUnixTimeInMs": 1751246680873,
     "trigger": {
         "id": 0,
-        "identifier": "d4617825-51af-47c4-9ee3-705e924645f9",
+        "identifier": "9f290596-debf-4aec-a1f4-def81b4fdff3",
         "type": 8,
         "logicalOperator": 0,
         "conditions": [
@@ -103,14 +102,15 @@
                 },
                 {
                     "name": "IntegrationInstance",
-                    "value": null,
+                    "value": "15a9c9ff-a5ed-41dc-a78e-8edafe202f23",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
                     "id": 0,
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
-                    "additionalProperties": {}
+                    "additionalProperties": {},
+                    "InstanceDisplayName": "System Default Instance"
                 },
                 {
                     "name": "MessageToAssignee",
@@ -172,12 +172,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "c36052f2-ec23-4ffa-8db7-a9a972c4d210",
+            "workflowIdentifier": "43cbd479-751a-418d-8c84-b80f4bb9d994",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1750328164245,
-            "modificationTimeUnixTimeInMs": 1750328164245,
+            "creationTimeUnixTimeInMs": 1751246680873,
+            "modificationTimeUnixTimeInMs": 1751246680873,
             "additionalProperties": {}
         }
     ],
