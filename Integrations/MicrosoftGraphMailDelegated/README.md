@@ -25,65 +25,65 @@ Python Version - 3
 #### Dependencies
 | |
 |-|
-|urllib3-2.2.3-py3-none-any.whl|
-|beautifulsoup4-4.12.3-py3-none-any.whl|
-|pycparser-2.22-py3-none-any.whl|
-|compressed_rtf-1.0.6.tar.gz|
-|emaildata-0.3.4-py3-none-any.whl|
-|rsa-4.9-py3-none-any.whl|
-|googleapis_common_protos-1.65.0-py2.py3-none-any.whl|
-|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
-|pyOpenSSL-24.1.0-py3-none-any.whl|
-|pyth3-0.7-py3-none-any.whl|
-|easygui-0.98.3-py2.py3-none-any.whl|
-|h11-0.14.0-py3-none-any.whl|
-|colorclass-2.2.2-py2.py3-none-any.whl|
-|typing_extensions-4.12.2-py3-none-any.whl|
-|idna-3.10-py3-none-any.whl|
-|google_api_core-2.23.0-py3-none-any.whl|
-|msoffcrypto_tool-5.4.2-py3-none-any.whl|
-|pycryptodome-3.21.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|PyJWT-2.9.0-py3-none-any.whl|
 |RTFDE-0.1.2-py3-none-any.whl|
-|pcodedmp-1.2.6-py2.py3-none-any.whl|
-|certifi-2024.8.30-py3-none-any.whl|
-|extract_msg-0.52.0-py3-none-any.whl|
-|google_auth-2.36.0-py2.py3-none-any.whl|
-|IMAPClient-3.0.1-py2.py3-none-any.whl|
-|tzlocal-5.2-py3-none-any.whl|
-|red-black-tree-mod-1.20.tar.gz|
-|requests-2.32.3-py3-none-any.whl|
 |cachetools-5.5.0-py3-none-any.whl|
-|soupsieve-2.6-py3-none-any.whl|
-|icalendar-6.0.1-py3-none-any.whl|
-|lark-1.1.9-py3-none-any.whl|
-|ebcdic-1.1.1-py2.py3-none-any.whl|
-|siemplify_html2text-2020.1.16-py3-none-any.whl|
+|rsa-4.9-py3-none-any.whl|
+|requests-2.32.3-py3-none-any.whl|
 |cryptography-42.0.8-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|sniffio-1.3.1-py3-none-any.whl|
-|exceptiongroup-1.2.2-py3-none-any.whl|
-|proto_plus-1.25.0-py3-none-any.whl|
-|python_dateutil-2.9.0.post0-py2.py3-none-any.whl|
-|pyasn1_modules-0.4.1-py3-none-any.whl|
-|protobuf-5.28.3-cp38-abi3-manylinux2014_x86_64.whl|
-|cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|TIPCommon-2.2.2-py2.py3-none-any.whl|
-|six-1.16.0-py2.py3-none-any.whl|
-|olefile-0.47-py2.py3-none-any.whl|
-|pytz-2024.2-py2.py3-none-any.whl|
-|pyparsing-3.2.0-py3-none-any.whl|
-|pyasn1-0.6.1-py3-none-any.whl|
-|anyio-4.6.2.post1-py3-none-any.whl|
-|uritemplate-4.1.1-py2.py3-none-any.whl|
-|google_api_python_client-2.151.0-py2.py3-none-any.whl|
+|siemplify_html2text-2020.1.16-py3-none-any.whl|
 |httplib2-0.22.0-py3-none-any.whl|
-|EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
-|tzdata-2024.2-py2.py3-none-any.whl|
-|chardet-5.2.0-py3-none-any.whl|
-|httpx-0.27.2-py3-none-any.whl|
 |oletools-0.60.2-py2.py3-none-any.whl|
-|charset_normalizer-3.4.0-py3-none-any.whl|
+|proto_plus-1.25.0-py3-none-any.whl|
+|pycparser-2.22-py3-none-any.whl|
+|lark-1.1.9-py3-none-any.whl|
+|TIPCommon-2.2.2-py2.py3-none-any.whl|
+|easygui-0.98.3-py2.py3-none-any.whl|
+|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
+|six-1.16.0-py2.py3-none-any.whl|
+|beautifulsoup4-4.12.3-py3-none-any.whl|
+|pyasn1_modules-0.4.1-py3-none-any.whl|
+|IMAPClient-3.0.1-py2.py3-none-any.whl|
+|red-black-tree-mod-1.20.tar.gz|
+|protobuf-5.28.3-cp38-abi3-manylinux2014_x86_64.whl|
+|idna-3.10-py3-none-any.whl|
+|msoffcrypto_tool-5.4.2-py3-none-any.whl|
+|chardet-5.2.0-py3-none-any.whl|
+|tzdata-2024.2-py2.py3-none-any.whl|
+|colorclass-2.2.2-py2.py3-none-any.whl|
+|python_dateutil-2.9.0.post0-py2.py3-none-any.whl|
+|exceptiongroup-1.2.2-py3-none-any.whl|
+|google_api_python_client-2.151.0-py2.py3-none-any.whl|
+|PyJWT-2.9.0-py3-none-any.whl|
+|urllib3-2.2.3-py3-none-any.whl|
+|sniffio-1.3.1-py3-none-any.whl|
+|pyOpenSSL-24.1.0-py3-none-any.whl|
+|olefile-0.47-py2.py3-none-any.whl|
+|pcodedmp-1.2.6-py2.py3-none-any.whl|
+|extract_msg-0.52.0-py3-none-any.whl|
+|h11-0.14.0-py3-none-any.whl|
 |httpcore-1.0.6-py3-none-any.whl|
+|pyth3-0.7-py3-none-any.whl|
+|compressed_rtf-1.0.6.tar.gz|
+|googleapis_common_protos-1.65.0-py2.py3-none-any.whl|
+|ebcdic-1.1.1-py2.py3-none-any.whl|
+|soupsieve-2.6-py3-none-any.whl|
+|pytz-2024.2-py2.py3-none-any.whl|
+|charset_normalizer-3.4.0-py3-none-any.whl|
+|typing_extensions-4.12.2-py3-none-any.whl|
+|pycryptodome-3.21.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|certifi-2024.8.30-py3-none-any.whl|
+|anyio-4.6.2.post1-py3-none-any.whl|
+|pyparsing-3.2.0-py3-none-any.whl|
+|EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
+|cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|emaildata-0.3.4-py3-none-any.whl|
+|google_api_core-2.23.0-py3-none-any.whl|
+|icalendar-6.0.1-py3-none-any.whl|
+|tzlocal-5.2-py3-none-any.whl|
+|httpx-0.27.2-py3-none-any.whl|
+|google_auth-2.36.0-py2.py3-none-any.whl|
+|uritemplate-4.1.1-py2.py3-none-any.whl|
+|pyasn1-0.6.1-py3-none-any.whl|
 
 
 ## Actions
@@ -220,6 +220,19 @@ Timeout - 600 Seconds
 
 
 
+#### Get Mailbox Account Out Of Facility Settings
+Use the Get Mailbox Account Out Of Facility Settings action to retrieve the mailbox account out of facility (OOF) settings for the Google SecOps User entity provided. The Get Mailbox Account Out Of Facility Settings action uses the beta version of Microsoft Graph API. This action runs on the Google SecOps User entity.
+Timeout - 600 Seconds
+
+
+
+##### JSON Results
+```json
+[{"Entity": "jame.bond@ex.com", "EntityResult": {"@odata.context": "https://abc.com", "id": "abcb", "availability": "Offline", "activity": "Offline", "statusMessage": null, "outOfOfficeSettings": {"message": null, "isOutOfOffice": false}}}, {"Entity": "exchang@ex.com", "EntityResult": {"@odata.context": "https://abc.com", "id": "djds", "availability": "Offline", "activity": "Offline", "statusMessage": null, "outOfOfficeSettings": {"message": null, "isOutOfOffice": false}}}]
+```
+
+
+
 #### Ping
 Use the Ping action to test connectivity to the Microsoft Graph mail service. This action doesn't run on Google SecOps entities.
 Timeout - 600 Seconds
@@ -327,42 +340,30 @@ Timeout - 600 Seconds
 
 
 
-#### Mark Email as Junk
-Use the Mark Email as Junk action to mark emails as junk in a specified mailbox. This action adds the email sender to the list of blocked senders and moves the message to the Junk Email folder. The Mark Email as Junk action uses the beta version of Microsoft Graph API. This action doesn't run on Google SecOps entities.
+#### Move Email To Folder
+Use the Move Email To Folder action to move one or multiple emails from the source email folder to the other folder in the mailbox. With the appropriate permissions, this action can move emails to other mailboxes different from the one that is provided in the integration configuration. This action is asynchronous. Adjust the action timeout in the Google SecOps IDE accordingly. This action doesn't run on Google SecOps entities.
 Timeout - 600 Seconds
 
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Search In Mailbox|A mailbox to search for an email in. By default, the action attempts to search for the email in the default mailbox that you specified in the integration configuration. To execute a search in other mailboxes, configure appropriate permissions for the action. This parameter accepts multiple values as a comma-separated string.|True|String||
-|Folder Name|A mailbox folder in which to search for an email. To specify a subfolder, use the “/” forward slash, such as {Inbox/Subfolder}.|True|String||
-|Mail IDs|A comma-separated string of the mail IDs or internetMessageId values of the emails to mark as junk.|True|String||
+|Move In Mailbox|The default mailbox to execute the move operation in. If permissions allow it, the action can search in other mailboxes as well. This parameter accepts multiple values as a comma-separated string.|True|String|Default Mailbox|
+|Source Folder Name|A source folder from which to move the email. To specify a subfolder, use the “/” forward slash, such as {Inbox/Subfolder}.|True|String|None|
+|Destination Folder Name|A destination folder to move the email to. Provide the parameter value in the following format: {Inbox/folder_name/subfolder_name}. This parameter is case-insensitive.|True|String|None|
+|Mail IDs|A filter condition to search for emails with specific email IDs. This parameter accepts a comma-separated list of email IDs to search for. If you configure this parameter, the search ignores the Subject Filter and Sender Filter parameters.|False|String|None|
+|Subject Filter|A filter condition that specifies the email subject to search for. This filter uses the contains logic.|False|String|None|
+|Sender Filter|A filter condition that specifies the sender of requested emails. This filter uses the equals logic.|False|String|None|
+|Time Frame (minutes)|A filter condition that specifies the period in minutes to search for emails.|False|String|None|
+|Only Unread|If selected, the action searches only for unread emails.|False|Boolean|None|
+|How many mailboxes to process in a single batch|The number of mailboxes to process in a single batch (a single connection to the Microsoft 365 server). The default value is 25.|False|String||
+|Limit the Amount of Information Returned in the JSON Result|If enabled, the amount of information returned by the action will be limited only to the key email fields.|False|Boolean|false|
+|Disable the Action JSON Result|If enabled, action will not return JSON result.|False|Boolean|false|
 
 
 
 ##### JSON Results
 ```json
-
-```
-
-
-
-#### Mark Email as Not Junk
-Use the Mark Email as Not Junk action to mark emails as not junk in a specific mailbox. This action removes the sender from the list of blocked senders and moves the message to the Inbox folder. The Mark Email as Not Junk action uses the beta version of Microsoft Graph API. This action doesn't run on Google SecOps entities.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Search In Mailbox|A mailbox to search for an email in. By default, the action attempts to search for the email in the default mailbox that you specified in the integration configuration. To execute a search in other mailboxes, configure appropriate permissions for the action. This parameter accepts multiple values as a comma-separated string.|True|String||
-|Folder Name|A mailbox folder in which to search for an email. To specify a subfolder, use the “/” forward slash, such as {Inbox/Subfolder}.|True|String||
-|Mail IDs|A comma-separated string of the mail IDs or internetMessageId values of the emails to mark as not junk.|True|String||
-
-
-
-##### JSON Results
-```json
-
+[{"Mailbox": "example@mail.com", "Emails": [{"id": "xxxxx", "createdDateTime": "2024-02-05T10:03:14Z", "lastModifiedDateTime": "2024-02-05T16:30:11Z", "changeKey": "cxsdjjh", "categories": [], "receivedDateTime": "2024-02-05T10:03:15Z", "sentDateTime": "2024-02-05T10:03:12Z", "hasAttachments": true, "internetMessageId": "sdfhsjdfhjsdjfd", "subject": "Forwarding for the last time with attachment", "bodyPreview": "this is the mail content for testingxyzrxyzn________________________________xyzrxyznFrom: xyzxyzrxyznSent: Monday, February 5, 2024 7:48:16 AMxyzrxyznTo: example.com <example.com>xyzrxyznSubject: subjectxyzrxyznxyzrxyznmail", "importance": "normal", "parentFolderId": "id", "conversationId": "id", "conversationIndex": "hjaoihfehf", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": true, "isDraft": false, "webLink": "https://www.example.com/about", "inferenceClassification": "focused", "body": {"contentType": "html", "content": "xyz"}, "sender": {"emailAddress": {"name": "xyz", "address": "example@mail.com"}}, "from": {"emailAddress": {"name": "xyz", "address": "example@mail.com"}}, "toRecipients": [{"emailAddress": {"name": "xyz", "address": "example@mail.com"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "flag": {"flagStatus": "notFlagged"}}]}]
 ```
 
 
@@ -469,30 +470,22 @@ Timeout - 600 Seconds
 
 
 
-#### Move Email To Folder
-Use the Move Email To Folder action to move one or multiple emails from the source email folder to the other folder in the mailbox. With the appropriate permissions, this action can move emails to other mailboxes different from the one that is provided in the integration configuration. This action is asynchronous. Adjust the action timeout in the Google SecOps IDE accordingly. This action doesn't run on Google SecOps entities.
+#### Mark Email as Junk
+Use the Mark Email as Junk action to mark emails as junk in a specified mailbox. This action adds the email sender to the list of blocked senders and moves the message to the Junk Email folder. The Mark Email as Junk action uses the beta version of Microsoft Graph API. This action doesn't run on Google SecOps entities.
 Timeout - 600 Seconds
 
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Only Unread|If selected, the action searches only for unread emails.|False|Boolean|None|
-|How many mailboxes to process in a single batch|The number of mailboxes to process in a single batch (a single connection to the Microsoft 365 server). The default value is 25.|False|String||
-|Limit the Amount of Information Returned in the JSON Result|If enabled, the amount of information returned by the action will be limited only to the key email fields.|False|Boolean|false|
-|Disable the Action JSON Result|If enabled, action will not return JSON result.|False|Boolean|false|
-|Time Frame (minutes)|A filter condition that specifies the period in minutes to search for emails.|False|String|None|
-|Move In Mailbox|The default mailbox to execute the move operation in. If permissions allow it, the action can search in other mailboxes as well. This parameter accepts multiple values as a comma-separated string.|True|String|Default Mailbox|
-|Source Folder Name|A source folder from which to move the email. To specify a subfolder, use the “/” forward slash, such as {Inbox/Subfolder}.|True|String|None|
-|Destination Folder Name|A destination folder to move the email to. Provide the parameter value in the following format: {Inbox/folder_name/subfolder_name}. This parameter is case-insensitive.|True|String|None|
-|Mail IDs|A filter condition to search for emails with specific email IDs. This parameter accepts a comma-separated list of email IDs to search for. If you configure this parameter, the search ignores the Subject Filter and Sender Filter parameters.|False|String|None|
-|Subject Filter|A filter condition that specifies the email subject to search for. This filter uses the contains logic.|False|String|None|
-|Sender Filter|A filter condition that specifies the sender of requested emails. This filter uses the equals logic.|False|String|None|
+|Search In Mailbox|A mailbox to search for an email in. By default, the action attempts to search for the email in the default mailbox that you specified in the integration configuration. To execute a search in other mailboxes, configure appropriate permissions for the action. This parameter accepts multiple values as a comma-separated string.|True|String||
+|Folder Name|A mailbox folder in which to search for an email. To specify a subfolder, use the “/” forward slash, such as {Inbox/Subfolder}.|True|String||
+|Mail IDs|A comma-separated string of the mail IDs or internetMessageId values of the emails to mark as junk.|True|String||
 
 
 
 ##### JSON Results
 ```json
-[{"Mailbox": "example@mail.com", "Emails": [{"id": "xxxxx", "createdDateTime": "2024-02-05T10:03:14Z", "lastModifiedDateTime": "2024-02-05T16:30:11Z", "changeKey": "cxsdjjh", "categories": [], "receivedDateTime": "2024-02-05T10:03:15Z", "sentDateTime": "2024-02-05T10:03:12Z", "hasAttachments": true, "internetMessageId": "sdfhsjdfhjsdjfd", "subject": "Forwarding for the last time with attachment", "bodyPreview": "this is the mail content for testingxyzrxyzn________________________________xyzrxyznFrom: xyzxyzrxyznSent: Monday, February 5, 2024 7:48:16 AMxyzrxyznTo: example.com <example.com>xyzrxyznSubject: subjectxyzrxyznxyzrxyznmail", "importance": "normal", "parentFolderId": "id", "conversationId": "id", "conversationIndex": "hjaoihfehf", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": true, "isDraft": false, "webLink": "https://www.example.com/about", "inferenceClassification": "focused", "body": {"contentType": "html", "content": "xyz"}, "sender": {"emailAddress": {"name": "xyz", "address": "example@mail.com"}}, "from": {"emailAddress": {"name": "xyz", "address": "example@mail.com"}}, "toRecipients": [{"emailAddress": {"name": "xyz", "address": "example@mail.com"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "flag": {"flagStatus": "notFlagged"}}]}]
+
 ```
 
 
@@ -521,15 +514,22 @@ Timeout - 600 Seconds
 
 
 
-#### Get Mailbox Account Out Of Facility Settings
-Use the Get Mailbox Account Out Of Facility Settings action to retrieve the mailbox account out of facility (OOF) settings for the Google SecOps User entity provided. The Get Mailbox Account Out Of Facility Settings action uses the beta version of Microsoft Graph API. This action runs on the Google SecOps User entity.
+#### Mark Email as Not Junk
+Use the Mark Email as Not Junk action to mark emails as not junk in a specific mailbox. This action removes the sender from the list of blocked senders and moves the message to the Inbox folder. The Mark Email as Not Junk action uses the beta version of Microsoft Graph API. This action doesn't run on Google SecOps entities.
 Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Search In Mailbox|A mailbox to search for an email in. By default, the action attempts to search for the email in the default mailbox that you specified in the integration configuration. To execute a search in other mailboxes, configure appropriate permissions for the action. This parameter accepts multiple values as a comma-separated string.|True|String||
+|Folder Name|A mailbox folder in which to search for an email. To specify a subfolder, use the “/” forward slash, such as {Inbox/Subfolder}.|True|String||
+|Mail IDs|A comma-separated string of the mail IDs or internetMessageId values of the emails to mark as not junk.|True|String||
 
 
 
 ##### JSON Results
 ```json
-[{"Entity": "jame.bond@ex.com", "EntityResult": {"@odata.context": "https://abc.com", "id": "abcb", "availability": "Offline", "activity": "Offline", "statusMessage": null, "outOfOfficeSettings": {"message": null, "isOutOfOffice": false}}}, {"Entity": "exchang@ex.com", "EntityResult": {"@odata.context": "https://abc.com", "id": "djds", "availability": "Offline", "activity": "Offline", "statusMessage": null, "outOfOfficeSettings": {"message": null, "isOutOfOffice": false}}}]
+
 ```
 
 
@@ -555,8 +555,6 @@ Connector can be used to fetch emails from the Microsoft Graph Mail service. Con
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Disable Overflow|If selected, the connector ignores the Google SecOps overflow mechanism.|False|Boolean|false|
-|Verify SSL|If selected, the integration verifies that the SSL certificate for connecting to the Microsoft Graph server is valid.|False|Boolean|true|
 |DeviceProductField|The name of the field where the product name is stored. The default value is device_product. The product name primarily impacts mapping. To streamline and improve the mapping process for the connector, the default value device_product resolves to a fallback value that is referenced from the code. Any invalid input for this parameter resolves to a fallback value by default.|True|String|device_product|
 |EventClassId|The name of the field where the event name (subtype) is stored. The default value is event_name.|True|String|event_name|
 |Environment Field Name|The name of the field where the environment name is stored. If the environment field isn't found, the environment is the default environment. The default value is ""|False|String||
@@ -575,6 +573,8 @@ Connector can be used to fetch emails from the Microsoft Graph Mail service. Con
 |Max Emails Per Cycle|The maximum number of emails to fetch for every connector iteration.|True|Integer|10|
 |Unread Emails Only|If selected, the connector creates cases only for unread emails.|False|Boolean|false|
 |Mark Emails as Read|If selected, the connector marks ingested emails as read.|False|Boolean|false|
+|Disable Overflow|If selected, the connector ignores the Google SecOps overflow mechanism.|False|Boolean|false|
+|Verify SSL|If selected, the integration verifies that the SSL certificate for connecting to the Microsoft Graph server is valid.|False|Boolean|true|
 |Base64 Encoded Private Key|Specify a base64 encoded private key that will be used to decrypt the email.|False|Password||
 |Base64 Encoded Certificate|Specify a base64 encoded certificate that will be used to decrypt the email.|False|Password||
 |Base64 Encoded CA certificate|Specify a base64 encoded trusted CA certificate for signature verification.|False|Password||

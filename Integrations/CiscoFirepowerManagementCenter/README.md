@@ -86,24 +86,6 @@ Timeout - 600 Seconds
 
 
 
-#### Get URL List By Name
-Get list of URL fro specific group by it's name.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|URL Group Name|The name of the needed URL group.|True|String|None|
-
-
-
-##### JSON Results
-```json
-
-```
-
-
-
 #### Ping
 Test Connectivity
 Timeout - 600 Seconds
@@ -141,6 +123,24 @@ Timeout - 600 Seconds
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
 |URL Group Name|URL group object name.|True|String|None|
+
+
+
+#### Get URL List By Name
+Get list of URL fro specific group by it's name.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|URL Group Name|The name of the needed URL group.|True|String|None|
+
+
+
+##### JSON Results
+```json
+
+```
 
 
 

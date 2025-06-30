@@ -18,13 +18,13 @@ Python Version - 3
 #### Dependencies
 | |
 |-|
-|TIPCommon-1.0.10-py3-none-any.whl|
-|charset_normalizer-3.3.2-py3-none-any.whl|
-|idna-3.7-py3-none-any.whl|
 |requests-2.32.3-py3-none-any.whl|
-|certifi-2024.7.4-py3-none-any.whl|
-|urllib3-2.2.2-py3-none-any.whl|
 |chardet-5.2.0-py3-none-any.whl|
+|urllib3-2.2.2-py3-none-any.whl|
+|TIPCommon-1.0.10-py3-none-any.whl|
+|idna-3.7-py3-none-any.whl|
+|certifi-2024.7.4-py3-none-any.whl|
+|charset_normalizer-3.3.2-py3-none-any.whl|
 
 
 ## Actions

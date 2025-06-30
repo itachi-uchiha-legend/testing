@@ -19,8 +19,8 @@
             "IsMandatory": false,
             "Value": "https://api.crowdstrike.com",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278176141,
-            "ModificationTimeUnixTimeInMs": 1751278176141
+            "CreationTimeUnixTimeInMs": 1751284700762,
+            "ModificationTimeUnixTimeInMs": 1751284700762
         },
         {
             "IntegrationIdentifier": "CrowdStrikeFalcon",
@@ -31,8 +31,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278176141,
-            "ModificationTimeUnixTimeInMs": 1751278176141
+            "CreationTimeUnixTimeInMs": 1751284700762,
+            "ModificationTimeUnixTimeInMs": 1751284700762
         },
         {
             "IntegrationIdentifier": "CrowdStrikeFalcon",
@@ -43,8 +43,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278176141,
-            "ModificationTimeUnixTimeInMs": 1751278176141
+            "CreationTimeUnixTimeInMs": 1751284700762,
+            "ModificationTimeUnixTimeInMs": 1751284700762
         },
         {
             "IntegrationIdentifier": "CrowdStrikeFalcon",
@@ -55,213 +55,213 @@
             "IsMandatory": false,
             "Value": "False",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278176141,
-            "ModificationTimeUnixTimeInMs": 1751278176141
+            "CreationTimeUnixTimeInMs": 1751284700762,
+            "ModificationTimeUnixTimeInMs": 1751284700762
         }
     ],
     "IntegrationSupportedActions": [
         {
+            "Name": "Run Script",
+            "Description": "Execute a powershell script on the endpoints in Crowdstrike. Supported entities: IP Address, Hostname. Note: Action is running as async, please adjust script timeout value in Google SecOps IDE for the action, as needed.",
+            "Id": 199,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
+        },
+        {
             "Name": "Upload IOCs",
             "Description": "Add custom IOCs in Crowdstrike Falcon. Supported entities: Hostname, URL, IP address and Hash. Note: Hostname entities are treated as domain IOCs and action will extract domain part out of URLs. Only MD5 and SHA-256 hashes are supported.",
-            "Id": 231,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 190,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Update Incident",
             "Description": "Update incident in Crowdstrike.",
-            "Id": 232,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 191,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Update Identity Protection Detection",
             "Description": "Update an identity protection detection in Crowdstrike. Note: this action requires an Identity Protection license.",
-            "Id": 233,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 192,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Update IOC Information",
             "Description": "Update information about custom IOCs in Crowdstrike Falcon. Supported entities: Hostname, URL, IP address and Hash. Note: Hostname entities are treated as domain IOCs and action will extract domain part out of URLs. Only MD5 and SHA-256 hashes are supported.",
-            "Id": 234,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 193,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Update Detection",
             "Description": "Update detection in Crowdstrike Falcon.",
-            "Id": 235,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 194,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Update Alert",
             "Description": "Update an alert in Crowdstrike.",
-            "Id": 236,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 195,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Submit URL",
             "Description": "Submit urls to a sandbox in Crowdstrike. Note: This action requires a Falcon Sandbox license.",
-            "Id": 237,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 196,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Submit File",
             "Description": "Submit files to a sandbox in Crowdstrike. Note: This action requires a Falcon Sandbox license. For the list of supported file formats, refer to the documentation portal.",
-            "Id": 238,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 197,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Search Events",
             "Description": "Search events in Crowdstrike. Note: Action is running as async, please adjust script timeout value in Google SecOps IDE for action, as needed.",
-            "Id": 239,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
-        },
-        {
-            "Name": "Run Script",
-            "Description": "Execute a powershell script on the endpoints in Crowdstrike. Supported entities: IP Address, Hostname. Note: Action is running as async, please adjust script timeout value in Google SecOps IDE for the action, as needed.",
-            "Id": 240,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 198,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Ping",
             "Description": "Test Connectivity",
-            "Id": 241,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 200,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "On-Demand Scan",
             "Description": "Scan the endpoint on demand in Crowdstrike. Note: only Windows hosts are supported. Supported entities: IP Address, Hostname. Note: Action is running as async, please adjust script timeout value in Chronicle SecOps IDE for action, as needed.",
-            "Id": 242,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 201,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "List Uploaded IOCs",
             "Description": "List available custom IOCs in CrowdStrike Falcon.",
-            "Id": 243,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 202,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "List Hosts",
             "Description": "List available hosts in Crowdstrike Falcon.",
-            "Id": 244,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 203,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "List Host Vulnerabilities",
             "Description": "List vulnerabilities found on the host in Crowdstrike Falcon. Supported entities: IP Address and Hostname. Note: requires Falcon Spotlight license and permissions. ",
-            "Id": 245,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 204,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Lift Contained Endpoint",
             "Description": "Lift endpoint containment in Crowdstrike Falcon. Supported entities: Hostname and IP address.",
-            "Id": 246,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 205,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Get Process Name By IOC",
             "Description": "DEPRECATED. Retrieve processes related to the IOCs and provided devices in Crowdstrike Falcon. Supported entities: Hostname, URL, IP address and Hash. Note: Hostname entities are treated as domain IOCs and action will extract domain part out of URLs. Only MD5 and SHA-256 hashes are supported. IP address entities are treated as IOCs.",
-            "Id": 247,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 206,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Get Hosts by IOC",
             "Description": "DEPRECATED. List hosts related to the IOCs in Crowdstrike Falcon. Supported entities: Hostname, URL, IP address and Hash. Note: Hostname entities are treated as domain IOCs and action will extract domain part out of URLs. Only MD5 and SHA-256 hashes are supported.",
-            "Id": 248,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 207,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Get Host Information",
             "Description": "Retrieve information about the hostname from Crowdstrike Falcon. Supported entities: Hostname, IP Address.",
-            "Id": 249,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
-        },
-        {
-            "Name": "Get Event Offset",
-            "Description": "Action will retrieve the event offset that is used by the Event Streaming Connector. Note: action starts processing events from 30 days ago.",
-            "Id": 250,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
-        },
-        {
-            "Name": "Execute Command",
-            "Description": "Execute commands on the hosts in Crowdstrike Falcon. Supported entities: IP Address and Hostname.",
-            "Id": 251,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
-        },
-        {
-            "Name": "Download File",
-            "Description": "Download files from the hosts in Crowdstrike Falcon. Supported entities: File Name, IP Address and Hostname. Note: action requires both File Name and IP Address/Hostname entity to be in the scope of the Siemplify alert. The downloaded file will be in password-protected zip. Password is \"infected\".",
-            "Id": 252,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
-        },
-        {
-            "Name": "Add Comment to Detection",
-            "Description": "Add a comment to the detection in Crowdstrike Falcon.",
-            "Id": 258,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
-        },
-        {
-            "Name": "Delete IOC",
-            "Description": "Delete custom IOCs in Crowdstrike Falcon. Supported entities: Hostname, URL, IP address and Hash. Note: Hostname entities are treated as domain IOCs and action will extract domain part out of URLs. Only MD5 and SHA-256 hashes are supported.",
-            "Id": 253,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
-        },
-        {
-            "Name": "Contain Endpoint",
-            "Description": "Contain endpoint in Crowdstrike Falcon. Supported entities: Hostname and IP address.",
-            "Id": 254,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
-        },
-        {
-            "Name": "Close Detection",
-            "Description": "Close a Crowdstrike Falcon detection. Note: Action \"Update Detection\" is the best practice for this use case.",
-            "Id": 255,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 208,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Add Incident Comment",
             "Description": "Add comment to incident in Crowdstrike.",
-            "Id": 256,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 215,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
+        },
+        {
+            "Name": "Get Event Offset",
+            "Description": "Action will retrieve the event offset that is used by the Event Streaming Connector. Note: action starts processing events from 30 days ago.",
+            "Id": 209,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
+        },
+        {
+            "Name": "Execute Command",
+            "Description": "Execute commands on the hosts in Crowdstrike Falcon. Supported entities: IP Address and Hostname.",
+            "Id": 210,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
+        },
+        {
+            "Name": "Download File",
+            "Description": "Download files from the hosts in Crowdstrike Falcon. Supported entities: File Name, IP Address and Hostname. Note: action requires both File Name and IP Address/Hostname entity to be in the scope of the Siemplify alert. The downloaded file will be in password-protected zip. Password is \"infected\".",
+            "Id": 211,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
+        },
+        {
+            "Name": "Delete IOC",
+            "Description": "Delete custom IOCs in Crowdstrike Falcon. Supported entities: Hostname, URL, IP address and Hash. Note: Hostname entities are treated as domain IOCs and action will extract domain part out of URLs. Only MD5 and SHA-256 hashes are supported.",
+            "Id": 212,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
+        },
+        {
+            "Name": "Contain Endpoint",
+            "Description": "Contain endpoint in Crowdstrike Falcon. Supported entities: Hostname and IP address.",
+            "Id": 213,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
+        },
+        {
+            "Name": "Close Detection",
+            "Description": "Close a Crowdstrike Falcon detection. Note: Action \"Update Detection\" is the best practice for this use case.",
+            "Id": 214,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Add Identity Protection Detection Comment",
             "Description": "Add a comment to identity protection detection in Crowdstrike.",
-            "Id": 257,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 216,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
+        },
+        {
+            "Name": "Add Comment to Detection",
+            "Description": "Add a comment to the detection in Crowdstrike Falcon.",
+            "Id": 217,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         },
         {
             "Name": "Add Alert Comment",
             "Description": "Add a comment to alert in Crowdstrike. ",
-            "Id": 259,
-            "CreationTimeUnixTimeInMs": 1751278176150,
-            "ModificationTimeUnixTimeInMs": 1751278176150
+            "Id": 218,
+            "CreationTimeUnixTimeInMs": 1751284700771,
+            "ModificationTimeUnixTimeInMs": 1751284700771
         }
     ],
     "Categories": [
@@ -279,6 +279,6 @@
     "MinimumSystemVersion": 0.0,
     "ProductionIntegrationIdentifier": null,
     "Id": 0,
-    "CreationTimeUnixTimeInMs": 1751278176141,
-    "ModificationTimeUnixTimeInMs": 1751278176141
+    "CreationTimeUnixTimeInMs": 1751284700762,
+    "ModificationTimeUnixTimeInMs": 1751284700762
 }

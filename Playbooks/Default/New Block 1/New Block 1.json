@@ -1,12 +1,12 @@
 {
     "id": 0,
-    "identifier": "cad9a925-ece9-411f-b387-d0c2b67c6257",
+    "identifier": "b08a4468-7b13-4c65-b317-01f967570b0f",
     "version": "1",
     "isEnabled": true,
     "isDebugMode": false,
     "name": "New Block 1",
-    "creator": "Siemplify automation",
-    "modifiedBy": "Siemplify automation",
+    "creator": "973d7959-bcd7-48fa-8b56-37fa8244951d",
+    "modifiedBy": "973d7959-bcd7-48fa-8b56-37fa8244951d",
     "priority": 2,
     "description": "An embedded workflow that can receive inputs and return an output.",
     "environments": [
@@ -14,12 +14,12 @@
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "cad9a925-ece9-411f-b387-d0c2b67c6257",
+    "originalPlaybookIdentifier": "b08a4468-7b13-4c65-b317-01f967570b0f",
     "creationTimeUnixTimeInMs": 1751283251116,
-    "modificationTimeUnixTimeInMs": 1751283971422,
+    "modificationTimeUnixTimeInMs": 1751285483440,
     "trigger": {
         "id": 0,
-        "identifier": "9055e4f4-a89b-4a8e-a8ab-bd83125ba79c",
+        "identifier": "8d89d59a-f109-4dc1-8b9d-31cb444db781",
         "type": 11,
         "logicalOperator": 0,
         "conditions": []
@@ -63,7 +63,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "90de8295-e24f-449d-a544-3989170da605",
+                    "value": "74f874b3-c98a-413b-99bb-845f8fecc5c8",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -177,12 +177,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "cad9a925-ece9-411f-b387-d0c2b67c6257",
+            "workflowIdentifier": "b08a4468-7b13-4c65-b317-01f967570b0f",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751283971422,
-            "modificationTimeUnixTimeInMs": 1751283971422,
+            "creationTimeUnixTimeInMs": 1751285483259,
+            "modificationTimeUnixTimeInMs": 1751285483440,
             "additionalProperties": {}
         },
         {
@@ -223,7 +223,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "38f5a3a3-a437-43db-8006-6cd397b3db86",
+                    "value": "6ee89512-5e26-4225-8a1b-ff789b563d81",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -337,12 +337,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "cad9a925-ece9-411f-b387-d0c2b67c6257",
+            "workflowIdentifier": "b08a4468-7b13-4c65-b317-01f967570b0f",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751283971238,
-            "modificationTimeUnixTimeInMs": 1751283971422,
+            "creationTimeUnixTimeInMs": 1751285483259,
+            "modificationTimeUnixTimeInMs": 1751285483440,
             "additionalProperties": {}
         },
         {
@@ -383,7 +383,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "4df95faa-6177-4b93-82a9-ec35839f9522",
+                    "value": "5223c91d-c832-44cf-87a1-e2a3dbe0c26c",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -497,12 +497,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "cad9a925-ece9-411f-b387-d0c2b67c6257",
+            "workflowIdentifier": "b08a4468-7b13-4c65-b317-01f967570b0f",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751283971238,
-            "modificationTimeUnixTimeInMs": 1751283971422,
+            "creationTimeUnixTimeInMs": 1751285483259,
+            "modificationTimeUnixTimeInMs": 1751285483440,
             "additionalProperties": {}
         },
         {
@@ -543,7 +543,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "573bea0b-0d83-4626-b2a5-e794545e80bc",
+                    "value": "ac89693a-cba6-477b-a1ac-df00a7f82a58",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -551,7 +551,7 @@
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
                     "additionalProperties": {},
-                    "FallbackInstanceDisplayName": "VirusTotalV3_5"
+                    "FallbackInstanceDisplayName": null
                 },
                 {
                     "name": "FetchInstanceByName",
@@ -657,12 +657,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "cad9a925-ece9-411f-b387-d0c2b67c6257",
+            "workflowIdentifier": "b08a4468-7b13-4c65-b317-01f967570b0f",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751283971422,
-            "modificationTimeUnixTimeInMs": 1751283971422,
+            "creationTimeUnixTimeInMs": 1751285483259,
+            "modificationTimeUnixTimeInMs": 1751285483440,
             "additionalProperties": {}
         },
         {
@@ -695,12 +695,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "cad9a925-ece9-411f-b387-d0c2b67c6257",
+            "workflowIdentifier": "b08a4468-7b13-4c65-b317-01f967570b0f",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751283971238,
-            "modificationTimeUnixTimeInMs": 1751283971422,
+            "creationTimeUnixTimeInMs": 1751285483259,
+            "modificationTimeUnixTimeInMs": 1751285483440,
             "additionalProperties": {}
         },
         {
@@ -741,7 +741,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "573bea0b-0d83-4626-b2a5-e794545e80bc",
+                    "value": "6ee89512-5e26-4225-8a1b-ff789b563d81",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -749,7 +749,7 @@
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
                     "additionalProperties": {},
-                    "FallbackInstanceDisplayName": "VirusTotalV3_5"
+                    "FallbackInstanceDisplayName": "VirusTotalV3_2"
                 },
                 {
                     "name": "FetchInstanceByName",
@@ -855,12 +855,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "cad9a925-ece9-411f-b387-d0c2b67c6257",
+            "workflowIdentifier": "b08a4468-7b13-4c65-b317-01f967570b0f",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751283971238,
-            "modificationTimeUnixTimeInMs": 1751283971422,
+            "creationTimeUnixTimeInMs": 1751285483259,
+            "modificationTimeUnixTimeInMs": 1751285483440,
             "additionalProperties": {}
         }
     ],

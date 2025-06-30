@@ -19,8 +19,8 @@
             "IsMandatory": true,
             "Value": "https://{jira_address}",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278527416,
-            "ModificationTimeUnixTimeInMs": 1751278527416
+            "CreationTimeUnixTimeInMs": 1751285318594,
+            "ModificationTimeUnixTimeInMs": 1751285318594
         },
         {
             "IntegrationIdentifier": "Jira",
@@ -31,8 +31,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278527416,
-            "ModificationTimeUnixTimeInMs": 1751278527416
+            "CreationTimeUnixTimeInMs": 1751285318594,
+            "ModificationTimeUnixTimeInMs": 1751285318594
         },
         {
             "IntegrationIdentifier": "Jira",
@@ -43,8 +43,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278527416,
-            "ModificationTimeUnixTimeInMs": 1751278527416
+            "CreationTimeUnixTimeInMs": 1751285318594,
+            "ModificationTimeUnixTimeInMs": 1751285318594
         },
         {
             "IntegrationIdentifier": "Jira",
@@ -55,115 +55,115 @@
             "IsMandatory": false,
             "Value": "False",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278527416,
-            "ModificationTimeUnixTimeInMs": 1751278527416
+            "CreationTimeUnixTimeInMs": 1751285318594,
+            "ModificationTimeUnixTimeInMs": 1751285318594
         }
     ],
     "IntegrationSupportedActions": [
         {
-            "Name": "Upload Attachment",
-            "Description": "Add an attachment to an issue.",
-            "Id": 269,
-            "CreationTimeUnixTimeInMs": 1751278527428,
-            "ModificationTimeUnixTimeInMs": 1751278527428
-        },
-        {
             "Name": "Update Issue",
             "Description": "Update an issue. For new Jira Api, action will try to find a match for the assignee to assign an issue based on User email or displayName field.",
             "Id": 270,
-            "CreationTimeUnixTimeInMs": 1751278527428,
-            "ModificationTimeUnixTimeInMs": 1751278527428
+            "CreationTimeUnixTimeInMs": 1751285318603,
+            "ModificationTimeUnixTimeInMs": 1751285318603
+        },
+        {
+            "Name": "Upload Attachment",
+            "Description": "Add an attachment to an issue.",
+            "Id": 269,
+            "CreationTimeUnixTimeInMs": 1751285318603,
+            "ModificationTimeUnixTimeInMs": 1751285318603
         },
         {
             "Name": "Search Users",
             "Description": "Search users in Jira. Note: Providing User Email Addresses will result in more accurate results.",
             "Id": 271,
-            "CreationTimeUnixTimeInMs": 1751278527428,
-            "ModificationTimeUnixTimeInMs": 1751278527428
+            "CreationTimeUnixTimeInMs": 1751285318603,
+            "ModificationTimeUnixTimeInMs": 1751285318603
         },
         {
             "Name": "Ping",
             "Description": "Test Connectivity",
             "Id": 272,
-            "CreationTimeUnixTimeInMs": 1751278527428,
-            "ModificationTimeUnixTimeInMs": 1751278527428
+            "CreationTimeUnixTimeInMs": 1751285318603,
+            "ModificationTimeUnixTimeInMs": 1751285318603
         },
         {
             "Name": "List Relation Types",
             "Description": "List available relation types in Jira.",
             "Id": 273,
-            "CreationTimeUnixTimeInMs": 1751278527428,
-            "ModificationTimeUnixTimeInMs": 1751278527428
+            "CreationTimeUnixTimeInMs": 1751285318603,
+            "ModificationTimeUnixTimeInMs": 1751285318603
         },
         {
             "Name": "List Issues",
             "Description": "Search for issues",
             "Id": 274,
-            "CreationTimeUnixTimeInMs": 1751278527428,
-            "ModificationTimeUnixTimeInMs": 1751278527428
+            "CreationTimeUnixTimeInMs": 1751285318603,
+            "ModificationTimeUnixTimeInMs": 1751285318603
         },
         {
             "Name": "Link Issues",
             "Description": "Link multiple issues in Jira.",
             "Id": 275,
-            "CreationTimeUnixTimeInMs": 1751278527428,
-            "ModificationTimeUnixTimeInMs": 1751278527428
+            "CreationTimeUnixTimeInMs": 1751285318603,
+            "ModificationTimeUnixTimeInMs": 1751285318603
         },
         {
             "Name": "Get Issues",
             "Description": "Get issues details by keys. (separated by comma)",
             "Id": 276,
-            "CreationTimeUnixTimeInMs": 1751278527428,
-            "ModificationTimeUnixTimeInMs": 1751278527428
+            "CreationTimeUnixTimeInMs": 1751285318603,
+            "ModificationTimeUnixTimeInMs": 1751285318603
         },
         {
             "Name": "Download Attachments",
             "Description": "Get an Issue key and download all attachments. If one of them is an EML file, download inside attachments as well",
             "Id": 277,
-            "CreationTimeUnixTimeInMs": 1751278527428,
-            "ModificationTimeUnixTimeInMs": 1751278527428
+            "CreationTimeUnixTimeInMs": 1751285318603,
+            "ModificationTimeUnixTimeInMs": 1751285318603
         },
         {
             "Name": "Delete Issue",
             "Description": "Delete an issue",
             "Id": 278,
-            "CreationTimeUnixTimeInMs": 1751278527428,
-            "ModificationTimeUnixTimeInMs": 1751278527428
+            "CreationTimeUnixTimeInMs": 1751285318603,
+            "ModificationTimeUnixTimeInMs": 1751285318603
         },
         {
             "Name": "Create Issue",
             "Description": "Create an issue in a project. (Jira username could be: name, mail, etc...). For new Jira Api, action will try to find a match for the assignee to assign an issue based on User email or displayName field.",
             "Id": 279,
-            "CreationTimeUnixTimeInMs": 1751278527428,
-            "ModificationTimeUnixTimeInMs": 1751278527428
+            "CreationTimeUnixTimeInMs": 1751285318603,
+            "ModificationTimeUnixTimeInMs": 1751285318603
         },
         {
             "Name": "Create Alert Issue",
             "Description": "Create an alert issue",
             "Id": 280,
-            "CreationTimeUnixTimeInMs": 1751278527428,
-            "ModificationTimeUnixTimeInMs": 1751278527428
+            "CreationTimeUnixTimeInMs": 1751285318603,
+            "ModificationTimeUnixTimeInMs": 1751285318603
         },
         {
             "Name": "Assign Issue",
             "Description": "Assign an issue to a specific user. (Jira username could be: name, mail, etc...). For new Jira Api, action will try to find a match for the assignee to assign an issue based on User email or displayName field.",
             "Id": 281,
-            "CreationTimeUnixTimeInMs": 1751278527428,
-            "ModificationTimeUnixTimeInMs": 1751278527428
+            "CreationTimeUnixTimeInMs": 1751285318603,
+            "ModificationTimeUnixTimeInMs": 1751285318603
         },
         {
             "Name": "Add Comment",
             "Description": "Add a comment to a issue",
             "Id": 282,
-            "CreationTimeUnixTimeInMs": 1751278527428,
-            "ModificationTimeUnixTimeInMs": 1751278527428
+            "CreationTimeUnixTimeInMs": 1751285318603,
+            "ModificationTimeUnixTimeInMs": 1751285318603
         },
         {
             "Name": "Copy of Ping",
             "Description": "Test Connectivity",
             "Id": 283,
-            "CreationTimeUnixTimeInMs": 1751282923529,
-            "ModificationTimeUnixTimeInMs": 1751282923539
+            "CreationTimeUnixTimeInMs": 1751285319944,
+            "ModificationTimeUnixTimeInMs": 1751285319944
         }
     ],
     "Categories": [
@@ -181,6 +181,6 @@
     "MinimumSystemVersion": 0.0,
     "ProductionIntegrationIdentifier": null,
     "Id": 0,
-    "CreationTimeUnixTimeInMs": 1751278527416,
-    "ModificationTimeUnixTimeInMs": 1751278527416
+    "CreationTimeUnixTimeInMs": 1751285318594,
+    "ModificationTimeUnixTimeInMs": 1751285318594
 }

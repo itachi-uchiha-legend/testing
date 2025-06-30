@@ -16,17 +16,17 @@ Python Version - 3
 #### Dependencies
 | |
 |-|
-|filelock-3.15.4-py3-none-any.whl|
-|TIPCommon-1.0.10-py3-none-any.whl|
-|EnvironmentCommon-1.0.0-py3-none-any.whl|
-|idna-3.7-py3-none-any.whl|
 |requests-2.32.3-py3-none-any.whl|
-|certifi-2024.7.4-py3-none-any.whl|
-|urllib3-2.2.2-py3-none-any.whl|
+|filelock-3.15.4-py3-none-any.whl|
 |charset_normalizer-3.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|tldextract-5.1.2-py3-none-any.whl|
-|requests_file-2.1.0-py2.py3-none-any.whl|
 |chardet-5.2.0-py3-none-any.whl|
+|tldextract-5.1.2-py3-none-any.whl|
+|urllib3-2.2.2-py3-none-any.whl|
+|TIPCommon-1.0.10-py3-none-any.whl|
+|requests_file-2.1.0-py2.py3-none-any.whl|
+|idna-3.7-py3-none-any.whl|
+|certifi-2024.7.4-py3-none-any.whl|
+|EnvironmentCommon-1.0.0-py3-none-any.whl|
 
 
 ## Actions
@@ -64,49 +64,6 @@ Timeout - 600 Seconds
 ##### JSON Results
 ```json
 {"data": {"id": "13xxx", "type": "reports", "links": {"self": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx"}, "attributes": {"location": "Processed", "risk_score": 96, "from_address": null, "subject": "Test Phishing domain", "received_at": "2020-10-12T21:30:54.000Z", "reported_at": "2020-10-12T21:30:53.000Z", "raw_headers": "X-Triage-Noise-Reduction: state=0\r\nX-Triage-Noise-Reduction: score=79\r\nX-Triage-Noise-Reduction: verdict=clean\r\nDate: Mon, 12 Oct 2020 21:31:36 +0000\r\nMessage-ID: <5f84cb38575a0_2592acb1561f9d0321eb@ip-10-132-10-234.ec2.intexxxxl.mail>\r\nSubject: Test Phishing domain\r\nMime-Version: 1.0\r\nContent-Type: multipart/mixed;\r\n boundary=\"--==_mimepart_5f84cb385734c_2592acb1561f9d032089\";\r\n charset=UTF-8\r\nContent-Transfer-Encoding: 7bit", "text_body": "Testing<http://dsrihsddk.net/>\r\n\r\nThis is a poor reputation domain\r\n\r\n", "html_body": "<html xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:w=\"urn:schemas-microsoft-com:office:word\" xmlns:m=\"http://schemas.microsoft.com/office/2004/12/omml\" xmlns=\"http://www.w3.org/TR/REC-html40\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta name=\"Generator\" content=\"Microsoft Word 15 (filtered medium)\">\r\n<style><!--\r\n/* Font Definitions */\r\n@font-face\r\n\t{font-family:\"Cambria Math\";\r\n\tpanose-1:2 4 5 3 5 4 6 3 2 4;}\r\n@font-face\r\n\t{font-family:Calibri;\r\n\tpanose-1:2 15 5 2 2 2 4 3 2 4;}\r\n/* Style Definitions */\r\np.MsoNormal, li.MsoNormal, div.MsoNormal\r\n\t{margin:0in;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\na:link, span.MsoHyperlink\r\n\t{mso-style-priority:99;\r\n\tcolor:#0563C1;\r\n\ttext-decoration:underline;}\r\nspan.EmailStyle17\r\n\t{mso-style-type:personal-compose;\r\n\tfont-family:\"Calibri\",sans-serif;\r\n\tcolor:windowtext;}\r\n.MsoChpDefault\r\n\t{mso-style-type:export-only;\r\n\tfont-size:12.0pt;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\n@page WordSection1\r\n\t{size:8.5in 11.0in;\r\n\tmargin:1.0in 1.0in 1.0in 1.0in;}\r\ndiv.WordSection1\r\n\t{page:WordSection1;}\r\n--></style>\r\n</head>\r\n<body lang=\"EN-US\" link=\"#0563C1\" vlink=\"#954F72\" style=\"word-wrap:break-word\">\r\n<div class=\"WordSection1\">\r\n<p class=\"MsoNormal\"><span style=\"font-size:11.0pt\"><a href=\"http://dsrihsddk.net/\">Testing</a><o:p></o:p></span></p>\r\n<p class=\"MsoNormal\"><span style=\"font-size:11.0pt\"><o:p>&nbsp;</o:p></span></p>\r\n<p class=\"MsoNormal\"><span style=\"font-size:11.0pt\">This is a poor reputation domain<o:p></o:p></span></p>\r\n<div>\r\n<p class=\"MsoNormal\"><span style=\"font-size:11.0pt\"><o:p>&nbsp;</o:p></span></p>\r\n</div>\r\n</div>\r\n</body>\r\n</html>\r\n", "md5": "81fe86fc9c244be978ab8b8392d3c986", "sha256": "146b857b2a147eeb9091571327452006438294aeb21069e38c6f25a811aa6c03", "match_priority": 1, "tags": [], "categorization_tags": [], "processed_at": "2020-11-23T08:39:53.143Z", "created_at": "2020-10-12T21:31:36.495Z", "updated_at": "2020-11-23T08:39:09.705Z"}, "relationships": {"assignee": {"links": {"self": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/relationships/assignee", "related": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/assignee"}, "data": null}, "category": {"links": {"self": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/relationships/category", "related": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/category"}, "data": {"type": "categories", "id": "1"}}, "cluster": {"links": {"self": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/relationships/cluster", "related": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/cluster"}, "data": {"type": "clusters", "id": "3915"}}, "reporter": {"links": {"self": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/relationships/reporter", "related": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/reporter"}, "data": {"type": "reporters", "id": "5331"}}, "attachment_payloads": {"links": {"self": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/relationships/attachment_payloads", "related": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/attachment_payloads"}}, "attachments": {"links": {"self": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/relationships/attachments", "related": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/attachments"}}, "headers": {"links": {"self": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/relationships/headers", "related": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/headers"}}, "hostnames": {"links": {"self": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/relationships/hostnames", "related": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/hostnames"}}, "urls": {"links": {"self": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/relationships/urls", "related": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/urls"}}, "rules": {"links": {"self": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/relationships/rules", "related": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/rules"}}, "threat_indicators": {"links": {"self": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/relationships/threat_indicators", "related": "https://tap.phishmecloud.com/api/public/v2/reports/13xxx/threat_indicators"}}}, "meta": {"risk_score_summary": {"integrations": 75, "vip": 5, "reporter": 15, "rules": 1}}}}
-```
-
-
-
-#### Download Report Email
-Download raw email related to the report from Cofense Triage.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Report ID|Specify the ID of the report, which contains the raw email that needs to be downloaded.|True|String||
-|Download Folder|Specify the absolute path to the download folder. Note: Name will be constructed in the following way {report id}.eml.|True|String||
-|Overwrite|If enabled, action will overwrite the file with the same name and filepath.|False|Boolean|true|
-|Create Insight|If enabled, action will create an insight that contains raw email of the report.|False|Boolean|false|
-
-
-
-##### JSON Results
-```json
-{"absolute_file_path": "/tmp/test/13507.eml"}
-```
-
-
-
-#### Download Report Preview
-Download image preview from the email related to the report from Cofense Triage.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Report ID|Specify the ID of the report, which contains the raw email that needs to be downloaded.|True|String||
-|Download Folder|Specify the absolute path to the download folder. Note: Name will be constructed in the following way {report id}.eml.|True|String||
-|Overwrite|If enabled, action will overwrite the file with the same name and filepath.|False|Boolean|true|
-|Image Format|Specify the format of the image.|True|List|PNG|
-|Create Insight|If enabled, action will create an insight that contains raw email of the report.|False|Boolean|false|
-
-
-
-##### JSON Results
-```json
-{"absolute_file_path": "/tmp/test/13507.eml"}
 ```
 
 
@@ -191,31 +148,6 @@ Timeout - 600 Seconds
 
 
 
-#### List Reports Related To Threat Indicators
-List reports related to threat indicators in Cofense Triage.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Create Case Wall Table|If enabled, action will create a case wall table with information about reports,|False|Boolean|false|
-|Max Reports To Return|Specify how many reports to return.|False|String|100|
-
-
-
-##### JSON Results
-```json
-[{"id": "string", "type": "string", "links": {"self": "string"}, "attributes": {"location": "string", "risk_score": null, "from_address": null, "subject": "string", "received_at": "string", "reported_at": "string", "raw_headers": "string", "md5": "string", "sha256": "string", "match_priority": "string", "tags": [], "categorization_tags": [], "processed_at": null, "created_at": "string", "updated_at": "string"}, "meta": {"risk_score_summary": null}}]
-```
-
-
-
-#### Ping
-Test connectivity to the Cofense Triage with parameters provided at the integration configuration page on the Marketplace tab.
-Timeout - 600 Seconds
-
-
-
 #### Get Threat Indicator Details
 Return information about the entities based on the threat indicator details from Cofense Triage. Note: Only MD5 and SHA256 hashes are supported.
 Timeout - 600 Seconds
@@ -270,6 +202,74 @@ Timeout - 600 Seconds
 ##### JSON Results
 ```json
 [{"id":"xxx","type":"playbooks","links":{"self":"https://reltest6.phishmecloud.com/api/public/v2/playbooks/xxx"},"attributes":{"name":"SN_Test","description":"","active":true,"button_color":"#204d74","add_rule_tags_to_report_tags":true,"remove_existing_report_tags":false,"remove_existing_cluster_tags":false,"report_tags":["SN_Test"],"cluster_tags":["SN_Cluster_Test","test1"],"delete_report":false,"guid":"b443xxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx","created_at":"2021-05-28T01:29:22.080Z","updated_at":"2022-04-08T06:04:17.016Z"}}]
+```
+
+
+
+#### Ping
+Test connectivity to the Cofense Triage with parameters provided at the integration configuration page on the Marketplace tab.
+Timeout - 600 Seconds
+
+
+
+#### Download Report Email
+Download raw email related to the report from Cofense Triage.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Report ID|Specify the ID of the report, which contains the raw email that needs to be downloaded.|True|String||
+|Download Folder|Specify the absolute path to the download folder. Note: Name will be constructed in the following way {report id}.eml.|True|String||
+|Overwrite|If enabled, action will overwrite the file with the same name and filepath.|False|Boolean|true|
+|Create Insight|If enabled, action will create an insight that contains raw email of the report.|False|Boolean|false|
+
+
+
+##### JSON Results
+```json
+{"absolute_file_path": "/tmp/test/13507.eml"}
+```
+
+
+
+#### Download Report Preview
+Download image preview from the email related to the report from Cofense Triage.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Report ID|Specify the ID of the report, which contains the raw email that needs to be downloaded.|True|String||
+|Download Folder|Specify the absolute path to the download folder. Note: Name will be constructed in the following way {report id}.eml.|True|String||
+|Overwrite|If enabled, action will overwrite the file with the same name and filepath.|False|Boolean|true|
+|Image Format|Specify the format of the image.|True|List|PNG|
+|Create Insight|If enabled, action will create an insight that contains raw email of the report.|False|Boolean|false|
+
+
+
+##### JSON Results
+```json
+{"absolute_file_path": "/tmp/test/13507.eml"}
+```
+
+
+
+#### List Reports Related To Threat Indicators
+List reports related to threat indicators in Cofense Triage.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Create Case Wall Table|If enabled, action will create a case wall table with information about reports,|False|Boolean|false|
+|Max Reports To Return|Specify how many reports to return.|False|String|100|
+
+
+
+##### JSON Results
+```json
+[{"id": "string", "type": "string", "links": {"self": "string"}, "attributes": {"location": "string", "risk_score": null, "from_address": null, "subject": "string", "received_at": "string", "reported_at": "string", "raw_headers": "string", "md5": "string", "sha256": "string", "match_priority": "string", "tags": [], "categorization_tags": [], "processed_at": null, "created_at": "string", "updated_at": "string"}, "meta": {"risk_score_summary": null}}]
 ```
 
 

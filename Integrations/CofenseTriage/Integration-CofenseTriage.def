@@ -19,8 +19,8 @@
             "IsMandatory": true,
             "Value": "https://tap.phishmecloud.com",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278112068,
-            "ModificationTimeUnixTimeInMs": 1751278112068
+            "CreationTimeUnixTimeInMs": 1751284633819,
+            "ModificationTimeUnixTimeInMs": 1751284633819
         },
         {
             "IntegrationIdentifier": "CofenseTriage",
@@ -31,8 +31,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278112068,
-            "ModificationTimeUnixTimeInMs": 1751278112068
+            "CreationTimeUnixTimeInMs": 1751284633819,
+            "ModificationTimeUnixTimeInMs": 1751284633819
         },
         {
             "IntegrationIdentifier": "CofenseTriage",
@@ -43,8 +43,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278112068,
-            "ModificationTimeUnixTimeInMs": 1751278112068
+            "CreationTimeUnixTimeInMs": 1751284633819,
+            "ModificationTimeUnixTimeInMs": 1751284633819
         },
         {
             "IntegrationIdentifier": "CofenseTriage",
@@ -55,108 +55,108 @@
             "IsMandatory": false,
             "Value": "false",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278112068,
-            "ModificationTimeUnixTimeInMs": 1751278112068
+            "CreationTimeUnixTimeInMs": 1751284633819,
+            "ModificationTimeUnixTimeInMs": 1751284633819
         }
     ],
     "IntegrationSupportedActions": [
         {
-            "Name": "List Playbooks",
-            "Description": "List available playbooks in Cofense Triage.",
-            "Id": 219,
-            "CreationTimeUnixTimeInMs": 1751278112076,
-            "ModificationTimeUnixTimeInMs": 1751278112076
-        },
-        {
-            "Name": "List Categories",
-            "Description": "List available categories in Cofense Triage.",
-            "Id": 220,
-            "CreationTimeUnixTimeInMs": 1751278112076,
-            "ModificationTimeUnixTimeInMs": 1751278112076
-        },
-        {
-            "Name": "Get Threat Indicator Details",
-            "Description": "Return information about the entities based on the threat indicator details from Cofense Triage. Note: Only MD5 and SHA256 hashes are supported.",
-            "Id": 221,
-            "CreationTimeUnixTimeInMs": 1751278112076,
-            "ModificationTimeUnixTimeInMs": 1751278112076
-        },
-        {
-            "Name": "Ping",
-            "Description": "Test connectivity to the Cofense Triage with parameters provided at the integration configuration page on the Marketplace tab.",
-            "Id": 217,
-            "CreationTimeUnixTimeInMs": 1751278112076,
-            "ModificationTimeUnixTimeInMs": 1751278112076
-        },
-        {
             "Name": "List Reports Related To Threat Indicators",
             "Description": "List reports related to threat indicators in Cofense Triage.",
-            "Id": 218,
-            "CreationTimeUnixTimeInMs": 1751278112076,
-            "ModificationTimeUnixTimeInMs": 1751278112076
-        },
-        {
-            "Name": "Get Report Reporters",
-            "Description": "Return information about the reporter related to the report from Cofense Triage.",
-            "Id": 222,
-            "CreationTimeUnixTimeInMs": 1751278112076,
-            "ModificationTimeUnixTimeInMs": 1751278112076
-        },
-        {
-            "Name": "Get Report Headers",
-            "Description": "Return information about the header related to the report from Cofense Triage.",
-            "Id": 223,
-            "CreationTimeUnixTimeInMs": 1751278112076,
-            "ModificationTimeUnixTimeInMs": 1751278112076
-        },
-        {
-            "Name": "Get Domain Details",
-            "Description": "Return information about the domain from Cofense Triage.",
-            "Id": 224,
-            "CreationTimeUnixTimeInMs": 1751278112076,
-            "ModificationTimeUnixTimeInMs": 1751278112076
-        },
-        {
-            "Name": "Execute Playbook",
-            "Description": "Initiate a playbook execution in Cofense Triage.",
-            "Id": 225,
-            "CreationTimeUnixTimeInMs": 1751278112076,
-            "ModificationTimeUnixTimeInMs": 1751278112076
-        },
-        {
-            "Name": "EnrichURL",
-            "Description": "Return information about the URL from Cofense Triage.",
-            "Id": 226,
-            "CreationTimeUnixTimeInMs": 1751278112076,
-            "ModificationTimeUnixTimeInMs": 1751278112076
+            "Id": 177,
+            "CreationTimeUnixTimeInMs": 1751284633828,
+            "ModificationTimeUnixTimeInMs": 1751284633828
         },
         {
             "Name": "Download Report Preview",
             "Description": "Download image preview from the email related to the report from Cofense Triage.",
-            "Id": 227,
-            "CreationTimeUnixTimeInMs": 1751278112076,
-            "ModificationTimeUnixTimeInMs": 1751278112076
+            "Id": 186,
+            "CreationTimeUnixTimeInMs": 1751284633828,
+            "ModificationTimeUnixTimeInMs": 1751284633828
         },
         {
             "Name": "Download Report Email",
             "Description": "Download raw email related to the report from Cofense Triage.",
-            "Id": 228,
-            "CreationTimeUnixTimeInMs": 1751278112076,
-            "ModificationTimeUnixTimeInMs": 1751278112076
+            "Id": 187,
+            "CreationTimeUnixTimeInMs": 1751284633828,
+            "ModificationTimeUnixTimeInMs": 1751284633828
+        },
+        {
+            "Name": "Ping",
+            "Description": "Test connectivity to the Cofense Triage with parameters provided at the integration configuration page on the Marketplace tab.",
+            "Id": 176,
+            "CreationTimeUnixTimeInMs": 1751284633828,
+            "ModificationTimeUnixTimeInMs": 1751284633828
+        },
+        {
+            "Name": "List Playbooks",
+            "Description": "List available playbooks in Cofense Triage.",
+            "Id": 178,
+            "CreationTimeUnixTimeInMs": 1751284633828,
+            "ModificationTimeUnixTimeInMs": 1751284633828
+        },
+        {
+            "Name": "List Categories",
+            "Description": "List available categories in Cofense Triage.",
+            "Id": 179,
+            "CreationTimeUnixTimeInMs": 1751284633828,
+            "ModificationTimeUnixTimeInMs": 1751284633828
+        },
+        {
+            "Name": "Get Threat Indicator Details",
+            "Description": "Return information about the entities based on the threat indicator details from Cofense Triage. Note: Only MD5 and SHA256 hashes are supported.",
+            "Id": 180,
+            "CreationTimeUnixTimeInMs": 1751284633828,
+            "ModificationTimeUnixTimeInMs": 1751284633828
+        },
+        {
+            "Name": "Get Report Reporters",
+            "Description": "Return information about the reporter related to the report from Cofense Triage.",
+            "Id": 181,
+            "CreationTimeUnixTimeInMs": 1751284633828,
+            "ModificationTimeUnixTimeInMs": 1751284633828
+        },
+        {
+            "Name": "Get Report Headers",
+            "Description": "Return information about the header related to the report from Cofense Triage.",
+            "Id": 182,
+            "CreationTimeUnixTimeInMs": 1751284633828,
+            "ModificationTimeUnixTimeInMs": 1751284633828
+        },
+        {
+            "Name": "Get Domain Details",
+            "Description": "Return information about the domain from Cofense Triage.",
+            "Id": 183,
+            "CreationTimeUnixTimeInMs": 1751284633828,
+            "ModificationTimeUnixTimeInMs": 1751284633828
+        },
+        {
+            "Name": "Execute Playbook",
+            "Description": "Initiate a playbook execution in Cofense Triage.",
+            "Id": 184,
+            "CreationTimeUnixTimeInMs": 1751284633828,
+            "ModificationTimeUnixTimeInMs": 1751284633828
+        },
+        {
+            "Name": "EnrichURL",
+            "Description": "Return information about the URL from Cofense Triage.",
+            "Id": 185,
+            "CreationTimeUnixTimeInMs": 1751284633828,
+            "ModificationTimeUnixTimeInMs": 1751284633828
         },
         {
             "Name": "Categorize Report",
             "Description": "Categorize a report in Cofense Triage.",
-            "Id": 229,
-            "CreationTimeUnixTimeInMs": 1751278112076,
-            "ModificationTimeUnixTimeInMs": 1751278112076
+            "Id": 188,
+            "CreationTimeUnixTimeInMs": 1751284633828,
+            "ModificationTimeUnixTimeInMs": 1751284633828
         },
         {
             "Name": "Add Tags To Report",
             "Description": "Add tags to a report in Cofense Triage.",
-            "Id": 230,
-            "CreationTimeUnixTimeInMs": 1751278112076,
-            "ModificationTimeUnixTimeInMs": 1751278112076
+            "Id": 189,
+            "CreationTimeUnixTimeInMs": 1751284633828,
+            "ModificationTimeUnixTimeInMs": 1751284633828
         }
     ],
     "Categories": [
@@ -174,6 +174,6 @@
     "MinimumSystemVersion": 0.0,
     "ProductionIntegrationIdentifier": null,
     "Id": 0,
-    "CreationTimeUnixTimeInMs": 1751278112068,
-    "ModificationTimeUnixTimeInMs": 1751278112068
+    "CreationTimeUnixTimeInMs": 1751284633819,
+    "ModificationTimeUnixTimeInMs": 1751284633819
 }

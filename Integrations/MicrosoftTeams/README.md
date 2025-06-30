@@ -21,36 +21,36 @@ Python Version - 3
 #### Dependencies
 | |
 |-|
-|beautifulsoup4-4.12.3-py3-none-any.whl|
-|httpcore-1.0.9-py3-none-any.whl|
-|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
-|pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|anyio-4.9.0-py3-none-any.whl|
-|urllib3-2.4.0-py3-none-any.whl|
-|charset_normalizer-3.4.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|idna-3.10-py3-none-any.whl|
-|rsa-4.9.1-py3-none-any.whl|
-|typing_extensions-4.14.0-py3-none-any.whl|
-|uritemplate-4.2.0-py3-none-any.whl|
-|pyasn1_modules-0.4.2-py3-none-any.whl|
-|proto_plus-1.26.1-py3-none-any.whl|
-|google_api_python_client-2.172.0-py3-none-any.whl|
-|soupsieve-2.6-py3-none-any.whl|
-|certifi-2025.4.26-py3-none-any.whl|
-|httpx-0.28.1-py3-none-any.whl|
-|requests-2.32.4-py3-none-any.whl|
-|protobuf-6.31.1-cp39-abi3-manylinux2014_x86_64.whl|
-|EnvironmentCommon-1.0.2-py2.py3-none-any.whl|
-|google_api_core-2.25.0-py3-none-any.whl|
-|sniffio-1.3.1-py3-none-any.whl|
-|h11-0.16.0-py3-none-any.whl|
-|google_auth-2.40.3-py2.py3-none-any.whl|
-|TIPCommon-2.2.2-py2.py3-none-any.whl|
-|googleapis_common_protos-1.70.0-py3-none-any.whl|
-|cachetools-5.5.2-py3-none-any.whl|
-|pyparsing-3.2.3-py3-none-any.whl|
-|pyasn1-0.6.1-py3-none-any.whl|
 |httplib2-0.22.0-py3-none-any.whl|
+|proto_plus-1.26.1-py3-none-any.whl|
+|EnvironmentCommon-1.0.2-py2.py3-none-any.whl|
+|TIPCommon-2.2.2-py2.py3-none-any.whl|
+|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
+|h11-0.16.0-py3-none-any.whl|
+|google_api_python_client-2.172.0-py3-none-any.whl|
+|typing_extensions-4.14.0-py3-none-any.whl|
+|google_auth-2.40.3-py2.py3-none-any.whl|
+|beautifulsoup4-4.12.3-py3-none-any.whl|
+|protobuf-6.31.1-cp39-abi3-manylinux2014_x86_64.whl|
+|certifi-2025.4.26-py3-none-any.whl|
+|pyparsing-3.2.3-py3-none-any.whl|
+|idna-3.10-py3-none-any.whl|
+|httpcore-1.0.9-py3-none-any.whl|
+|googleapis_common_protos-1.70.0-py3-none-any.whl|
+|google_api_core-2.25.0-py3-none-any.whl|
+|requests-2.32.4-py3-none-any.whl|
+|pyasn1_modules-0.4.2-py3-none-any.whl|
+|uritemplate-4.2.0-py3-none-any.whl|
+|sniffio-1.3.1-py3-none-any.whl|
+|rsa-4.9.1-py3-none-any.whl|
+|httpx-0.28.1-py3-none-any.whl|
+|soupsieve-2.6-py3-none-any.whl|
+|anyio-4.9.0-py3-none-any.whl|
+|cachetools-5.5.2-py3-none-any.whl|
+|charset_normalizer-3.4.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|urllib3-2.4.0-py3-none-any.whl|
+|pyasn1-0.6.1-py3-none-any.whl|
 
 
 ## Actions
@@ -236,18 +236,6 @@ Timeout - 600 Seconds
 
 
 
-#### Remove Users From Channel
-Remove users from the private channel in Microsoft Teams. Supported entities: Username, Email Address (username that matches email regex).
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Team Name|Specify the name of the team in which you want to search for the channel.|True|String||
-|Channel Name|Specify a name of the channel in which you want to remove users.|True|String||
-
-
-
 #### Send Chat Message
 Send a chat message in Microsoft Teams. Note: Action is running as async if “Wait For Reply” is enabled, please adjust script timeout value in Siemplify IDE for action as needed.
 Timeout - 600 Seconds
@@ -295,11 +283,11 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Text|Specify the content of the message.|True|String||
 |Team Name|Specify the team to which you want to send the reply.|True|String||
 |Channel Name|Specify the channel to which you want to send the reply.|True|String||
 |Message ID|Specify the ID of the message to which you want to send the reply.|True|String||
 |Content Type|Specify the content type for the message.|False|List|Text|
-|Text|Specify the content of the message.|True|String||
 
 
 
@@ -339,9 +327,9 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Team Name|Specify name of the team.|True|String||
 |Channel Name|Specify name of the channel.|True|String||
 |Message ID|Specify ID of the message that is expected to have a reply.|True|String||
-|Team Name|Specify name of the team.|True|String||
 |Expected Reply|Specify text of the expected reply. If this value is not provided, then action will stop execution on any reply.|False|String||
 |Wait Method|Specify the wait method for the action. If "Check First Reply" is selected, action will either return the first reply or compare the first reply with expected value. If "Wait Till Timeout" is selected, action will either wait for the expected value until timeout is reached or return all of the messages that were sent during the timeout period.|False|List|Check First Reply|
 
@@ -351,6 +339,18 @@ Timeout - 600 Seconds
 ```json
 {"messages":[{"id":"1234567890123","replyToId":"1234567890122","etag":"1690955630010","messageType":"message","createdDateTime":"2023-08-02T05:53:50.09Z","lastModifiedDateTime":"2023-08-02T05:53:50.09Z","lastEditedDateTime":null,"deletedDateTime":null,"subject":null,"summary":null,"chatId":null,"importance":"normal","locale":"en-us","webUrl":"https://teams.microsoft.com/l/message/xyz","onBehalfOf":null,"policyViolation":null,"eventDetail":null,"from":{"application":null,"device":null,"user":{"@odata.type":"#microsoft.graph.teamworkUserIdentity","id":"test","displayName":"Testing","userIdentityType":"aadUser","tenantId":"testing"}},"body":{"contentType":"text","content":"Yes1"},"channelIdentity":{"teamId":"sampleValue","channelId":"channelValue"},"attachments":[],"mentions":[],"reactions":[]}]}
 ```
+
+
+
+#### Remove Users From Channel
+Remove users from the private channel in Microsoft Teams. Supported entities: Username, Email Address (username that matches email regex).
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Team Name|Specify the name of the team in which you want to search for the channel.|True|String||
+|Channel Name|Specify a name of the channel in which you want to remove users.|True|String||
 
 
 

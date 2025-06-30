@@ -19,8 +19,8 @@
             "IsMandatory": true,
             "Value": "https://{IP}",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751279132057,
-            "ModificationTimeUnixTimeInMs": 1751279132057
+            "CreationTimeUnixTimeInMs": 1751285621357,
+            "ModificationTimeUnixTimeInMs": 1751285621357
         },
         {
             "IntegrationIdentifier": "Netskope",
@@ -31,8 +31,8 @@
             "IsMandatory": false,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751279132057,
-            "ModificationTimeUnixTimeInMs": 1751279132057
+            "CreationTimeUnixTimeInMs": 1751285621357,
+            "ModificationTimeUnixTimeInMs": 1751285621357
         },
         {
             "IntegrationIdentifier": "Netskope",
@@ -43,8 +43,8 @@
             "IsMandatory": false,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751279132057,
-            "ModificationTimeUnixTimeInMs": 1751279132057
+            "CreationTimeUnixTimeInMs": 1751285621357,
+            "ModificationTimeUnixTimeInMs": 1751285621357
         },
         {
             "IntegrationIdentifier": "Netskope",
@@ -55,66 +55,66 @@
             "IsMandatory": false,
             "Value": "False",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751279132057,
-            "ModificationTimeUnixTimeInMs": 1751279132057
+            "CreationTimeUnixTimeInMs": 1751285621357,
+            "ModificationTimeUnixTimeInMs": 1751285621357
         }
     ],
     "IntegrationSupportedActions": [
         {
-            "Name": "Ping",
-            "Description": "Test connectivity to Netskope.",
-            "Id": 367,
-            "CreationTimeUnixTimeInMs": 1751279132065,
-            "ModificationTimeUnixTimeInMs": 1751279132065
-        },
-        {
-            "Name": "List Quarantined Files",
-            "Description": "List quarantined files.",
-            "Id": 368,
-            "CreationTimeUnixTimeInMs": 1751279132065,
-            "ModificationTimeUnixTimeInMs": 1751279132065
-        },
-        {
-            "Name": "List Events",
-            "Description": "List events.",
-            "Id": 369,
-            "CreationTimeUnixTimeInMs": 1751279132065,
-            "ModificationTimeUnixTimeInMs": 1751279132065
-        },
-        {
-            "Name": "List Clients",
-            "Description": "List clients.",
-            "Id": 370,
-            "CreationTimeUnixTimeInMs": 1751279132065,
-            "ModificationTimeUnixTimeInMs": 1751279132065
-        },
-        {
-            "Name": "List Alerts",
-            "Description": "List alerts.",
-            "Id": 371,
-            "CreationTimeUnixTimeInMs": 1751279132065,
-            "ModificationTimeUnixTimeInMs": 1751279132065
-        },
-        {
-            "Name": "Download File",
-            "Description": "Download a quarantined file.",
-            "Id": 372,
-            "CreationTimeUnixTimeInMs": 1751279132065,
-            "ModificationTimeUnixTimeInMs": 1751279132065
+            "Name": "Allow File",
+            "Description": "Allow a quarantined file.",
+            "Id": 347,
+            "CreationTimeUnixTimeInMs": 1751285621364,
+            "ModificationTimeUnixTimeInMs": 1751285621364
         },
         {
             "Name": "Block File",
             "Description": "Block a quarantined file.",
-            "Id": 373,
-            "CreationTimeUnixTimeInMs": 1751279132065,
-            "ModificationTimeUnixTimeInMs": 1751279132065
+            "Id": 346,
+            "CreationTimeUnixTimeInMs": 1751285621364,
+            "ModificationTimeUnixTimeInMs": 1751285621364
         },
         {
-            "Name": "Allow File",
-            "Description": "Allow a quarantined file.",
-            "Id": 374,
-            "CreationTimeUnixTimeInMs": 1751279132065,
-            "ModificationTimeUnixTimeInMs": 1751279132065
+            "Name": "Download File",
+            "Description": "Download a quarantined file.",
+            "Id": 345,
+            "CreationTimeUnixTimeInMs": 1751285621364,
+            "ModificationTimeUnixTimeInMs": 1751285621364
+        },
+        {
+            "Name": "List Alerts",
+            "Description": "List alerts.",
+            "Id": 344,
+            "CreationTimeUnixTimeInMs": 1751285621364,
+            "ModificationTimeUnixTimeInMs": 1751285621364
+        },
+        {
+            "Name": "List Clients",
+            "Description": "List clients.",
+            "Id": 343,
+            "CreationTimeUnixTimeInMs": 1751285621364,
+            "ModificationTimeUnixTimeInMs": 1751285621364
+        },
+        {
+            "Name": "List Events",
+            "Description": "List events.",
+            "Id": 342,
+            "CreationTimeUnixTimeInMs": 1751285621364,
+            "ModificationTimeUnixTimeInMs": 1751285621364
+        },
+        {
+            "Name": "List Quarantined Files",
+            "Description": "List quarantined files.",
+            "Id": 341,
+            "CreationTimeUnixTimeInMs": 1751285621364,
+            "ModificationTimeUnixTimeInMs": 1751285621364
+        },
+        {
+            "Name": "Ping",
+            "Description": "Test connectivity to Netskope.",
+            "Id": 340,
+            "CreationTimeUnixTimeInMs": 1751285621364,
+            "ModificationTimeUnixTimeInMs": 1751285621364
         }
     ],
     "Categories": [
@@ -133,6 +133,6 @@
     "MinimumSystemVersion": 0.0,
     "ProductionIntegrationIdentifier": null,
     "Id": 0,
-    "CreationTimeUnixTimeInMs": 1751279132057,
-    "ModificationTimeUnixTimeInMs": 1751279132057
+    "CreationTimeUnixTimeInMs": 1751285621357,
+    "ModificationTimeUnixTimeInMs": 1751285621357
 }

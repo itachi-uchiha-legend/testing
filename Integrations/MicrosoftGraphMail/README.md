@@ -23,65 +23,65 @@ Python Version - 3
 #### Dependencies
 | |
 |-|
-|urllib3-2.2.3-py3-none-any.whl|
-|beautifulsoup4-4.12.3-py3-none-any.whl|
-|pycparser-2.22-py3-none-any.whl|
-|compressed_rtf-1.0.6.tar.gz|
-|emaildata-0.3.4-py3-none-any.whl|
-|rsa-4.9-py3-none-any.whl|
-|googleapis_common_protos-1.65.0-py2.py3-none-any.whl|
-|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
-|pyOpenSSL-24.1.0-py3-none-any.whl|
-|pyth3-0.7-py3-none-any.whl|
-|easygui-0.98.3-py2.py3-none-any.whl|
-|h11-0.14.0-py3-none-any.whl|
-|colorclass-2.2.2-py2.py3-none-any.whl|
-|typing_extensions-4.12.2-py3-none-any.whl|
-|idna-3.10-py3-none-any.whl|
-|google_api_core-2.23.0-py3-none-any.whl|
-|msoffcrypto_tool-5.4.2-py3-none-any.whl|
-|pycryptodome-3.21.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|PyJWT-2.9.0-py3-none-any.whl|
 |RTFDE-0.1.2-py3-none-any.whl|
-|pcodedmp-1.2.6-py2.py3-none-any.whl|
-|certifi-2024.8.30-py3-none-any.whl|
-|extract_msg-0.52.0-py3-none-any.whl|
-|google_auth-2.36.0-py2.py3-none-any.whl|
-|IMAPClient-3.0.1-py2.py3-none-any.whl|
-|tzlocal-5.2-py3-none-any.whl|
-|red-black-tree-mod-1.20.tar.gz|
-|requests-2.32.3-py3-none-any.whl|
 |cachetools-5.5.0-py3-none-any.whl|
-|soupsieve-2.6-py3-none-any.whl|
-|icalendar-6.0.1-py3-none-any.whl|
-|lark-1.1.9-py3-none-any.whl|
-|ebcdic-1.1.1-py2.py3-none-any.whl|
-|siemplify_html2text-2020.1.16-py3-none-any.whl|
+|rsa-4.9-py3-none-any.whl|
+|requests-2.32.3-py3-none-any.whl|
 |cryptography-42.0.8-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|sniffio-1.3.1-py3-none-any.whl|
-|exceptiongroup-1.2.2-py3-none-any.whl|
-|proto_plus-1.25.0-py3-none-any.whl|
-|python_dateutil-2.9.0.post0-py2.py3-none-any.whl|
-|pyasn1_modules-0.4.1-py3-none-any.whl|
-|protobuf-5.28.3-cp38-abi3-manylinux2014_x86_64.whl|
-|cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|TIPCommon-2.2.2-py2.py3-none-any.whl|
-|six-1.16.0-py2.py3-none-any.whl|
-|olefile-0.47-py2.py3-none-any.whl|
-|pytz-2024.2-py2.py3-none-any.whl|
-|pyparsing-3.2.0-py3-none-any.whl|
-|pyasn1-0.6.1-py3-none-any.whl|
-|anyio-4.6.2.post1-py3-none-any.whl|
-|uritemplate-4.1.1-py2.py3-none-any.whl|
-|google_api_python_client-2.151.0-py2.py3-none-any.whl|
+|siemplify_html2text-2020.1.16-py3-none-any.whl|
 |httplib2-0.22.0-py3-none-any.whl|
-|EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
-|tzdata-2024.2-py2.py3-none-any.whl|
-|chardet-5.2.0-py3-none-any.whl|
-|httpx-0.27.2-py3-none-any.whl|
 |oletools-0.60.2-py2.py3-none-any.whl|
-|charset_normalizer-3.4.0-py3-none-any.whl|
+|proto_plus-1.25.0-py3-none-any.whl|
+|pycparser-2.22-py3-none-any.whl|
+|lark-1.1.9-py3-none-any.whl|
+|TIPCommon-2.2.2-py2.py3-none-any.whl|
+|easygui-0.98.3-py2.py3-none-any.whl|
+|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
+|six-1.16.0-py2.py3-none-any.whl|
+|beautifulsoup4-4.12.3-py3-none-any.whl|
+|pyasn1_modules-0.4.1-py3-none-any.whl|
+|IMAPClient-3.0.1-py2.py3-none-any.whl|
+|red-black-tree-mod-1.20.tar.gz|
+|protobuf-5.28.3-cp38-abi3-manylinux2014_x86_64.whl|
+|idna-3.10-py3-none-any.whl|
+|msoffcrypto_tool-5.4.2-py3-none-any.whl|
+|chardet-5.2.0-py3-none-any.whl|
+|tzdata-2024.2-py2.py3-none-any.whl|
+|colorclass-2.2.2-py2.py3-none-any.whl|
+|python_dateutil-2.9.0.post0-py2.py3-none-any.whl|
+|exceptiongroup-1.2.2-py3-none-any.whl|
+|google_api_python_client-2.151.0-py2.py3-none-any.whl|
+|PyJWT-2.9.0-py3-none-any.whl|
+|urllib3-2.2.3-py3-none-any.whl|
+|sniffio-1.3.1-py3-none-any.whl|
+|pyOpenSSL-24.1.0-py3-none-any.whl|
+|olefile-0.47-py2.py3-none-any.whl|
+|pcodedmp-1.2.6-py2.py3-none-any.whl|
+|extract_msg-0.52.0-py3-none-any.whl|
+|h11-0.14.0-py3-none-any.whl|
 |httpcore-1.0.6-py3-none-any.whl|
+|pyth3-0.7-py3-none-any.whl|
+|compressed_rtf-1.0.6.tar.gz|
+|googleapis_common_protos-1.65.0-py2.py3-none-any.whl|
+|ebcdic-1.1.1-py2.py3-none-any.whl|
+|soupsieve-2.6-py3-none-any.whl|
+|pytz-2024.2-py2.py3-none-any.whl|
+|charset_normalizer-3.4.0-py3-none-any.whl|
+|typing_extensions-4.12.2-py3-none-any.whl|
+|pycryptodome-3.21.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|certifi-2024.8.30-py3-none-any.whl|
+|anyio-4.6.2.post1-py3-none-any.whl|
+|pyparsing-3.2.0-py3-none-any.whl|
+|EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
+|cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|emaildata-0.3.4-py3-none-any.whl|
+|google_api_core-2.23.0-py3-none-any.whl|
+|icalendar-6.0.1-py3-none-any.whl|
+|tzlocal-5.2-py3-none-any.whl|
+|httpx-0.27.2-py3-none-any.whl|
+|google_auth-2.36.0-py2.py3-none-any.whl|
+|uritemplate-4.1.1-py2.py3-none-any.whl|
+|pyasn1-0.6.1-py3-none-any.whl|
 
 
 ## Actions
@@ -183,6 +183,19 @@ Timeout - 600 Seconds
 ##### JSON Results
 ```json
 {"id": "xxxxx", "createdDateTime": "2024-02-02T09:49:53Z", "lastModifiedDateTime": "2024-02-02T09:51:19Z", "changeKey": "ieiohjdskj", "categories": [], "receivedDateTime": "2024-02-02T09:49:54Z", "sentDateTime": "2024-02-02T09:49:54Z", "hasAttachments": true, "internetMessageId": "<xyz>", "subject": "xxxx", "bodyPreview": "Mail Action body", "importance": "normal", "parentFolderId": "ddd==", "conversationId": "dagazz=", "conversationIndex": "daf+UJo/clVcxTQ==", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": true, "isDraft": false, "webLink": "https://www.example.com/about", "inferenceClassification": "focused", "body": {"contentType": "text", "content": "Send Mail Action body"}, "sender": {"emailAddress": {"name": "wdzd", "address": "sample@s.com"}}, "from": {"emailAddress": {"name": "safd", "address": "xxx"}}, "toRecipients": [{"emailAddress": {"name": "xx", "address": "aef"}}], "ccRecipients": [{"emailAddress": {"name": "as", "address": "kdaw"}}], "bccRecipients": [{"emailAddress": {"name": "xxsf", "address": "wf"}}], "replyTo": [], "uniqueBody": {"contentType": "html", "content": "Mail Action body"}, "flag": {"flagStatus": "notFlagged"}}
+```
+
+
+
+#### Get Mailbox Account Out Of Facility Settings
+Get the mailbox account out of facility (OOF) settings for the provided Google SecOps User entity. Note: This action uses the beta version of Microsoft Graph APIs.
+Timeout - 600 Seconds
+
+
+
+##### JSON Results
+```json
+[{"Entity": "jame.bond@ex.com", "EntityResult": {"@odata.context": "https://abc.com", "id": "abcb", "availability": "Offline", "activity": "Offline", "statusMessage": null, "outOfOfficeSettings": {"message": null, "isOutOfOffice": false}}}, {"Entity": "exchang@ex.com", "EntityResult": {"@odata.context": "https://abc.com", "id": "djds", "availability": "Offline", "activity": "Offline", "statusMessage": null, "outOfOfficeSettings": {"message": null, "isOutOfOffice": false}}}]
 ```
 
 
@@ -300,19 +313,6 @@ Timeout - 600 Seconds
 
 
 
-#### Get Mailbox Account Out Of Facility Settings
-Get the mailbox account out of facility (OOF) settings for the provided Google SecOps User entity. Note: This action uses the beta version of Microsoft Graph APIs.
-Timeout - 600 Seconds
-
-
-
-##### JSON Results
-```json
-[{"Entity": "jame.bond@ex.com", "EntityResult": {"@odata.context": "https://abc.com", "id": "abcb", "availability": "Offline", "activity": "Offline", "statusMessage": null, "outOfOfficeSettings": {"message": null, "isOutOfOffice": false}}}, {"Entity": "exchang@ex.com", "EntityResult": {"@odata.context": "https://abc.com", "id": "djds", "availability": "Offline", "activity": "Offline", "statusMessage": null, "outOfOfficeSettings": {"message": null, "isOutOfOffice": false}}}]
-```
-
-
-
 #### Mark Email as Junk
 Mark an email as junk for a specific mailbox. This action adds the email sender to the list of blocked senders and moves the message to the Junk Email folder. Note: This action uses the beta version of Microsoft Graph APIs and is not running on Google SecOps entities.
 Timeout - 600 Seconds
@@ -323,6 +323,26 @@ Timeout - 600 Seconds
 |Search In Mailbox|A mailbox to search for an email in. By default, the action  attempts to search for the email in the default mailbox that you specified in the integration configuration. With correct permissions, the action can execute a search in other mailboxes. Parameter accepts multiple values as a comma separated string.|True|String||
 |Folder Name|A mailbox folder to search in.|True|String||
 |Mail IDs|Specify the mail ids or internetMessageIds to mark as junk. Parameter accepts multiple values as a comma separated string.|True|String||
+
+
+
+##### JSON Results
+```json
+
+```
+
+
+
+#### Mark Email as Not Junk
+Mark an email as not junk for a specific mailbox. This action removes the sender from the list of blocked senders and moves the message to the Inbox folder. Note: This action uses the beta version of Microsoft Graph APIs and is not running on Google SecOps entities.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Search In Mailbox|A mailbox to search for an email in. By default, the action  attempts to search for the email in the default mailbox that you specified in the integration configuration. With correct permissions, the action can execute a search in other mailboxes. Parameter accepts multiple values as a comma separated string. |True|String||
+|Folder Name|A mailbox folder to search in.|True|String||
+|Mail IDs|Specify the mail ids or internetMessageIds to mark as not junk. Parameter accepts multiple values as a comma separated string.|True|String||
 
 
 
@@ -391,7 +411,6 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Structure of voting options|Structure of the vote to send to the recipients.|True|List|Yes/No|
 |Send From|Optional email address to send an email from (if permissions allow it). By default, the email is sent from the default mailbox specified in the integration configuration.|True|String||
 |Subject|Email subject.|True|String||
 |Send to|Arbitrary comma-separated list of email addresses for the email recipients, for example, user1@company.co, user2@company.co.|True|String||
@@ -399,6 +418,7 @@ Timeout - 600 Seconds
 |BCC|Arbitrary comma-separated list of email addresses to use in the BCC email field. Use the same format for the "Send to" field.|False|String||
 |Attachments Paths|Specify the attachments to be added, parameter expects full paths to be provided, for example: /<work directory>/file1.pdf. Parameter accepts multiple values as a comma separated string.|False|String||
 |Email HTML Template|The question you would like to ask, or describe the decision you would like the recipient to be able to respond to|True|Email Content|Email HTML Template|
+|Structure of voting options|Structure of the vote to send to the recipients.|True|List|Yes/No|
 |Reply-To Recipients|Comma-separated list of recipients used in the Reply-To header. Note: The Reply-To header is added to force email replies to specific email addresses instead of the email sender address stated in the From field.|False|String||
 |Attachment Location|Location where the attachments to be added are stored. By default, the action attempts to get the attachment from the Google Cloud storage bucket, another option is to fetch it from the local file system.|True|List|None|
 
@@ -431,26 +451,6 @@ Timeout - 600 Seconds
 ##### JSON Results
 ```json
 {"Responses": [{"recipient": "recipient@example.com", "content": {"@odata.etag": "W/\"dummy_etag\"", "id": "dummy_id", "createdDateTime": "2024-01-01T12:00:00Z", "lastModifiedDateTime": "2024-01-01T12:00:01Z", "changeKey": "dummy_change_key", "categories": [], "receivedDateTime": "2024-01-01T12:00:00Z", "sentDateTime": "2024-01-01T12:00:00Z", "hasAttachments": false, "internetMessageId": "<dummy_message_id@example.com>", "subject": "Dummy Subject", "bodyPreview": "Dummy Body Preview", "importance": "normal", "parentFolderId": "dummy_folder_id", "conversationId": "dummy_conversation_id", "conversationIndex": "dummy_conversation_index", "isDeliveryReceiptRequested": false, "isReadReceiptRequested": false, "isRead": false, "isDraft": false, "webLink": "https://outlook.office365.com/owa/?ItemID=dummy_item_id&exvsurl=1&viewmodel=ReadMessageItem", "inferenceClassification": "focused", "internetMessageHeaders": [{"name": "Received", "value": "from dummy_server by dummy_server"}, {"name": "Authentication-Results", "value": "dummy_authentication_results"},  {"name": "From", "value": "\"Dummy Sender\" <dummy_sender@example.com>"}, {"name": "To", "value": "\"Dummy Recipient\" <dummy_recipient@example.com>"}, {"name": "Subject", "value": "Dummy Subject"}, {"name": "Thread-Topic", "value": "Dummy Thread Topic"}, {"name": "Thread-Index", "value": "dummy_thread_index"}, {"name": "Date", "value": "Mon, 01 Jan 2024 12:00:00 +0000"}, {"name": "Message-ID", "value": "<dummy_message_id@example.com>"}, {"name": "References", "value": "<dummy_reference_id@example.com>"}, {"name": "In-Reply-To", "value": "<dummy_in_reply_to_id@example.com>"}, {"name": "X-MS-Exchange-Organization-SCL", "value": "0"}, {"name": "X-MS-TNEF-Correlator", "value": "dummy_correlator"}, {"name": "MIME-Version", "value": "1.0"}], "body": {"contentType": "html", "content": "<html><body>Dummy Body</body></html>"}, "sender": {"emailAddress": {"name": "Dummy Sender", "address": "dummy_sender@example.com"}}, "from": {"emailAddress": {"name": "Dummy Sender", "address": "dummy_sender@example.com"}}, "toRecipients": [{"emailAddress": {"name": "Dummy Recipient", "address": "dummy_recipient@example.com"}}], "ccRecipients": [], "bccRecipients": [], "replyTo": [], "uniqueBody": {"contentType": "html", "content": "<html><body>Dummy Unique Body</body></html>"}, "flag": {"flagStatus": "notFlagged"}, "singleValueExtendedProperties": [{"id": "String 0x7d", "value": "Dummy Extended Property"}]}}]}
-```
-
-
-
-#### Mark Email as Not Junk
-Mark an email as not junk for a specific mailbox. This action removes the sender from the list of blocked senders and moves the message to the Inbox folder. Note: This action uses the beta version of Microsoft Graph APIs and is not running on Google SecOps entities.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Search In Mailbox|A mailbox to search for an email in. By default, the action  attempts to search for the email in the default mailbox that you specified in the integration configuration. With correct permissions, the action can execute a search in other mailboxes. Parameter accepts multiple values as a comma separated string. |True|String||
-|Folder Name|A mailbox folder to search in.|True|String||
-|Mail IDs|Specify the mail ids or internetMessageIds to mark as not junk. Parameter accepts multiple values as a comma separated string.|True|String||
-
-
-
-##### JSON Results
-```json
-
 ```
 
 

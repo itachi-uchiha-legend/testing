@@ -19,8 +19,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -31,8 +31,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -43,8 +43,8 @@
             "IsMandatory": false,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -55,8 +55,8 @@
             "IsMandatory": false,
             "Value": "False",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -67,8 +67,8 @@
             "IsMandatory": false,
             "Value": "False",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -79,8 +79,8 @@
             "IsMandatory": false,
             "Value": "False",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -91,8 +91,8 @@
             "IsMandatory": false,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -103,8 +103,8 @@
             "IsMandatory": false,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -115,8 +115,8 @@
             "IsMandatory": false,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -127,8 +127,8 @@
             "IsMandatory": false,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -139,8 +139,8 @@
             "IsMandatory": false,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -151,8 +151,8 @@
             "IsMandatory": false,
             "Value": "http://localhost",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -163,8 +163,8 @@
             "IsMandatory": false,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -175,8 +175,8 @@
             "IsMandatory": false,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -187,8 +187,8 @@
             "IsMandatory": false,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -199,8 +199,8 @@
             "IsMandatory": false,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         },
         {
             "IntegrationIdentifier": "Exchange",
@@ -211,192 +211,192 @@
             "IsMandatory": false,
             "Value": "False",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278997252,
-            "ModificationTimeUnixTimeInMs": 1751278997252
+            "CreationTimeUnixTimeInMs": 1751285063891,
+            "ModificationTimeUnixTimeInMs": 1751285063891
         }
     ],
     "IntegrationSupportedActions": [
         {
-            "Name": "Send Thread Reply",
-            "Description": "Send a message as a reply to the email thread.",
-            "Id": 325,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
-        },
-        {
             "Name": "Wait for Vote Mail Results",
             "Description": "Use this action to fetch the responses of a vote mail sent by the \"Send Vote Mail\" action, in order to wait for the responses and get them inside Siemplify.",
-            "Id": 321,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
+            "Id": 228,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
         },
         {
             "Name": "Wait for mail from user",
             "Description": "Wait for user's response based on an email sent via Send Email action. Note: please adjust the async timeout for action (polling timeout) and global action timeout in Siemplify server configuration as needed. Action input parameter \"How long to wait for recipient reply (minutes)\" cant be bigger than Siemplify server global timeout value.",
-            "Id": 322,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
+            "Id": 229,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
         },
         {
             "Name": "Unblock Sender by Message ID",
             "Description": "Action will get as a parameter a list of message IDs, and will be able to unmark it as junk. Unmarking an item as junk using this action will remove the item sender's mail address from the \"Blocked Senders List\". To move it back to the inbox, please tick the appropriate checkbox in the action parameters. NOTICE - to unmark emails in all mailboxes, please configure impersonation permissions: https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed. NOTE: Action is supported only from Exchange Server version 2013 and newer, if a lower version is used, action will fail with the appropriate message.",
-            "Id": 323,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
+            "Id": 230,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
         },
         {
             "Name": "Send Vote Mail",
             "Description": "Send emails with easy answering options, to allow stakeholders to be combined in the automated processes without accessing the Siemplify UI.",
-            "Id": 324,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
+            "Id": 231,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
+        },
+        {
+            "Name": "Send Thread Reply",
+            "Description": "Send a message as a reply to the email thread.",
+            "Id": 232,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
         },
         {
             "Name": "Send Mail HTML",
             "Description": "Send an email with HTML template content, Send to field is comma separated. Note: Sender's display name can be configured in the client under the account settings",
-            "Id": 326,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
+            "Id": 233,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
         },
         {
             "Name": "Send Mail",
             "Description": "Send Email from specific mailbox to an arbitrary list of recipients. Action can be used to inform users about specific alerts created in the Siemplify or inform about the results of processing of specific alerts.",
-            "Id": 327,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
+            "Id": 234,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
         },
         {
             "Name": "Send Email And Wait",
             "Description": "Send email and wait action, Send to field is comma separated. Note: Sender's display name can be configured in the client under the account settings",
-            "Id": 328,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
+            "Id": 235,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
         },
         {
             "Name": "Search Mails",
             "Description": "Search for specific emails in configured mailbox using multiple provided search criteria. Action return information on found in mailbox emails in JSON format. NOTICE - to search for an email in all mailboxes, please configure impersonation permissions. https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange. Note: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.",
-            "Id": 329,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
-        },
-        {
-            "Name": "Save Mail Attachments To The Case",
-            "Description": "Save email attachments from email stored in monitored mailbox to the Case Wall.",
-            "Id": 330,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
-        },
-        {
-            "Name": "Remove Senders from Exchange-Siemplify Inbox Rules",
-            "Description": "Action will get as a parameter a list of Senders, or will work on User entities (if parameters are not provided), and will be able to remove the provided Senders from the existing rules. WARNING: Action will modify your current users inbox rules, using EWS. NOTICE - to perform operation, please configure EDiscovery Group and Author permissions. For full details, please visit: https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/exchang. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.",
-            "Id": 331,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
-        },
-        {
-            "Name": "Remove Domains from Exchange-Siemplify Inbox Rules",
-            "Description": "Action will get as a parameter a list of Domains, and will be able to remove the provided domains from the existing rules. WARNING: Action will modify your current users inbox rules, using EWS. NOTICE - to perform operation, please configure EDiscovery Group and Author permissions. For full details, please visit: https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/exchang. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.",
-            "Id": 332,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
-        },
-        {
-            "Name": "Ping",
-            "Description": "Test connectivity to Microsoft Exchange instance with parameters provided at the integration configuration page on Marketplace tab.",
-            "Id": 333,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
-        },
-        {
-            "Name": "Move Mail To Folder",
-            "Description": "Move one or multiple emails from source email folder to another folder in mailbox. NOTICE - to search and move emails in all mailboxes, please configure impersonation permissions. https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange. Note: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.",
-            "Id": 334,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
-        },
-        {
-            "Name": "List Exchange-Siemplify Inbox Rules",
-            "Description": "Action will get as a parameter a rule name, from the Exchange-Siemplify Inbox rules, and will list it. If no mailboxes to list for will be provided, the rules for the logged in user will be listed. NOTICE - to perform operation, please configure EDiscovery Group and Author permissions. For full details, please visit: https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/exchang. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.",
-            "Id": 335,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
-        },
-        {
-            "Name": "Get Mail EML File",
-            "Description": "Fetch message EML file.",
-            "Id": 336,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
-        },
-        {
-            "Name": "Get Authorization",
-            "Description": "For integration configuration with Oauth authentication, run the action and browse to the received URL to get a link with access code. That link needs to be provided to the Generate Token action next to get the refresh token.",
-            "Id": 337,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
-        },
-        {
-            "Name": "Add Domains to Exchange-Siemplify Inbox Rules",
-            "Description": "Action will get as a parameter a list of Domains, and will be able to create or update a rule, filtering the domains from your mailboxes. Actions can be modified in the parameters using rule parameter. WARNING: Action will modify your current users inbox rules, using EWS. NOTICE - to perform operation, please configure EDiscovery Group and Author permissions. For full details, please visit: https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/exchang. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.",
-            "Id": 346,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
-        },
-        {
-            "Name": "Get Account Out Of Facility Settings",
-            "Description": "Get account out of facility (OOF) settings for the provided Siemplify User entity. Note 1: If the target User entity is a username, not a mail address, please run Enrich Entities from Active Directory integration first to try to use the information about User's mail stored in Active Directory. Note 2: For integration to return the information, it should have delegation or impersonation permissions to the target account mailbox. Link to impersonation permission configuration: https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange",
-            "Id": 338,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
-        },
-        {
-            "Name": "Generate Token",
-            "Description": "For integration configuration with Oauth authentication, get a refresh token using the authorization URL received in the Get Authorization action.",
-            "Id": 339,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
-        },
-        {
-            "Name": "Extract EML Data",
-            "Description": "Extract data from email's EML attachments.",
-            "Id": 340,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
-        },
-        {
-            "Name": "Download Attachments",
-            "Description": "Download email attachments from email to specific file path on Siemplify server. NOTICE - to search for an email in all mailboxes, please configure impersonation permissions. https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange. Note: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed. Additionally, please note that if the downloaded attachments have \"/\" or \"\\\" characters in the names, those will be replaced with the '_' character.",
-            "Id": 341,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
-        },
-        {
-            "Name": "Delete Mail",
-            "Description": "Delete one or multiple email from the mailbox that matches search criterias. Delete can be done for the first email that matched the search criteria, or it can be done for all matching emails. NOTICE - to delete emails in all mailboxes, please configure impersonation permissions. https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange. Note: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.",
-            "Id": 342,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
+            "Id": 236,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
         },
         {
             "Name": "Delete Exchange-Siemplify Inbox Rules",
             "Description": "Action will get as a parameter a rule name and will delete it from all the specified mailboxes. WARNING: Action will modify your current users inbox rules, using EWS. NOTICE - to perform operation, please configure EDiscovery Group and Author permissions. For full details, please visit: https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/exchang. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.",
-            "Id": 343,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
+            "Id": 250,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
+        },
+        {
+            "Name": "Save Mail Attachments To The Case",
+            "Description": "Save email attachments from email stored in monitored mailbox to the Case Wall.",
+            "Id": 237,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
+        },
+        {
+            "Name": "Remove Senders from Exchange-Siemplify Inbox Rules",
+            "Description": "Action will get as a parameter a list of Senders, or will work on User entities (if parameters are not provided), and will be able to remove the provided Senders from the existing rules. WARNING: Action will modify your current users inbox rules, using EWS. NOTICE - to perform operation, please configure EDiscovery Group and Author permissions. For full details, please visit: https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/exchang. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.",
+            "Id": 238,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
+        },
+        {
+            "Name": "Remove Domains from Exchange-Siemplify Inbox Rules",
+            "Description": "Action will get as a parameter a list of Domains, and will be able to remove the provided domains from the existing rules. WARNING: Action will modify your current users inbox rules, using EWS. NOTICE - to perform operation, please configure EDiscovery Group and Author permissions. For full details, please visit: https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/exchang. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.",
+            "Id": 239,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
+        },
+        {
+            "Name": "Ping",
+            "Description": "Test connectivity to Microsoft Exchange instance with parameters provided at the integration configuration page on Marketplace tab.",
+            "Id": 240,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
+        },
+        {
+            "Name": "Move Mail To Folder",
+            "Description": "Move one or multiple emails from source email folder to another folder in mailbox. NOTICE - to search and move emails in all mailboxes, please configure impersonation permissions. https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange. Note: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.",
+            "Id": 241,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
+        },
+        {
+            "Name": "List Exchange-Siemplify Inbox Rules",
+            "Description": "Action will get as a parameter a rule name, from the Exchange-Siemplify Inbox rules, and will list it. If no mailboxes to list for will be provided, the rules for the logged in user will be listed. NOTICE - to perform operation, please configure EDiscovery Group and Author permissions. For full details, please visit: https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/exchang. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.",
+            "Id": 242,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
         },
         {
             "Name": "Block Sender by Message ID",
             "Description": "Action will get as a parameter a list of message IDs, and will be able to mark it as junk. Marking an item as junk using this action will add the item sender's mail address to the \"Blocked Senders List\", and will also move it to the \"Junk\" folder. NOTICE - to mark emails in all mailboxes, please configure impersonation permissions: https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed. NOTE: Action is supported only from Exchange Server version 2013 and newer, if a lower version is used, action will fail with the appropriate message.",
-            "Id": 344,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
+            "Id": 251,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
+        },
+        {
+            "Name": "Get Mail EML File",
+            "Description": "Fetch message EML file.",
+            "Id": 243,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
+        },
+        {
+            "Name": "Get Authorization",
+            "Description": "For integration configuration with Oauth authentication, run the action and browse to the received URL to get a link with access code. That link needs to be provided to the Generate Token action next to get the refresh token.",
+            "Id": 244,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
+        },
+        {
+            "Name": "Get Account Out Of Facility Settings",
+            "Description": "Get account out of facility (OOF) settings for the provided Siemplify User entity. Note 1: If the target User entity is a username, not a mail address, please run Enrich Entities from Active Directory integration first to try to use the information about User's mail stored in Active Directory. Note 2: For integration to return the information, it should have delegation or impersonation permissions to the target account mailbox. Link to impersonation permission configuration: https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange",
+            "Id": 245,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
+        },
+        {
+            "Name": "Generate Token",
+            "Description": "For integration configuration with Oauth authentication, get a refresh token using the authorization URL received in the Get Authorization action.",
+            "Id": 246,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
+        },
+        {
+            "Name": "Extract EML Data",
+            "Description": "Extract data from email's EML attachments.",
+            "Id": 247,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
+        },
+        {
+            "Name": "Download Attachments",
+            "Description": "Download email attachments from email to specific file path on Siemplify server. NOTICE - to search for an email in all mailboxes, please configure impersonation permissions. https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange. Note: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed. Additionally, please note that if the downloaded attachments have \"/\" or \"\\\" characters in the names, those will be replaced with the '_' character.",
+            "Id": 248,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
+        },
+        {
+            "Name": "Delete Mail",
+            "Description": "Delete one or multiple email from the mailbox that matches search criterias. Delete can be done for the first email that matched the search criteria, or it can be done for all matching emails. NOTICE - to delete emails in all mailboxes, please configure impersonation permissions. https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange. Note: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.",
+            "Id": 249,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
         },
         {
             "Name": "Add Senders to Exchange-Siemplify Inbox Rule",
             "Description": "Action will get as a parameter a list of Email Addresses, or will work on User entities with Email regexes (if parameters are not provided), and will be able to create a new rule, filtering the senders from your mailboxes. Actions can be modified in the parameters using the rule parameter. WARNING: Action will modify your current users inbox rules, using EWS. NOTICE - to perform operation, please configure EDiscovery Group and Author permissions. For full details, please visit: https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/exchang. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.",
-            "Id": 345,
-            "CreationTimeUnixTimeInMs": 1751278997266,
-            "ModificationTimeUnixTimeInMs": 1751278997266
+            "Id": 252,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
+        },
+        {
+            "Name": "Add Domains to Exchange-Siemplify Inbox Rules",
+            "Description": "Action will get as a parameter a list of Domains, and will be able to create or update a rule, filtering the domains from your mailboxes. Actions can be modified in the parameters using rule parameter. WARNING: Action will modify your current users inbox rules, using EWS. NOTICE - to perform operation, please configure EDiscovery Group and Author permissions. For full details, please visit: https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/exchang. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.",
+            "Id": 253,
+            "CreationTimeUnixTimeInMs": 1751285063905,
+            "ModificationTimeUnixTimeInMs": 1751285063905
         }
     ],
     "Categories": [
@@ -414,6 +414,6 @@
     "MinimumSystemVersion": 0.0,
     "ProductionIntegrationIdentifier": null,
     "Id": 0,
-    "CreationTimeUnixTimeInMs": 1751278997252,
-    "ModificationTimeUnixTimeInMs": 1751278997252
+    "CreationTimeUnixTimeInMs": 1751285063891,
+    "ModificationTimeUnixTimeInMs": 1751285063891
 }

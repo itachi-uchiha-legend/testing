@@ -19,8 +19,8 @@
             "IsMandatory": true,
             "Value": "https://x.x.x.x/",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278092863,
-            "ModificationTimeUnixTimeInMs": 1751278092863
+            "CreationTimeUnixTimeInMs": 1751284614405,
+            "ModificationTimeUnixTimeInMs": 1751284614405
         },
         {
             "IntegrationIdentifier": "CiscoFirepowerManagementCenter",
@@ -31,8 +31,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278092863,
-            "ModificationTimeUnixTimeInMs": 1751278092863
+            "CreationTimeUnixTimeInMs": 1751284614405,
+            "ModificationTimeUnixTimeInMs": 1751284614405
         },
         {
             "IntegrationIdentifier": "CiscoFirepowerManagementCenter",
@@ -43,8 +43,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278092863,
-            "ModificationTimeUnixTimeInMs": 1751278092863
+            "CreationTimeUnixTimeInMs": 1751284614405,
+            "ModificationTimeUnixTimeInMs": 1751284614405
         },
         {
             "IntegrationIdentifier": "CiscoFirepowerManagementCenter",
@@ -55,80 +55,80 @@
             "IsMandatory": false,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278092863,
-            "ModificationTimeUnixTimeInMs": 1751278092863
+            "CreationTimeUnixTimeInMs": 1751284614405,
+            "ModificationTimeUnixTimeInMs": 1751284614405
         }
     ],
     "IntegrationSupportedActions": [
         {
+            "Name": "Get URL List By Name",
+            "Description": "Get list of URL fro specific group by it's name.",
+            "Id": 170,
+            "CreationTimeUnixTimeInMs": 1751284614412,
+            "ModificationTimeUnixTimeInMs": 1751284614412
+        },
+        {
             "Name": "Unblock URL",
             "Description": "Remove URL from a groups of blocked URLs",
-            "Id": 207,
-            "CreationTimeUnixTimeInMs": 1751278092871,
-            "ModificationTimeUnixTimeInMs": 1751278092871
+            "Id": 166,
+            "CreationTimeUnixTimeInMs": 1751284614412,
+            "ModificationTimeUnixTimeInMs": 1751284614412
         },
         {
             "Name": "Unblock Port",
             "Description": "Remove port from a group of blocked ports",
-            "Id": 208,
-            "CreationTimeUnixTimeInMs": 1751278092871,
-            "ModificationTimeUnixTimeInMs": 1751278092871
+            "Id": 167,
+            "CreationTimeUnixTimeInMs": 1751284614412,
+            "ModificationTimeUnixTimeInMs": 1751284614412
         },
         {
             "Name": "Unblock Address",
             "Description": "Unblock address in Cisco Firepower",
-            "Id": 209,
-            "CreationTimeUnixTimeInMs": 1751278092871,
-            "ModificationTimeUnixTimeInMs": 1751278092871
+            "Id": 168,
+            "CreationTimeUnixTimeInMs": 1751284614412,
+            "ModificationTimeUnixTimeInMs": 1751284614412
         },
         {
             "Name": "Ping",
             "Description": "Test Connectivity",
-            "Id": 210,
-            "CreationTimeUnixTimeInMs": 1751278092871,
-            "ModificationTimeUnixTimeInMs": 1751278092871
-        },
-        {
-            "Name": "Get URL List By Name",
-            "Description": "Get list of URL fro specific group by it's name.",
-            "Id": 211,
-            "CreationTimeUnixTimeInMs": 1751278092871,
-            "ModificationTimeUnixTimeInMs": 1751278092871
+            "Id": 169,
+            "CreationTimeUnixTimeInMs": 1751284614412,
+            "ModificationTimeUnixTimeInMs": 1751284614412
         },
         {
             "Name": "Get Ports List By Name",
             "Description": "Get list of blocked ports for specific group by it's name.",
-            "Id": 212,
-            "CreationTimeUnixTimeInMs": 1751278092871,
-            "ModificationTimeUnixTimeInMs": 1751278092871
+            "Id": 171,
+            "CreationTimeUnixTimeInMs": 1751284614412,
+            "ModificationTimeUnixTimeInMs": 1751284614412
         },
         {
             "Name": "Get Addresses List By Name",
             "Description": "Get list of blocked addresses in a specific network group by it's name. ",
-            "Id": 213,
-            "CreationTimeUnixTimeInMs": 1751278092871,
-            "ModificationTimeUnixTimeInMs": 1751278092871
+            "Id": 172,
+            "CreationTimeUnixTimeInMs": 1751284614412,
+            "ModificationTimeUnixTimeInMs": 1751284614412
         },
         {
             "Name": "Block URL",
             "Description": "Block URL by assigning it to a URL group attached to a policy",
-            "Id": 214,
-            "CreationTimeUnixTimeInMs": 1751278092871,
-            "ModificationTimeUnixTimeInMs": 1751278092871
+            "Id": 173,
+            "CreationTimeUnixTimeInMs": 1751284614412,
+            "ModificationTimeUnixTimeInMs": 1751284614412
         },
         {
             "Name": "Block Port",
             "Description": "Block port by assigning it to a port group attached to a policy",
-            "Id": 215,
-            "CreationTimeUnixTimeInMs": 1751278092871,
-            "ModificationTimeUnixTimeInMs": 1751278092871
+            "Id": 174,
+            "CreationTimeUnixTimeInMs": 1751284614412,
+            "ModificationTimeUnixTimeInMs": 1751284614412
         },
         {
             "Name": "Block Address",
             "Description": "Block IP address by assigning it to a network group attached to a policy",
-            "Id": 216,
-            "CreationTimeUnixTimeInMs": 1751278092871,
-            "ModificationTimeUnixTimeInMs": 1751278092871
+            "Id": 175,
+            "CreationTimeUnixTimeInMs": 1751284614412,
+            "ModificationTimeUnixTimeInMs": 1751284614412
         }
     ],
     "Categories": [
@@ -148,6 +148,6 @@
     "MinimumSystemVersion": 0.0,
     "ProductionIntegrationIdentifier": null,
     "Id": 0,
-    "CreationTimeUnixTimeInMs": 1751278092863,
-    "ModificationTimeUnixTimeInMs": 1751278092863
+    "CreationTimeUnixTimeInMs": 1751284614405,
+    "ModificationTimeUnixTimeInMs": 1751284614405
 }

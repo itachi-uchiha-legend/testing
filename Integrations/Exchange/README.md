@@ -31,83 +31,97 @@ Python Version - 3
 #### Dependencies
 | |
 |-|
-|ntlm_auth-1.5.0-py2.py3-none-any.whl|
-|requests_oauthlib-2.0.0-py2.py3-none-any.whl|
-|beautifulsoup4-4.12.3-py3-none-any.whl|
+|RTFDE-0.1.2-py3-none-any.whl|
+|asn1crypto-1.5.1-py2.py3-none-any.whl|
+|rsa-4.9-py3-none-any.whl|
+|requests-2.32.3-py3-none-any.whl|
+|cryptography-42.0.8-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|siemplify_html2text-2020.1.16-py3-none-any.whl|
+|httplib2-0.22.0-py3-none-any.whl|
+|oletools-0.60.2-py2.py3-none-any.whl|
+|proto_plus-1.26.0-py3-none-any.whl|
 |pycparser-2.22-py3-none-any.whl|
-|google_auth-2.38.0-py2.py3-none-any.whl|
+|lark-1.1.9-py3-none-any.whl|
+|TIPCommon-2.2.2-py2.py3-none-any.whl|
+|easygui-0.98.3-py2.py3-none-any.whl|
+|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
+|exchangelib-5.5.0-py3-none-any.whl|
+|six-1.16.0-py2.py3-none-any.whl|
+|pyspnego-0.11.1-py3-none-any.whl|
+|lxml-5.3.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|protobuf-5.29.3-cp38-abi3-manylinux2014_x86_64.whl|
+|urllib3-2.3.0-py3-none-any.whl|
+|beautifulsoup4-4.12.3-py3-none-any.whl|
+|pyasn1_modules-0.4.1-py3-none-any.whl|
+|python-smail-0.9.0.tar.gz|
+|isodate-0.7.2-py3-none-any.whl|
+|red-black-tree-mod-1.20.tar.gz|
+|httpcore-1.0.7-py3-none-any.whl|
+|dnspython-2.7.0-py3-none-any.whl|
+|idna-3.10-py3-none-any.whl|
+|msoffcrypto_tool-5.4.2-py3-none-any.whl|
+|chardet-5.2.0-py3-none-any.whl|
+|ntlm_auth-1.5.0-py2.py3-none-any.whl|
+|tzdata-2024.2-py2.py3-none-any.whl|
+|colorclass-2.2.2-py2.py3-none-any.whl|
+|pytest_runner-6.0.1-py3-none-any.whl|
+|python_dateutil-2.9.0.post0-py2.py3-none-any.whl|
+|oauthlib-3.2.2-py3-none-any.whl|
+|anyio-4.8.0-py3-none-any.whl|
+|certifi-2025.1.31-py3-none-any.whl|
+|sniffio-1.3.1-py3-none-any.whl|
+|pyOpenSSL-24.1.0-py3-none-any.whl|
+|olefile-0.47-py2.py3-none-any.whl|
+|pcodedmp-1.2.6-py2.py3-none-any.whl|
+|extract_msg-0.52.0-py3-none-any.whl|
+|charset_normalizer-3.4.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|h11-0.14.0-py3-none-any.whl|
+|google_api_python_client-2.161.0-py2.py3-none-any.whl|
+|pygments-2.18.0-py3-none-any.whl|
+|pyth3-0.7-py3-none-any.whl|
+|compressed_rtf-1.0.6.tar.gz|
+|googleapis_common_protos-1.68.0-py2.py3-none-any.whl|
+|httpx-0.28.1-py3-none-any.whl|
+|oscrypto-1.3.0-py3-none-any.whl|
+|ebcdic-1.1.1-py2.py3-none-any.whl|
+|soupsieve-2.6-py3-none-any.whl|
 |requests_ntlm-1.3.0-py3-none-any.whl|
 |cached_property-2.0.1-py3-none-any.whl|
-|compressed_rtf-1.0.6.tar.gz|
-|emaildata-0.3.4-py3-none-any.whl|
-|rsa-4.9-py3-none-any.whl|
-|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
-|pyOpenSSL-24.1.0-py3-none-any.whl|
-|anyio-4.8.0-py3-none-any.whl|
-|exchangelib-5.5.0-py3-none-any.whl|
-|pyth3-0.7-py3-none-any.whl|
-|easygui-0.98.3-py2.py3-none-any.whl|
-|pyspnego-0.11.1-py3-none-any.whl|
-|h11-0.14.0-py3-none-any.whl|
-|colorclass-2.2.2-py2.py3-none-any.whl|
-|typing_extensions-4.12.2-py3-none-any.whl|
-|idna-3.10-py3-none-any.whl|
-|dnspython-2.7.0-py3-none-any.whl|
-|IMAPClient-2.1.0-py2.py3-none-any.whl|
-|msoffcrypto_tool-5.4.2-py3-none-any.whl|
-|pycryptodome-3.21.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|charset_normalizer-3.4.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|RTFDE-0.1.2-py3-none-any.whl|
-|pcodedmp-1.2.6-py2.py3-none-any.whl|
-|proto_plus-1.26.0-py3-none-any.whl|
+|google_auth-2.38.0-py2.py3-none-any.whl|
 |pyparsing-3.2.1-py3-none-any.whl|
-|extract_msg-0.52.0-py3-none-any.whl|
-|pygments-2.18.0-py3-none-any.whl|
-|tzlocal-5.2-py3-none-any.whl|
-|red-black-tree-mod-1.20.tar.gz|
-|requests-2.32.3-py3-none-any.whl|
-|soupsieve-2.6-py3-none-any.whl|
-|lxml-5.3.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|icalendar-6.0.1-py3-none-any.whl|
-|httpx-0.28.1-py3-none-any.whl|
-|python-smail-0.9.0.tar.gz|
-|lark-1.1.9-py3-none-any.whl|
-|httpcore-1.0.7-py3-none-any.whl|
-|ebcdic-1.1.1-py2.py3-none-any.whl|
-|certifi-2025.1.31-py3-none-any.whl|
-|html2text-2024.2.26.tar.gz|
-|google_api_python_client-2.161.0-py2.py3-none-any.whl|
-|siemplify_html2text-2020.1.16-py3-none-any.whl|
-|cryptography-42.0.8-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|google_api_core-2.24.1-py3-none-any.whl|
-|sniffio-1.3.1-py3-none-any.whl|
-|asn1crypto-1.5.1-py2.py3-none-any.whl|
-|python_dateutil-2.9.0.post0-py2.py3-none-any.whl|
-|pyasn1_modules-0.4.1-py3-none-any.whl|
-|protobuf-5.29.3-cp38-abi3-manylinux2014_x86_64.whl|
-|cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|TIPCommon-2.2.2-py2.py3-none-any.whl|
-|urllib3-2.3.0-py3-none-any.whl|
-|six-1.16.0-py2.py3-none-any.whl|
-|googleapis_common_protos-1.68.0-py2.py3-none-any.whl|
-|isodate-0.7.2-py3-none-any.whl|
-|defusedxml-0.7.1-py2.py3-none-any.whl|
-|oauthlib-3.2.2-py3-none-any.whl|
-|oscrypto-1.3.0-py3-none-any.whl|
-|olefile-0.47-py2.py3-none-any.whl|
+|typing_extensions-4.12.2-py3-none-any.whl|
+|pycryptodome-3.21.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
 |cachetools-5.5.2-py3-none-any.whl|
-|pyasn1-0.6.1-py3-none-any.whl|
-|uritemplate-4.1.1-py2.py3-none-any.whl|
-|httplib2-0.22.0-py3-none-any.whl|
 |EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
-|tzdata-2024.2-py2.py3-none-any.whl|
-|pytest_runner-6.0.1-py3-none-any.whl|
-|chardet-5.2.0-py3-none-any.whl|
+|requests_oauthlib-2.0.0-py2.py3-none-any.whl|
+|cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|emaildata-0.3.4-py3-none-any.whl|
+|icalendar-6.0.1-py3-none-any.whl|
+|tzlocal-5.2-py3-none-any.whl|
+|google_api_core-2.24.1-py3-none-any.whl|
+|html2text-2024.2.26.tar.gz|
+|defusedxml-0.7.1-py2.py3-none-any.whl|
 |pytz-2020.1-py2.py3-none-any.whl|
-|oletools-0.60.2-py2.py3-none-any.whl|
+|uritemplate-4.1.1-py2.py3-none-any.whl|
+|IMAPClient-2.1.0-py2.py3-none-any.whl|
+|pyasn1-0.6.1-py3-none-any.whl|
 
 
 ## Actions
+#### Add Domains to Exchange-Siemplify Inbox Rules
+Action will get as a parameter a list of Domains, and will be able to create or update a rule, filtering the domains from your mailboxes. Actions can be modified in the parameters using rule parameter. WARNING: Action will modify your current users inbox rules, using EWS. NOTICE - to perform operation, please configure EDiscovery Group and Author permissions. For full details, please visit: https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/exchang. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Domains|Specify the Domains you would like to add to the rule, in a comma separated list.|False|String||
+|Rule to add Domains to|Specify the rule to add the Domains to. If the rule doesn't exist - action will create it where it's missing.|True|List|Siemplify - Domains List - Move To Junk|
+|Perform action in all mailboxes|If checked, action will be performed in all mailboxes accessible with current impersonalization settings. If delegated access is used, implicitly specify the mailboxes to search in the "Mailboxes" parameter.|False|Boolean|false|
+|How many mailboxes to process in a single batch|In case "Perform action in all mailboxes" is checked, action works in batches, this parameter controls how many mailboxes action should process in single batch (single connection to mail server).|False|String|50|
+
+
+
 #### Add Senders to Exchange-Siemplify Inbox Rule
 Action will get as a parameter a list of Email Addresses, or will work on User entities with Email regexes (if parameters are not provided), and will be able to create a new rule, filtering the senders from your mailboxes. Actions can be modified in the parameters using the rule parameter. WARNING: Action will modify your current users inbox rules, using EWS. NOTICE - to perform operation, please configure EDiscovery Group and Author permissions. For full details, please visit: https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/exchang. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.
 Timeout - 600 Seconds
@@ -123,47 +137,6 @@ Timeout - 600 Seconds
 
 
 
-#### Block Sender by Message ID
-Action will get as a parameter a list of message IDs, and will be able to mark it as junk. Marking an item as junk using this action will add the item sender's mail address to the "Blocked Senders List", and will also move it to the "Junk" folder. NOTICE - to mark emails in all mailboxes, please configure impersonation permissions: https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed. NOTE: Action is supported only from Exchange Server version 2013 and newer, if a lower version is used, action will fail with the appropriate message.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Move item to Junk folder?|Should the action move the specified messages to the junk folder|False|Boolean|true|
-|Message IDs|Filter condition, specify emails with which message ids to find. Should accept comma separated list of message ids to mark as junk. If message id is provided, subject, sender and recipient filters are ignored.|False|String||
-|Mailboxes list to perform on|Filter condition, If you have a specific list of mailboxes you would like to conduct the operation on, for better timing, please provide them here. Should accept a comma separated list of mail addresses, to mark the messages as junk in. If a mailboxes list is provided, "Perform Action in all Mailboxes" parameter will be ignored.|False|String||
-|Folder Name|Parameter can be used to specify email folder on the mailbox to search for the emails. Parameter should also accept comma separated list of folders to check the user response in multiple folders. Parameter is case sensitive. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|False|String|Inbox|
-|Subject Filter|Filter condition, specify subject to search for emails|False|String||
-|Sender Filter|Filter condition, specify who should be the sender of needed emails|False|String||
-|Recipient Filter|Filter condition, specify who should be the recipient of needed emails|False|String||
-|Mark All Matching Emails|Filter condition, specify if action should Mark all matched by criteria emails from the mailbox or Mark only first match.|False|Boolean|false|
-|Perform action in all mailboxes|If checked, move to junk and block sender emails in all mailboxes accessible with current impersonalization settings. If delegated access is used, implicitly specify the mailboxes to search in the "Mailboxes" parameter.|False|Boolean|false|
-|How many mailboxes to process in a single batch|In case "Perform action in all mailboxes" is checked, action works in batches, this parameter controls how many mailboxes action should process in single batch (single connection to mail server).|False|String|25|
-|Time Frame (minutes)|Filter condition, specify in what time frame in minutes should action look for emails.|False|String||
-
-
-
-##### JSON Results
-```json
-[{"mime_content":"content example","_id":"ItemId(id='xxxxxxxxxxJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQBGAAAAAADLc0XF/C8kRJTduC5WOJE/BwDby9ZjVdTJTJRS8jxrcA+oAAAAAAEMAADby9ZjVdTJTJRS8jxrcA+oAxxxxxxxxxx=', changekey='xxxxxxxxxxDby9ZjVdTJTJRS8jxrcA+oAAEy4kvx')","parent_folder_id":"ParentFolderId(id='xxxxxxxxxxJjNjJkLTc3ADMwLTRjOTMtOGYzNC02YmM1YzAyOGU2ZTUALgAAA8tzRcX8LyRElN24LlY4kT8BANvL1mNV1MlMlFLyPGtwD6gAxxxxxxxxxx==', changekey='xxxAAA==')","item_class":"IPM.Note","subject":"test","sensitivity":"Normal","text_body":"test\r\n","body":"test","attachments":[],"datetime_received":"2021-01-19 14:31:39+00:00","size":"47965","categories":"None","importance":"Normal","in_reply_to":"None","is_submitted":"False","is_draft":"False","is_from_me":"False","is_resend":"False","is_unmodified":"True","headers":["MessageHeader(name='Received', value='from xxxxx05MB7074.eurprd05.prod.outlook.com (xxxx:10a6:20b:1a6::xx) by xxxxx05MB5957.eurprd05.prod.outlook.com with HTTPS; Tue, 19 Jan 2021 14:31:38 +0000')","MessageHeader(name='Received', value='from xxxxx81CA0021.DEUP281.PROD.OUTLOOK.COM (xxxx:10a6:b10:14::x) by xxxxx05MB7074.eurprd05.prod.outlook.com (xxxx:10a6:20b:1a6::xx) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id xx.20.3763.x; Tue, 19 Jan 2021 14:31:37 +0000')"],"datetime_sent":"2021-01-19 14:31:24+00:00","datetime_created":"2021-01-19 14:31:39+00:00","reminder_due_by":"None","reminder_is_set":"False","reminder_minutes_before_start":"0","display_cc":"None","display_to":"ג'יימס בונד","has_attachments":"False","culture":"en-US","effective_rights":"EffectiveRights(create_associated=False, create_contents=False, create_hierarchy=False, delete=True, modify=True, read=True, view_private_items=True)","last_modified_name":"Test User","last_modified_time":"2021-01-19 14:33:08+00:00","is_associated":"False","web_client_read_form_query_string":"https://outlook.office365.com/owa/?ItemID=xxxxxxxxxxJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQBGAAAAAADLc0XF%2FC8kRJTduC5WOJE%2FBwDby9ZjVdTJTJRS8jxrcA%2BoAAAAAAEMAADby9ZjVdTJTJRS8jxrcA%2BoAAEzKVFJAAA%3D&exvsurl=1&viewmodel=ReadMessageItem","web_client_edit_form_query_string":"None","conversation_id":"ConversationId(id='xxxxxxxxxxJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQAQAHyj1LciNtFHpS4ZbBghSeM=')","unique_body":"<html><body><div>\r\n<div>\r\n<div dir=\"ltr\">test</div>\r\n</div>\r\n</div>\r\n</body></html>","sender":"Mailbox(name='Test User', email_address='test.user@siemplify.co', routing_type='SMTP', mailbox_type='OneOff')","to_recipients":["Mailbox(name=\"ג'יימס בונד\", email_address='test@test.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')"],"cc_recipients":"None","bcc_recipients":"None","is_read_receipt_requested":"False","is_delivery_receipt_requested":"False","conversation_topic":"test","author":"test.user@siemplify.co","message_id":"<xxxxxxxxxxGt5T8SAeM7mnbuOPXXCe6r0mhiqNh6VNA2aVJRyKQ@mail.gmail.com>","is_read":"True","is_response_requested":"False","references":"None","reply_to":"None","received_by":"Mailbox(name=\"ג'יימס בונד\", email_address='test@test.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')","received_representing":"Mailbox(name=\"ג'יימס בונד\", email_address='test@test.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')","account":"test@test.onmicrosoft.com","plaintext_body":"test","html_body":"<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><div dir=\"ltr\">test</div></body></html>","attachments_list":{}},{"mime_content":"content example","_id":"ItemId(id='xxxxxxxxxxJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQBGAAAAAADLc0XF/C8kRJTduC5WOJE/BwDby9ZjVdTJTJRS8jxrcA+oAAAAAAEMAADby9ZjVdTJTJRS8jxrcA+oAAEzKVFHAAA=', changekey='xxxxxxxxxxDby9ZjVdTJTJRS8jxrcA+oAAEy4kvE')","parent_folder_id":"ParentFolderId(id='xxxxxxxxxxJjNjJkLTc3ADMwLTRjOTMtOGYzNC02YmM1YzAyOGU2ZTUALgAAA8tzRcX8LyRElN24LlY4kT8BANvL1mNV1MlMlFLyPGtwD6gAxxxxxxxxxx==', changekey='xxxAAA==')","item_class":"IPM.Note","subject":"test","sensitivity":"Normal","text_body":"test \r\n","body":"test","attachments":[],"datetime_received":"2021-01-19 14:31:30+00:00","size":"47390","categories":"None","importance":"Normal","in_reply_to":"None","is_submitted":"False","is_draft":"False","is_from_me":"False","is_resend":"False","is_unmodified":"True","headers":["MessageHeader(name='Received', value='from xxxxx0502MB3111.eurprd05.prod.outlook.com (xxxx:10a6:4:96::xx) by xxxxx05MB5957.eurprd05.prod.outlook.com with HTTPS; Tue, 19 Jan 2021 14:31:29 +0000')","MessageHeader(name='Received', value='from xxxxx0402CA0005.eurprd04.prod.outlook.com (xxxx:10a6:4:91::xx) by xxxxx0502MB3111.eurprd05.prod.outlook.com (xxxx:10a6:4:96::xx) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id xx.20.3763.xx; Tue, 19 Jan 2021 14:31:27 +0000')"],"datetime_sent":"2021-01-19 14:31:15+00:00","datetime_created":"2021-01-19 14:31:29+00:00","reminder_due_by":"None","reminder_is_set":"False","reminder_minutes_before_start":"0","display_cc":"None","display_to":"ג'יימס בונד","has_attachments":"False","culture":"en-US","effective_rights":"EffectiveRights(create_associated=False, create_contents=False, create_hierarchy=False, delete=True, modify=True, read=True, view_private_items=True)","last_modified_name":"Test User","last_modified_time":"2021-01-19 14:31:30+00:00","is_associated":"False","web_client_read_form_query_string":"https://outlook.office365.com/owa/?ItemID=xxxxxxxxxxJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQBGAAAAAADLc0XF%2FC8kRJTduC5WOJE%2FBwDby9ZjVdTJTJRS8jxrcA%2BoAAAAAAEMAADby9ZjVdTJTJRS8jxrcA%2BoAAEzKVFHAAA%3D&exvsurl=1&viewmodel=ReadMessageItem","web_client_edit_form_query_string":"None","conversation_id":"ConversationId(id='xxxxxxxxxxJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQAQAC1GApVgHVlBtJWYxzGtVqU=')","unique_body":"<html><body><div>\r\n<div>\r\n<div dir=\"ltr\">test</div>\r\n</div>\r\n</div>\r\n</body></html>","sender":"Mailbox(name='Test User', email_address='test.user@siemplify.co', routing_type='SMTP', mailbox_type='OneOff')","to_recipients":["Mailbox(name=\"ג'יימס בונד\", email_address='test@test.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')"],"cc_recipients":"None","bcc_recipients":"None","is_read_receipt_requested":"False","is_delivery_receipt_requested":"False","conversation_topic":"test","author":"test.user@siemplify.co","message_id":"<xxxxxxxxxxEce+P27nsq-V3Jc69iCW9tTrfy6zQpuqug0kBwh=g@mail.gmail.com>","is_read":"True","is_response_requested":"False","references":"None","reply_to":"None","received_by":"Mailbox(name=\"ג'יימס בונד\", email_address='test@test.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')","received_representing":"Mailbox(name=\"ג'יימס בונד\", email_address='test@test.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')","account":"test@test.onmicrosoft.com","plaintext_body":"test","html_body":"<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><div dir=\"ltr\">test</div></body></html>","attachments_list":{}}]
-```
-
-
-
-#### Delete Exchange-Siemplify Inbox Rules
-Action will get as a parameter a rule name and will delete it from all the specified mailboxes. WARNING: Action will modify your current users inbox rules, using EWS. NOTICE - to perform operation, please configure EDiscovery Group and Author permissions. For full details, please visit: https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/exchang. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Rule Name To Delete|Specify the Rule name you would like to completely delete from the relevant mailboxes|True|List||
-|Perform action in all mailboxes|If checked, action will be performed in all mailboxes accessible with current impersonalization settings. If delegated access is used, implicitly specify the mailboxes to search in the "Mailboxes" parameter.|False|Boolean|false|
-|How many mailboxes to process in a single batch|In case "Perform action in all mailboxes" is checked, action works in batches, this parameter controls how many mailboxes action should process in single batch (single connection to mail server).|False|String|50|
-
-
-
 #### Delete Mail
 Delete one or multiple email from the mailbox that matches search criterias. Delete can be done for the first email that matched the search criteria, or it can be done for all matching emails. NOTICE - to delete emails in all mailboxes, please configure impersonation permissions. https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange. Note: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.
 Timeout - 600 Seconds
@@ -171,13 +144,13 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Recipient Filter|Filter condition, specify who should be the recipient of needed emails|False|String||
-|Delete All Matching Emails|Filter condition, specify if action should delete all matched by criteria emails from the mailbox or delete only first match.|False|Boolean|false|
 |Folder Name|Parameter can be used to specify email folder on the mailbox to search for the emails. Parameter should also accept comma separated list of folders to check the user response in multiple folders. Parameter is case sensitive. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|False|String|Inbox|
 |Message IDs|Filter condition, specify emails with which email ids to find. Should accept comma separated list of message ids to search for. If message id is provided, subject, sender and recipient filters are ignored.|False|String||
 |Mailboxes|Specify a comma-separated list of mailboxes that need to be searched. This parameter has priority over “Delete in all mailboxes“.|False|String||
 |Subject Filter|Filter condition, specify subject to search for emails|False|String||
 |Sender Filter|Filter condition, specify who should be the sender of needed emails|False|String||
+|Recipient Filter|Filter condition, specify who should be the recipient of needed emails|False|String||
+|Delete All Matching Emails|Filter condition, specify if action should delete all matched by criteria emails from the mailbox or delete only first match.|False|Boolean|false|
 |Delete from all mailboxes|If checked, delete emails in all mailboxes accessible with current impersonalization settings. If delegated access is used, implicitly specify the mailboxes to search in the "Mailboxes" parameter.|False|Boolean|false|
 |How many mailboxes to process in a single batch|In case "Delete from all mailboxes" is checked, action works in batches, this parameter controls how many mailboxes action should process in single batch (single connection to mail server).|False|String|25|
 |Time Frame (minutes)|Filter condition, specify in what time frame in minutes should action look for emails|False|String||
@@ -198,10 +171,10 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Subject Filter|Filter condition to search emails by specific subject|False|String||
+|Message IDs|Filter condition, specify emails with which email ids to find. Should accept comma separated multiple message ids. If message id is provided, subject filter is ignored|False|String||
 |Folder Name|Parameter can be used to specify email folder on the mailbox to search for the emails. Parameter should also accept comma separated list of folders to check the user response in multiple folders. Parameter is case sensitive. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|True|String|Inbox|
 |Download Path|File path on the server where to download the email attachments|True|String||
-|Message IDs|Filter condition, specify emails with which email ids to find. Should accept comma separated multiple message ids. If message id is provided, subject filter is ignored|False|String||
-|Subject Filter|Filter condition to search emails by specific subject|False|String||
 |Sender Filter|Filter condition to search emails by specific sender|False|String||
 |Only Unread|If checked, download attachments only from unread emails|False|Boolean|false|
 |Download Attachments from EML|If checked, download attachments also from attached EML files|False|Boolean|false|
@@ -263,20 +236,6 @@ Timeout - 600 Seconds
 
 
 
-#### Add Domains to Exchange-Siemplify Inbox Rules
-Action will get as a parameter a list of Domains, and will be able to create or update a rule, filtering the domains from your mailboxes. Actions can be modified in the parameters using rule parameter. WARNING: Action will modify your current users inbox rules, using EWS. NOTICE - to perform operation, please configure EDiscovery Group and Author permissions. For full details, please visit: https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/exchang. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Domains|Specify the Domains you would like to add to the rule, in a comma separated list.|False|String||
-|Rule to add Domains to|Specify the rule to add the Domains to. If the rule doesn't exist - action will create it where it's missing.|True|List|Siemplify - Domains List - Move To Junk|
-|Perform action in all mailboxes|If checked, action will be performed in all mailboxes accessible with current impersonalization settings. If delegated access is used, implicitly specify the mailboxes to search in the "Mailboxes" parameter.|False|Boolean|false|
-|How many mailboxes to process in a single batch|In case "Perform action in all mailboxes" is checked, action works in batches, this parameter controls how many mailboxes action should process in single batch (single connection to mail server).|False|String|50|
-
-
-
 #### Get Authorization
 For integration configuration with Oauth authentication, run the action and browse to the received URL to get a link with access code. That link needs to be provided to the Generate Token action next to get the refresh token.
 Timeout - 600 Seconds
@@ -293,6 +252,34 @@ Timeout - 600 Seconds
 |Folder Name|Folder to fetch from. Default is Inbox. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|False|String|Inbox|
 |Message ID||True|String||
 |Base64 Encode||False|Boolean|true|
+
+
+
+#### Block Sender by Message ID
+Action will get as a parameter a list of message IDs, and will be able to mark it as junk. Marking an item as junk using this action will add the item sender's mail address to the "Blocked Senders List", and will also move it to the "Junk" folder. NOTICE - to mark emails in all mailboxes, please configure impersonation permissions: https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed. NOTE: Action is supported only from Exchange Server version 2013 and newer, if a lower version is used, action will fail with the appropriate message.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Move item to Junk folder?|Should the action move the specified messages to the junk folder|False|Boolean|true|
+|Message IDs|Filter condition, specify emails with which message ids to find. Should accept comma separated list of message ids to mark as junk. If message id is provided, subject, sender and recipient filters are ignored.|False|String||
+|Mailboxes list to perform on|Filter condition, If you have a specific list of mailboxes you would like to conduct the operation on, for better timing, please provide them here. Should accept a comma separated list of mail addresses, to mark the messages as junk in. If a mailboxes list is provided, "Perform Action in all Mailboxes" parameter will be ignored.|False|String||
+|Folder Name|Parameter can be used to specify email folder on the mailbox to search for the emails. Parameter should also accept comma separated list of folders to check the user response in multiple folders. Parameter is case sensitive. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|False|String|Inbox|
+|Subject Filter|Filter condition, specify subject to search for emails|False|String||
+|Sender Filter|Filter condition, specify who should be the sender of needed emails|False|String||
+|Recipient Filter|Filter condition, specify who should be the recipient of needed emails|False|String||
+|Mark All Matching Emails|Filter condition, specify if action should Mark all matched by criteria emails from the mailbox or Mark only first match.|False|Boolean|false|
+|Perform action in all mailboxes|If checked, move to junk and block sender emails in all mailboxes accessible with current impersonalization settings. If delegated access is used, implicitly specify the mailboxes to search in the "Mailboxes" parameter.|False|Boolean|false|
+|How many mailboxes to process in a single batch|In case "Perform action in all mailboxes" is checked, action works in batches, this parameter controls how many mailboxes action should process in single batch (single connection to mail server).|False|String|25|
+|Time Frame (minutes)|Filter condition, specify in what time frame in minutes should action look for emails.|False|String||
+
+
+
+##### JSON Results
+```json
+[{"mime_content":"content example","_id":"ItemId(id='xxxxxxxxxxJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQBGAAAAAADLc0XF/C8kRJTduC5WOJE/BwDby9ZjVdTJTJRS8jxrcA+oAAAAAAEMAADby9ZjVdTJTJRS8jxrcA+oAxxxxxxxxxx=', changekey='xxxxxxxxxxDby9ZjVdTJTJRS8jxrcA+oAAEy4kvx')","parent_folder_id":"ParentFolderId(id='xxxxxxxxxxJjNjJkLTc3ADMwLTRjOTMtOGYzNC02YmM1YzAyOGU2ZTUALgAAA8tzRcX8LyRElN24LlY4kT8BANvL1mNV1MlMlFLyPGtwD6gAxxxxxxxxxx==', changekey='xxxAAA==')","item_class":"IPM.Note","subject":"test","sensitivity":"Normal","text_body":"test\r\n","body":"test","attachments":[],"datetime_received":"2021-01-19 14:31:39+00:00","size":"47965","categories":"None","importance":"Normal","in_reply_to":"None","is_submitted":"False","is_draft":"False","is_from_me":"False","is_resend":"False","is_unmodified":"True","headers":["MessageHeader(name='Received', value='from xxxxx05MB7074.eurprd05.prod.outlook.com (xxxx:10a6:20b:1a6::xx) by xxxxx05MB5957.eurprd05.prod.outlook.com with HTTPS; Tue, 19 Jan 2021 14:31:38 +0000')","MessageHeader(name='Received', value='from xxxxx81CA0021.DEUP281.PROD.OUTLOOK.COM (xxxx:10a6:b10:14::x) by xxxxx05MB7074.eurprd05.prod.outlook.com (xxxx:10a6:20b:1a6::xx) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id xx.20.3763.x; Tue, 19 Jan 2021 14:31:37 +0000')"],"datetime_sent":"2021-01-19 14:31:24+00:00","datetime_created":"2021-01-19 14:31:39+00:00","reminder_due_by":"None","reminder_is_set":"False","reminder_minutes_before_start":"0","display_cc":"None","display_to":"ג'יימס בונד","has_attachments":"False","culture":"en-US","effective_rights":"EffectiveRights(create_associated=False, create_contents=False, create_hierarchy=False, delete=True, modify=True, read=True, view_private_items=True)","last_modified_name":"Test User","last_modified_time":"2021-01-19 14:33:08+00:00","is_associated":"False","web_client_read_form_query_string":"https://outlook.office365.com/owa/?ItemID=xxxxxxxxxxJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQBGAAAAAADLc0XF%2FC8kRJTduC5WOJE%2FBwDby9ZjVdTJTJRS8jxrcA%2BoAAAAAAEMAADby9ZjVdTJTJRS8jxrcA%2BoAAEzKVFJAAA%3D&exvsurl=1&viewmodel=ReadMessageItem","web_client_edit_form_query_string":"None","conversation_id":"ConversationId(id='xxxxxxxxxxJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQAQAHyj1LciNtFHpS4ZbBghSeM=')","unique_body":"<html><body><div>\r\n<div>\r\n<div dir=\"ltr\">test</div>\r\n</div>\r\n</div>\r\n</body></html>","sender":"Mailbox(name='Test User', email_address='test.user@siemplify.co', routing_type='SMTP', mailbox_type='OneOff')","to_recipients":["Mailbox(name=\"ג'יימס בונד\", email_address='test@test.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')"],"cc_recipients":"None","bcc_recipients":"None","is_read_receipt_requested":"False","is_delivery_receipt_requested":"False","conversation_topic":"test","author":"test.user@siemplify.co","message_id":"<xxxxxxxxxxGt5T8SAeM7mnbuOPXXCe6r0mhiqNh6VNA2aVJRyKQ@mail.gmail.com>","is_read":"True","is_response_requested":"False","references":"None","reply_to":"None","received_by":"Mailbox(name=\"ג'יימס בונד\", email_address='test@test.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')","received_representing":"Mailbox(name=\"ג'יימס בונד\", email_address='test@test.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')","account":"test@test.onmicrosoft.com","plaintext_body":"test","html_body":"<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><div dir=\"ltr\">test</div></body></html>","attachments_list":{}},{"mime_content":"content example","_id":"ItemId(id='xxxxxxxxxxJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQBGAAAAAADLc0XF/C8kRJTduC5WOJE/BwDby9ZjVdTJTJRS8jxrcA+oAAAAAAEMAADby9ZjVdTJTJRS8jxrcA+oAAEzKVFHAAA=', changekey='xxxxxxxxxxDby9ZjVdTJTJRS8jxrcA+oAAEy4kvE')","parent_folder_id":"ParentFolderId(id='xxxxxxxxxxJjNjJkLTc3ADMwLTRjOTMtOGYzNC02YmM1YzAyOGU2ZTUALgAAA8tzRcX8LyRElN24LlY4kT8BANvL1mNV1MlMlFLyPGtwD6gAxxxxxxxxxx==', changekey='xxxAAA==')","item_class":"IPM.Note","subject":"test","sensitivity":"Normal","text_body":"test \r\n","body":"test","attachments":[],"datetime_received":"2021-01-19 14:31:30+00:00","size":"47390","categories":"None","importance":"Normal","in_reply_to":"None","is_submitted":"False","is_draft":"False","is_from_me":"False","is_resend":"False","is_unmodified":"True","headers":["MessageHeader(name='Received', value='from xxxxx0502MB3111.eurprd05.prod.outlook.com (xxxx:10a6:4:96::xx) by xxxxx05MB5957.eurprd05.prod.outlook.com with HTTPS; Tue, 19 Jan 2021 14:31:29 +0000')","MessageHeader(name='Received', value='from xxxxx0402CA0005.eurprd04.prod.outlook.com (xxxx:10a6:4:91::xx) by xxxxx0502MB3111.eurprd05.prod.outlook.com (xxxx:10a6:4:96::xx) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id xx.20.3763.xx; Tue, 19 Jan 2021 14:31:27 +0000')"],"datetime_sent":"2021-01-19 14:31:15+00:00","datetime_created":"2021-01-19 14:31:29+00:00","reminder_due_by":"None","reminder_is_set":"False","reminder_minutes_before_start":"0","display_cc":"None","display_to":"ג'יימס בונד","has_attachments":"False","culture":"en-US","effective_rights":"EffectiveRights(create_associated=False, create_contents=False, create_hierarchy=False, delete=True, modify=True, read=True, view_private_items=True)","last_modified_name":"Test User","last_modified_time":"2021-01-19 14:31:30+00:00","is_associated":"False","web_client_read_form_query_string":"https://outlook.office365.com/owa/?ItemID=xxxxxxxxxxJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQBGAAAAAADLc0XF%2FC8kRJTduC5WOJE%2FBwDby9ZjVdTJTJRS8jxrcA%2BoAAAAAAEMAADby9ZjVdTJTJRS8jxrcA%2BoAAEzKVFHAAA%3D&exvsurl=1&viewmodel=ReadMessageItem","web_client_edit_form_query_string":"None","conversation_id":"ConversationId(id='xxxxxxxxxxJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQAQAC1GApVgHVlBtJWYxzGtVqU=')","unique_body":"<html><body><div>\r\n<div>\r\n<div dir=\"ltr\">test</div>\r\n</div>\r\n</div>\r\n</body></html>","sender":"Mailbox(name='Test User', email_address='test.user@siemplify.co', routing_type='SMTP', mailbox_type='OneOff')","to_recipients":["Mailbox(name=\"ג'יימס בונד\", email_address='test@test.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')"],"cc_recipients":"None","bcc_recipients":"None","is_read_receipt_requested":"False","is_delivery_receipt_requested":"False","conversation_topic":"test","author":"test.user@siemplify.co","message_id":"<xxxxxxxxxxEce+P27nsq-V3Jc69iCW9tTrfy6zQpuqug0kBwh=g@mail.gmail.com>","is_read":"True","is_response_requested":"False","references":"None","reply_to":"None","received_by":"Mailbox(name=\"ג'יימס בונד\", email_address='test@test.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')","received_representing":"Mailbox(name=\"ג'יימס בונד\", email_address='test@test.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')","account":"test@test.onmicrosoft.com","plaintext_body":"test","html_body":"<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><div dir=\"ltr\">test</div></body></html>","attachments_list":{}}]
+```
 
 
 
@@ -403,6 +390,19 @@ Timeout - 600 Seconds
 
 
 
+#### Delete Exchange-Siemplify Inbox Rules
+Action will get as a parameter a rule name and will delete it from all the specified mailboxes. WARNING: Action will modify your current users inbox rules, using EWS. NOTICE - to perform operation, please configure EDiscovery Group and Author permissions. For full details, please visit: https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/exchang. NOTE: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Rule Name To Delete|Specify the Rule name you would like to completely delete from the relevant mailboxes|True|List||
+|Perform action in all mailboxes|If checked, action will be performed in all mailboxes accessible with current impersonalization settings. If delegated access is used, implicitly specify the mailboxes to search in the "Mailboxes" parameter.|False|Boolean|false|
+|How many mailboxes to process in a single batch|In case "Perform action in all mailboxes" is checked, action works in batches, this parameter controls how many mailboxes action should process in single batch (single connection to mail server).|False|String|50|
+
+
+
 #### Search Mails
 Search for specific emails in configured mailbox using multiple provided search criteria. Action return information on found in mailbox emails in JSON format. NOTICE - to search for an email in all mailboxes, please configure impersonation permissions. https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange. Note: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.
 Timeout - 600 Seconds
@@ -500,6 +500,29 @@ Timeout - 600 Seconds
 
 
 
+#### Send Thread Reply
+Send a message as a reply to the email thread.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Message ID|Specify the ID of the message to which you want to send a reply.|True|String||
+|Folder Name|Parameter can be used to specify email folder on the mailbox to search for the emails. Parameter should also accept comma separated list of folders to check the user response in multiple folders. Parameter is case sensitive. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|True|String|Inbox|
+|Content|Specify the content of the reply.|True|Email Content||
+|Attachments Paths|Specify a comma separated list of attachments file paths stored on the server for addition to the email.|False|String||
+|Reply All|If enabled, action will send a reply to all recipients related to the original email. Note: this parameter has priority over “Reply To“ parameter.|False|Boolean|true|
+|Reply To|Specify a comma-separated list of emails to which you want to send this reply. If nothing is provided and “Reply All“ is disabled, action will only send a reply to the sender of the email. If “Reply All“ is enabled, action will ignore this parameter.|False|String||
+
+
+
+##### JSON Results
+```json
+{"mime_content": "b'From: =?iso-8859-8-i?B?4ifp6e7xIOHl8OM=?=\\r\\n\\t<james.bond@siemplifycyarx.onmicrosoft.com>\\r\\nTo: =?iso-8859-8-i?B?4ifp6e7xIOHl8OM=?=\\r\\n\\t<james.bond@siemplifycyarx.onmicrosoft.com>\\r\\nCC: \"chekfu20@gmail.com\" <chekfu20@gmail.com>\\r\\nBCC: \"xx.xx@domain.com\" <xx.xx@domain.com>\\r\\nSubject: test wait\\r\\nThread-Topic: test wait\\r\\nThread-Index: AQHZ1N2NLZMgJd2ck06KUMVHU81Liw==\\r\\nDate: Tue, 22 Aug 2023 09:46:41 +0000\\r\\nMessage-ID: <169269760131.28984.14300856660134392405@a967f923bb44>\\r\\nReply-To: \"chekfu20@gmail.com\" <chekfu20@gmail.com>\\r\\nAccept-Language: en-US\\r\\nContent-Language: en-US\\r\\nX-MS-Has-Attach:\\r\\nX-MS-Exchange-Organization-SCL: -1\\r\\nX-MS-TNEF-Correlator:\\r\\nX-MS-Exchange-Organization-RecordReviewCfmType: 0\\r\\nContent-Type: multipart/alternative;\\r\\n\\tboundary=\"_000_1692697601312898414300856660134392405a967f923bb44_\"\\r\\nMIME-Version: 1.0\\r\\n\\r\\n--_000_1692697601312898414300856660134392405a967f923bb44_\\r\\nContent-Type: text/plain; charset=\"iso-8859-8-i\"\\r\\nContent-Transfer-Encoding: quoted-printable\\r\\n\\r\\nlets reply from all 3\\r\\n\\r\\n--_000_1692697601312898414300856660134392405a967f923bb44_\\r\\nContent-Type: text/html; charset=\"iso-8859-8-i\"\\r\\nContent-Transfer-Encoding: quoted-printable\\r\\n\\r\\n<html>\\r\\n<head>\\r\\n<meta http-equiv=3D\"Content-Type\" content=3D\"text/html; charset=3Diso-8859-=\\r\\n8-i\">\\r\\n</head>\\r\\n<body>\\r\\n<p>lets reply from all 3 </p>\\r\\n</body>\\r\\n</html>\\r\\n\\r\\n--_000_1692697601312898414300856660134392405a967f923bb44_--\\r\\n'", "_id": "ItemId(id='AAMkADU0MDJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQBGAAAAAADLc0XF/C8kRJTduC5WOJE/BwDby9ZjVdTJTJRS8jxrcA+oAAAAAAEJAADby9ZjVdTJTJRS8jxrcA+oAAOg2I5ZAAA=', changekey='CQAAABYAAADby9ZjVdTJTJRS8jxrcA+oAAOfKrGu')", "_id_prettified": {"id": "AAMkADU0MDJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQBGAAAAAADLc0XF/C8kRJTduC5WOJE/BwDby9ZjVdTJTJRS8jxrcA+oAAAAAAEJAADby9ZjVdTJTJRS8jxrcA+oAAOg2I5ZAAA=", "changekey": "CQAAABYAAADby9ZjVdTJTJRS8jxrcA+oAAOfKrGu"}, "parent_folder_id": "ParentFolderId(id='AQMkADU0MDJjNjJkLTc3ADMwLTRjOTMtOGYzNC02YmM1YzAyOGU2ZTUALgAAA8tzRcX8LyRElN24LlY4kT8BANvL1mNV1MlMlFLyPGtwD6gAAAIBCQAAAA==', changekey='AQAAAA==')", "parent_folder_id_prettified": {"id": "AQMkADU0MDJjNjJkLTc3ADMwLTRjOTMtOGYzNC02YmM1YzAyOGU2ZTUALgAAA8tzRcX8LyRElN24LlY4kT8BANvL1mNV1MlMlFLyPGtwD6gAAAIBCQAAAA==", "changekey": "AQAAAA=="}, "item_class": "IPM.Note", "subject": "test wait", "sensitivity": "Normal", "text_body": "lets reply from all 3\r\n", "body": "<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><p>lets reply from all 3 </p></body></html>", "attachments": [], "datetime_received": "2023-08-22 09:46:41+00:00", "size": 3611, "categories": null, "importance": "Normal", "in_reply_to": null, "is_submitted": true, "is_draft": true, "is_from_me": false, "is_resend": false, "is_unmodified": false, "headers": null, "datetime_sent": "2023-08-22 09:46:41+00:00", "datetime_created": "2023-08-22 09:46:41+00:00", "reminder_due_by": null, "reminder_is_set": false, "reminder_minutes_before_start": 0, "display_cc": "chekfu20@gmail.com", "display_to": "\u05d2'\u05d9\u05d9\u05de\u05e1 \u05d1\u05d5\u05e0\u05d3", "has_attachments": false, "vote_request": null, "culture": "en-US", "effective_rights": "EffectiveRights(create_associated=False, create_contents=False, create_hierarchy=False, delete=True, modify=True, read=True, view_private_items=True)", "effective_rights_prettified": {"create_associated": false, "create_contents": false, "create_hierarchy": false, "delete": true, "modify": true, "read": true, "view_private_items": true}, "last_modified_name": "\u05d2'\u05d9\u05d9\u05de\u05e1 \u05d1\u05d5\u05e0\u05d3", "last_modified_time": "2023-08-22 09:46:41+00:00", "is_associated": false, "web_client_read_form_query_string": "https://outlook.office365.com/owa/?ItemID=AAMkADU0MDJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQBGAAAAAADLc0XF%2FC8kRJTduC5WOJE%2FBwDby9ZjVdTJTJRS8jxrcA%2BoAAAAAAEJAADby9ZjVdTJTJRS8jxrcA%2BoAAOg2I5ZAAA%3D&exvsurl=1&viewmodel=ReadMessageItem", "web_client_edit_form_query_string": null, "conversation_id": "ConversationId(id='AAQkADU0MDJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQAQAC2TICXdnJNOilDFR1PNS4s=')", "conversation_id_prettified": {"id": "AAQkADU0MDJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQAQAC2TICXdnJNOilDFR1PNS4s=", "changekey": null}, "unique_body": "<html><body><div>\r\n<div>\r\n<p>lets reply from all 3 </p></div></div>\r\n</body></html>", "sender": "Mailbox(name=\"\u05d2'\u05d9\u05d9\u05de\u05e1 \u05d1\u05d5\u05e0\u05d3\", email_address='james.bond@siemplifycyarx.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')", "sender_prettified": "james.bond@siemplifycyarx.onmicrosoft.com", "to_recipients": ["Mailbox(name=\"\u05d2'\u05d9\u05d9\u05de\u05e1 \u05d1\u05d5\u05e0\u05d3\", email_address='james.bond@siemplifycyarx.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')"], "to_recipients_prettified": ["james.bond@siemplifycyarx.onmicrosoft.com"], "cc_recipients": ["Mailbox(name='chekfu20@gmail.com', email_address='chekfu20@gmail.com', routing_type='SMTP', mailbox_type='OneOff')"], "cc_recipients_prettified": ["chekfu20@gmail.com"], "bcc_recipients": ["Mailbox(name='xx.xx@domain.com', email_address=xx.xx@domain.com', routing_type='SMTP', mailbox_type='OneOff')"], "bcc_recipients_prettified": ["xx.xx@domain.com"], "is_read_receipt_requested": false, "is_delivery_receipt_requested": false, "conversation_index": "b'\\x01\\x01\\xd9\\xd4\\xdd\\x8d-\\x93 %\\xdd\\x9c\\x93N\\x8aP\\xc5GS\\xcdK\\x8b'", "conversation_topic": "test wait", "author": "Mailbox(name=\"\u05d2'\u05d9\u05d9\u05de\u05e1 \u05d1\u05d5\u05e0\u05d3\", email_address='james.bond@siemplifycyarx.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')", "author_prettified": "james.bond@siemplifycyarx.onmicrosoft.com", "message_id": "<169269760131.28984.14300856660134392405@a967f923bb44>", "is_read": true, "is_response_requested": false, "references": null, "reply_to": ["Mailbox(name='chekfu20@gmail.com', email_address='chekfu20@gmail.com', routing_type='SMTP', mailbox_type='OneOff')"], "reply_to_prettified": ["chekfu20@gmail.com"], "received_by": null, "received_representing": null, "vote_response": null, "email_date": 1692697601}
+```
+
+
+
 #### Send Vote Mail
 Send emails with easy answering options, to allow stakeholders to be combined in the automated processes without accessing the Siemplify UI.
 Timeout - 600 Seconds
@@ -584,11 +607,11 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|How long to wait for recipient reply (minutes)|How long in minutes to wait for the user's reply before marking it timed out.|True|String|1440|
 |Vote Mail message_id|Message_id of the vote email, which current action would be waiting for. If message has been sent using Send Vote Mail action, please select SendVoteMail.JSONResult|message_id field as a placeholder.|True|String||
 |Mail Recipients|Comma-separated list of recipient emails, response from which current action would be waiting for. Please select SendVoteMail.JSONResult|to_recipients field as a placeholder.|True|String||
 |Folder to Check for Reply|Parameter can be used to specify mailbox email folder (mailbox that was used to send the email with question) to search for the user reply in this folder. Parameter should also accept comma separated list of folders to check the user response in multiple folders. Parameter is case sensitive. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|True|String|Inbox|
 |Folder to check for Sent Mail|Parameter can be used to specify mailbox email folder (mailbox that was used to send the email with question) to search for the sent mail in this folder. Parameter should also accept comma separated list of folders to check the user response in multiple folders. Parameter is case sensitive.|True|String|Sent Items|
+|How long to wait for recipient reply (minutes)|How long in minutes to wait for the user's reply before marking it timed out.|True|String|1440|
 |Wait for All Recipients to Reply?|Parameter can be used to define if there are multiple recipients - should the Action wait for responses from all of recipients until timeout, or Action should wait for first reply to proceed.|False|Boolean|true|
 
 
@@ -596,29 +619,6 @@ Timeout - 600 Seconds
 ##### JSON Results
 ```json
 {"Responses":[{"recipient":"test1@example.com","vote":"Approve"},{"recipient":"test2@example.com","vote":"Reject"}]}
-```
-
-
-
-#### Send Thread Reply
-Send a message as a reply to the email thread.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Message ID|Specify the ID of the message to which you want to send a reply.|True|String||
-|Folder Name|Parameter can be used to specify email folder on the mailbox to search for the emails. Parameter should also accept comma separated list of folders to check the user response in multiple folders. Parameter is case sensitive. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|True|String|Inbox|
-|Content|Specify the content of the reply.|True|Email Content||
-|Attachments Paths|Specify a comma separated list of attachments file paths stored on the server for addition to the email.|False|String||
-|Reply All|If enabled, action will send a reply to all recipients related to the original email. Note: this parameter has priority over “Reply To“ parameter.|False|Boolean|true|
-|Reply To|Specify a comma-separated list of emails to which you want to send this reply. If nothing is provided and “Reply All“ is disabled, action will only send a reply to the sender of the email. If “Reply All“ is enabled, action will ignore this parameter.|False|String||
-
-
-
-##### JSON Results
-```json
-{"mime_content": "b'From: =?iso-8859-8-i?B?4ifp6e7xIOHl8OM=?=\\r\\n\\t<james.bond@siemplifycyarx.onmicrosoft.com>\\r\\nTo: =?iso-8859-8-i?B?4ifp6e7xIOHl8OM=?=\\r\\n\\t<james.bond@siemplifycyarx.onmicrosoft.com>\\r\\nCC: \"chekfu20@gmail.com\" <chekfu20@gmail.com>\\r\\nBCC: \"xx.xx@domain.com\" <xx.xx@domain.com>\\r\\nSubject: test wait\\r\\nThread-Topic: test wait\\r\\nThread-Index: AQHZ1N2NLZMgJd2ck06KUMVHU81Liw==\\r\\nDate: Tue, 22 Aug 2023 09:46:41 +0000\\r\\nMessage-ID: <169269760131.28984.14300856660134392405@a967f923bb44>\\r\\nReply-To: \"chekfu20@gmail.com\" <chekfu20@gmail.com>\\r\\nAccept-Language: en-US\\r\\nContent-Language: en-US\\r\\nX-MS-Has-Attach:\\r\\nX-MS-Exchange-Organization-SCL: -1\\r\\nX-MS-TNEF-Correlator:\\r\\nX-MS-Exchange-Organization-RecordReviewCfmType: 0\\r\\nContent-Type: multipart/alternative;\\r\\n\\tboundary=\"_000_1692697601312898414300856660134392405a967f923bb44_\"\\r\\nMIME-Version: 1.0\\r\\n\\r\\n--_000_1692697601312898414300856660134392405a967f923bb44_\\r\\nContent-Type: text/plain; charset=\"iso-8859-8-i\"\\r\\nContent-Transfer-Encoding: quoted-printable\\r\\n\\r\\nlets reply from all 3\\r\\n\\r\\n--_000_1692697601312898414300856660134392405a967f923bb44_\\r\\nContent-Type: text/html; charset=\"iso-8859-8-i\"\\r\\nContent-Transfer-Encoding: quoted-printable\\r\\n\\r\\n<html>\\r\\n<head>\\r\\n<meta http-equiv=3D\"Content-Type\" content=3D\"text/html; charset=3Diso-8859-=\\r\\n8-i\">\\r\\n</head>\\r\\n<body>\\r\\n<p>lets reply from all 3 </p>\\r\\n</body>\\r\\n</html>\\r\\n\\r\\n--_000_1692697601312898414300856660134392405a967f923bb44_--\\r\\n'", "_id": "ItemId(id='AAMkADU0MDJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQBGAAAAAADLc0XF/C8kRJTduC5WOJE/BwDby9ZjVdTJTJRS8jxrcA+oAAAAAAEJAADby9ZjVdTJTJRS8jxrcA+oAAOg2I5ZAAA=', changekey='CQAAABYAAADby9ZjVdTJTJRS8jxrcA+oAAOfKrGu')", "_id_prettified": {"id": "AAMkADU0MDJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQBGAAAAAADLc0XF/C8kRJTduC5WOJE/BwDby9ZjVdTJTJRS8jxrcA+oAAAAAAEJAADby9ZjVdTJTJRS8jxrcA+oAAOg2I5ZAAA=", "changekey": "CQAAABYAAADby9ZjVdTJTJRS8jxrcA+oAAOfKrGu"}, "parent_folder_id": "ParentFolderId(id='AQMkADU0MDJjNjJkLTc3ADMwLTRjOTMtOGYzNC02YmM1YzAyOGU2ZTUALgAAA8tzRcX8LyRElN24LlY4kT8BANvL1mNV1MlMlFLyPGtwD6gAAAIBCQAAAA==', changekey='AQAAAA==')", "parent_folder_id_prettified": {"id": "AQMkADU0MDJjNjJkLTc3ADMwLTRjOTMtOGYzNC02YmM1YzAyOGU2ZTUALgAAA8tzRcX8LyRElN24LlY4kT8BANvL1mNV1MlMlFLyPGtwD6gAAAIBCQAAAA==", "changekey": "AQAAAA=="}, "item_class": "IPM.Note", "subject": "test wait", "sensitivity": "Normal", "text_body": "lets reply from all 3\r\n", "body": "<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><p>lets reply from all 3 </p></body></html>", "attachments": [], "datetime_received": "2023-08-22 09:46:41+00:00", "size": 3611, "categories": null, "importance": "Normal", "in_reply_to": null, "is_submitted": true, "is_draft": true, "is_from_me": false, "is_resend": false, "is_unmodified": false, "headers": null, "datetime_sent": "2023-08-22 09:46:41+00:00", "datetime_created": "2023-08-22 09:46:41+00:00", "reminder_due_by": null, "reminder_is_set": false, "reminder_minutes_before_start": 0, "display_cc": "chekfu20@gmail.com", "display_to": "\u05d2'\u05d9\u05d9\u05de\u05e1 \u05d1\u05d5\u05e0\u05d3", "has_attachments": false, "vote_request": null, "culture": "en-US", "effective_rights": "EffectiveRights(create_associated=False, create_contents=False, create_hierarchy=False, delete=True, modify=True, read=True, view_private_items=True)", "effective_rights_prettified": {"create_associated": false, "create_contents": false, "create_hierarchy": false, "delete": true, "modify": true, "read": true, "view_private_items": true}, "last_modified_name": "\u05d2'\u05d9\u05d9\u05de\u05e1 \u05d1\u05d5\u05e0\u05d3", "last_modified_time": "2023-08-22 09:46:41+00:00", "is_associated": false, "web_client_read_form_query_string": "https://outlook.office365.com/owa/?ItemID=AAMkADU0MDJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQBGAAAAAADLc0XF%2FC8kRJTduC5WOJE%2FBwDby9ZjVdTJTJRS8jxrcA%2BoAAAAAAEJAADby9ZjVdTJTJRS8jxrcA%2BoAAOg2I5ZAAA%3D&exvsurl=1&viewmodel=ReadMessageItem", "web_client_edit_form_query_string": null, "conversation_id": "ConversationId(id='AAQkADU0MDJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQAQAC2TICXdnJNOilDFR1PNS4s=')", "conversation_id_prettified": {"id": "AAQkADU0MDJjNjJkLTc3MzAtNGM5My04ZjM0LTZiYzVjMDI4ZTZlNQAQAC2TICXdnJNOilDFR1PNS4s=", "changekey": null}, "unique_body": "<html><body><div>\r\n<div>\r\n<p>lets reply from all 3 </p></div></div>\r\n</body></html>", "sender": "Mailbox(name=\"\u05d2'\u05d9\u05d9\u05de\u05e1 \u05d1\u05d5\u05e0\u05d3\", email_address='james.bond@siemplifycyarx.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')", "sender_prettified": "james.bond@siemplifycyarx.onmicrosoft.com", "to_recipients": ["Mailbox(name=\"\u05d2'\u05d9\u05d9\u05de\u05e1 \u05d1\u05d5\u05e0\u05d3\", email_address='james.bond@siemplifycyarx.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')"], "to_recipients_prettified": ["james.bond@siemplifycyarx.onmicrosoft.com"], "cc_recipients": ["Mailbox(name='chekfu20@gmail.com', email_address='chekfu20@gmail.com', routing_type='SMTP', mailbox_type='OneOff')"], "cc_recipients_prettified": ["chekfu20@gmail.com"], "bcc_recipients": ["Mailbox(name='xx.xx@domain.com', email_address=xx.xx@domain.com', routing_type='SMTP', mailbox_type='OneOff')"], "bcc_recipients_prettified": ["xx.xx@domain.com"], "is_read_receipt_requested": false, "is_delivery_receipt_requested": false, "conversation_index": "b'\\x01\\x01\\xd9\\xd4\\xdd\\x8d-\\x93 %\\xdd\\x9c\\x93N\\x8aP\\xc5GS\\xcdK\\x8b'", "conversation_topic": "test wait", "author": "Mailbox(name=\"\u05d2'\u05d9\u05d9\u05de\u05e1 \u05d1\u05d5\u05e0\u05d3\", email_address='james.bond@siemplifycyarx.onmicrosoft.com', routing_type='SMTP', mailbox_type='Mailbox')", "author_prettified": "james.bond@siemplifycyarx.onmicrosoft.com", "message_id": "<169269760131.28984.14300856660134392405@a967f923bb44>", "is_read": true, "is_response_requested": false, "references": null, "reply_to": ["Mailbox(name='chekfu20@gmail.com', email_address='chekfu20@gmail.com', routing_type='SMTP', mailbox_type='OneOff')"], "reply_to_prettified": ["chekfu20@gmail.com"], "received_by": null, "received_representing": null, "vote_response": null, "email_date": 1692697601}
 ```
 
 

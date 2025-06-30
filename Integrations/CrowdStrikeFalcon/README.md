@@ -18,43 +18,43 @@ Python Version - 3
 #### Dependencies
 | |
 |-|
-|requests_toolbelt-1.0.0-py2.py3-none-any.whl|
-|filelock-3.15.4-py3-none-any.whl|
-|pycparser-2.22-py3-none-any.whl|
-|rsa-4.9-py3-none-any.whl|
-|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
-|h11-0.14.0-py3-none-any.whl|
-|idna-3.10-py3-none-any.whl|
-|google_api_core-2.23.0-py3-none-any.whl|
-|charset_normalizer-3.4.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|pycryptodome-3.21.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|PyJWT-2.9.0-py3-none-any.whl|
-|certifi-2024.8.30-py3-none-any.whl|
-|googleapis_common_protos-1.66.0-py2.py3-none-any.whl|
-|google_auth-2.36.0-py2.py3-none-any.whl|
-|requests-2.32.3-py3-none-any.whl|
 |cachetools-5.5.0-py3-none-any.whl|
-|google_api_python_client-2.152.0-py2.py3-none-any.whl|
-|urllib3-2.2.2-py3-none-any.whl|
-|sniffio-1.3.1-py3-none-any.whl|
+|rsa-4.9-py3-none-any.whl|
+|requests-2.32.3-py3-none-any.whl|
+|httplib2-0.22.0-py3-none-any.whl|
 |proto_plus-1.25.0-py3-none-any.whl|
+|pycparser-2.22-py3-none-any.whl|
+|google_auth_httplib2-0.2.0-py2.py3-none-any.whl|
+|filelock-3.15.4-py3-none-any.whl|
 |pyasn1_modules-0.4.1-py3-none-any.whl|
 |protobuf-5.28.3-cp38-abi3-manylinux2014_x86_64.whl|
-|cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|TIPCommon-2.0.4-py2.py3-none-any.whl|
-|pyparsing-3.2.0-py3-none-any.whl|
-|pyasn1-0.6.1-py3-none-any.whl|
-|tldextract-5.1.2-py3-none-any.whl|
-|anyio-4.6.2.post1-py3-none-any.whl|
-|requests_file-2.1.0-py2.py3-none-any.whl|
-|uritemplate-4.1.1-py2.py3-none-any.whl|
-|pyOpenSSL-24.2.1-py3-none-any.whl|
-|httplib2-0.22.0-py3-none-any.whl|
-|EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
-|cryptography-43.0.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|idna-3.10-py3-none-any.whl|
 |chardet-5.2.0-py3-none-any.whl|
-|httpx-0.27.2-py3-none-any.whl|
+|tldextract-5.1.2-py3-none-any.whl|
+|charset_normalizer-3.4.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|PyJWT-2.9.0-py3-none-any.whl|
+|urllib3-2.2.2-py3-none-any.whl|
+|sniffio-1.3.1-py3-none-any.whl|
+|h11-0.14.0-py3-none-any.whl|
+|TIPCommon-2.0.4-py2.py3-none-any.whl|
+|requests_toolbelt-1.0.0-py2.py3-none-any.whl|
+|pyOpenSSL-24.2.1-py3-none-any.whl|
 |httpcore-1.0.6-py3-none-any.whl|
+|googleapis_common_protos-1.66.0-py2.py3-none-any.whl|
+|requests_file-2.1.0-py2.py3-none-any.whl|
+|pycryptodome-3.21.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|certifi-2024.8.30-py3-none-any.whl|
+|cryptography-43.0.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|anyio-4.6.2.post1-py3-none-any.whl|
+|pyparsing-3.2.0-py3-none-any.whl|
+|EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
+|cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|google_api_core-2.23.0-py3-none-any.whl|
+|httpx-0.27.2-py3-none-any.whl|
+|google_api_python_client-2.152.0-py2.py3-none-any.whl|
+|google_auth-2.36.0-py2.py3-none-any.whl|
+|uritemplate-4.1.1-py2.py3-none-any.whl|
+|pyasn1-0.6.1-py3-none-any.whl|
 
 
 ## Actions
@@ -70,6 +70,18 @@ Timeout - 600 Seconds
 
 
 
+#### Add Comment to Detection
+Add a comment to the detection in Crowdstrike Falcon.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Detection ID|Specify the id of the detection to which you want to add a comment.|True|String||
+|Comment|Specify the comment that needs to be added to the detection.|True|String||
+
+
+
 #### Add Identity Protection Detection Comment
 Add a comment to identity protection detection in Crowdstrike.
 Timeout - 600 Seconds
@@ -79,25 +91,6 @@ Timeout - 600 Seconds
 |----|-----------|-----------|----|------------|
 |Detection ID|Specify the ID of the detection that needs to be updated.|True|String||
 |Comment|Specify the comment for the detection.|True|String||
-
-
-
-#### Add Incident Comment
-Add comment to incident in Crowdstrike.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Incident ID|Specify the ID of the incident that needs to be updated.|True|String||
-|Comment|Specify the comment for the incident.|True|String||
-
-
-
-##### JSON Results
-```json
-[{"incident_id": "inc:466a00b13a5e4a9a9x.ac1a5e:x.x.x.", "incident_type": 1, "cid": "27fe4e476ca3490b6b2b6650e5a74", "host_ids": ["466a00b13a5e4a9a93ce2aca5eac1a5e"], "hosts": [{"device_id": "466a00b13a5e4a9a93ce2aca5eac1a5e", "cid": "27fe4e476ca34dd90b8476b2b6650e5a74", "agent_load_flags": "0", "agent_local_time": "2023-09-25T15:41:40.130Z", "agent_version": "7.01.17312.0", "bios_manufacturer": "VMware, Inc.", "bios_version": "VMW71.00V.17369862.B64.2012240522", "config_id_base": "65994753", "config_id_build": "17312", "config_id_platform": "3", "external_ip": "35.246.203.0", "hostname": "EX16-AD01", "first_seen": "2023-01-20T00:40:31Z", "last_seen": "2023-10-06T07:19:50Z", "local_ip": "172.30.3.162", "mac_address": "00-50-56-a2-94-8d", "machine_domain": "exlab.local", "major_version": "10", "minor_version": "0", "os_version": "Windows Server 2016", "ou": ["Domain Controllers"], "platform_id": "0", "platform_name": "Windows", "product_type": "2", "product_type_desc": "Domain Controller", "site_name": "Default-First-Site-Name", "status": "contained", "system_manufacturer": "VMware, Inc.", "system_product_name": "VMware7,1", "groups": ["9489d65c343244169627dcbc"], "modified_timestamp": "2023-10-06T07:19:58Z"}], "created": "2023-10-06T07:20:51Z", "start": "2023-10-06T07:19:21Z", "end": "2023-10-06T07:30:27Z", "state": "closed", "assigned_to": "67494-b86d-4a55-9e52-7492449400a1", "assigned_to_name": "Yuriy Landovskyy", "status": 30, "tactics": ["Persistence", "Defense Evasion", "Command and Control", "Credential Access", "Malware", "Privilege Escalation"], "techniques": ["Create Account", "Masquerading", "Ingress Tool Transfer", "OS Credential Dumping", "Malicious File", "Image File Execution Options Injection", "Bypass User Account Control", "Accessibility Features", "Registry Run Keys / Startup Folder"], "objectives": ["Keep Access", "Contact Controlled Systems", "Gain Access", "Falcon Detection Method"], "modified_timestamp": "2023-10-20T08:34:07.078440797Z", "users": ["EX16-AD01$", "administrator"], "fine_score": 100}]
-```
 
 
 
@@ -135,18 +128,6 @@ Timeout - 600 Seconds
 #### Delete IOC
 Delete custom IOCs in Crowdstrike Falcon. Supported entities: Hostname, URL, IP address and Hash. Note: Hostname entities are treated as domain IOCs and action will extract domain part out of URLs. Only MD5 and SHA-256 hashes are supported.
 Timeout - 600 Seconds
-
-
-
-#### Add Comment to Detection
-Add a comment to the detection in Crowdstrike Falcon.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Detection ID|Specify the id of the detection to which you want to add a comment.|True|String||
-|Comment|Specify the comment that needs to be added to the detection.|True|String||
 
 
 
@@ -205,6 +186,25 @@ Timeout - 600 Seconds
 ##### JSON Results
 ```json
 {"offset":100000,"timestamp":1627634506826}
+```
+
+
+
+#### Add Incident Comment
+Add comment to incident in Crowdstrike.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Incident ID|Specify the ID of the incident that needs to be updated.|True|String||
+|Comment|Specify the comment for the incident.|True|String||
+
+
+
+##### JSON Results
+```json
+[{"incident_id": "inc:466a00b13a5e4a9a9x.ac1a5e:x.x.x.", "incident_type": 1, "cid": "27fe4e476ca3490b6b2b6650e5a74", "host_ids": ["466a00b13a5e4a9a93ce2aca5eac1a5e"], "hosts": [{"device_id": "466a00b13a5e4a9a93ce2aca5eac1a5e", "cid": "27fe4e476ca34dd90b8476b2b6650e5a74", "agent_load_flags": "0", "agent_local_time": "2023-09-25T15:41:40.130Z", "agent_version": "7.01.17312.0", "bios_manufacturer": "VMware, Inc.", "bios_version": "VMW71.00V.17369862.B64.2012240522", "config_id_base": "65994753", "config_id_build": "17312", "config_id_platform": "3", "external_ip": "35.246.203.0", "hostname": "EX16-AD01", "first_seen": "2023-01-20T00:40:31Z", "last_seen": "2023-10-06T07:19:50Z", "local_ip": "172.30.3.162", "mac_address": "00-50-56-a2-94-8d", "machine_domain": "exlab.local", "major_version": "10", "minor_version": "0", "os_version": "Windows Server 2016", "ou": ["Domain Controllers"], "platform_id": "0", "platform_name": "Windows", "product_type": "2", "product_type_desc": "Domain Controller", "site_name": "Default-First-Site-Name", "status": "contained", "system_manufacturer": "VMware, Inc.", "system_product_name": "VMware7,1", "groups": ["9489d65c343244169627dcbc"], "modified_timestamp": "2023-10-06T07:19:58Z"}], "created": "2023-10-06T07:20:51Z", "start": "2023-10-06T07:19:21Z", "end": "2023-10-06T07:30:27Z", "state": "closed", "assigned_to": "67494-b86d-4a55-9e52-7492449400a1", "assigned_to_name": "Yuriy Landovskyy", "status": 30, "tactics": ["Persistence", "Defense Evasion", "Command and Control", "Credential Access", "Malware", "Privilege Escalation"], "techniques": ["Create Account", "Masquerading", "Ingress Tool Transfer", "OS Credential Dumping", "Malicious File", "Image File Execution Options Injection", "Bypass User Account Control", "Accessibility Features", "Registry Run Keys / Startup Folder"], "objectives": ["Keep Access", "Contact Controlled Systems", "Gain Access", "Falcon Detection Method"], "modified_timestamp": "2023-10-20T08:34:07.078440797Z", "users": ["EX16-AD01$", "administrator"], "fine_score": 100}]
 ```
 
 
@@ -285,9 +285,9 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Create Insight|If enabled, action will create an insight per entity containing statistical information about related vulnerabilities.|False|Boolean|true|
 |Customer ID|Specify the ID of the customer for which you want to execute the action.|False|String||
 |Severity Filter|Specify the comma-separated list of severities for vulnerabilities.If nothing is provided, action will ingest all related vulnerabilities. Possible values: Critical, High, Medium, Low, Unknown.|False|String||
+|Create Insight|If enabled, action will create an insight per entity containing statistical information about related vulnerabilities.|False|Boolean|true|
 |Max Vulnerabilities To Return|Specify how many vulnerabilities to return per host. If nothing is provided action will process all of the related vulnerabilities.|False|String|100|
 
 
@@ -375,27 +375,6 @@ Timeout - 600 Seconds
 #### Ping
 Test Connectivity
 Timeout - 600 Seconds
-
-
-
-#### Run Script
-Execute a powershell script on the endpoints in Crowdstrike. Supported entities: IP Address, Hostname. Note: Action is running as async, please adjust script timeout value in Google SecOps IDE for the action, as needed.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Customer ID|Specify the ID of the customer for which you want to execute the action.|False|String||
-|Script Name|The name of the script file that needs to be executed. Note: either “Script Name” or “Raw Script” should be provided. If both “Script Name” and “Raw Script” are provided, then “Raw Script” will have the priority.|False|String||
-|Raw Script|Raw powershell script payload that needs to be executed on the endpoints. Note: either “Script Name” or “Raw Script” should be provided. If both “Script Name” and “Raw Script” are provided, then “Raw Script” will have the priority.|False|String||
-|Hostname|Comma-separated list of hostnames on which you want to execute the action. Note: action will run the action on both entities + this parameter values.|False|String||
-
-
-
-##### JSON Results
-```json
-{"Entity":"XXX.XXX.XXX","EntityResult":{"session_id":"2a066818-XXXX-XXXX-XXXX-c295ed7295b3","task_id":"84846f59-XXXX-XXXX-XXXX-12af4af88a8b","complete":true,"stdout":"","stderr":"","base_command":"get"}}
-```
 
 
 
@@ -579,6 +558,27 @@ Timeout - 600 Seconds
 
 
 
+#### Run Script
+Execute a powershell script on the endpoints in Crowdstrike. Supported entities: IP Address, Hostname. Note: Action is running as async, please adjust script timeout value in Google SecOps IDE for the action, as needed.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Customer ID|Specify the ID of the customer for which you want to execute the action.|False|String||
+|Script Name|The name of the script file that needs to be executed. Note: either “Script Name” or “Raw Script” should be provided. If both “Script Name” and “Raw Script” are provided, then “Raw Script” will have the priority.|False|String||
+|Raw Script|Raw powershell script payload that needs to be executed on the endpoints. Note: either “Script Name” or “Raw Script” should be provided. If both “Script Name” and “Raw Script” are provided, then “Raw Script” will have the priority.|False|String||
+|Hostname|Comma-separated list of hostnames on which you want to execute the action. Note: action will run the action on both entities + this parameter values.|False|String||
+
+
+
+##### JSON Results
+```json
+{"Entity":"XXX.XXX.XXX","EntityResult":{"session_id":"2a066818-XXXX-XXXX-XXXX-c295ed7295b3","task_id":"84846f59-XXXX-XXXX-XXXX-12af4af88a8b","complete":true,"stdout":"","stderr":"","base_command":"get"}}
+```
+
+
+
 
 
 
@@ -591,6 +591,10 @@ Pull alerts from Crowdstrike. Dynamic List works with the "display_name" paramet
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Proxy Server Address|The address of the proxy server to use.|False|String||
+|Proxy Username|The proxy username to authenticate with.|False|String||
+|Verify SSL|If enabled, verify the SSL certificate for the connection to the Crowdstrike server is valid.|False|Boolean|false|
+|Disable Overflow|If enabled, connector will ignore the overflow mechanism.|False|Boolean|false|
 |DeviceProductField|Enter the source field name in order to retrieve the Product Field name.|True|String|Product Name|
 |EventClassId|Enter the source field name in order to retrieve the Event Field name.|True|String|type|
 |Environment Field Name|Describes the name of the field where the environment name is stored. If the environment field isn't found, the environment is the default environment.|False|String||
@@ -605,10 +609,6 @@ Pull alerts from Crowdstrike. Dynamic List works with the "display_name" paramet
 |Include Hidden Alerts|If enabled, connector will also fetch alerts that are labeled as "hidden" by Crowdstrike.|False|Boolean|true|
 |Fallback Severity|Fallback severity for the SecOps alert that should be applied to the Crowdstrike alerts, which are missing severity information. Possible values: Informational, Low, Medium, High, Critical. If nothing is provided, connector will use "Informational" severity.|False|String|Informational|
 |Use dynamic list as a blocklist|If enabled, the dynamic list will be used as a blocklist.|False|Boolean|false|
-|Verify SSL|If enabled, verify the SSL certificate for the connection to the Crowdstrike server is valid.|False|Boolean|false|
-|Disable Overflow|If enabled, connector will ignore the overflow mechanism.|False|Boolean|false|
-|Proxy Server Address|The address of the proxy server to use.|False|String||
-|Proxy Username|The proxy username to authenticate with.|False|String||
 |Proxy Password|The proxy password to authenticate with.|False|Password||
 |Case Name Template|When provided, connector will add a new key called "custom_case_name" to the Google Secops Event. It can used to have a customer case name. Please refer to the documentation portal for more details. You can provide placeholders in the following format: [name of the field]. Example: Phishing - [event_mailbox]. Note: connector will use first Google Secops Event for placeholders. Only keys that have string value will be handled.|False|String||
 |Alert Name Template|If provided, connector will use this value for Google Secops Alert Name. Please refer to the documentation portal for more details. You can provide placeholders in the following format: [name of the field]. Example: Phishing - [event_mailbox]. Note: connector will use first Google Secops Event for placeholders. Only keys that have string value will be handled. If nothing is provided or user provides an invalid template, connector will use the default alert name.|False|String||
@@ -646,7 +646,6 @@ Pull Identity Protection detections from Crowdstrike. Note: this connector requi
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Lowest Severity Score To Fetch|Lowest severity score of the identity protection detections to fetch. If nothing is provided, the connector will ingest detections with all severities. Maximum is 100. Note: action also supports the following values: Informational, Low, Medium, High, Critical.|False|String||
 |DeviceProductField|Enter the source field name in order to retrieve the Product Field name.|True|String|Product Name|
 |EventClassId|Enter the source field name in order to retrieve the Event Field name.|True|String|type|
 |Environment Field Name|Describes the name of the field where the environment name is stored. If the environment field isn't found, the environment is the default environment.|False|String||
@@ -655,6 +654,7 @@ Pull Identity Protection detections from Crowdstrike. Note: this connector requi
 |API Root|API root of the Crowdstrike instance.|True|String|https://api.crowdstrike.com|
 |Client ID|Client ID  of the Crowdstrike account.|True|String||
 |Client Secret|Client Secret of the Crowdstrike account.|True|Password||
+|Lowest Severity Score To Fetch|Lowest severity score of the identity protection detections to fetch. If nothing is provided, the connector will ingest detections with all severities. Maximum is 100. Note: action also supports the following values: Informational, Low, Medium, High, Critical.|False|String||
 |Max Hours Backwards|Number of hours before the first connector iteration to retrieve detections from. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires.|False|Integer|1|
 |Max Detections To Fetch|How many identity protection detections to process per one connector iteration. Default: 10.|False|Integer|10|
 |Use dynamic list as a blocklist|If enabled, the dynamic list will be used as a blocklist.|False|Boolean|true|
@@ -672,6 +672,7 @@ Pull incident and related behaviors from Crowdstrike. Dynamic List works with th
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|PythonProcessTimeout|Timeout limit for the python process running the current script. Default: 180|True|Integer|180|
 |DeviceProductField|Enter the source field name in order to retrieve the Product Field name.|True|String|Product Name|
 |EventClassId|Enter the source field name in order to retrieve the Event Field name.|True|String|data_type|
 |API Root|API root of the Crowdstrike instance.|True|String|https://api.crowdstrike.com|
@@ -680,7 +681,6 @@ Pull incident and related behaviors from Crowdstrike. Dynamic List works with th
 |Max Hours Backwards|Number of hours before the first connector iteration to retrieve incidents from. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires. Default: 1|False|String|1|
 |Environment Field Name|Describes the name of the field where the environment name is stored. If the environment field isn't found, the environment is the default environment.|False|String||
 |Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field. Default is .* to catch all and return the value unchanged. Used to allow the user to manipulate the environment field via regex logic. If the regex pattern is null or empty, or the environment value is null, the final environment result is the default environment.|False|String|.*|
-|PythonProcessTimeout|Timeout limit for the python process running the current script. Default: 180|True|Integer|180|
 |Lowest Severity Score To Fetch|Lowest severity score of the incidents to fetch. If nothing is provided, the connector will ingest incidents with all severities. Maximum is 100. Note: action also supports the following values: Low, Medium, High, Critical. In the Crowdstrike UI the same value is presented as divided by 10.|False|String||
 |Max Incidents To Fetch|How many incidents to process per one connector iteration. Default: 10. Max: 100.|False|String|10|
 |Use dynamic list as a blocklist|If enabled, the dynamic list will be used as a blocklist.|False|Boolean|false|

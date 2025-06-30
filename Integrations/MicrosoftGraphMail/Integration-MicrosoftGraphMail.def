@@ -19,8 +19,8 @@
             "IsMandatory": true,
             "Value": "https://login.microsoftonline.com",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278624933,
-            "ModificationTimeUnixTimeInMs": 1751278624933
+            "CreationTimeUnixTimeInMs": 1751285428126,
+            "ModificationTimeUnixTimeInMs": 1751285428126
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMail",
@@ -31,8 +31,8 @@
             "IsMandatory": true,
             "Value": "https://graph.microsoft.com",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278624933,
-            "ModificationTimeUnixTimeInMs": 1751278624933
+            "CreationTimeUnixTimeInMs": 1751285428126,
+            "ModificationTimeUnixTimeInMs": 1751285428126
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMail",
@@ -43,8 +43,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278624933,
-            "ModificationTimeUnixTimeInMs": 1751278624933
+            "CreationTimeUnixTimeInMs": 1751285428126,
+            "ModificationTimeUnixTimeInMs": 1751285428126
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMail",
@@ -55,8 +55,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278624933,
-            "ModificationTimeUnixTimeInMs": 1751278624933
+            "CreationTimeUnixTimeInMs": 1751285428126,
+            "ModificationTimeUnixTimeInMs": 1751285428126
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMail",
@@ -67,8 +67,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278624933,
-            "ModificationTimeUnixTimeInMs": 1751278624933
+            "CreationTimeUnixTimeInMs": 1751285428126,
+            "ModificationTimeUnixTimeInMs": 1751285428126
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMail",
@@ -79,8 +79,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278624933,
-            "ModificationTimeUnixTimeInMs": 1751278624933
+            "CreationTimeUnixTimeInMs": 1751285428126,
+            "ModificationTimeUnixTimeInMs": 1751285428126
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMail",
@@ -91,8 +91,8 @@
             "IsMandatory": false,
             "Value": "false",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278624933,
-            "ModificationTimeUnixTimeInMs": 1751278624933
+            "CreationTimeUnixTimeInMs": 1751285428126,
+            "ModificationTimeUnixTimeInMs": 1751285428126
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMail",
@@ -103,8 +103,8 @@
             "IsMandatory": false,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278624933,
-            "ModificationTimeUnixTimeInMs": 1751278624933
+            "CreationTimeUnixTimeInMs": 1751285428126,
+            "ModificationTimeUnixTimeInMs": 1751285428126
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMail",
@@ -115,8 +115,8 @@
             "IsMandatory": false,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278624933,
-            "ModificationTimeUnixTimeInMs": 1751278624933
+            "CreationTimeUnixTimeInMs": 1751285428126,
+            "ModificationTimeUnixTimeInMs": 1751285428126
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMail",
@@ -127,8 +127,8 @@
             "IsMandatory": false,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278624933,
-            "ModificationTimeUnixTimeInMs": 1751278624933
+            "CreationTimeUnixTimeInMs": 1751285428126,
+            "ModificationTimeUnixTimeInMs": 1751285428126
         },
         {
             "IntegrationIdentifier": "MicrosoftGraphMail",
@@ -139,8 +139,8 @@
             "IsMandatory": false,
             "Value": "true",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751278624933,
-            "ModificationTimeUnixTimeInMs": 1751278624933
+            "CreationTimeUnixTimeInMs": 1751285428126,
+            "ModificationTimeUnixTimeInMs": 1751285428126
         }
     ],
     "IntegrationSupportedActions": [
@@ -148,120 +148,120 @@
             "Name": "Wait For Vote Email Results",
             "Description": "Wait for the user response based on the vote email sent using the Send Vote Email action. This action is asynchronous. Adjust the action timeout in the IDE accordingly. This action is not working on Google SecOps entities.",
             "Id": 284,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
-        },
-        {
-            "Name": "Mark Email as Not Junk",
-            "Description": "Mark an email as not junk for a specific mailbox. This action removes the sender from the list of blocked senders and moves the message to the Inbox folder. Note: This action uses the beta version of Microsoft Graph APIs and is not running on Google SecOps entities.",
-            "Id": 294,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
         },
         {
             "Name": "Wait For Email From User",
             "Description": "Wait for user's response based on an email sent via the \"Send Mail\" action. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities.",
             "Id": 285,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
         },
         {
             "Name": "Send Vote Email",
             "Description": "Send email with easy answering options, to allow stakeholders to be included in workflow processes. This action uses Google SecOps HTML templates to format the email. If permissions allow, the action sends an email from a mailbox different than the one specified in the integration configuration. Note: This action is not running on Google SecOps entities.",
             "Id": 286,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
         },
         {
             "Name": "Send Thread Reply",
             "Description": "Send a message as a reply to the email thread. If permissions allow, action can send an email from a mailbox different that is specified in the integration configuration. Note: Action is not running on Chronicle entities.",
             "Id": 287,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
         },
         {
             "Name": "Send Email HTML",
             "Description": "Send email with the Google SecOps HTML template from a specific mailbox to an arbitrary list of recipients. If permissions allow, the action sends an email from a mailbox different than the one specified in the integration configuration. Note: Action is not running on Google SecOps entities.",
             "Id": 288,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
+        },
+        {
+            "Name": "Mark Email as Not Junk",
+            "Description": "Mark an email as not junk for a specific mailbox. This action removes the sender from the list of blocked senders and moves the message to the Inbox folder. Note: This action uses the beta version of Microsoft Graph APIs and is not running on Google SecOps entities.",
+            "Id": 294,
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
         },
         {
             "Name": "Mark Email as Junk",
             "Description": "Mark an email as junk for a specific mailbox. This action adds the email sender to the list of blocked senders and moves the message to the Junk Email folder. Note: This action uses the beta version of Microsoft Graph APIs and is not running on Google SecOps entities.",
             "Id": 295,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
-        },
-        {
-            "Name": "Get Mailbox Account Out Of Facility Settings",
-            "Description": "Get the mailbox account out of facility (OOF) settings for the provided Google SecOps User entity. Note: This action uses the beta version of Microsoft Graph APIs.",
-            "Id": 296,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
         },
         {
             "Name": "Send Email",
             "Description": "Send email from a specific mailbox to an arbitrary list of recipients. Action can send either plain text or html emails. If permissions allow, action can send an email from a mailbox different that is specified in the integration configuration. Note: Action is not running on Chronicle entities.",
             "Id": 289,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
         },
         {
             "Name": "Search Emails",
             "Description": "Execute email search in the configured mailbox based on provided search criteria. If permissions allow, action can search in mailboxes other than the one provided in the integration configuration. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities. ",
             "Id": 290,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
         },
         {
             "Name": "Save Email to the Case",
             "Description": "Save email or email attachments to the Chronicle Case Wall. If permissions allow, action can save emails from mailboxes other than the one provided in the integration configuration. Action is not working on Chronicle entities.",
             "Id": 291,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
         },
         {
             "Name": "Ping",
             "Description": "Test Connectivity",
             "Id": 292,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
         },
         {
             "Name": "Move Email To Folder",
             "Description": "Move one or multiple emails from source email folder to another folder in the mailbox. If permissions allow, action can move emails in mailboxes other than the one provided in the integration configuration. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities.",
             "Id": 293,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
+        },
+        {
+            "Name": "Get Mailbox Account Out Of Facility Settings",
+            "Description": "Get the mailbox account out of facility (OOF) settings for the provided Google SecOps User entity. Note: This action uses the beta version of Microsoft Graph APIs.",
+            "Id": 296,
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
         },
         {
             "Name": "Forward Email",
             "Description": "Forward email including previous threads. If permissions allow, action can send an email from a mailbox different that is specified in the integration configuration. Note: Action is not running on Siemplify entities.",
             "Id": 297,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
         },
         {
             "Name": "Extract Data from Attached EML",
             "Description": "Extract data from the email EML attachments and return it in the actions JSON result. The action supports .eml, .msg, .ics file formats. Note: Action is not running on SecOps entities.",
             "Id": 298,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
         },
         {
             "Name": "Download Attachments from Email",
             "Description": "Download attachments from an email based on the provided criteria. Note: Action is not running on SecOps entities. Action is running asynchronously. Adjust the script timeout value in the SecOps IDE for action as needed. If the downloaded attachments contain \"/\" or \"\\\" characters in their names, the characters will be replaced with the '_' character.",
             "Id": 299,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
         },
         {
             "Name": "Delete Email",
             "Description": "Delete one or multiple emails from the mailbox based on provided search criteria. If permissions allow, action can move emails in mailboxes other than the one provided in the integration configuration. Action is async, please adjust action timeout in IDE accordingly. Action is not working on Chronicle entities.",
             "Id": 300,
-            "CreationTimeUnixTimeInMs": 1751278624943,
-            "ModificationTimeUnixTimeInMs": 1751278624943
+            "CreationTimeUnixTimeInMs": 1751285428135,
+            "ModificationTimeUnixTimeInMs": 1751285428135
         }
     ],
     "Categories": [
@@ -278,6 +278,6 @@
     "MinimumSystemVersion": 0.0,
     "ProductionIntegrationIdentifier": null,
     "Id": 0,
-    "CreationTimeUnixTimeInMs": 1751278624933,
-    "ModificationTimeUnixTimeInMs": 1751278624933
+    "CreationTimeUnixTimeInMs": 1751285428126,
+    "ModificationTimeUnixTimeInMs": 1751285428126
 }

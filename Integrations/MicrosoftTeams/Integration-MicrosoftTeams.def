@@ -19,8 +19,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751279116143,
-            "ModificationTimeUnixTimeInMs": 1751279116143
+            "CreationTimeUnixTimeInMs": 1751285604808,
+            "ModificationTimeUnixTimeInMs": 1751285604808
         },
         {
             "IntegrationIdentifier": "MicrosoftTeams",
@@ -31,8 +31,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751279116143,
-            "ModificationTimeUnixTimeInMs": 1751279116143
+            "CreationTimeUnixTimeInMs": 1751285604808,
+            "ModificationTimeUnixTimeInMs": 1751285604808
         },
         {
             "IntegrationIdentifier": "MicrosoftTeams",
@@ -43,8 +43,8 @@
             "IsMandatory": true,
             "Value": "",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751279116143,
-            "ModificationTimeUnixTimeInMs": 1751279116143
+            "CreationTimeUnixTimeInMs": 1751285604808,
+            "ModificationTimeUnixTimeInMs": 1751285604808
         },
         {
             "IntegrationIdentifier": "MicrosoftTeams",
@@ -55,8 +55,8 @@
             "IsMandatory": true,
             "Value": null,
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751279116143,
-            "ModificationTimeUnixTimeInMs": 1751279116143
+            "CreationTimeUnixTimeInMs": 1751285604808,
+            "ModificationTimeUnixTimeInMs": 1751285604808
         },
         {
             "IntegrationIdentifier": "MicrosoftTeams",
@@ -67,8 +67,8 @@
             "IsMandatory": false,
             "Value": "http://localhost/",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751279116143,
-            "ModificationTimeUnixTimeInMs": 1751279116143
+            "CreationTimeUnixTimeInMs": 1751285604808,
+            "ModificationTimeUnixTimeInMs": 1751285604808
         },
         {
             "IntegrationIdentifier": "MicrosoftTeams",
@@ -79,143 +79,143 @@
             "IsMandatory": false,
             "Value": "false",
             "Id": 0,
-            "CreationTimeUnixTimeInMs": 1751279116143,
-            "ModificationTimeUnixTimeInMs": 1751279116143
+            "CreationTimeUnixTimeInMs": 1751285604808,
+            "ModificationTimeUnixTimeInMs": 1751285604808
         }
     ],
     "IntegrationSupportedActions": [
         {
             "Name": "Add Users To Channel",
             "Description": "Add users to the private channel in Microsoft Teams. Supported entities: Username, Email Address (username that matches email regex). Note: only users that are a part of the same team can be added to the channel.",
-            "Id": 366,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "Wait For Reply",
-            "Description": "Action waits for the reply to a specified message. Note: You need to be a part of the desired team and channel. Note: Action is running as async, please adjust script timeout value in Chronicle SOAR IDE for action as needed.",
-            "Id": 348,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "Send User Message",
-            "Description": "Send a chat message to the user in Microsoft Teams. Supported entities: Username, Email Address (username that matches email regex). Note: Action is running as async if \u201cWait For Reply\u201d is enabled, please adjust script timeout value in Siemplify IDE for action as needed.",
-            "Id": 349,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "Send Message Reply",
-            "Description": "Send a reply to the channel message in Microsoft Teams.",
-            "Id": 350,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "Send Message",
-            "Description": "Send Message to specific Channel",
-            "Id": 351,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "Send Chat Message",
-            "Description": "Send a chat message in Microsoft Teams. Note: Action is running as async if \u201cWait For Reply\u201d is enabled, please adjust script timeout value in Siemplify IDE for action as needed.",
-            "Id": 352,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "Remove Users From Channel",
-            "Description": "Remove users from the private channel in Microsoft Teams. Supported entities: Username, Email Address (username that matches email regex).",
-            "Id": 353,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "Ping",
-            "Description": "Test Connectivity",
-            "Id": 354,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "List Users",
-            "Description": "Get all users details",
-            "Id": 355,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "List Teams",
-            "Description": "Retrieve details of all teams",
-            "Id": 356,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "List Chats",
-            "Description": "List available chats in Teams.",
-            "Id": 357,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "List Channels",
-            "Description": "Get all channels details that exist in specific team",
-            "Id": 358,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "Get User Details",
-            "Description": "Retrieve the properties and relationships of specific user",
-            "Id": 359,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "Get Team Details",
-            "Description": "Retrieve the properties of specific team",
-            "Id": 360,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "Get Authorization",
-            "Description": "Run the action and browse to the received url",
-            "Id": 361,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "Generate Token",
-            "Description": "Get an access token using the authorization url received in the previous step",
-            "Id": 362,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "Delete Channel",
-            "Description": "Delete a channel in Microsoft Teams.",
-            "Id": 363,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
-        },
-        {
-            "Name": "Create Chat",
-            "Description": "Create a user chat in Microsoft Teams. Supported entities: Username, Email Address (username that matches email regex). Note: chat will be created for each user.",
-            "Id": 364,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
+            "Id": 339,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
         },
         {
             "Name": "Create Channel",
             "Description": "Create a channel in Microsoft Teams.",
-            "Id": 365,
-            "CreationTimeUnixTimeInMs": 1751279116154,
-            "ModificationTimeUnixTimeInMs": 1751279116154
+            "Id": 338,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "Create Chat",
+            "Description": "Create a user chat in Microsoft Teams. Supported entities: Username, Email Address (username that matches email regex). Note: chat will be created for each user.",
+            "Id": 337,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "Delete Channel",
+            "Description": "Delete a channel in Microsoft Teams.",
+            "Id": 336,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "Generate Token",
+            "Description": "Get an access token using the authorization url received in the previous step",
+            "Id": 335,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "Get Authorization",
+            "Description": "Run the action and browse to the received url",
+            "Id": 334,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "Get Team Details",
+            "Description": "Retrieve the properties of specific team",
+            "Id": 333,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "Get User Details",
+            "Description": "Retrieve the properties and relationships of specific user",
+            "Id": 332,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "List Channels",
+            "Description": "Get all channels details that exist in specific team",
+            "Id": 331,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "List Chats",
+            "Description": "List available chats in Teams.",
+            "Id": 330,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "List Teams",
+            "Description": "Retrieve details of all teams",
+            "Id": 329,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "List Users",
+            "Description": "Get all users details",
+            "Id": 328,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "Ping",
+            "Description": "Test Connectivity",
+            "Id": 327,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "Remove Users From Channel",
+            "Description": "Remove users from the private channel in Microsoft Teams. Supported entities: Username, Email Address (username that matches email regex).",
+            "Id": 326,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "Send Chat Message",
+            "Description": "Send a chat message in Microsoft Teams. Note: Action is running as async if \u201cWait For Reply\u201d is enabled, please adjust script timeout value in Siemplify IDE for action as needed.",
+            "Id": 325,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "Send Message",
+            "Description": "Send Message to specific Channel",
+            "Id": 324,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "Send Message Reply",
+            "Description": "Send a reply to the channel message in Microsoft Teams.",
+            "Id": 323,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "Send User Message",
+            "Description": "Send a chat message to the user in Microsoft Teams. Supported entities: Username, Email Address (username that matches email regex). Note: Action is running as async if \u201cWait For Reply\u201d is enabled, please adjust script timeout value in Siemplify IDE for action as needed.",
+            "Id": 322,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
+        },
+        {
+            "Name": "Wait For Reply",
+            "Description": "Action waits for the reply to a specified message. Note: You need to be a part of the desired team and channel. Note: Action is running as async, please adjust script timeout value in Chronicle SOAR IDE for action as needed.",
+            "Id": 321,
+            "CreationTimeUnixTimeInMs": 1751285604816,
+            "ModificationTimeUnixTimeInMs": 1751285604816
         }
     ],
     "Categories": [
@@ -233,6 +233,6 @@
     "MinimumSystemVersion": 0.0,
     "ProductionIntegrationIdentifier": null,
     "Id": 0,
-    "CreationTimeUnixTimeInMs": 1751279116143,
-    "ModificationTimeUnixTimeInMs": 1751279116143
+    "CreationTimeUnixTimeInMs": 1751285604808,
+    "ModificationTimeUnixTimeInMs": 1751285604808
 }

@@ -1,11 +1,11 @@
 {
     "id": 0,
-    "identifier": "c9e9952b-0dcb-424b-925d-498e24bfff3d",
+    "identifier": "fa456a68-5e8a-441d-adee-03c45101f0a2",
     "version": "1",
     "isEnabled": true,
     "isDebugMode": false,
-    "name": "New Block 3",
-    "creator": "bc91ae5a-65ad-40bd-aa54-2cfabde49698",
+    "name": "New Block 4",
+    "creator": "973d7959-bcd7-48fa-8b56-37fa8244951d",
     "modifiedBy": "973d7959-bcd7-48fa-8b56-37fa8244951d",
     "priority": 2,
     "description": "An embedded workflow that can receive inputs and return an output.",
@@ -14,12 +14,12 @@
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "c9e9952b-0dcb-424b-925d-498e24bfff3d",
-    "creationTimeUnixTimeInMs": 1751285484085,
-    "modificationTimeUnixTimeInMs": 1751285484085,
+    "originalPlaybookIdentifier": "fa456a68-5e8a-441d-adee-03c45101f0a2",
+    "creationTimeUnixTimeInMs": 1751285589339,
+    "modificationTimeUnixTimeInMs": 1751285589339,
     "trigger": {
         "id": 0,
-        "identifier": "23a82bd7-07af-46db-bf4d-8e409b1b5650",
+        "identifier": "9134870e-2981-48e9-9513-e050f240eae8",
         "type": 11,
         "logicalOperator": 0,
         "conditions": []
@@ -27,8 +27,8 @@
     "steps": [
         {
             "parallelActions": [],
-            "identifier": "5dcaed1e-d07d-4398-b50e-474bbe491092",
-            "originalStepIdentifier": "5dcaed1e-d07d-4398-b50e-474bbe491092",
+            "identifier": "0d7ee264-65ee-4088-a820-ee366dc8cea5",
+            "originalStepIdentifier": "0d7ee264-65ee-4088-a820-ee366dc8cea5",
             "isAutomatic": true,
             "isSkippable": false,
             "instanceName": "Output_1",
@@ -55,26 +55,26 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "c9e9952b-0dcb-424b-925d-498e24bfff3d",
+            "workflowIdentifier": "fa456a68-5e8a-441d-adee-03c45101f0a2",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751285484085,
-            "modificationTimeUnixTimeInMs": 1751285484085,
+            "creationTimeUnixTimeInMs": 1751285589339,
+            "modificationTimeUnixTimeInMs": 1751285589339,
             "additionalProperties": {}
         },
         {
             "parallelActions": [],
-            "identifier": "f8b31ef3-9c45-4755-960b-c9381bb84901",
-            "originalStepIdentifier": "f8b31ef3-9c45-4755-960b-c9381bb84901",
+            "identifier": "56f3608b-943c-49a7-85f0-da13c2c3590d",
+            "originalStepIdentifier": "56f3608b-943c-49a7-85f0-da13c2c3590d",
             "isAutomatic": true,
             "isSkippable": false,
-            "instanceName": "VirusTotalV3_Add Comment To Entity_1",
-            "name": "VirusTotalV3_Add Comment To Entity",
+            "instanceName": "VirusTotalV3_Add Vote To Entity_1",
+            "name": "VirusTotalV3_Add Vote To Entity",
             "integration": "VirusTotalV3",
-            "description": "Add a comment to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported",
+            "description": "Add a vote to entities in VirusTotal. Supported entities: File Hash, URL, Hostname, Domain, IP Address. Note: only MD5, SHA-1 and SHA-256 Hash types are supported",
             "actionProvider": "Scripts",
-            "actionName": "VirusTotalV3_Add Comment To Entity",
+            "actionName": "VirusTotalV3_Add Vote To Entity",
             "type": 0,
             "parameters": [
                 {
@@ -101,7 +101,7 @@
                 },
                 {
                     "name": "FallbackIntegrationInstance",
-                    "value": "4cdfc6ec-859a-4c1c-a3de-cd62739b8c50",
+                    "value": "5223c91d-c832-44cf-87a1-e2a3dbe0c26c",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -109,7 +109,7 @@
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
                     "additionalProperties": {},
-                    "FallbackInstanceDisplayName": "VirusTotalV3_1"
+                    "FallbackInstanceDisplayName": "VirusTotalV3_3"
                 },
                 {
                     "name": "FetchInstanceByName",
@@ -168,7 +168,7 @@
                 },
                 {
                     "name": "ScriptName",
-                    "value": "VirusTotalV3_Add Comment To Entity",
+                    "value": "VirusTotalV3_Add Vote To Entity",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -179,7 +179,7 @@
                 },
                 {
                     "name": "ScriptParametersEntityFields",
-                    "value": "{\"Comment\":\"sdasdasdas\"}",
+                    "value": "{\"Vote\":\"Malicious\"}",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -215,20 +215,20 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "c9e9952b-0dcb-424b-925d-498e24bfff3d",
+            "workflowIdentifier": "fa456a68-5e8a-441d-adee-03c45101f0a2",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1751285484085,
-            "modificationTimeUnixTimeInMs": 1751285484085,
+            "creationTimeUnixTimeInMs": 1751285589339,
+            "modificationTimeUnixTimeInMs": 1751285589339,
             "additionalProperties": {}
         }
     ],
     "stepsRelations": [
         {
             "condition": "",
-            "fromStep": "f8b31ef3-9c45-4755-960b-c9381bb84901",
-            "toStep": "5dcaed1e-d07d-4398-b50e-474bbe491092",
+            "fromStep": "56f3608b-943c-49a7-85f0-da13c2c3590d",
+            "toStep": "0d7ee264-65ee-4088-a820-ee366dc8cea5",
             "destinationActionStatus": 0
         }
     ],

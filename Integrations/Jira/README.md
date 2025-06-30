@@ -18,34 +18,34 @@ Python Version - 3
 #### Dependencies
 | |
 |-|
-|requests_toolbelt-1.0.0-py2.py3-none-any.whl|
-|requests_oauthlib-2.0.0-py2.py3-none-any.whl|
-|pycparser-2.22-py3-none-any.whl|
-|TIPCommon-1.1.2.2-py2.py3-none-any.whl|
-|rsa-4.9-py3-none-any.whl|
-|charset_normalizer-3.3.2-py3-none-any.whl|
-|argparse-1.4.0-py2.py3-none-any.whl|
-|jira-3.8.0-py3-none-any.whl|
-|my_test_package-0.1.1.tar.gz|
-|typing_extensions-4.12.2-py3-none-any.whl|
-|idna-3.7-py3-none-any.whl|
-|requests-2.32.3-py3-none-any.whl|
-|pyasn1_modules-0.4.0-py3-none-any.whl|
 |cachetools-5.5.0-py3-none-any.whl|
+|cryptography-43.0.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|rsa-4.9-py3-none-any.whl|
+|requests-2.32.3-py3-none-any.whl|
+|pycparser-2.22-py3-none-any.whl|
+|cffi-1.17.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|pyasn1-0.6.0-py2.py3-none-any.whl|
+|jira-3.8.0-py3-none-any.whl|
+|google_auth-2.34.0-py2.py3-none-any.whl|
+|packaging-24.1-py3-none-any.whl|
+|SecretStorage-3.3.3-py3-none-any.whl|
+|pyasn1_modules-0.4.0-py3-none-any.whl|
+|jeepney-0.8.0-py3-none-any.whl|
+|oauthlib-3.2.2-py3-none-any.whl|
+|urllib3-2.2.2-py3-none-any.whl|
+|requests_toolbelt-1.0.0-py2.py3-none-any.whl|
+|argparse-1.4.0-py2.py3-none-any.whl|
+|typing_extensions-4.12.2-py3-none-any.whl|
+|pillow-10.4.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
+|EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
+|idna-3.7-py3-none-any.whl|
+|requests_oauthlib-2.0.0-py2.py3-none-any.whl|
 |certifi-2024.7.4-py3-none-any.whl|
 |pbr-6.0.0-py2.py3-none-any.whl|
-|pyasn1-0.6.0-py2.py3-none-any.whl|
-|SecretStorage-3.3.3-py3-none-any.whl|
-|urllib3-2.2.2-py3-none-any.whl|
-|cryptography-43.0.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|cffi-1.17.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|pillow-10.4.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|jeepney-0.8.0-py3-none-any.whl|
 |defusedxml-0.7.1-py2.py3-none-any.whl|
-|oauthlib-3.2.2-py3-none-any.whl|
-|google_auth-2.34.0-py2.py3-none-any.whl|
-|EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
-|packaging-24.1-py3-none-any.whl|
+|charset_normalizer-3.3.2-py3-none-any.whl|
+|my_test_package-0.1.1.tar.gz|
+|TIPCommon-1.1.2.2-py2.py3-none-any.whl|
 
 
 ## Actions
@@ -114,10 +114,10 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Issue Type|The type of the issue|True|String||
 |Project Key|The key of the project to create an issue in|True|String||
 |Summary|The summary of the issue|True|String||
 |Description|The description of the issue|False|String||
-|Issue Type|The type of the issue|True|String||
 |Jira Username|The Jira username of the initiator of the action. Note: If a username is not provided, action will not create a comment in the issue|False|String||
 |Assignee|The new assignee of the issue.|False|String||
 |Components|The Components field of the issue. Parameter accepts multiple values as a comma separated string.|False|String||
@@ -378,6 +378,19 @@ Timeout - 600 Seconds
 
 
 
+#### Upload Attachment
+Add an attachment to an issue.
+Timeout - 600 Seconds
+
+
+|Name|Description|IsMandatory|Type|DefaultValue|
+|----|-----------|-----------|----|------------|
+|Issue Key|The key of the issue|True|String||
+|File Paths|The paths of the files to upload, comma separated|True|String||
+|Mode|Specify the mode for the action. If "Add New Attachment" is selected, action will add a new attachment, if it even has the same name. If "Overwrite Existing Attachment" is selected, action will remove other attachments with the same name and add a new attachment.|False|List|Add New Attachment|
+
+
+
 #### Update Issue
 Update an issue. For new Jira Api, action will try to find a match for the assignee to assign an issue based on User email or displayName field.
 Timeout - 600 Seconds
@@ -385,11 +398,11 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Issue Type|The new type of the issue|False|String||
 |Issue Key|The key of the issue to update|True|String||
 |Status|Specify the relevant transition name, to transition this issue to the new desired status.|False|String|Done|
 |Summary|The new summary of the issue|False|String||
 |Description|The new description of the issue|False|String||
+|Issue Type|The new type of the issue|False|String||
 |Jira Username|The JIRA username of the action initiator. Note: If a username is not provided, action will not create a comment in the issue|False|String||
 |Assignee|The new assignee of the issue.|False|String||
 |Components|The Components field of the issue. Parameter accepts multiple values as a comma separated string.|False|String||
@@ -405,37 +418,10 @@ Timeout - 600 Seconds
 
 
 
-#### Upload Attachment
-Add an attachment to an issue.
-Timeout - 600 Seconds
-
-
-|Name|Description|IsMandatory|Type|DefaultValue|
-|----|-----------|-----------|----|------------|
-|Issue Key|The key of the issue|True|String||
-|File Paths|The paths of the files to upload, comma separated|True|String||
-|Mode|Specify the mode for the action. If "Add New Attachment" is selected, action will add a new attachment, if it even has the same name. If "Overwrite Existing Attachment" is selected, action will remove other attachments with the same name and add a new attachment.|False|List|Add New Attachment|
-
-
-
 
 
 
 ## Jobs
-
-#### Copy of Sync Comments
-Sync comments between Siemplify alert’s case and corresponding Jira ticket. Sync mechanism works in both ways, Siemplify → Jira and Jira → Siemplify
-
-|Name|IsMandatory|Type|DefaultValue|
-|----|-----------|----|------------|
-|API Root|True|String|https://{jira_address}|
-|Username|True|String||
-|API Token|True|Password||
-|Environment|False|String||
-|Project Names|False|String|project names separated by comma|
-|Days Backwards|False|String|1|
-|Siemplify Comment Prefix|True|String|SIEMPLIFY:|
-|Jira Comment Prefix|True|String|Jira Comment Sync Job:|
 
 #### Tits Sync Comments
 Sync comments between Siemplify alert’s case and corresponding Jira ticket. Sync mechanism works in both ways, Siemplify → Jira and Jira → Siemplify
@@ -462,6 +448,20 @@ Close tickets in Jira if corresponding Siemplify alerts were closed.
 |Environment|False|String||
 |Project Names|True|String|project names separated by comma|
 |Days Backwards|True|String|1|
+
+#### Copy of Sync Comments
+Sync comments between Siemplify alert’s case and corresponding Jira ticket. Sync mechanism works in both ways, Siemplify → Jira and Jira → Siemplify
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|API Root|True|String|https://{jira_address}|
+|Username|True|String||
+|API Token|True|Password||
+|Environment|False|String||
+|Project Names|False|String|project names separated by comma|
+|Days Backwards|False|String|1|
+|Siemplify Comment Prefix|True|String|SIEMPLIFY:|
+|Jira Comment Prefix|True|String|Jira Comment Sync Job:|
 
 #### Sync Closure
 Close tickets in Jira if corresponding Google SecOps alerts were closed.
@@ -497,18 +497,18 @@ Fetch issues from Jira to Siemplify
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Verify SSL|If enabled, verify the SSL certificate for the connection to Jira server is valid.|False|Boolean|false|
-|Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field. Default is .* to catch all and return the value unchanged. Used to allow the user to manipulate the environment field via regex logic. If the regex pattern is null or empty, or the environment value is null, the final environment result is the default environment.|False|String|.*|
+|Api Token||True|Password||
 |DeviceProductField|The field name used to determine the device product|True|String|device_product|
 |EventClassId|The field name used to determine the event name (sub-type)|False|String|issuetype_name|
 |PythonProcessTimeout|The timeout limit (in seconds) for the python process running current script|True|String|180|
 |Api Root|The API root of the JIRA instance|True|String|https://{jira_address}|
 |Username||True|String||
-|Api Token||True|Password||
 |Use Jira Project as Environment|Use Jira project as environment else use Environment Field Name as environment.|False|Boolean|true|
 |Environment Field Name|Describes the name of the field where the environment name is stored. If the environment field isn't found, the environment is the default environment.|False|String||
+|Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field. Default is .* to catch all and return the value unchanged. Used to allow the user to manipulate the environment field via regex logic. If the regex pattern is null or empty, or the environment value is null, the final environment result is the default environment.|False|String|.*|
 |Days Backwards|Max number of days backwards to pull alerts from|False|Integer|5|
 |Max Tickets Per Cycle|Max tickets to fetch and process in one connector cycle|False|Integer|10|
+|Verify SSL|If enabled, verify the SSL certificate for the connection to Jira server is valid.|False|Boolean|false|
 |Project Names|Project names separated by comma|False|String||
 |Issue Statuses|Issue statuses separated by comma|False|String||
 |Assignees|Users full names separated by comma|False|String||
