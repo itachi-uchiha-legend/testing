@@ -1,0 +1,366 @@
+[
+    {
+        "environment": "Default Environment",
+        "integrationIdentifier": "VirusTotalV3",
+        "settings": {
+            "instanceDescription": "",
+            "instanceName": "System Default Instance",
+            "settings": [
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "API Key",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "API Key",
+                    "propertyType": 3,
+                    "isMandatory": true,
+                    "value": "***************",
+                    "integrationInstance": "15a9c9ff-a5ed-41dc-a78e-8edafe202f23",
+                    "environment": null,
+                    "id": 15,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "Verify SSL",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Verify SSL",
+                    "propertyType": 0,
+                    "isMandatory": false,
+                    "value": "False",
+                    "integrationInstance": "15a9c9ff-a5ed-41dc-a78e-8edafe202f23",
+                    "environment": null,
+                    "id": 16,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "AgentIdentifier",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Agent",
+                    "propertyType": 9,
+                    "isMandatory": false,
+                    "value": null,
+                    "integrationInstance": "15a9c9ff-a5ed-41dc-a78e-8edafe202f23",
+                    "environment": null,
+                    "id": 17,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                }
+            ]
+        }
+    },
+    {
+        "environment": "*",
+        "integrationIdentifier": "VirusTotalV3",
+        "settings": {
+            "instanceDescription": "",
+            "instanceName": "VirusTotalV3_1",
+            "settings": [
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "API Key",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "API Key",
+                    "propertyType": 3,
+                    "isMandatory": true,
+                    "value": "***************",
+                    "integrationInstance": "4cdfc6ec-859a-4c1c-a3de-cd62739b8c50",
+                    "environment": null,
+                    "id": 18,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "Verify SSL",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Verify SSL",
+                    "propertyType": 0,
+                    "isMandatory": false,
+                    "value": "False",
+                    "integrationInstance": "4cdfc6ec-859a-4c1c-a3de-cd62739b8c50",
+                    "environment": null,
+                    "id": 19,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "AgentIdentifier",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Agent",
+                    "propertyType": 9,
+                    "isMandatory": false,
+                    "value": null,
+                    "integrationInstance": "4cdfc6ec-859a-4c1c-a3de-cd62739b8c50",
+                    "environment": null,
+                    "id": 20,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                }
+            ]
+        }
+    },
+    {
+        "environment": "*",
+        "integrationIdentifier": "VirusTotalV3",
+        "settings": {
+            "instanceDescription": "",
+            "instanceName": "VirusTotalV3_2",
+            "settings": [
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "API Key",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "API Key",
+                    "propertyType": 3,
+                    "isMandatory": true,
+                    "value": "***************",
+                    "integrationInstance": "6ee89512-5e26-4225-8a1b-ff789b563d81",
+                    "environment": null,
+                    "id": 21,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "Verify SSL",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Verify SSL",
+                    "propertyType": 0,
+                    "isMandatory": false,
+                    "value": "False",
+                    "integrationInstance": "6ee89512-5e26-4225-8a1b-ff789b563d81",
+                    "environment": null,
+                    "id": 22,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "AgentIdentifier",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Agent",
+                    "propertyType": 9,
+                    "isMandatory": false,
+                    "value": null,
+                    "integrationInstance": "6ee89512-5e26-4225-8a1b-ff789b563d81",
+                    "environment": null,
+                    "id": 23,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                }
+            ]
+        }
+    },
+    {
+        "environment": "*",
+        "integrationIdentifier": "VirusTotalV3",
+        "settings": {
+            "instanceDescription": "",
+            "instanceName": "VirusTotalV3_3",
+            "settings": [
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "API Key",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "API Key",
+                    "propertyType": 3,
+                    "isMandatory": true,
+                    "value": "***************",
+                    "integrationInstance": "5223c91d-c832-44cf-87a1-e2a3dbe0c26c",
+                    "environment": null,
+                    "id": 34,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "Verify SSL",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Verify SSL",
+                    "propertyType": 0,
+                    "isMandatory": false,
+                    "value": "False",
+                    "integrationInstance": "5223c91d-c832-44cf-87a1-e2a3dbe0c26c",
+                    "environment": null,
+                    "id": 35,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "AgentIdentifier",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Agent",
+                    "propertyType": 9,
+                    "isMandatory": false,
+                    "value": null,
+                    "integrationInstance": "5223c91d-c832-44cf-87a1-e2a3dbe0c26c",
+                    "environment": null,
+                    "id": 36,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                }
+            ]
+        }
+    },
+    {
+        "environment": "*",
+        "integrationIdentifier": "VirusTotalV3",
+        "settings": {
+            "instanceDescription": "",
+            "instanceName": "VirusTotalV3_4",
+            "settings": [
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "API Key",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "API Key",
+                    "propertyType": 3,
+                    "isMandatory": true,
+                    "value": "***************",
+                    "integrationInstance": "74f874b3-c98a-413b-99bb-845f8fecc5c8",
+                    "environment": null,
+                    "id": 37,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "Verify SSL",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Verify SSL",
+                    "propertyType": 0,
+                    "isMandatory": false,
+                    "value": "False",
+                    "integrationInstance": "74f874b3-c98a-413b-99bb-845f8fecc5c8",
+                    "environment": null,
+                    "id": 38,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "AgentIdentifier",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Agent",
+                    "propertyType": 9,
+                    "isMandatory": false,
+                    "value": null,
+                    "integrationInstance": "74f874b3-c98a-413b-99bb-845f8fecc5c8",
+                    "environment": null,
+                    "id": 39,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                }
+            ]
+        }
+    },
+    {
+        "environment": "*",
+        "integrationIdentifier": "VirusTotalV3",
+        "settings": {
+            "instanceDescription": "",
+            "instanceName": "VirusTotalV3_5",
+            "settings": [
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "API Key",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "API Key",
+                    "propertyType": 3,
+                    "isMandatory": true,
+                    "value": "***************",
+                    "integrationInstance": "ac89693a-cba6-477b-a1ac-df00a7f82a58",
+                    "environment": null,
+                    "id": 50,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "Verify SSL",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Verify SSL",
+                    "propertyType": 0,
+                    "isMandatory": false,
+                    "value": "False",
+                    "integrationInstance": "ac89693a-cba6-477b-a1ac-df00a7f82a58",
+                    "environment": null,
+                    "id": 51,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "AgentIdentifier",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Agent",
+                    "propertyType": 9,
+                    "isMandatory": false,
+                    "value": null,
+                    "integrationInstance": "ac89693a-cba6-477b-a1ac-df00a7f82a58",
+                    "environment": null,
+                    "id": 52,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                }
+            ]
+        }
+    },
+    {
+        "environment": "*",
+        "integrationIdentifier": "VirusTotalV3",
+        "settings": {
+            "instanceDescription": "",
+            "instanceName": "VirusTotalV3_6",
+            "settings": [
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "API Key",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "API Key",
+                    "propertyType": 3,
+                    "isMandatory": true,
+                    "value": "***************",
+                    "integrationInstance": "a84200d5-8170-4354-8259-de1a59343771",
+                    "environment": null,
+                    "id": 53,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "Verify SSL",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Verify SSL",
+                    "propertyType": 0,
+                    "isMandatory": false,
+                    "value": "False",
+                    "integrationInstance": "a84200d5-8170-4354-8259-de1a59343771",
+                    "environment": null,
+                    "id": 54,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                },
+                {
+                    "integrationIdentifier": "VirusTotalV3",
+                    "propertyName": "AgentIdentifier",
+                    "propertyDescription": null,
+                    "propertyDisplayName": "Agent",
+                    "propertyType": 9,
+                    "isMandatory": false,
+                    "value": null,
+                    "integrationInstance": "a84200d5-8170-4354-8259-de1a59343771",
+                    "environment": null,
+                    "id": 55,
+                    "creationTimeUnixTimeInMs": 0,
+                    "modificationTimeUnixTimeInMs": 0
+                }
+            ]
+        }
+    }
+]
