@@ -9,10 +9,12 @@
 |Block 4|Default|An embedded workflow that can receive inputs and return an output.|
 |Block 5|Default|An embedded workflow that can receive inputs and return an output.|
 |Block 6|Default|An embedded workflow that can receive inputs and return an output.|
+|Lock Playbook|Default||
 |New Block|Default|An embedded workflow that can receive inputs and return an output.|
 |New Playbook|Default||
 |New Playbook 1|Default||
 |New hhha|Default||
+|Playbook-1|Default||
 |Playbook-Action-Block-Content-1|Default||
 |Playbook-Content-2|Default||
 |Playbook-Content-3|Default||
@@ -24,3 +26,4 @@
 |Playbook_Actions_3|Default||
 |Playbook_Actions_4|Default||
 |RA_Playbook_1|Default||
+|Siemplify|Imported Playbooks||
