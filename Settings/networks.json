@@ -1,1 +1,13 @@
-[]
+[
+    {
+        "address": "192.168.1.0/24",
+        "name": "Test",
+        "priority": 1,
+        "environments": [
+            "*"
+        ],
+        "id": 1,
+        "creationTimeUnixTimeInMs": 1756207230691,
+        "modificationTimeUnixTimeInMs": 1756207230691
+    }
+]

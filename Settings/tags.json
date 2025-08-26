@@ -1,1 +1,15 @@
-[]
+[
+    {
+        "value": "google.com",
+        "name": "Nishant",
+        "propertyName": "",
+        "priority": 1,
+        "isPotentialCaseName": true,
+        "environments": [],
+        "type": 1,
+        "compareType": 2,
+        "id": 3,
+        "creationTimeUnixTimeInMs": 1756207288013,
+        "modificationTimeUnixTimeInMs": 1756207288013
+    }
+]

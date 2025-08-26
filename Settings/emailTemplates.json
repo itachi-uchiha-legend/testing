@@ -1,1 +1,28 @@
-[]
+[
+    {
+        "type": 1,
+        "name": "testng",
+        "content": "<html>\n    <head>\n    <style type=\"text/css\"> .title\n\n    { color: blue; text-decoration: bold; text-size: 1em; }\n    .author\n    { color: gray; }\n\n    </style>\n    </head>\n\n    <body>\n    <span class=\"title\">La super bonne</span>\n\n    {Text}\n    </h1> <br/>\n    </body>\n\n    </html>",
+        "creatorUserName": "9ade41cb-14f3-4782-adfa-4b8122e9d6ba",
+        "forMigration": false,
+        "environments": [
+            "*"
+        ],
+        "id": 1,
+        "creationTimeUnixTimeInMs": 1756207144279,
+        "modificationTimeUnixTimeInMs": 1756207144279
+    },
+    {
+        "type": 0,
+        "name": "test",
+        "content": "<html></html>",
+        "creatorUserName": "9ade41cb-14f3-4782-adfa-4b8122e9d6ba",
+        "forMigration": false,
+        "environments": [
+            "*"
+        ],
+        "id": 2,
+        "creationTimeUnixTimeInMs": 1756207174081,
+        "modificationTimeUnixTimeInMs": 1756207174081
+    }
+]

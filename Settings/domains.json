@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "domain": "Google.com",
+        "alias": null,
+        "environments": [
+            "*"
+        ],
+        "id": 1,
+        "creationTimeUnixTimeInMs": 1756207210776,
+        "modificationTimeUnixTimeInMs": 1756207210776
+    }
+]

@@ -1,1 +1,13 @@
-[]
+[
+    {
+        "entityIdentifier": "Google.com",
+        "category": "address",
+        "forDBMigration": false,
+        "environments": [
+            "*"
+        ],
+        "id": 1,
+        "creationTimeUnixTimeInMs": 1756207198978,
+        "modificationTimeUnixTimeInMs": 1756207198978
+    }
+]
