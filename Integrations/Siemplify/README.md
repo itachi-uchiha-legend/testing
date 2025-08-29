@@ -213,7 +213,7 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|password|Testing|True|Password|Default password|
+|password|Testing|True|Password|*****|
 
 
 
